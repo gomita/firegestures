@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Навигация">
+<!ENTITY gestureCategory.window "Окно">
+<!ENTITY gestureCategory.tab "Вкладка">
+<!ENTITY gestureCategory.page "Страница">
+<!ENTITY gestureCategory.frame "Фрейм">
+<!ENTITY gestureCategory.link "Ссылка">
+<!ENTITY gestureCategory.image "Изображение">
+<!ENTITY gestureCategory.selection "Выделенный фрагмент">
+<!ENTITY gestureCategory.tools "Инструменты">
+<!ENTITY gestureCategory.popup "Диалоговый тип">
+<!ENTITY gestureCategory.hybrid "Гибридный тип">
+<!ENTITY gestureCategory.script "Схемы, созданные пользователем">
+<!ENTITY gestureType.popup "Диалог">
+<!ENTITY gestureType.hybrid "Гибрид">
+<!ENTITY gestureCmd.skipCache "игнорировать кэш">
+<!ENTITY gestureCmd.goUpperLevel "Перейти на уровень выше">
+<!ENTITY gestureCmd.incrementURL "Увеличить число в URL">
+<!ENTITY gestureCmd.decrementURL "Уменьшить число в URL">
+<!ENTITY gestureCmd.undoCloseWindow "Отменить закрытие окна">
+<!ENTITY gestureCmd.minimizeWindow "Свернуть окно">
+<!ENTITY gestureCmd.maximizeWindow "Развернуть окно / Восстановить размер окна">
+<!ENTITY gestureCmd.previousTab "Предыдущая вкладка">
+<!ENTITY gestureCmd.nextTab "Следующая вкладка">
+<!ENTITY gestureCmd.duplicateTab "Клонировать вкладку">
+<!ENTITY gestureCmd.closeLeftTabs "Закрыть вкладку слева">
+<!ENTITY gestureCmd.closeRightTabs "Закрыть вкладку справа">
+<!ENTITY gestureCmd.scrollTop "Прокрутить в начало документа">
+<!ENTITY gestureCmd.scrollBottom "Прокрутить в конец документа">
+<!ENTITY gestureCmd.scrollPageUp "Прокрутить на страницу вверх">
+<!ENTITY gestureCmd.scrollPageDown "Прокрутить на страницу вниз">
+<!ENTITY gestureCmd.backgroundTab "фоновой">
+<!ENTITY gestureCmd.foregroundTab "активной">
+<!ENTITY gestureCmd.saveImageNow "Сохранить изображение">
+<!ENTITY gestureCmd.searchForSelection "Поиск по выделенному фрагменту">
+<!ENTITY gestureCmd.searchForSelectionWith "Поиск по выделенному фрагменту с помощью...">
+<!ENTITY gestureCmd.openLinksInSelection "Открыть все ссылки в выделенном фрагменте">
+<!ENTITY gestureCmd.openURLsInSelection "Открыть все URL в выделенном фрагменте">
+<!ENTITY gestureCmd.bookmarksSidebar "Открыть боковую панель с закладками">
+<!ENTITY gestureCmd.historySidebar "Открыть боковую панель с историей посещений">
+<!ENTITY gestureCmd.backForwardHistory "Назад / Вперёд по истории посещений">
+<!ENTITY gestureCmd.previewMode "Режим предварительного просмотра">
+<!ENTITY gestureCmd.hybridSave "Сохранить как...">
+<!ENTITY gestureCmd.hybridBookmark "Закладка...">
+<!ENTITY gestureCmd.hybridViewSource "Просмотреть исходный код">
+<!ENTITY gestureCmd.hybridSendURL "Отправить...">
+<!ENTITY gestureCmd.hybridCopyURL "Копировать адрес">
+<!ENTITY gestureCmd.toggleFindbar "Открыть / Закрыть панель поиска">
+<!ENTITY gestureCmd.restartApp "Перезапустить Firefox">
+<!ENTITY gestureCmd.options "Настройки">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Свойства">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

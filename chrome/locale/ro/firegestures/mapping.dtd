@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigare">
+<!ENTITY gestureCategory.window "Fereastră">
+<!ENTITY gestureCategory.tab "Filă">
+<!ENTITY gestureCategory.page "Pagină">
+<!ENTITY gestureCategory.frame "Cadru">
+<!ENTITY gestureCategory.link "Legătură">
+<!ENTITY gestureCategory.image "Imagine">
+<!ENTITY gestureCategory.selection "Selecție">
+<!ENTITY gestureCategory.tools "Instrumente">
+<!ENTITY gestureCategory.popup "Tip fereastră instantanee">
+<!ENTITY gestureCategory.hybrid "Tip hibrid">
+<!ENTITY gestureCategory.script "Script utilizator">
+<!ENTITY gestureType.popup "Fereastră instantanee">
+<!ENTITY gestureType.hybrid "Hibrid">
+<!ENTITY gestureCmd.skipCache "Reîncarcă pagina (ignoră memoria cache)">
+<!ENTITY gestureCmd.goUpperLevel "Navighează un nivel mai sus">
+<!ENTITY gestureCmd.incrementURL "Incrementează numărul din adresă">
+<!ENTITY gestureCmd.decrementURL "Decrementează numărul din adresă">
+<!ENTITY gestureCmd.undoCloseWindow "Redeschide fereastra închisă">
+<!ENTITY gestureCmd.minimizeWindow "Minimizează fereastra">
+<!ENTITY gestureCmd.maximizeWindow "Maximizează fereastra / Restabilește dimensiunea ferestrei">
+<!ENTITY gestureCmd.previousTab "Fila precedentă">
+<!ENTITY gestureCmd.nextTab "Fila următoare">
+<!ENTITY gestureCmd.duplicateTab "Duplică fila">
+<!ENTITY gestureCmd.closeLeftTabs "Închide filele din stânga">
+<!ENTITY gestureCmd.closeRightTabs "Închide filele din dreapta">
+<!ENTITY gestureCmd.scrollTop "Defilează spre început">
+<!ENTITY gestureCmd.scrollBottom "Defilează spre sfârșit">
+<!ENTITY gestureCmd.scrollPageUp "O pagină în sus">
+<!ENTITY gestureCmd.scrollPageDown "O pagină în jos">
+<!ENTITY gestureCmd.backgroundTab "Filă în fundal">
+<!ENTITY gestureCmd.foregroundTab "Filă în prim-plan">
+<!ENTITY gestureCmd.saveImageNow "Salvează imaginea acum">
+<!ENTITY gestureCmd.searchForSelection "Caută textul selectat">
+<!ENTITY gestureCmd.searchForSelectionWith "Caută textul selectat cu...">
+<!ENTITY gestureCmd.openLinksInSelection "Deschide toate legăturile în selecție">
+<!ENTITY gestureCmd.openURLsInSelection "Deschide toate adresele în selecție">
+<!ENTITY gestureCmd.bookmarksSidebar "Afișează panoul lateral cu semne de carte">
+<!ENTITY gestureCmd.historySidebar "Afișează panoul lateral cu istoricul">
+<!ENTITY gestureCmd.backForwardHistory "Element precedent/următor">
+<!ENTITY gestureCmd.previewMode "Mod previzualizare">
+<!ENTITY gestureCmd.hybridSave "Salvează ca...">
+<!ENTITY gestureCmd.hybridBookmark "Semn de carte...">
+<!ENTITY gestureCmd.hybridViewSource "Afișează codul sursă">
+<!ENTITY gestureCmd.hybridSendURL "Trimite...">
+<!ENTITY gestureCmd.hybridCopyURL "Copiază adresa locației">
+<!ENTITY gestureCmd.toggleFindbar "Afișează/Ascunde bara de căutare">
+<!ENTITY gestureCmd.restartApp "Repornește Firefox">
+<!ENTITY gestureCmd.options "Opțiuni">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Proprietăți">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

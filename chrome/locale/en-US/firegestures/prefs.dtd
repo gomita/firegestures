@@ -1,0 +1,57 @@
+<!ENTITY options "Options">
+<!ENTITY mainPane "Main">
+<!ENTITY mappingPane "Mapping">
+<!ENTITY advancedPane "Advanced">
+<!ENTITY mouseGesture "Mouse Gestures">
+<!ENTITY triggerButton "Trigger button to start a gesture">
+<!ENTITY triggerButton.left "Left">
+<!ENTITY triggerButton.middle "Middle">
+<!ENTITY triggerButton.right "Right">
+<!ENTITY suppress.alt "Do not start a gesture with holding Alt key">
+<!ENTITY trail "Trail Drawing">
+<!ENTITY trail.color "Color">
+<!ENTITY trail.size "Size">
+<!ENTITY status "Status Display">
+<!ENTITY status.description.1 "Hide status display after">
+<!ENTITY status.description.2 "seconds">
+<!ENTITY timeout "Timeout">
+<!ENTITY timeout.description.1 "Cancel gesture after">
+<!ENTITY timeout.description.2 "seconds without move">
+<!ENTITY mappings.title "Mappings">
+<!ENTITY mappings.description "Choose a mapping to configure">
+<!ENTITY tools.title "Tools">
+<!ENTITY tools.description "Backup and restore all mappings">
+<!ENTITY tools.backup.label "Backup">
+<!ENTITY tools.restore.label "Restore">
+<!ENTITY tools.restore.alerttext "This will replace all of your current mappings with the backup. Are you sure?">
+<!ENTITY wheelGesture "Wheel Gestures">
+<!ENTITY wheelGesture.up.left "Scroll up with holding left-button">
+<!ENTITY wheelGesture.up.middle "Scroll up with holding middle-button">
+<!ENTITY wheelGesture.up.right "Scroll up with holding right-button">
+<!ENTITY wheelGesture.down.left "Scroll down with holding left-button">
+<!ENTITY wheelGesture.down.middle "Scroll down with holding middle-button">
+<!ENTITY wheelGesture.down.right "Scroll down with holding right-button">
+<!ENTITY rockerGesture "Rocker Gestures">
+<!ENTITY rockerGesture.left "Left-click with holding right-button">
+<!ENTITY rockerGesture.right "Right-click with holding left-button">
+<!ENTITY keypressGesture "Keypress Gestures">
+<!ENTITY keypressGesture.ctrl "Mouse gesture with holding Ctrl key">
+<!ENTITY keypressGesture.shift "Mouse gesture with holding Shift key">
+<!ENTITY keypressGesture.open "Open hovered links in tabs">
+<!ENTITY keypressGesture.save "Save hovered links">
+<!ENTITY keypressGesture.copy "Copy hovered link locations">
+<!ENTITY tabwheelGesture "Tab Wheel Gestures">
+<!ENTITY tabwheelGesture.description "Switch tabs when scrolling wheel on tab bar">
+<!ENTITY treecol.name "Name">
+<!ENTITY treecol.command "Command">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Gesture">
+<!ENTITY editButton.label "Edit">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Clear">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "Add Script">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Delete Script">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "Get Scripts">

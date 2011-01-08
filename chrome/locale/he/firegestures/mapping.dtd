@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "ניווט">
+<!ENTITY gestureCategory.window "חלון">
+<!ENTITY gestureCategory.tab "לשונית">
+<!ENTITY gestureCategory.page "עמוד">
+<!ENTITY gestureCategory.frame "מסגרת">
+<!ENTITY gestureCategory.link "קישור">
+<!ENTITY gestureCategory.image "תמונה">
+<!ENTITY gestureCategory.selection "בחירה">
+<!ENTITY gestureCategory.tools "כלים">
+<!ENTITY gestureCategory.popup "סוג החלון הקופץ">
+<!ENTITY gestureCategory.hybrid "סוג משולב">
+<!ENTITY gestureCategory.script "תסריטי משתמש">
+<!ENTITY gestureType.popup "חלון קופץ">
+<!ENTITY gestureType.hybrid "משולב">
+<!ENTITY gestureCmd.skipCache "דילוג על המטמון">
+<!ENTITY gestureCmd.goUpperLevel "רמה אחת למעלה">
+<!ENTITY gestureCmd.incrementURL "הוספת מספר בכתובת האינטרנט">
+<!ENTITY gestureCmd.decrementURL "הוספת מספר בכתובת האינטרנט">
+<!ENTITY gestureCmd.undoCloseWindow "פתיחת חלון מחדש">
+<!ENTITY gestureCmd.minimizeWindow "מזעור החלון">
+<!ENTITY gestureCmd.maximizeWindow "הרחבת החלון / שחזור גודל החלון">
+<!ENTITY gestureCmd.previousTab "לשונית קודמת">
+<!ENTITY gestureCmd.nextTab "לשונית הבאה">
+<!ENTITY gestureCmd.duplicateTab "שכפול הלשונית">
+<!ENTITY gestureCmd.closeLeftTabs "סגירת הלשוניות השמאליות">
+<!ENTITY gestureCmd.closeRightTabs "סגירת הלשוניות הימניות">
+<!ENTITY gestureCmd.scrollTop "גלילה למעלה">
+<!ENTITY gestureCmd.scrollBottom "גלילה למטה">
+<!ENTITY gestureCmd.scrollPageUp "עמוד מעלה">
+<!ENTITY gestureCmd.scrollPageDown "עמוד מטה">
+<!ENTITY gestureCmd.backgroundTab "לשונית ברקע">
+<!ENTITY gestureCmd.foregroundTab "לשונית מחזית">
+<!ENTITY gestureCmd.saveImageNow "שמירת התמונה כעת">
+<!ENTITY gestureCmd.searchForSelection "חיפוש הבחירה">
+<!ENTITY gestureCmd.searchForSelectionWith "חיפוש הבחירה באמצעות..">
+<!ENTITY gestureCmd.openLinksInSelection "פתיחת כל הקישורים שבבחירה">
+<!ENTITY gestureCmd.openURLsInSelection "פתיחת כל הכתובות אינטרנט שבבחירה">
+<!ENTITY gestureCmd.bookmarksSidebar "הצגת סרגל-צד סימניות">
+<!ENTITY gestureCmd.historySidebar "הצגת סרגל-צד ההיסטוריה">
+<!ENTITY gestureCmd.backForwardHistory "היסטוריה קדימה / אחורה">
+<!ENTITY gestureCmd.previewMode "מצב תצוגה מקדימה">
+<!ENTITY gestureCmd.hybridSave "שמירה בשם...">
+<!ENTITY gestureCmd.hybridBookmark "סימניות...">
+<!ENTITY gestureCmd.hybridViewSource "הצגת המקור">
+<!ENTITY gestureCmd.hybridSendURL "שליחה...">
+<!ENTITY gestureCmd.hybridCopyURL "העתקת המיקום">
+<!ENTITY gestureCmd.toggleFindbar "פתיחת / סגירת סרגל החיפוש">
+<!ENTITY gestureCmd.restartApp "אתחול Firefox">
+<!ENTITY gestureCmd.options "אפשרויות">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "הגדרות">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

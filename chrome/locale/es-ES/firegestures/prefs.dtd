@@ -1,0 +1,57 @@
+<!ENTITY options "Opciones">
+<!ENTITY mainPane "Principal">
+<!ENTITY mappingPane "Correspondencia">
+<!ENTITY advancedPane "Avanzadas">
+<!ENTITY mouseGesture "Gestos del ratón">
+<!ENTITY triggerButton "Butón para iniciar un gesto">
+<!ENTITY triggerButton.left "Izquierda">
+<!ENTITY triggerButton.middle "Central">
+<!ENTITY triggerButton.right "Derecha">
+<!ENTITY suppress.alt "No iniciar un gesto si se está pulsando la tecla Alt">
+<!ENTITY trail "Rastro">
+<!ENTITY trail.color "Color">
+<!ENTITY trail.size "Tamaño">
+<!ENTITY status "Visualización del estado">
+<!ENTITY status.description.1 "Ocultar el estado tras">
+<!ENTITY status.description.2 "segundos">
+<!ENTITY timeout "Tiempo de espera">
+<!ENTITY timeout.description.1 "Cancelar los gestos después de">
+<!ENTITY timeout.description.2 "segundos sin movimiento">
+<!ENTITY mappings.title "Correspondencias">
+<!ENTITY mappings.description "Seleccione una acción para configurar">
+<!ENTITY tools.title "Herramientas">
+<!ENTITY tools.description "Copie y restaure todas las correspondencias">
+<!ENTITY tools.backup.label "Copia de seguridad">
+<!ENTITY tools.restore.label "Restaurar">
+<!ENTITY tools.restore.alerttext "Se reemplazarán todas sus correspondencias actuales con la copia de seguridad. ¿Está seguro?">
+<!ENTITY wheelGesture "Gestos con la rueda">
+<!ENTITY wheelGesture.up.left "Subir mientras se pulsa el botón izquierdo">
+<!ENTITY wheelGesture.up.middle "Subir mientras se pulsa el botón central">
+<!ENTITY wheelGesture.up.right "Subir mientras se pulsa el botón derecho">
+<!ENTITY wheelGesture.down.left "Bajar mientras se pulsa el botón izquierdo">
+<!ENTITY wheelGesture.down.middle "Bajar mientras se pulsa el botón central">
+<!ENTITY wheelGesture.down.right "Bajar mientras se pulsa el botón derecho">
+<!ENTITY rockerGesture "Gestos duros">
+<!ENTITY rockerGesture.left "Click izquierdo mientras se pulsa el botón derecho">
+<!ENTITY rockerGesture.right "Click derecho mientras se pulsa el botón izquierdo">
+<!ENTITY keypressGesture "Gestos de pulsaciones de teclas">
+<!ENTITY keypressGesture.ctrl "Gesto pulsando la tecla Ctrl">
+<!ENTITY keypressGesture.shift "Gesto pulsando la tecla Mayús">
+<!ENTITY keypressGesture.open "Abrir los enlaces con el cursor en pestañas">
+<!ENTITY keypressGesture.save "Guardar los enlaces con el cursor">
+<!ENTITY keypressGesture.copy "Copiar las direcciones de los enlaces con el cursor">
+<!ENTITY tabwheelGesture "Gestos de rueda en pestañas">
+<!ENTITY tabwheelGesture.description "Intercambiar pestañas al mover la rueda en la barra de pestañas">
+<!ENTITY treecol.name "Nombre">
+<!ENTITY treecol.command "Comando">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Gesto">
+<!ENTITY editButton.label "Editar">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Borrar">
+<!ENTITY clearButton.accesskey "B">
+<!ENTITY addScriptButton.label "Añadir script">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Borrar script">
+<!ENTITY deleteScriptButton.accesskey "S">
+<!ENTITY getScripts.label "Obtener scripts">

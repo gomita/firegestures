@@ -1,0 +1,12 @@
+pref("extensions.firegestures.mousegesture", true);
+pref("extensions.firegestures.wheelgesture", true);
+pref("extensions.firegestures.rockergesture", false);
+pref("extensions.firegestures.keypressgesture", true);
+pref("extensions.firegestures.tabwheelgesture", false);
+pref("extensions.firegestures.trigger_button", 2);
+pref("extensions.firegestures.suppress.alt", false);
+pref("extensions.firegestures.mousetrail", true);
+pref("extensions.firegestures.mousetrail.size", 2);
+pref("extensions.firegestures.mousetrail.color", "#33FF33");
+pref("extensions.firegestures.gesture_timeout", 3000);
+pref("extensions.firegestures.status_display", 2000);

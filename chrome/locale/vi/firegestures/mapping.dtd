@@ -1,0 +1,60 @@
+<!ENTITY gestureCategory.navigation "Điều hướng">
+<!ENTITY gestureCategory.window "Cửa sổ">
+<!ENTITY gestureCategory.tab "Thẻ">
+<!ENTITY gestureCategory.page "Trang">
+<!ENTITY gestureCategory.frame "Khung">
+<!ENTITY gestureCategory.link "Liên kết">
+<!ENTITY gestureCategory.image "Hình ảnh">
+<!ENTITY gestureCategory.selection "Vùng chọn">
+<!ENTITY gestureCategory.tools "Công cụ">
+<!ENTITY gestureCategory.popup "Kiểu popup">
+<!ENTITY gestureCategory.hybrid "Kiểu lai">
+<!ENTITY gestureCategory.script "Script Người dùng">
+<!ENTITY gestureType.popup "Popup">
+<!ENTITY gestureType.hybrid "Lai">
+<!ENTITY gestureCmd.skipCache "Bỏ qua Bộ đệm">
+<!ENTITY gestureCmd.goUpperLevel "Lên một cấp">
+<!ENTITY gestureCmd.incrementURL "Tăng số trong URL">
+<!ENTITY gestureCmd.decrementURL "Giảm số trong URL">
+<!ENTITY gestureCmd.undoCloseWindow "Hoàn tác Đóng Cửa Sổ">
+<!ENTITY gestureCmd.minimizeWindow "Cực tiểu hóa Cửa sổ">
+<!ENTITY gestureCmd.maximizeWindow "Cực đại hóa Cửa sổ/Khôi phục Kích thước Cửa sổ">
+<!ENTITY gestureCmd.previousTab "Thẻ trước">
+<!ENTITY gestureCmd.nextTab "Thẻ sau">
+<!ENTITY gestureCmd.duplicateTab "Nhân dôi Thẻ">
+<!ENTITY gestureCmd.closeLeftTabs "Đóng các Thẻ Trái">
+<!ENTITY gestureCmd.closeRightTabs "Đóng các Thẻ Phải">
+<!ENTITY gestureCmd.scrollTop "Cuộn lên trên">
+<!ENTITY gestureCmd.scrollBottom "Cuộn xuống dưới">
+<!ENTITY gestureCmd.scrollPageUp "Page Up">
+<!ENTITY gestureCmd.scrollPageDown "Page Down">
+<!ENTITY gestureCmd.backgroundTab "Thẻ hậu cảnh">
+<!ENTITY gestureCmd.foregroundTab "Thẻ tiền cảnh">
+<!ENTITY gestureCmd.saveImageNow "Lưu ảnh ngay">
+<!ENTITY gestureCmd.searchForSelection "Tìm kiếm Khối đã chọn">
+<!ENTITY gestureCmd.searchForSelectionWith "Tìm kiếm Khối đã chọn với...">
+<!ENTITY gestureCmd.openLinksInSelection "Mở tất cả liên kết nằm trong Khối đã chọn">
+<!ENTITY gestureCmd.openURLsInSelection "Mở tất cả URL nằm trong Khối đã chọn">
+<!ENTITY gestureCmd.bookmarksSidebar "Hiện Thanh lề Đánh dấu">
+<!ENTITY gestureCmd.historySidebar "Hiện Thanh lề Lược sử">
+<!ENTITY gestureCmd.backForwardHistory "Lùi/Tiến Lược sử">
+<!ENTITY gestureCmd.hybridSave "Lưu dưới dạng...">
+<!ENTITY gestureCmd.hybridBookmark "Đánh dấu...">
+<!ENTITY gestureCmd.hybridViewSource "Xem mã nguồn">
+<!ENTITY gestureCmd.hybridSendURL "Gửi...">
+<!ENTITY gestureCmd.hybridCopyURL "Chép địa chỉ">
+<!ENTITY gestureCmd.toggleFindbar "Mở/Đóng Thanh tìm kiếm">
+<!ENTITY gestureCmd.restartApp "Khởi động lại Firefox">
+<!ENTITY gestureCmd.options "Tùy chọn">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Thuộc tính">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

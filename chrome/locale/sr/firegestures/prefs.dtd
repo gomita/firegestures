@@ -1,0 +1,57 @@
+<!ENTITY options "Опције">
+<!ENTITY mainPane "Основно">
+<!ENTITY mappingPane "Мапирања">
+<!ENTITY advancedPane "Напредно">
+<!ENTITY mouseGesture "Гестикулације мишем">
+<!ENTITY triggerButton "Дугме за покретање гестикулације">
+<!ENTITY triggerButton.left "лево">
+<!ENTITY triggerButton.middle "средње">
+<!ENTITY triggerButton.right "десно">
+<!ENTITY suppress.alt "Не покрећи гестикулацију док је притиснуто думе Алт">
+<!ENTITY trail "Исцртавање трагова">
+<!ENTITY trail.color "Боја">
+<!ENTITY trail.size "Величина">
+<!ENTITY status "Приказ статуса">
+<!ENTITY status.description.1 "Сакриј статус после">
+<!ENTITY status.description.2 "секунди(е)">
+<!ENTITY timeout "Одбројавање">
+<!ENTITY timeout.description.1 "Откажи гестикулацију након">
+<!ENTITY timeout.description.2 "секунди(е) мировања">
+<!ENTITY mappings.title "Мапирања">
+<!ENTITY mappings.description "Изаберите мапирање које желите да подесите">
+<!ENTITY tools.title "Алатке">
+<!ENTITY tools.description "Направи резервну копију и врати сва мапирања">
+<!ENTITY tools.backup.label "Резервна копија">
+<!ENTITY tools.restore.label "Враћање">
+<!ENTITY tools.restore.alerttext "Ово ће заменити сва ваша тренутна мапирања. Да ли сте сигурни?">
+<!ENTITY wheelGesture "Гестикулације точкићем">
+<!ENTITY wheelGesture.up.left "Котрљај нагоре док држиш притиснуто лево дугме">
+<!ENTITY wheelGesture.up.middle "Котрљај нагоре док држиш притиснуто средње дугме">
+<!ENTITY wheelGesture.up.right "Котрљај нагоре док држиш притиснуто десно дугме">
+<!ENTITY wheelGesture.down.left "Котрљај надоле док држиш притиснуто лево дугме">
+<!ENTITY wheelGesture.down.middle "Котрљај надоле док држиш притиснуто средње дугме">
+<!ENTITY wheelGesture.down.right "Котрљај надоле док држиш притиснуто десно дугме">
+<!ENTITY rockerGesture "Гестикулације рокера">
+<!ENTITY rockerGesture.left "Леви клик док држиш притиснуто десно дугме">
+<!ENTITY rockerGesture.right "Десни клик док држиш притиснуто лево дугме">
+<!ENTITY keypressGesture "Гестикулације притиска на дугмад">
+<!ENTITY keypressGesture.ctrl "Гестикулација мишем док држиш дугме ктрл">
+<!ENTITY keypressGesture.shift "Гестикулација мишем док држиш дугме шифт">
+<!ENTITY keypressGesture.open "Отвори у језичцима везе на које је нанесен показивач">
+<!ENTITY keypressGesture.save "Сачувај везе на које је нанесен показивач">
+<!ENTITY keypressGesture.copy "Умножи локације веза на које је нанесен показивач">
+<!ENTITY tabwheelGesture "Гестикулације језичака точкићем миша">
+<!ENTITY tabwheelGesture.description "Замени језичке када котрљам точкића на клизачу">
+<!ENTITY treecol.name "Назив">
+<!ENTITY treecol.command "Наредба">
+<!ENTITY treecol.script "Скрипта">
+<!ENTITY treecol.gesture "Гестикулација">
+<!ENTITY editButton.label "Уређивање">
+<!ENTITY editButton.accesskey "У">
+<!ENTITY clearButton.label "Очисти">
+<!ENTITY clearButton.accesskey "О">
+<!ENTITY addScriptButton.label "Додај скрипту">
+<!ENTITY addScriptButton.accesskey "Д">
+<!ENTITY deleteScriptButton.label "Избриши скрипту">
+<!ENTITY deleteScriptButton.accesskey "И">
+<!ENTITY getScripts.label "Набави скрипте">

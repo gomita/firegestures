@@ -1,0 +1,52 @@
+<!ENTITY options "asetukset">
+<!ENTITY mainPane "Yleiset">
+<!ENTITY mappingPane "Eleet">
+<!ENTITY advancedPane "Lisäasetukset">
+<!ENTITY mouseGesture "Hiirieleet">
+<!ENTITY triggerButton "Eleen aloitusnäppäin">
+<!ENTITY triggerButton.left "Vasen">
+<!ENTITY triggerButton.middle "Keski">
+<!ENTITY triggerButton.right "Oikea">
+<!ENTITY suppress.alt "Älä tee elettä jos Alt-näppäin painettuna">
+<!ENTITY trail.color "Väri">
+<!ENTITY trail.size "Koko">
+<!ENTITY timeout.description.1 "Peru hiiriele kun kulunut">
+<!ENTITY timeout.description.2 "sekuntia ilman liikettä">
+<!ENTITY mappings.title "Kartoitukset">
+<!ENTITY mappings.description "Valitse muokattava kartoitus">
+<!ENTITY tools.title "Työkalut">
+<!ENTITY tools.description "Varmista ja palauta kartoitukset">
+<!ENTITY tools.backup.label "Varmista">
+<!ENTITY tools.restore.label "Palauta">
+<!ENTITY tools.restore.alerttext "Tämä korvaa kaikki kartoituksesi varmuuskopiosta löytyvillä. Oletko varma?">
+<!ENTITY wheelGesture "Rullaeleet">
+<!ENTITY wheelGesture.up.left "Rulla ylös vasen pohjassa">
+<!ENTITY wheelGesture.up.middle "Rulla ylös keskinäppäin pohjassa">
+<!ENTITY wheelGesture.up.right "Rulla ylös oikea pohjassa">
+<!ENTITY wheelGesture.down.left "Rulla alas vasen pohjassa">
+<!ENTITY wheelGesture.down.middle "Rulla alas keskinäppäin pohjassa">
+<!ENTITY wheelGesture.down.right "Rulla alas oikea pohjassa">
+<!ENTITY rockerGesture "Keinueleet">
+<!ENTITY rockerGesture.left "Vasemman napsautus, oikea pohjassa">
+<!ENTITY rockerGesture.right "Oikean napsautus, vasen pohjassa">
+<!ENTITY keypressGesture "Näppäimiin yhdistetty ele">
+<!ENTITY keypressGesture.ctrl "Hiiriele Ctrl-näppäin pohjassa">
+<!ENTITY keypressGesture.shift "Hiiriele Vaihto-näppäin pohjassa">
+<!ENTITY keypressGesture.open "avaa ylivedetyt linkit välilehtiin">
+<!ENTITY keypressGesture.save "tallenna ylivedetyt linkit">
+<!ENTITY keypressGesture.copy "Kopioi linkki leijumalla päällä">
+<!ENTITY tabwheelGesture "Välilehtipalkin rullaeleet">
+<!ENTITY tabwheelGesture.description "Siirry välilehdissä pyörittämällä rullaa välilehtipalkin päällä">
+<!ENTITY treecol.name "Nimi">
+<!ENTITY treecol.command "Komento">
+<!ENTITY treecol.script "Komentosarja">
+<!ENTITY treecol.gesture "Ele">
+<!ENTITY editButton.label "Muokkaa">
+<!ENTITY editButton.accesskey "M">
+<!ENTITY clearButton.label "Tyhjennä">
+<!ENTITY clearButton.accesskey "T">
+<!ENTITY addScriptButton.label "Lisää komentosarja">
+<!ENTITY addScriptButton.accesskey "L">
+<!ENTITY deleteScriptButton.label "Poista komentosarja">
+<!ENTITY deleteScriptButton.accesskey "P">
+<!ENTITY getScripts.label "Hae komentosarjoja">

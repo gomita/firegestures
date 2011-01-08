@@ -1,0 +1,60 @@
+<!ENTITY gestureCategory.navigation "Navigasyon">
+<!ENTITY gestureCategory.window "Pencere">
+<!ENTITY gestureCategory.tab "Sekme">
+<!ENTITY gestureCategory.page "Sayfa">
+<!ENTITY gestureCategory.frame "Sahne">
+<!ENTITY gestureCategory.link "Bağlantı">
+<!ENTITY gestureCategory.image "Resim">
+<!ENTITY gestureCategory.selection "Seçim">
+<!ENTITY gestureCategory.tools "Araçlar">
+<!ENTITY gestureCategory.popup "Açılır Pencere Tipi">
+<!ENTITY gestureCategory.hybrid "Hibrit Tipi">
+<!ENTITY gestureCategory.script "Kullanıcı Kodları">
+<!ENTITY gestureType.popup "Açılır pencere">
+<!ENTITY gestureType.hybrid "Karışık">
+<!ENTITY gestureCmd.skipCache "Önbelleği Atla">
+<!ENTITY gestureCmd.goUpperLevel "Üst Seviyeye Git">
+<!ENTITY gestureCmd.incrementURL "URL&apos;deki arttırma sayısı">
+<!ENTITY gestureCmd.decrementURL "URL&apos;deki azalma sayısı">
+<!ENTITY gestureCmd.undoCloseWindow "Pencere Kapatmayı Geri Al">
+<!ENTITY gestureCmd.minimizeWindow "Pencereyi Küçült">
+<!ENTITY gestureCmd.maximizeWindow "Pencereyi Büyüt / Pencereyi Düzenle">
+<!ENTITY gestureCmd.previousTab "Önceki Sekme">
+<!ENTITY gestureCmd.nextTab "Sonraki Sekme">
+<!ENTITY gestureCmd.duplicateTab "Sekmeyi Çoğalt">
+<!ENTITY gestureCmd.closeLeftTabs "Soldaki Sekmeleri Kapat">
+<!ENTITY gestureCmd.closeRightTabs "Sağdaki Sekmeleri Kapat">
+<!ENTITY gestureCmd.scrollTop "Üste Kaydır">
+<!ENTITY gestureCmd.scrollBottom "Aşağı Kaydır">
+<!ENTITY gestureCmd.scrollPageUp "Sayfa Yukarı">
+<!ENTITY gestureCmd.scrollPageDown "Sayfa Aşağı">
+<!ENTITY gestureCmd.backgroundTab "Arkaplan Sekmesi">
+<!ENTITY gestureCmd.foregroundTab "Önplan Sekmesi">
+<!ENTITY gestureCmd.saveImageNow "Resmi Şimdi Kaydet">
+<!ENTITY gestureCmd.searchForSelection "Seçimi Arat">
+<!ENTITY gestureCmd.searchForSelectionWith "Seçimi bununla arat...">
+<!ENTITY gestureCmd.openLinksInSelection "Tüm Bağlantıları Seçimde Aç">
+<!ENTITY gestureCmd.openURLsInSelection "Tüm URLleri Seçimde Aç">
+<!ENTITY gestureCmd.bookmarksSidebar "Yer İmleri Bölmesini Göster">
+<!ENTITY gestureCmd.historySidebar "Geçmiş Bölmesini Göster">
+<!ENTITY gestureCmd.backForwardHistory "Önceki / Sonraki Geçmiş">
+<!ENTITY gestureCmd.hybridSave "Farklı Kaydet...">
+<!ENTITY gestureCmd.hybridBookmark "Yer İmi...">
+<!ENTITY gestureCmd.hybridViewSource "Kaynağı Göster">
+<!ENTITY gestureCmd.hybridSendURL "Gönder...">
+<!ENTITY gestureCmd.hybridCopyURL "Konumu Kopyala">
+<!ENTITY gestureCmd.toggleFindbar "Arama Çubuğunu Aç/ Kapat">
+<!ENTITY gestureCmd.restartApp "Firefox&apos;u Baştan Başlat">
+<!ENTITY gestureCmd.options "Ayarlar">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Özellikler">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

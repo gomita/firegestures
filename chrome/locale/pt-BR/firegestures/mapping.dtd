@@ -1,0 +1,52 @@
+<!ENTITY gestureCategory.navigation "Navegação">
+<!ENTITY gestureCategory.window "Janela">
+<!ENTITY gestureCategory.tab "Aba">
+<!ENTITY gestureCategory.page "Página">
+<!ENTITY gestureCategory.frame "Frame">
+<!ENTITY gestureCategory.link "Link">
+<!ENTITY gestureCategory.image "Imagem">
+<!ENTITY gestureCategory.selection "Seleção">
+<!ENTITY gestureCategory.tools "Ferramentas">
+<!ENTITY gestureCategory.script "Scripts do usuário">
+<!ENTITY gestureType.popup "Popup">
+<!ENTITY gestureType.hybrid "Híbrido">
+<!ENTITY gestureCmd.skipCache "Pular cache">
+<!ENTITY gestureCmd.goUpperLevel "Subir nível">
+<!ENTITY gestureCmd.incrementURL "Aumentar número no endereço">
+<!ENTITY gestureCmd.decrementURL "Diminuir número no endereço">
+<!ENTITY gestureCmd.minimizeWindow "Minimizar janela">
+<!ENTITY gestureCmd.maximizeWindow "Maximizar janela / Restaurar tamanho da janela">
+<!ENTITY gestureCmd.previousTab "Voltar aba">
+<!ENTITY gestureCmd.nextTab "Próxima aba">
+<!ENTITY gestureCmd.duplicateTab "Duplicar aba">
+<!ENTITY gestureCmd.closeLeftTabs "Fechar abas à esquerda">
+<!ENTITY gestureCmd.closeRightTabs "Fechar abas à direita">
+<!ENTITY gestureCmd.scrollTop "Rolar para cima">
+<!ENTITY gestureCmd.scrollBottom "Rolar para baixo">
+<!ENTITY gestureCmd.scrollPageUp "Rolar par acima">
+<!ENTITY gestureCmd.scrollPageDown "Rolar para baixo">
+<!ENTITY gestureCmd.backgroundTab "Aba em segundo plano">
+<!ENTITY gestureCmd.foregroundTab "Aba">
+<!ENTITY gestureCmd.saveImageNow "Salvar imagem agora">
+<!ENTITY gestureCmd.searchForSelection "Localizar a seleção">
+<!ENTITY gestureCmd.searchForSelectionWith "Localizar a seleção com…">
+<!ENTITY gestureCmd.openLinksInSelection "Abrir todos links na seleção">
+<!ENTITY gestureCmd.openURLsInSelection "Abrir todos os endereços na seleção">
+<!ENTITY gestureCmd.bookmarksSidebar "Exibir Favoritos">
+<!ENTITY gestureCmd.historySidebar "Exibir Histórico">
+<!ENTITY gestureCmd.backForwardHistory "Voltar / Avançar Histórico">
+<!ENTITY gestureCmd.hybridSave "Salvar como…">
+<!ENTITY gestureCmd.hybridBookmark "Favoritos…">
+<!ENTITY gestureCmd.hybridViewSource "Ver código-fonte">
+<!ENTITY gestureCmd.toggleFindbar "Abrir / Fechar barra de localizar">
+<!ENTITY gestureCmd.options "Opções">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

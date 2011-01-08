@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Siirtyminen">
+<!ENTITY gestureCategory.window "Ikkuna">
+<!ENTITY gestureCategory.tab "Välilehti">
+<!ENTITY gestureCategory.page "Sivu">
+<!ENTITY gestureCategory.frame "Kehys">
+<!ENTITY gestureCategory.link "Linkki">
+<!ENTITY gestureCategory.image "Kuva">
+<!ENTITY gestureCategory.selection "Valinta">
+<!ENTITY gestureCategory.tools "Työkalut">
+<!ENTITY gestureCategory.popup "Ponnahdus">
+<!ENTITY gestureCategory.hybrid "Hybridi">
+<!ENTITY gestureCategory.script "Käyttäjän komentosarjat">
+<!ENTITY gestureType.popup "Alasvetovalikko">
+<!ENTITY gestureType.hybrid "Hybridi">
+<!ENTITY gestureCmd.skipCache "Ohita välimuisti">
+<!ENTITY gestureCmd.goUpperLevel "Siirry sivuhierarkiassa ylöspäin">
+<!ENTITY gestureCmd.incrementURL "Kasvata numeroa URL:ssä">
+<!ENTITY gestureCmd.decrementURL "Laske numeroa URL:ssä">
+<!ENTITY gestureCmd.undoCloseWindow "Peru ikkunan sulkeminen">
+<!ENTITY gestureCmd.minimizeWindow "Pienennä ikkuna">
+<!ENTITY gestureCmd.maximizeWindow "Suurenna tai palauta ikkunan koko">
+<!ENTITY gestureCmd.previousTab "Edellinen välilehti">
+<!ENTITY gestureCmd.nextTab "Seuraava välilehti">
+<!ENTITY gestureCmd.duplicateTab "Tee välilehdestä kopio">
+<!ENTITY gestureCmd.closeLeftTabs "Sulje välilehdet vasemmalta">
+<!ENTITY gestureCmd.closeRightTabs "Sulje välilehdet oikealta">
+<!ENTITY gestureCmd.scrollTop "Siirry sivun alkuun">
+<!ENTITY gestureCmd.scrollBottom "Siirry sivun loppuun">
+<!ENTITY gestureCmd.scrollPageUp "Sivu ylöspäin">
+<!ENTITY gestureCmd.scrollPageDown "Sivu alaspäin">
+<!ENTITY gestureCmd.backgroundTab "Taustalla oleva välilehti">
+<!ENTITY gestureCmd.foregroundTab "Valittu välilehti">
+<!ENTITY gestureCmd.saveImageNow "Tallenna kuva heti">
+<!ENTITY gestureCmd.searchForSelection "Etsi valinta">
+<!ENTITY gestureCmd.searchForSelectionWith "Etsi valintaa hakukoneella...">
+<!ENTITY gestureCmd.openLinksInSelection "Avaa kaikki linkit valinnasta">
+<!ENTITY gestureCmd.openURLsInSelection "Avaa kaikki URLit valinnasta">
+<!ENTITY gestureCmd.bookmarksSidebar "Näytä kirjanmerkkipaneeli">
+<!ENTITY gestureCmd.historySidebar "Näytä sivuhistoriapaneeli">
+<!ENTITY gestureCmd.backForwardHistory "Eteen- tai taaksepäin sivuhistoriassa">
+<!ENTITY gestureCmd.previewMode "Esikatselu">
+<!ENTITY gestureCmd.hybridSave "Tallenna nimellä...">
+<!ENTITY gestureCmd.hybridBookmark "Lisää kirjanmerkki">
+<!ENTITY gestureCmd.hybridViewSource "Näytä lähdekoodi">
+<!ENTITY gestureCmd.hybridSendURL "Lähetä...">
+<!ENTITY gestureCmd.hybridCopyURL "Kopio sijainti">
+<!ENTITY gestureCmd.toggleFindbar "Avaa tai sulje etsintäpalkki">
+<!ENTITY gestureCmd.restartApp "Käynnistä Firefox uudelleen">
+<!ENTITY gestureCmd.options "asetukset">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Ominaisuudet">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

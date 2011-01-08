@@ -1,0 +1,52 @@
+<!ENTITY options "Options">
+<!ENTITY mainPane "Général">
+<!ENTITY mappingPane "Liaisons">
+<!ENTITY advancedPane "Avancé">
+<!ENTITY mouseGesture "Mouvements de la souris">
+<!ENTITY triggerButton "Bouton déclencheur pour débuter le mouvement">
+<!ENTITY triggerButton.left "Gauche">
+<!ENTITY triggerButton.middle "Centre">
+<!ENTITY triggerButton.right "Droite">
+<!ENTITY suppress.alt "Ne pas effectuer de mouvement en maintenant la touche Alt">
+<!ENTITY trail.color "Couleur">
+<!ENTITY trail.size "Taille">
+<!ENTITY timeout.description.1 "Annuler le geste de la souris après">
+<!ENTITY timeout.description.2 "secondes sans mouvement">
+<!ENTITY mappings.title "Correspondances">
+<!ENTITY mappings.description "Choisir une correspondance à configurer">
+<!ENTITY tools.title "Outils">
+<!ENTITY tools.description "Réinitialiser et restaurer toutes les correspondances">
+<!ENTITY tools.backup.label "Réinitialiser">
+<!ENTITY tools.restore.label "Restaurer">
+<!ENTITY tools.restore.alerttext "Cela remplacera toutes les correspondances actuelles en les réinitialisant. Voulez-vous vraiment continuer ?">
+<!ENTITY wheelGesture "Gestes avec la molette">
+<!ENTITY wheelGesture.up.left "Défiler vers le haut en maintenant le clic gauche">
+<!ENTITY wheelGesture.up.middle "Défiler vers le haut en maintenant le clic central">
+<!ENTITY wheelGesture.up.right "Défiler vers le haut en maintenant le clic droit">
+<!ENTITY wheelGesture.down.left "Défiler vers le bas en maintenant le clic gauche">
+<!ENTITY wheelGesture.down.middle "Défiler vers le bas en maintenant le clic central">
+<!ENTITY wheelGesture.down.right "Défiler vers le bas en maintenant le clic droit">
+<!ENTITY rockerGesture "Gestes à clics">
+<!ENTITY rockerGesture.left "Clic gauche en maintenant le clic droit">
+<!ENTITY rockerGesture.right "Clic droit en maintenant le clic gauche">
+<!ENTITY keypressGesture "Gestes avec l&apos;appui sur des touches">
+<!ENTITY keypressGesture.ctrl "Geste de la souris en maintenant la touche Ctrl">
+<!ENTITY keypressGesture.shift "Geste de la souris en maintenant la touche Maj">
+<!ENTITY keypressGesture.open "Ouvrir dans des onglets les liens survolés">
+<!ENTITY keypressGesture.save "Enregistrer les liens survolés">
+<!ENTITY keypressGesture.copy "Copier les adresses des liens survolés">
+<!ENTITY tabwheelGesture "Gestes avec la molette, pour les onglets">
+<!ENTITY tabwheelGesture.description "Changer d&apos;onglet en faisant tourner la molette sur la barre d&apos;onglets">
+<!ENTITY treecol.name "Nom">
+<!ENTITY treecol.command "Commande">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Geste">
+<!ENTITY editButton.label "Éditer">
+<!ENTITY editButton.accesskey "É">
+<!ENTITY clearButton.label "Effacer">
+<!ENTITY clearButton.accesskey "E">
+<!ENTITY addScriptButton.label "Ajouter un script">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Supprimer un script">
+<!ENTITY deleteScriptButton.accesskey "S">
+<!ENTITY getScripts.label "Récupérer des scripts">

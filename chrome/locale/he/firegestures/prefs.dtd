@@ -1,0 +1,57 @@
+<!ENTITY options "אפשרויות">
+<!ENTITY mainPane "ראשי">
+<!ENTITY mappingPane "מיפוי">
+<!ENTITY advancedPane "מתקדם">
+<!ENTITY mouseGesture "מחוות עכבר">
+<!ENTITY triggerButton "כפתור להתחלת פעולת המחווה">
+<!ENTITY triggerButton.left "שמאלי">
+<!ENTITY triggerButton.middle "אמצעי">
+<!ENTITY triggerButton.right "ימני">
+<!ENTITY suppress.alt "אין להתחיל את המחווה אם כפתור ה-Alt  לחוץ">
+<!ENTITY trail "ציור סמן העקבה">
+<!ENTITY trail.color "צבע">
+<!ENTITY trail.size "גודל">
+<!ENTITY status "תצוגת המצב">
+<!ENTITY status.description.1 "הסתרת תצוגת המצב לאחר">
+<!ENTITY status.description.2 "שניות">
+<!ENTITY timeout "זמן תפוגה">
+<!ENTITY timeout.description.1 "ביטול המחווה לאחר">
+<!ENTITY timeout.description.2 "שניות ללא תזוזה">
+<!ENTITY mappings.title "מיפוי">
+<!ENTITY mappings.description "בחירת מיפוי לעיצוב">
+<!ENTITY tools.title "כלים">
+<!ENTITY tools.description "גיבוי ושחזור כל המיפויים">
+<!ENTITY tools.backup.label "גיבוי">
+<!ENTITY tools.restore.label "שחזור">
+<!ENTITY tools.restore.alerttext "פעולה זו תחליף את המיפוי הנוכחי עם הגיבוי. האם להמשיך?">
+<!ENTITY wheelGesture "מחוות גלגלת">
+<!ENTITY wheelGesture.up.left "גלילה מעלה עם החזקת הכפתור השמאלי">
+<!ENTITY wheelGesture.up.middle "גלילה מעלה עם החזקת הכפתור האמצעי">
+<!ENTITY wheelGesture.up.right "גלילה מעלה עם החזקת הכפתור הימני">
+<!ENTITY wheelGesture.down.left "גלילה מטה עם החזקת הכפתור השמאלי">
+<!ENTITY wheelGesture.down.middle "גלילה מטה עם החזקת הכפתור האמצעי">
+<!ENTITY wheelGesture.down.right "גלילה מטה עם החזקת הכפתור הימני">
+<!ENTITY rockerGesture "מחוות נדנדה">
+<!ENTITY rockerGesture.left "לחיצה שמאלית עם החזקת הכפתור הימני">
+<!ENTITY rockerGesture.right "לחיצה ימנית עם החזקת הכפתור השמאלי">
+<!ENTITY keypressGesture "מחוות לחיצת כפתור">
+<!ENTITY keypressGesture.ctrl "מחוות עכבר עם לחיצה על כפתור ה-Ctrl">
+<!ENTITY keypressGesture.shift "מחוות עכבר עם לחיצה על כפתור ה-Shift">
+<!ENTITY keypressGesture.open "פתיחת קישורים שעוברים מעליהם בלשוניות">
+<!ENTITY keypressGesture.save "שמירת קישורם שעוברים מעליהם">
+<!ENTITY keypressGesture.copy "שמירת המיקום של הקישור שעוברים מעליו">
+<!ENTITY tabwheelGesture "מחוות גלילת לשונית">
+<!ENTITY tabwheelGesture.description "החלפת לשוניות כאשר גוללים על סרגל הלשוניות">
+<!ENTITY treecol.name "שם">
+<!ENTITY treecol.command "פקודה">
+<!ENTITY treecol.script "תסריט">
+<!ENTITY treecol.gesture "מחוות">
+<!ENTITY editButton.label "עריכה">
+<!ENTITY editButton.accesskey "ע">
+<!ENTITY clearButton.label "ניקוי">
+<!ENTITY clearButton.accesskey "נ">
+<!ENTITY addScriptButton.label "הוספת תסריט">
+<!ENTITY addScriptButton.accesskey "ה">
+<!ENTITY deleteScriptButton.label "מחיקת תסריט">
+<!ENTITY deleteScriptButton.accesskey "מ">
+<!ENTITY getScripts.label "השגת תסריטים">

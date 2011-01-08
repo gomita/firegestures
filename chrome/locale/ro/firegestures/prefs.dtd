@@ -1,0 +1,57 @@
+<!ENTITY options "Opțiuni">
+<!ENTITY mainPane "General">
+<!ENTITY mappingPane "Asignări">
+<!ENTITY advancedPane "Complex">
+<!ENTITY mouseGesture "Mișcări maus">
+<!ENTITY triggerButton "Declanșează începutul mișcării cu butonul din">
+<!ENTITY triggerButton.left "Stânga">
+<!ENTITY triggerButton.middle "Mijloc">
+<!ENTITY triggerButton.right "Dreapta">
+<!ENTITY suppress.alt "Ignoră mișcarea prin apăsarea tastei Alt">
+<!ENTITY trail "Afișează urma mișcării">
+<!ENTITY trail.color "Culoare">
+<!ENTITY trail.size "Grosime">
+<!ENTITY status "Afișează bara de stare">
+<!ENTITY status.description.1 "Ascunde bara de stare după">
+<!ENTITY status.description.2 "secunde">
+<!ENTITY timeout "Abandonează mișcarea">
+<!ENTITY timeout.description.1 "după">
+<!ENTITY timeout.description.2 "secunde de staționare">
+<!ENTITY mappings.title "Asignări">
+<!ENTITY mappings.description "Modifică asignările">
+<!ENTITY tools.title "Instrumente">
+<!ENTITY tools.description "Arhivează și restaurează asignările">
+<!ENTITY tools.backup.label "Arhivează">
+<!ENTITY tools.restore.label "Restaurează">
+<!ENTITY tools.restore.alerttext "Toate asignările curente vor fi înlocuite cu cele arhivate. Continuați?">
+<!ENTITY wheelGesture "Mișcări rotiță maus">
+<!ENTITY wheelGesture.up.left "Rotire în sus cu butonul stâng apăsat">
+<!ENTITY wheelGesture.up.middle "Rotire în sus cu butonul din mijloc apăsat">
+<!ENTITY wheelGesture.up.right "Rotire în sus cu butonul drept apăsat">
+<!ENTITY wheelGesture.down.left "Rotire în jos cu butonul stâng apăsat">
+<!ENTITY wheelGesture.down.middle "Rotire în jos cu butonul din mijloc apăsat">
+<!ENTITY wheelGesture.down.right "Rotire în jos cu butonul drept apăsat">
+<!ENTITY rockerGesture "Mișcări Rocker">
+<!ENTITY rockerGesture.left "Clic-stânga cu butonul drept apăsat">
+<!ENTITY rockerGesture.right "Clic-dreapta cu butonul stâng apăsat">
+<!ENTITY keypressGesture "Mișcări cu taste apăsate">
+<!ENTITY keypressGesture.ctrl "Mișcare maus cu tasta Ctrl apăsată">
+<!ENTITY keypressGesture.shift "Mișcare maus cu tasta Shift apăsată">
+<!ENTITY keypressGesture.open "Deschide legăturile survolate în file">
+<!ENTITY keypressGesture.save "Salvează legăturile survolate">
+<!ENTITY keypressGesture.copy "Copiază legăturile survolate">
+<!ENTITY tabwheelGesture "Mișcări rotiță maus pe file">
+<!ENTITY tabwheelGesture.description "Comută filele la rotirea rotiței pe bara de file">
+<!ENTITY treecol.name "Denumire">
+<!ENTITY treecol.command "Comandă">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Mișcare">
+<!ENTITY editButton.label "Editează">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Șterge">
+<!ENTITY clearButton.accesskey "t">
+<!ENTITY addScriptButton.label "Adaugă un script">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Șterge scriptul">
+<!ENTITY deleteScriptButton.accesskey "g">
+<!ENTITY getScripts.label "Preia scripturi">

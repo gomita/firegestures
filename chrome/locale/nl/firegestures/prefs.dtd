@@ -1,0 +1,52 @@
+<!ENTITY options "Opties">
+<!ENTITY mainPane "Hoofd">
+<!ENTITY mappingPane "Toewijzing">
+<!ENTITY advancedPane "Geavanceerd">
+<!ENTITY mouseGesture "Muisgebaren">
+<!ENTITY triggerButton "Knop om een gebaar te starten">
+<!ENTITY triggerButton.left "Links">
+<!ENTITY triggerButton.middle "Midden">
+<!ENTITY triggerButton.right "Rechts">
+<!ENTITY suppress.alt "Gebaar niet starten als ALT ingedrukt gehouden wordt">
+<!ENTITY trail.color "Kleur">
+<!ENTITY trail.size "Grootte">
+<!ENTITY timeout.description.1 "Stop muisgebaar na">
+<!ENTITY timeout.description.2 "seconden zonder beweging">
+<!ENTITY mappings.title "Toewijzingen">
+<!ENTITY mappings.description "Kies een toewijzing om te bewerken">
+<!ENTITY tools.title "Extra">
+<!ENTITY tools.description "Backuppen en terugzetten van alle toewijzingen">
+<!ENTITY tools.backup.label "Backup">
+<!ENTITY tools.restore.label "Terugzetten">
+<!ENTITY tools.restore.alerttext "Dit zal alle huidige toewijzingen vervangen door die van de backup. Weet je het zeker?">
+<!ENTITY wheelGesture "Wielgebaren">
+<!ENTITY wheelGesture.up.left "Omhoog scrollen met linkerknop ingedrukt">
+<!ENTITY wheelGesture.up.middle "Omhoog scrollen met middenknop ingedrukt">
+<!ENTITY wheelGesture.up.right "Omhoog scrollen met rechterknop ingedrukt">
+<!ENTITY wheelGesture.down.left "Omlaag scrollen met linkerknop ingedrukt">
+<!ENTITY wheelGesture.down.middle "Omlaag scrollen met middenknop ingedrukt">
+<!ENTITY wheelGesture.down.right "Omlaag scrollen met rechterknop ingedrukt">
+<!ENTITY rockerGesture "Rockergebaren">
+<!ENTITY rockerGesture.left "Linksklikken met rechterknop ingedrukt">
+<!ENTITY rockerGesture.right "Rechtsklikken met linkerknop ingedrukt">
+<!ENTITY keypressGesture "Toetsgebaren">
+<!ENTITY keypressGesture.ctrl "Muisgebaar met CTRL-toets ingedrukt">
+<!ENTITY keypressGesture.shift "Muisgebaar met Shift-toets ingedrukt">
+<!ENTITY keypressGesture.open "Open links in tabs">
+<!ENTITY keypressGesture.save "Links opslaan">
+<!ENTITY keypressGesture.copy "Links kopiëren">
+<!ENTITY tabwheelGesture "Tab Wielgebaren">
+<!ENTITY tabwheelGesture.description "Tabs wisselen met scrollwiel op tabbalk">
+<!ENTITY treecol.name "Naam">
+<!ENTITY treecol.command "Opdracht">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Gebaar">
+<!ENTITY editButton.label "Bewerken">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Wissen">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "Script Toevoegen">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Script Wissen">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "Scripts Verkrijgen">

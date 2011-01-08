@@ -1,0 +1,50 @@
+<!ENTITY options "Tùy chọn">
+<!ENTITY mainPane "Tổng quát">
+<!ENTITY mappingPane "Gán thao tác">
+<!ENTITY advancedPane "Nâng cao">
+<!ENTITY mouseGesture "Lắc chuột">
+<!ENTITY triggerButton "Kích hoạt nút để bắt đầu thao tác lắc">
+<!ENTITY triggerButton.left "Trái">
+<!ENTITY triggerButton.middle "Giữa">
+<!ENTITY triggerButton.right "Phải">
+<!ENTITY suppress.alt "Không bắt đầu thao tác lắc khi giữ phím Alt">
+<!ENTITY trail.color "Màu">
+<!ENTITY trail.size "Kích thước">
+<!ENTITY mappings.title "Gán phím">
+<!ENTITY mappings.description "Chọn một sơ đồ gán để cấu hình">
+<!ENTITY tools.title "Công cụ">
+<!ENTITY tools.description "Sao lưu và khôi phục tất cả các sơ đồ gán">
+<!ENTITY tools.backup.label "Sao lưu">
+<!ENTITY tools.restore.label "Khôi phục">
+<!ENTITY tools.restore.alerttext "Thao tác này sẽ thay thế tất cả các sơ đồ gán hiện tại bằng bản sao lưu. Bạn có chắc không?">
+<!ENTITY wheelGesture "Điệu bộ Cuộn chuột">
+<!ENTITY wheelGesture.up.left "Cuộn lên và giữ chuột trái">
+<!ENTITY wheelGesture.up.middle "Cuộn lên và giữ chuột giữa">
+<!ENTITY wheelGesture.up.right "Cuộn lên và giữ chuột phải">
+<!ENTITY wheelGesture.down.left "Cuộn xuống và giữ chuột trái">
+<!ENTITY wheelGesture.down.middle "Cuộn xuống và giữ chuột giữa">
+<!ENTITY wheelGesture.down.right "Cuộn xuống và giữ chuột phải">
+<!ENTITY rockerGesture "Điệu bộ Tay chơi nhạc Rock">
+<!ENTITY rockerGesture.left "Nhấn chuột trái đồng thời giữ chuột phải">
+<!ENTITY rockerGesture.right "Nhấn chuột phải đồng thời giữ chuột trái">
+<!ENTITY keypressGesture "Điệu bộ Ấn phím">
+<!ENTITY keypressGesture.ctrl "Lắc chuột đồng thời giữ phím Ctrl">
+<!ENTITY keypressGesture.shift "Lắc chuột đồng thời giữ phím Shift">
+<!ENTITY keypressGesture.open "Mở các liên kết được chọn trong các thẻ">
+<!ENTITY keypressGesture.save "Lưu các liên kết được chọn">
+<!ENTITY keypressGesture.copy "Chép địa chỉ các liên kết được chọn">
+<!ENTITY tabwheelGesture "Điệu bộ Cuộn chuột cho Thẻ">
+<!ENTITY tabwheelGesture.description "Chuyển thẻ khi cuộn chuột trên thanh thẻ">
+<!ENTITY treecol.name "Tên">
+<!ENTITY treecol.command "Lệnh">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Điệu bộ">
+<!ENTITY editButton.label "Chỉnh sửa">
+<!ENTITY editButton.accesskey "C">
+<!ENTITY clearButton.label "Xóa trắng">
+<!ENTITY clearButton.accesskey "X">
+<!ENTITY addScriptButton.label "Thêm Script">
+<!ENTITY addScriptButton.accesskey "T">
+<!ENTITY deleteScriptButton.label "Xóa Script">
+<!ENTITY deleteScriptButton.accesskey "a">
+<!ENTITY getScripts.label "Lấy thêm Script">

@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigatie">
+<!ENTITY gestureCategory.window "Venster">
+<!ENTITY gestureCategory.tab "Tab">
+<!ENTITY gestureCategory.page "Pagina">
+<!ENTITY gestureCategory.frame "Frame">
+<!ENTITY gestureCategory.link "Link">
+<!ENTITY gestureCategory.image "Afbeelding">
+<!ENTITY gestureCategory.selection "Selectie">
+<!ENTITY gestureCategory.tools "Extra">
+<!ENTITY gestureCategory.popup "Popup Type">
+<!ENTITY gestureCategory.hybrid "Hybride Type">
+<!ENTITY gestureCategory.script "Gebruikersscripts">
+<!ENTITY gestureType.popup "Popup">
+<!ENTITY gestureType.hybrid "Hybride">
+<!ENTITY gestureCmd.skipCache "Cache Overslaan">
+<!ENTITY gestureCmd.goUpperLevel "Niveau Omhoog">
+<!ENTITY gestureCmd.incrementURL "Nummer in URL Verhogen">
+<!ENTITY gestureCmd.decrementURL "Nummer in URL Verlagen">
+<!ENTITY gestureCmd.undoCloseWindow "Venster Sluiten Ongedaan Maken">
+<!ENTITY gestureCmd.minimizeWindow "Venster Minimaliseren">
+<!ENTITY gestureCmd.maximizeWindow "Venster Maximaliseren / Origineel Formaat">
+<!ENTITY gestureCmd.previousTab "Vorige Tab">
+<!ENTITY gestureCmd.nextTab "Volgende Tab">
+<!ENTITY gestureCmd.duplicateTab "Tab Dupliceren">
+<!ENTITY gestureCmd.closeLeftTabs "Linkertabs Sluiten">
+<!ENTITY gestureCmd.closeRightTabs "Rechtertabs Sluiten">
+<!ENTITY gestureCmd.scrollTop "Naar Boven Scrollen">
+<!ENTITY gestureCmd.scrollBottom "Naar Beneden Scrollen">
+<!ENTITY gestureCmd.scrollPageUp "Pagina Omhoog">
+<!ENTITY gestureCmd.scrollPageDown "Pagina Omlaag">
+<!ENTITY gestureCmd.backgroundTab "Tab Achtergrond">
+<!ENTITY gestureCmd.foregroundTab "Tab Voorgrond">
+<!ENTITY gestureCmd.saveImageNow "Afbeelding Nu Opslaan">
+<!ENTITY gestureCmd.searchForSelection "Zoeken naar Selectie">
+<!ENTITY gestureCmd.searchForSelectionWith "Zoeken naar Selectie met...">
+<!ENTITY gestureCmd.openLinksInSelection "Alle Links Openen in Selectie">
+<!ENTITY gestureCmd.openURLsInSelection "Alle URLs Openen in Selectie">
+<!ENTITY gestureCmd.bookmarksSidebar "Bladwijzerbalk Tonen">
+<!ENTITY gestureCmd.historySidebar "Geschiedenisbalk Tonen">
+<!ENTITY gestureCmd.backForwardHistory "Terug / Vooruit in Geschiedenis">
+<!ENTITY gestureCmd.previewMode "Voorbeeldmodus">
+<!ENTITY gestureCmd.hybridSave "Opslaan Als...">
+<!ENTITY gestureCmd.hybridBookmark "Bladwijzer...">
+<!ENTITY gestureCmd.hybridViewSource "Bron Bekijken">
+<!ENTITY gestureCmd.hybridSendURL "Verzenden...">
+<!ENTITY gestureCmd.hybridCopyURL "Locatie Kopiëren">
+<!ENTITY gestureCmd.toggleFindbar "Zoekbalk Openen / Sluiten">
+<!ENTITY gestureCmd.restartApp "Firefox Herstarten">
+<!ENTITY gestureCmd.options "Opties">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Eigenschappen">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

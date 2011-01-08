@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE RDF:RDF [
+  <!ENTITY % mappingDTD SYSTEM "chrome://firegestures/locale/mapping.dtd">
+  %mappingDTD;
+  <!ENTITY % sourceDTD SYSTEM "chrome://global/locale/viewSource.dtd">
+  %sourceDTD;
+  <!ENTITY % editDTD SYSTEM "chrome://global/locale/editMenuOverlay.dtd">
+  %editDTD;
+]>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:FG="http://www.xuldev.org/firegestures-mapping#">
+  <RDF:Seq RDF:about="urn:mapping:root">
+    <RDF:li RDF:resource="urn:category:navigation" />
+    <RDF:li RDF:resource="urn:Browser:Back" />
+    <RDF:li RDF:resource="urn:Browser:Forward" />
+    <RDF:li RDF:resource="urn:category:file" />
+    <RDF:li RDF:resource="urn:cmd_savePage" />
+    <RDF:li RDF:resource="urn:cmd_pagesetup" />
+    <RDF:li RDF:resource="urn:cmd_printpreview" />
+    <RDF:li RDF:resource="urn:cmd_print" />
+    <RDF:li RDF:resource="urn:cmd_close" />
+    <RDF:li RDF:resource="urn:category:edit" />
+    <RDF:li RDF:resource="urn:cmd_find" />
+    <RDF:li RDF:resource="urn:cmd_findAgain" />
+    <RDF:li RDF:resource="urn:cmd_findPrevious" />
+    <RDF:li RDF:resource="urn:cmd_goToLine" />
+    <RDF:li RDF:resource="urn:category:view" />
+    <RDF:li RDF:resource="urn:cmd_reload" />
+    <RDF:li RDF:resource="urn:cmd_textZoomEnlarge" />
+    <RDF:li RDF:resource="urn:cmd_textZoomReduce" />
+    <RDF:li RDF:resource="urn:cmd_textZoomReset" />
+    <RDF:li RDF:resource="urn:category:window" />
+    <RDF:li RDF:resource="urn:ViewSource:MinimizeWindow" />
+    <RDF:li RDF:resource="urn:ViewSource:MaximizeWindow" />
+    <RDF:li RDF:resource="urn:category:page" />
+    <RDF:li RDF:resource="urn:cmd_scrollTop" />
+    <RDF:li RDF:resource="urn:cmd_scrollBottom" />
+    <RDF:li RDF:resource="urn:cmd_scrollPageUp" />
+    <RDF:li RDF:resource="urn:cmd_scrollPageDown" />
+    <RDF:li RDF:resource="urn:category:tools" />
+    <RDF:li RDF:resource="urn:ViewSource:FireGestures" />
+  </RDF:Seq>
+  <!-- navigation -->
+  <RDF:Description RDF:about="urn:category:navigation"
+                   FG:type="0"
+                   FG:name="&gestureCategory.navigation;"
+                   FG:flags="firefox3.5" />
+  <RDF:Description RDF:about="urn:Browser:Back"
+                   FG:type="1"
+                   FG:name="&backCmd.label;"
+                   FG:direction="L"
+                   FG:flags="firefox3.5" />
+  <RDF:Description RDF:about="urn:Browser:Forward"
+                   FG:type="1"
+                   FG:name="&forwardCmd.label;"
+                   FG:direction="R"
+                   FG:flags="firefox3.5" />
+  <!-- file -->
+  <RDF:Description RDF:about="urn:category:file"
+                   FG:type="0"
+                   FG:name="&fileMenu.label;" />
+  <RDF:Description RDF:about="urn:cmd_close"
+                   FG:type="1"
+                   FG:name="&closeCmd.label;"
+                   FG:direction="DR" />
+  <RDF:Description RDF:about="urn:cmd_savePage"
+                   FG:type="1"
+                   FG:name="&savePageCmd.label;"
+                   FG:direction="DL" />
+  <RDF:Description RDF:about="urn:cmd_pagesetup"
+                   FG:type="1"
+                   FG:name="&pageSetupCmd.label;" />
+  <RDF:Description RDF:about="urn:cmd_printpreview"
+                   FG:type="1"
+                   FG:name="&printPreviewCmd.label;" />
+  <RDF:Description RDF:about="urn:cmd_print"
+                   FG:type="1"
+                   FG:name="&printCmd.label;" />
+  <!-- edit -->
+  <RDF:Description RDF:about="urn:category:edit"
+                   FG:type="0"
+                   FG:name="&editMenu.label;" />
+  <RDF:Description RDF:about="urn:cmd_find"
+                   FG:type="1"
+                   FG:name="&findCmd.label;" />
+  <RDF:Description RDF:about="urn:cmd_findAgain"
+                   FG:type="1"
+                   FG:name="&findAgainCmd.label;" />
+  <RDF:Description RDF:about="urn:cmd_findPrevious"
+                   FG:type="1"
+                   FG:name="&findPreviousCmd.label;" />
+  <RDF:Description RDF:about="urn:cmd_goToLine"
+                   FG:type="1"
+                   FG:name="&goToLineCmd.label;" />
+  <!-- view -->
+  <RDF:Description RDF:about="urn:category:view"
+                   FG:type="0"
+                   FG:name="&viewMenu.label;" />
+  <RDF:Description RDF:about="urn:cmd_reload"
+                   FG:type="1"
+                   FG:name="&reloadCmd.label;"
+                   FG:direction="UD" />
+  <RDF:Description RDF:about="urn:cmd_textZoomEnlarge"
+                   FG:type="1"
+                   FG:name="&menu_textSize.label; - &menu_textEnlarge.label;"
+                   FG:direction="LRU"
+                   FG:extra="wheel-up" />
+  <RDF:Description RDF:about="urn:cmd_textZoomReduce"
+                   FG:type="1"
+                   FG:name="&menu_textSize.label; - &menu_textReduce.label;"
+                   FG:direction="LRD"
+                   FG:extra="wheel-down" />
+  <RDF:Description RDF:about="urn:cmd_textZoomReset"
+                   FG:type="1"
+                   FG:name="&menu_textSize.label; - &menu_textReset.label;"
+                   FG:direction="LRUD" />
+  <!-- window -->
+  <RDF:Description RDF:about="urn:category:window"
+                   FG:type="0"
+                   FG:name="&gestureCategory.window;" />
+  <RDF:Description RDF:about="urn:ViewSource:MinimizeWindow"
+                   FG:type="1"
+                   FG:name="&gestureCmd.minimizeWindow;" />
+  <RDF:Description RDF:about="urn:ViewSource:MaximizeWindow"
+                   FG:type="1"
+                   FG:name="&gestureCmd.maximizeWindow;" />
+  <!-- page -->
+  <RDF:Description RDF:about="urn:category:page"
+                   FG:type="0"
+                   FG:name="&gestureCategory.page;" />
+  <RDF:Description RDF:about="urn:cmd_scrollTop"
+                   FG:type="1"
+                   FG:name="&gestureCmd.scrollTop;"
+                   FG:direction="LU" />
+  <RDF:Description RDF:about="urn:cmd_scrollBottom"
+                   FG:type="1"
+                   FG:name="&gestureCmd.scrollBottom;"
+                   FG:direction="LD" />
+  <RDF:Description RDF:about="urn:cmd_scrollPageUp"
+                   FG:type="1"
+                   FG:name="&gestureCmd.scrollPageUp;" />
+  <RDF:Description RDF:about="urn:cmd_scrollPageDown"
+                   FG:type="1"
+                   FG:name="&gestureCmd.scrollPageDown;" />
+  <!-- tools -->
+  <RDF:Description RDF:about="urn:category:tools"
+                   FG:type="0"
+                   FG:name="&gestureCategory.tools;" />
+  <RDF:Description RDF:about="urn:ViewSource:FireGestures"
+                   FG:type="1"
+                   FG:name="&gestureCmd.hybridViewSource; : FireGestures - &gestureCmd.options;"
+                   FG:direction="LDRUL" />
+</RDF:RDF>

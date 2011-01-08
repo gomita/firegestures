@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Кретање">
+<!ENTITY gestureCategory.window "Прозор">
+<!ENTITY gestureCategory.tab "Језичак">
+<!ENTITY gestureCategory.page "Страна">
+<!ENTITY gestureCategory.frame "Оквир">
+<!ENTITY gestureCategory.link "Веза">
+<!ENTITY gestureCategory.image "Слика">
+<!ENTITY gestureCategory.selection "Одабрано">
+<!ENTITY gestureCategory.tools "Алатке">
+<!ENTITY gestureCategory.popup "Врста искакања">
+<!ENTITY gestureCategory.hybrid "Врста хибрида">
+<!ENTITY gestureCategory.script "Корисничке скрипте">
+<!ENTITY gestureType.popup "Искакање">
+<!ENTITY gestureType.hybrid "Хибрид">
+<!ENTITY gestureCmd.skipCache "Прескочи кеш">
+<!ENTITY gestureCmd.goUpperLevel "Пређи на горњи ниво">
+<!ENTITY gestureCmd.incrementURL "Број повећања у адреси">
+<!ENTITY gestureCmd.decrementURL "Број смањења у адреси">
+<!ENTITY gestureCmd.undoCloseWindow "Врати затворени прозор">
+<!ENTITY gestureCmd.minimizeWindow "Умањи прозор">
+<!ENTITY gestureCmd.maximizeWindow "Повећај прозор/врати величину прозора">
+<!ENTITY gestureCmd.previousTab "Претходни језичак">
+<!ENTITY gestureCmd.nextTab "Следећи језичак">
+<!ENTITY gestureCmd.duplicateTab "Умножи језичак">
+<!ENTITY gestureCmd.closeLeftTabs "Затвори језичке с лева">
+<!ENTITY gestureCmd.closeRightTabs "Затвори језичке с десна">
+<!ENTITY gestureCmd.scrollTop "Помери на врх">
+<!ENTITY gestureCmd.scrollBottom "Помери на дно">
+<!ENTITY gestureCmd.scrollPageUp "Нагоре">
+<!ENTITY gestureCmd.scrollPageDown "Надоле">
+<!ENTITY gestureCmd.backgroundTab "Језичак у позадини">
+<!ENTITY gestureCmd.foregroundTab "Језичак у првом плану">
+<!ENTITY gestureCmd.saveImageNow "Сачувај слику">
+<!ENTITY gestureCmd.searchForSelection "Потражи одабрано">
+<!ENTITY gestureCmd.searchForSelectionWith "Потражи одабрано користећи...">
+<!ENTITY gestureCmd.openLinksInSelection "Отвори све везе у одабраном">
+<!ENTITY gestureCmd.openURLsInSelection "Отвори све адресе у одабраном">
+<!ENTITY gestureCmd.bookmarksSidebar "Прикажи забелешке у бочној траци">
+<!ENTITY gestureCmd.historySidebar "Прикажи историјат у бочној траци">
+<!ENTITY gestureCmd.backForwardHistory "Назад/напред историјат">
+<!ENTITY gestureCmd.previewMode "Начин приказа">
+<!ENTITY gestureCmd.hybridSave "Сачувај као...">
+<!ENTITY gestureCmd.hybridBookmark "Забележи...">
+<!ENTITY gestureCmd.hybridViewSource "Погледај извор">
+<!ENTITY gestureCmd.hybridSendURL "Пошаљи...">
+<!ENTITY gestureCmd.hybridCopyURL "Умножи локацију">
+<!ENTITY gestureCmd.toggleFindbar "Отвори/затвори траку за претрагу">
+<!ENTITY gestureCmd.restartApp "Поново покрени Фајерфокс">
+<!ENTITY gestureCmd.options "Опције">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Својства">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigation">
+<!ENTITY gestureCategory.window "Fenster">
+<!ENTITY gestureCategory.tab "Tab">
+<!ENTITY gestureCategory.page "Seite">
+<!ENTITY gestureCategory.frame "Frame">
+<!ENTITY gestureCategory.link "Hyperlink">
+<!ENTITY gestureCategory.image "Bild">
+<!ENTITY gestureCategory.selection "Selektion">
+<!ENTITY gestureCategory.tools "Tools">
+<!ENTITY gestureCategory.popup "Popup">
+<!ENTITY gestureCategory.hybrid "Hybrid">
+<!ENTITY gestureCategory.script "Benutzerdefinierte Skripte">
+<!ENTITY gestureType.popup "Popup">
+<!ENTITY gestureType.hybrid "Hybrid">
+<!ENTITY gestureCmd.skipCache "Cache überspringen">
+<!ENTITY gestureCmd.goUpperLevel "Auf ein höheres Level wechseln">
+<!ENTITY gestureCmd.incrementURL "Zahl in URL erhöhen">
+<!ENTITY gestureCmd.decrementURL "Zahl in URL vermindern">
+<!ENTITY gestureCmd.undoCloseWindow "Geschlossenes Fenster wieder öffnen">
+<!ENTITY gestureCmd.minimizeWindow "Minimiere Fenster">
+<!ENTITY gestureCmd.maximizeWindow "Max. Fenster / Stelle Größe wieder her">
+<!ENTITY gestureCmd.previousTab "Vorheriger Tab">
+<!ENTITY gestureCmd.nextTab "Nächster Tab">
+<!ENTITY gestureCmd.duplicateTab "Tab kopieren">
+<!ENTITY gestureCmd.closeLeftTabs "Linke Tabs schließen">
+<!ENTITY gestureCmd.closeRightTabs "Rechte Tabs schließen">
+<!ENTITY gestureCmd.scrollTop "Zum Anfang scrollen">
+<!ENTITY gestureCmd.scrollBottom "Zum Ende scrollen">
+<!ENTITY gestureCmd.scrollPageUp "Bild auf">
+<!ENTITY gestureCmd.scrollPageDown "Bild runter">
+<!ENTITY gestureCmd.backgroundTab "Tab im Hintergrund">
+<!ENTITY gestureCmd.foregroundTab "Tab im Vordergrund">
+<!ENTITY gestureCmd.saveImageNow "Bild jetzt abspeichern">
+<!ENTITY gestureCmd.searchForSelection "Nach Selektion suchen">
+<!ENTITY gestureCmd.searchForSelectionWith "Nach Selektion suchen mit...">
+<!ENTITY gestureCmd.openLinksInSelection "Alle Hyperlinks in der Selektion öffnen">
+<!ENTITY gestureCmd.openURLsInSelection "Alles URLs in der Selektion öffnen">
+<!ENTITY gestureCmd.bookmarksSidebar "Lesezeichenleiste anzeigen">
+<!ENTITY gestureCmd.historySidebar "Chronikleiste anzeigen">
+<!ENTITY gestureCmd.backForwardHistory "Chronik vor/zurück">
+<!ENTITY gestureCmd.previewMode "Vorschaumodus">
+<!ENTITY gestureCmd.hybridSave "Speichern unter...">
+<!ENTITY gestureCmd.hybridBookmark "Lesezeichen...">
+<!ENTITY gestureCmd.hybridViewSource "Quelltext anzeigen">
+<!ENTITY gestureCmd.hybridSendURL "Link senden...">
+<!ENTITY gestureCmd.hybridCopyURL "Link-Adresse kopieren">
+<!ENTITY gestureCmd.toggleFindbar "Suchleiste öffnen/schließen">
+<!ENTITY gestureCmd.restartApp "Firefox neu starten">
+<!ENTITY gestureCmd.options "Optionen">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Eigenschaften">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

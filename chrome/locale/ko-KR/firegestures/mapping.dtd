@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "이동">
+<!ENTITY gestureCategory.window "창">
+<!ENTITY gestureCategory.tab "탭">
+<!ENTITY gestureCategory.page "페이지">
+<!ENTITY gestureCategory.frame "프레임">
+<!ENTITY gestureCategory.link "링크">
+<!ENTITY gestureCategory.image "그림">
+<!ENTITY gestureCategory.selection "선택한 것">
+<!ENTITY gestureCategory.tools "도구">
+<!ENTITY gestureCategory.popup "팝업 방식">
+<!ENTITY gestureCategory.hybrid "복합 방식">
+<!ENTITY gestureCategory.script "사용자 스크립트">
+<!ENTITY gestureType.popup "팝업">
+<!ENTITY gestureType.hybrid "복합">
+<!ENTITY gestureCmd.skipCache "캐쉬 무시">
+<!ENTITY gestureCmd.goUpperLevel "상위 레벨로">
+<!ENTITY gestureCmd.incrementURL "URL내 숫자 증가">
+<!ENTITY gestureCmd.decrementURL "URL내 숫자 감소">
+<!ENTITY gestureCmd.undoCloseWindow "닫은 창 복원">
+<!ENTITY gestureCmd.minimizeWindow "창 최소화">
+<!ENTITY gestureCmd.maximizeWindow "창 최대화/예전 크기로">
+<!ENTITY gestureCmd.previousTab "이전 탭">
+<!ENTITY gestureCmd.nextTab "다음 탭">
+<!ENTITY gestureCmd.duplicateTab "탭 복제">
+<!ENTITY gestureCmd.closeLeftTabs "왼쪽 탭 닫기">
+<!ENTITY gestureCmd.closeRightTabs "오른쪽 탭 닫기">
+<!ENTITY gestureCmd.scrollTop "상단으로 스크롤">
+<!ENTITY gestureCmd.scrollBottom "하단으로 스크롤">
+<!ENTITY gestureCmd.scrollPageUp "페이지 위로">
+<!ENTITY gestureCmd.scrollPageDown "페이지 아래로">
+<!ENTITY gestureCmd.backgroundTab "배경 탭">
+<!ENTITY gestureCmd.foregroundTab "전경 탭">
+<!ENTITY gestureCmd.saveImageNow "그림 즉시 저장">
+<!ENTITY gestureCmd.searchForSelection "선택한 문장 검색">
+<!ENTITY gestureCmd.searchForSelectionWith "선택한 문장을 다음으로 검색">
+<!ENTITY gestureCmd.openLinksInSelection "선택한 문장 내 모든 연결 열기">
+<!ENTITY gestureCmd.openURLsInSelection "선택한 문장 내 모든 URL 열기">
+<!ENTITY gestureCmd.bookmarksSidebar "북마크 탐색창 표시">
+<!ENTITY gestureCmd.historySidebar "열어본 페이지 목록 창 표시">
+<!ENTITY gestureCmd.backForwardHistory "이전/이후 방문 기록">
+<!ENTITY gestureCmd.previewMode "미리보기 모드">
+<!ENTITY gestureCmd.hybridSave "새 이름으로저장">
+<!ENTITY gestureCmd.hybridBookmark "북마크에 추가">
+<!ENTITY gestureCmd.hybridViewSource "소스 보기">
+<!ENTITY gestureCmd.hybridSendURL "보내기...">
+<!ENTITY gestureCmd.hybridCopyURL "위치 복사">
+<!ENTITY gestureCmd.toggleFindbar "검색 막대 열기/닫기">
+<!ENTITY gestureCmd.restartApp "Firefox 재시작">
+<!ENTITY gestureCmd.options "선택사항">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "속성">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

@@ -1,0 +1,57 @@
+<!ENTITY options "Sätted">
+<!ENTITY mainPane "Peamine">
+<!ENTITY mappingPane "Kaardistamine">
+<!ENTITY advancedPane "Täpsem">
+<!ENTITY mouseGesture "Hiire Žestid">
+<!ENTITY triggerButton "Žesti päästiknupp">
+<!ENTITY triggerButton.left "Vasak">
+<!ENTITY triggerButton.middle "Keskmine">
+<!ENTITY triggerButton.right "Parem">
+<!ENTITY suppress.alt "Ära alusta žesti Alt'i all hoidmisega">
+<!ENTITY trail "Jäljejoonistamine">
+<!ENTITY trail.color "Värv">
+<!ENTITY trail.size "Suurus">
+<!ENTITY status "Olekuvaade">
+<!ENTITY status.description.1 "Peida olekuvaade peale">
+<!ENTITY status.description.2 "sekundit">
+<!ENTITY timeout "Jahtumisaeg">
+<!ENTITY timeout.description.1 "Loobu hiire žestist pärast">
+<!ENTITY timeout.description.2 "sekundit ilma liikumiseta">
+<!ENTITY mappings.title "Kaardistamised">
+<!ENTITY mappings.description "Valige kaardistamine mida te soovite konfigureerida">
+<!ENTITY tools.title "Tööriistad">
+<!ENTITY tools.description "Varundamise ja taastamise kaardistamised">
+<!ENTITY tools.backup.label "Varunda">
+<!ENTITY tools.restore.label "Taasta">
+<!ENTITY tools.restore.alerttext "See asendab kõik teie hetkesed kaardistused varundatud kaardistustega. Olete te kindel?">
+<!ENTITY wheelGesture "Ratta Žestid">
+<!ENTITY wheelGesture.up.left "Keri üles kui vasakut hiirenuppu hoitakse peal">
+<!ENTITY wheelGesture.up.middle "Keri üles kui keskmist hiirenuppu hoitakse peal">
+<!ENTITY wheelGesture.up.right "Keri üles kui paremat hiirenuppu hoitakse peal">
+<!ENTITY wheelGesture.down.left "Keri alla kui vasakut hiirenuppu hoitakse peal">
+<!ENTITY wheelGesture.down.middle "Keri alla kui keskmist hiirenuppu hoitakse peal">
+<!ENTITY wheelGesture.down.right "Keri alla kui paremat hiirenuppu hoitakse peal">
+<!ENTITY rockerGesture "Rokkija Žestid">
+<!ENTITY rockerGesture.left "Vasak-klikk kui hoitakse paremat nuppu">
+<!ENTITY rockerGesture.right "Parem-klikk kui hoitakse vasakut nuppu">
+<!ENTITY keypressGesture "Nupuvajutuse Žestid">
+<!ENTITY keypressGesture.ctrl "Hiire žest kui hoitakse Ctrl nuppu peal">
+<!ENTITY keypressGesture.shift "Hiire žest kui hoitakse Shift nuppu peal">
+<!ENTITY keypressGesture.open "Ava hõljutatud lingid kaartides">
+<!ENTITY keypressGesture.save "Salvesta hõljutatud lingid">
+<!ENTITY keypressGesture.copy "Kopeeri hõljutatud lingid asukohtatesse">
+<!ENTITY tabwheelGesture "Kaardiratte Žestid">
+<!ENTITY tabwheelGesture.description "Vaheta kaarte kui ratta kerimisel kaardiribal">
+<!ENTITY treecol.name "Nimi">
+<!ENTITY treecol.command "Käsk">
+<!ENTITY treecol.script "Skript">
+<!ENTITY treecol.gesture "Žest">
+<!ENTITY editButton.label "Muuda">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Tühjenda">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "Add Script">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Delete Script">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "Get Scripts">

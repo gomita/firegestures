@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>firegestures@xuldev.org</em:id>
+		<em:type>2</em:type>
+		<em:name>FireGestures</em:name>
+		<em:version>1.6.1</em:version>
+		<em:description>Executes various commands with mouse gestures.</em:description>
+		<em:creator>Gomita</em:creator>
+		<em:localized>
+			<Description>
+				<em:locale>cs-CZ</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Slouží ke spouštění různých příkazů za pomoci myších gest.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>de</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Führt verschiedene Aktionen mit Hilfe von Mausgesten aus</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>es-AR</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Ejecuta varios comandos con gestos del mouse</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>es-ES</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Ejecuta diferentes comandos usando gestos del ratón.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>fi-FI</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Suorita eri toimintoja hiirieleillä.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>fr</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Exécuter des commandes grâce à des mouvements de souris.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>hu-HU</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Különféle parancsokat hajt végre egérmozdulatok hatására.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>it-IT</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Esegue vari comandi attraverso le gesture del mouse.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>ko-KR</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>마우스 동작으로 다양한 명령을 실행합니다.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>nb-NO</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Utfør kommandoer med musebevegelser</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>nl</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Voert verschillende opdrachten uit met muisgebaren.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>pl-PL</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Wykonuje różne polecenia za pomocą gestów myszy.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>pt-BR</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Executar vários comandos com gestos do mouse.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>ro</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Execută numeroase comenzi prin mişcarea mausului</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>ru-RU</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Выполнение различных команд с помощью жестов мышью.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>sk-SK</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Rozšírenie umožňuje vykonávať množstvo príkazov len pomocou gest myši, tlačidiel a kolieska myši.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>sr</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Извршавање разних наредбе гестикулацијом мишем.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>tr-TR</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Birçok komutu fare hareketi ile çalıştırır.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>vi</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Thực hiện lệnh chỉ bằng cách lắc chuột.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>zh-CN</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>用鼠标手势执行命令.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>zh-TW</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>用滑鼠手勢劃出各種功能。</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
+				<em:locale>ja</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>マウスジェスチャによって様々なコマンドを実行します。</em:description>
+				<em:creator>ごみた</em:creator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:translator>Quicksilver tears (ru-RU)</em:translator>
+		<em:translator>myahoo (fr)</em:translator>
+		<em:translator>Cye3s (zh-CN)</em:translator>
+		<em:translator>teo, Wacław Jacek (pl-PL)</em:translator>
+		<em:translator>josesun, Nelson (zh-TW)</em:translator>
+		<em:translator>Indigo (it-IT)</em:translator>
+		<em:translator>PAB (de)</em:translator>
+		<em:translator>Alberto Eidh (pt-BR)</em:translator>
+		<em:translator>villepyry (fi-FI)</em:translator>
+		<em:translator>wtspout (ko-KR)</em:translator>
+		<em:translator>MartinZubek (cs-CZ)</em:translator>
+		<em:translator>gandhi2 (nb-NO)</em:translator>
+		<em:translator>kami (hu-HU)</em:translator>
+		<em:translator>headshrinker (sk-SK)</em:translator>
+		<em:translator>efecan (tr-TR)</em:translator>
+		<em:translator>DakSrbija (sr)</em:translator>
+		<em:translator>loveleeyoungae (vi)</em:translator>
+		<em:translator>odliam (es-AR)</em:translator>
+		<em:translator>chuzo (es-ES)</em:translator>
+		<em:translator>x10firefox (ro)</em:translator>
+		<em:translator>Ruffnekk (nl)</em:translator>
+		<em:translator>Grunt (et-EE)</em:translator>
+		<em:translator>Lakrits (sv-SE)</em:translator>
+		<em:translator>SiiiE (he)</em:translator>
+		<em:contributor>tsukkee (testing with Mac OS X)</em:contributor>
+		<em:iconURL>chrome://firegestures/skin/icon.png</em:iconURL>
+		<em:optionsURL>chrome://firegestures/content/prefs.xul</em:optionsURL>
+		<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.5</em:minVersion>
+				<em:maxVersion>4.0.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+
+</RDF>

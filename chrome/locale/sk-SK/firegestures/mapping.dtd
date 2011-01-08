@@ -1,0 +1,54 @@
+<!ENTITY gestureCategory.navigation "Navigácia">
+<!ENTITY gestureCategory.window "Okno">
+<!ENTITY gestureCategory.tab "Karta">
+<!ENTITY gestureCategory.page "Stránka">
+<!ENTITY gestureCategory.frame "Rámec">
+<!ENTITY gestureCategory.link "Odkaz">
+<!ENTITY gestureCategory.image "Obrázok">
+<!ENTITY gestureCategory.selection "Výber">
+<!ENTITY gestureCategory.tools "Nástroje">
+<!ENTITY gestureCategory.script "Používateľské skripty">
+<!ENTITY gestureType.popup "Vyskakovacie okno">
+<!ENTITY gestureType.hybrid "Hybrid">
+<!ENTITY gestureCmd.skipCache "Odstrániť vyrovnávaciu pamäť">
+<!ENTITY gestureCmd.goUpperLevel "O úroveň vyššie">
+<!ENTITY gestureCmd.incrementURL "Zvýšiť číslo v adrese URL">
+<!ENTITY gestureCmd.decrementURL "Znížiť číslo v adrese URL">
+<!ENTITY gestureCmd.minimizeWindow "Minimalizovať okno">
+<!ENTITY gestureCmd.maximizeWindow "Maximalizoavť okno / Obnoviť veľkosť okna">
+<!ENTITY gestureCmd.previousTab "Predchádzajúca karta">
+<!ENTITY gestureCmd.nextTab "Nasledujúca karta">
+<!ENTITY gestureCmd.duplicateTab "Duplikovať kartu">
+<!ENTITY gestureCmd.closeLeftTabs "Zatvoriť karty naľavo">
+<!ENTITY gestureCmd.closeRightTabs "Zatvoriť karty napravo">
+<!ENTITY gestureCmd.scrollTop "Na začiatok">
+<!ENTITY gestureCmd.scrollBottom "Na koniec">
+<!ENTITY gestureCmd.scrollPageUp "O stránku vyššie">
+<!ENTITY gestureCmd.scrollPageDown "O stránku nižšie">
+<!ENTITY gestureCmd.backgroundTab "Na pozadie">
+<!ENTITY gestureCmd.foregroundTab "Na popredie">
+<!ENTITY gestureCmd.saveImageNow "Uložiť obrázok">
+<!ENTITY gestureCmd.searchForSelection "Hľadať výber">
+<!ENTITY gestureCmd.searchForSelectionWith "Hľadať výber s ...">
+<!ENTITY gestureCmd.openLinksInSelection "Otvoriť všetky odkazy vo výbere">
+<!ENTITY gestureCmd.openURLsInSelection "Otvoriť všetky URL vo výbere">
+<!ENTITY gestureCmd.bookmarksSidebar "Zobraziť záložky v bočnom paneli">
+<!ENTITY gestureCmd.historySidebar "Zobraziť históriu v bočnom paneli">
+<!ENTITY gestureCmd.backForwardHistory "Späť / Vpred v Histórii">
+<!ENTITY gestureCmd.hybridSave "Uložiť ako...">
+<!ENTITY gestureCmd.hybridBookmark "Pridať k záložkam...">
+<!ENTITY gestureCmd.hybridViewSource "Zobraziť zdrojový kód">
+<!ENTITY gestureCmd.hybridSendURL "Poslať">
+<!ENTITY gestureCmd.hybridCopyURL "Kopírovať umiestnenie">
+<!ENTITY gestureCmd.toggleFindbar "Otvoriť / Zavrieť lištu vyhľadávania">
+<!ENTITY gestureCmd.options "Možnosti">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

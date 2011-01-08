@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigáció">
+<!ENTITY gestureCategory.window "Ablak">
+<!ENTITY gestureCategory.tab "Lap">
+<!ENTITY gestureCategory.page "Oldal">
+<!ENTITY gestureCategory.frame "Keret">
+<!ENTITY gestureCategory.link "Link">
+<!ENTITY gestureCategory.image "Kép">
+<!ENTITY gestureCategory.selection "Kiválasztás">
+<!ENTITY gestureCategory.tools "Eszközök">
+<!ENTITY gestureCategory.popup "Felugró típus">
+<!ENTITY gestureCategory.hybrid "Hibrid típus">
+<!ENTITY gestureCategory.script "Felhasználói parancsfájlok">
+<!ENTITY gestureType.popup "Előugró ablakok">
+<!ENTITY gestureType.hybrid "Összetett">
+<!ENTITY gestureCmd.skipCache "Gyorsítótár ürítése">
+<!ENTITY gestureCmd.goUpperLevel "Egy szinttel feljebb">
+<!ENTITY gestureCmd.incrementURL "Szám növelése az URL címben">
+<!ENTITY gestureCmd.decrementURL "Szám csökkentése az URL címben">
+<!ENTITY gestureCmd.undoCloseWindow "Ablakbezárás visszavonása">
+<!ENTITY gestureCmd.minimizeWindow "Ablak minimalizálás">
+<!ENTITY gestureCmd.maximizeWindow "Maximalizálás/Előző méret">
+<!ENTITY gestureCmd.previousTab "Előző lap">
+<!ENTITY gestureCmd.nextTab "Következő lap">
+<!ENTITY gestureCmd.duplicateTab "Lap duplikálás">
+<!ENTITY gestureCmd.closeLeftTabs "Bal oldali lapok bezárása">
+<!ENTITY gestureCmd.closeRightTabs "Jobb oldali lapok bezárása">
+<!ENTITY gestureCmd.scrollTop "Ugrás az elejére">
+<!ENTITY gestureCmd.scrollBottom "Ugrás az aljára">
+<!ENTITY gestureCmd.scrollPageUp "Lapozás vissza">
+<!ENTITY gestureCmd.scrollPageDown "Lapozás előre">
+<!ENTITY gestureCmd.backgroundTab "Háttér lap">
+<!ENTITY gestureCmd.foregroundTab "Előtér lap">
+<!ENTITY gestureCmd.saveImageNow "Kép mentése">
+<!ENTITY gestureCmd.searchForSelection "Keresés a kiválasztásra">
+<!ENTITY gestureCmd.searchForSelectionWith "Keresés a kiválasztásra ezzel…">
+<!ENTITY gestureCmd.openLinksInSelection "Kiválasztás linkjeinek megnyitása">
+<!ENTITY gestureCmd.openURLsInSelection "Kiválasztás URL címek megnyitása">
+<!ENTITY gestureCmd.bookmarksSidebar "Könyvjelző oldalsáv megjelenítése">
+<!ENTITY gestureCmd.historySidebar "Előzmények oldalsáv megjelenítése">
+<!ENTITY gestureCmd.backForwardHistory "Előző/következő története">
+<!ENTITY gestureCmd.previewMode "Előnézet mód">
+<!ENTITY gestureCmd.hybridSave "Mentés másként…">
+<!ENTITY gestureCmd.hybridBookmark "Könyvjelző…">
+<!ENTITY gestureCmd.hybridViewSource "Oldal forrása">
+<!ENTITY gestureCmd.hybridSendURL "Küldés…">
+<!ENTITY gestureCmd.hybridCopyURL "Útvonal másolása">
+<!ENTITY gestureCmd.toggleFindbar "Keresés megnyitása/bezárása">
+<!ENTITY gestureCmd.restartApp "Firefox újraindítása">
+<!ENTITY gestureCmd.options "Beállítások">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Tulajdonságok">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

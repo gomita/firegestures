@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Nawigacja">
+<!ENTITY gestureCategory.window "Okno">
+<!ENTITY gestureCategory.tab "Karta">
+<!ENTITY gestureCategory.page "Strona">
+<!ENTITY gestureCategory.frame "Ramka">
+<!ENTITY gestureCategory.link "Odnośnik">
+<!ENTITY gestureCategory.image "Obrazek">
+<!ENTITY gestureCategory.selection "Zaznaczenie">
+<!ENTITY gestureCategory.tools "Narzędzia">
+<!ENTITY gestureCategory.popup "Typ menu">
+<!ENTITY gestureCategory.hybrid "Typ hybrydowy">
+<!ENTITY gestureCategory.script "Skrypty użytkownika">
+<!ENTITY gestureType.popup "Menu">
+<!ENTITY gestureType.hybrid "Hybrydowy">
+<!ENTITY gestureCmd.skipCache "pomiń bufor">
+<!ENTITY gestureCmd.goUpperLevel "Przejdź poziom wyżej">
+<!ENTITY gestureCmd.incrementURL "Zwiększ liczbę w adresie URL">
+<!ENTITY gestureCmd.decrementURL "Zmniejsz liczbę w adresie URL">
+<!ENTITY gestureCmd.undoCloseWindow "Przywróć zamknięte okno">
+<!ENTITY gestureCmd.minimizeWindow "Minimalizuj okno">
+<!ENTITY gestureCmd.maximizeWindow "Maksymalizuj okno/Przywróć oryginalną wielkość">
+<!ENTITY gestureCmd.previousTab "Poprzednia karta">
+<!ENTITY gestureCmd.nextTab "Następna karta">
+<!ENTITY gestureCmd.duplicateTab "Powiel kartę">
+<!ENTITY gestureCmd.closeLeftTabs "Zamknij karty po lewej stronie">
+<!ENTITY gestureCmd.closeRightTabs "Zamknij karty po prawej stronie">
+<!ENTITY gestureCmd.scrollTop "Przejdź na początek strony">
+<!ENTITY gestureCmd.scrollBottom "Przejdź na koniec strony">
+<!ENTITY gestureCmd.scrollPageUp "Przewiń w górę">
+<!ENTITY gestureCmd.scrollPageDown "Przewiń w dół">
+<!ENTITY gestureCmd.backgroundTab "w tle">
+<!ENTITY gestureCmd.foregroundTab "na pierwszym planie">
+<!ENTITY gestureCmd.saveImageNow "Zapisz obrazek teraz">
+<!ENTITY gestureCmd.searchForSelection "Wyszukaj zaznaczone">
+<!ENTITY gestureCmd.searchForSelectionWith "Wyszukaj zaznaczone w…">
+<!ENTITY gestureCmd.openLinksInSelection "Otwórz wszystkie odnośniki z zaznaczenia">
+<!ENTITY gestureCmd.openURLsInSelection "Otwórz wszystkie adresy URL z zaznaczenia">
+<!ENTITY gestureCmd.bookmarksSidebar "Wyświetl zakładki w panelu bocznym">
+<!ENTITY gestureCmd.historySidebar "Wyświetl historię w panelu bocznym">
+<!ENTITY gestureCmd.backForwardHistory "Historia Wstecz/Do przodu">
+<!ENTITY gestureCmd.previewMode "Tryb podglądu">
+<!ENTITY gestureCmd.hybridSave "Zapisz jako…">
+<!ENTITY gestureCmd.hybridBookmark "Dodaj zakładkę…">
+<!ENTITY gestureCmd.hybridViewSource "Pokaż źródło">
+<!ENTITY gestureCmd.hybridSendURL "Wyślij…">
+<!ENTITY gestureCmd.hybridCopyURL "Kopiuj lokalizację">
+<!ENTITY gestureCmd.toggleFindbar "Otwórz/Zamknij pasek wyszukiwania">
+<!ENTITY gestureCmd.restartApp "Uruchom ponownie Firefoksa">
+<!ENTITY gestureCmd.options "opcje">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Właściwości">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

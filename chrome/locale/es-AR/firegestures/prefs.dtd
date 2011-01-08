@@ -1,0 +1,52 @@
+<!ENTITY options "Opciones">
+<!ENTITY mainPane "Principal">
+<!ENTITY mappingPane "Mapeo">
+<!ENTITY advancedPane "Avanzado">
+<!ENTITY mouseGesture "Gestos del ratón">
+<!ENTITY triggerButton "Disparar el botón para comenzar un gesto">
+<!ENTITY triggerButton.left "Izquierda">
+<!ENTITY triggerButton.middle "Medio">
+<!ENTITY triggerButton.right "Derecha">
+<!ENTITY suppress.alt "No comenzar un gesto manteniendo apretada la tecla Alt">
+<!ENTITY trail.color "Color">
+<!ENTITY trail.size "Tamaño">
+<!ENTITY timeout.description.1 "Terminar el gesto del ratón luego de">
+<!ENTITY timeout.description.2 "segundos sin movimientos">
+<!ENTITY mappings.title "Mapeos">
+<!ENTITY mappings.description "Elija un mapeo para configurar">
+<!ENTITY tools.title "Herramientas">
+<!ENTITY tools.description "Resguardar y restaurar todos los mapeos">
+<!ENTITY tools.backup.label "Resguardo">
+<!ENTITY tools.restore.label "Restaurar">
+<!ENTITY tools.restore.alerttext "Esto remplazará todos sus mapeos actuales con el de resguardo. ¿Está seguro?">
+<!ENTITY wheelGesture "Gestos con la rueda">
+<!ENTITY wheelGesture.up.left "Desplazar hacia arriba manteniendo apretado el botón izquierdo">
+<!ENTITY wheelGesture.up.middle "Desplazar hacia arriba manteniendo apretado el botón central">
+<!ENTITY wheelGesture.up.right "Desplazar hacia arriba manteniendo apretado el botón derecho">
+<!ENTITY wheelGesture.down.left "Desplazar hacia abajo manteniendo apretado el botón derecho">
+<!ENTITY wheelGesture.down.middle "Desplazar hacia abajo manteniendo apretado el botón central">
+<!ENTITY wheelGesture.down.right "Desplazar hacia abajo manteniendo apretado el botón derecho">
+<!ENTITY rockerGesture "Gestos del rocker">
+<!ENTITY rockerGesture.left "Hacer clic izquierdo manteniendo apretado el botón derecho">
+<!ENTITY rockerGesture.right "Hacer clic derecho manteniendo apretado el botón izquierdo">
+<!ENTITY keypressGesture "Gestos de Keypress">
+<!ENTITY keypressGesture.ctrl "Gestos del ratón sosteniendo apretada la tecla Ctrl">
+<!ENTITY keypressGesture.shift "Gestos del ratón sosteniendo apretada la tecla Cambio a Mayúscula">
+<!ENTITY keypressGesture.open "Abrir los enlaces cuando el ratón se detiene sobre ellos">
+<!ENTITY keypressGesture.save "Guaradr los enlaces seleccionados al pasar el ratón sobre ellos">
+<!ENTITY keypressGesture.copy "Copiar las ubicaciones de los enlaces seleccionados por el ratón al pasar sobre ellos">
+<!ENTITY tabwheelGesture "Gestos de la rueda de pestañas">
+<!ENTITY tabwheelGesture.description "Cambiar pestañas cuando la rueda se desplace sobre la barra de pestañas">
+<!ENTITY treecol.name "Nombre">
+<!ENTITY treecol.command "Comando">
+<!ENTITY treecol.script "Archivo de comandos">
+<!ENTITY treecol.gesture "Gestos">
+<!ENTITY editButton.label "Edición">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Limpiar">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "Agregar archivo de comandos">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Eliminar Archivo de comandos">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "Obtener archivos de comando">

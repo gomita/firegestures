@@ -1,0 +1,57 @@
+<!ENTITY options "Inställningar">
+<!ENTITY mainPane "Allmänt">
+<!ENTITY mappingPane "Mappning">
+<!ENTITY advancedPane "Avancerat">
+<!ENTITY mouseGesture "Musgester">
+<!ENTITY triggerButton "Utlösarmusknapp som startar en gest">
+<!ENTITY triggerButton.left "Vänster">
+<!ENTITY triggerButton.middle "Mitten">
+<!ENTITY triggerButton.right "Höger">
+<!ENTITY suppress.alt "Starta inte en gest med Alt-tangenten nedtryckt">
+<!ENTITY trail "Spårritning">
+<!ENTITY trail.color "Färg">
+<!ENTITY trail.size "Storlek">
+<!ENTITY status "Statusvisning">
+<!ENTITY status.description.1 "Göm statusvisning efter">
+<!ENTITY status.description.2 "sekunder">
+<!ENTITY timeout "Tidsgräns">
+<!ENTITY timeout.description.1 "Avbryt gest efter">
+<!ENTITY timeout.description.2 "sekunder utan rörelser">
+<!ENTITY mappings.title "Mappningar">
+<!ENTITY mappings.description "Välj en mappning att konfigurera">
+<!ENTITY tools.title "Verktyg">
+<!ENTITY tools.description "Säkerhetskopiera och återställ alla mappningar">
+<!ENTITY tools.backup.label "Säkerhetskopiering">
+<!ENTITY tools.restore.label "Återställ">
+<!ENTITY tools.restore.alerttext "Det här kommer att ersätta alla dina nuvarande mappningar med säkerhetskopian. Är du säker?">
+<!ENTITY wheelGesture "Hjulgester">
+<!ENTITY wheelGesture.up.left "Rulla uppåt med vänster musknapp nedtryckt">
+<!ENTITY wheelGesture.up.middle "Rulla uppåt med mittenmusknappen nedtryckt">
+<!ENTITY wheelGesture.up.right "Rulla uppåt med höger musknapp nedtryckt">
+<!ENTITY wheelGesture.down.left "Rulla nedåt med vänster musknapp nedtryckt">
+<!ENTITY wheelGesture.down.middle "Rulla nedåt med mittenmusknappen nedtryckt">
+<!ENTITY wheelGesture.down.right "Rulla nedåt med höger musknapp nedtryckt">
+<!ENTITY rockerGesture "Musknappsgester">
+<!ENTITY rockerGesture.left "Vänsterklick med höger musknapp nedtryckt">
+<!ENTITY rockerGesture.right "Högerklick med vänster musknapp nedtryckt">
+<!ENTITY keypressGesture "Låstangentsgester">
+<!ENTITY keypressGesture.ctrl "Musgest med Ctrl-tangenten nedtryckt">
+<!ENTITY keypressGesture.shift "Musgest med Skift-tangenten nedtryckt">
+<!ENTITY keypressGesture.open "Öppna muspekarhovrade länkar i flikar">
+<!ENTITY keypressGesture.save "Spara muspekarhovrade länkar">
+<!ENTITY keypressGesture.copy "Kopiera muspekarhovrade länkplatser">
+<!ENTITY tabwheelGesture "Flikgester">
+<!ENTITY tabwheelGesture.description "Växla mellan flikar vid mushjulsrullning i flikfältet">
+<!ENTITY treecol.name "Namn">
+<!ENTITY treecol.command "Kommando">
+<!ENTITY treecol.script "Skript">
+<!ENTITY treecol.gesture "Gest">
+<!ENTITY editButton.label "Redigera">
+<!ENTITY editButton.accesskey "R">
+<!ENTITY clearButton.label "Rensa">
+<!ENTITY clearButton.accesskey "e">
+<!ENTITY addScriptButton.label "Lägg till skript">
+<!ENTITY addScriptButton.accesskey "L">
+<!ENTITY deleteScriptButton.label "Ta bort skript">
+<!ENTITY deleteScriptButton.accesskey "T">
+<!ENTITY getScripts.label "Hämta skript">

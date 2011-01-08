@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigering">
+<!ENTITY gestureCategory.window "Fönster">
+<!ENTITY gestureCategory.tab "Flik">
+<!ENTITY gestureCategory.page "Sida">
+<!ENTITY gestureCategory.frame "Ram">
+<!ENTITY gestureCategory.link "Länk">
+<!ENTITY gestureCategory.image "Bild">
+<!ENTITY gestureCategory.selection "Markering">
+<!ENTITY gestureCategory.tools "Verktyg">
+<!ENTITY gestureCategory.popup "Popup-typ">
+<!ENTITY gestureCategory.hybrid "Hybridtyp">
+<!ENTITY gestureCategory.script "Användarskript">
+<!ENTITY gestureType.popup "Popup">
+<!ENTITY gestureType.hybrid "Hybrid">
+<!ENTITY gestureCmd.skipCache "Hoppa över cache">
+<!ENTITY gestureCmd.goUpperLevel "Gå uppåt en nivå">
+<!ENTITY gestureCmd.incrementURL "Öka siffra/tal i URL">
+<!ENTITY gestureCmd.decrementURL "Minska siffra/tal i URL">
+<!ENTITY gestureCmd.undoCloseWindow "Ångra Stäng fönster">
+<!ENTITY gestureCmd.minimizeWindow "Minimera fönster">
+<!ENTITY gestureCmd.maximizeWindow "Maximera fönster / Återställ fönsterstorlek">
+<!ENTITY gestureCmd.previousTab "Föregående flik">
+<!ENTITY gestureCmd.nextTab "Nästa flik">
+<!ENTITY gestureCmd.duplicateTab "Duplicera flik">
+<!ENTITY gestureCmd.closeLeftTabs "Stäng flikarna till vänster">
+<!ENTITY gestureCmd.closeRightTabs "Stäng flikarna till höger">
+<!ENTITY gestureCmd.scrollTop "Rulla till toppen">
+<!ENTITY gestureCmd.scrollBottom "Rulla till botten">
+<!ENTITY gestureCmd.scrollPageUp "En sida upp">
+<!ENTITY gestureCmd.scrollPageDown "En sida ned">
+<!ENTITY gestureCmd.backgroundTab "Bakgrundsflik">
+<!ENTITY gestureCmd.foregroundTab "Förgrundsflik">
+<!ENTITY gestureCmd.saveImageNow "Spara bild nu">
+<!ENTITY gestureCmd.searchForSelection "Sök efter markering">
+<!ENTITY gestureCmd.searchForSelectionWith "Sök efter markering med...">
+<!ENTITY gestureCmd.openLinksInSelection "Öppna alla länkar i markeringen">
+<!ENTITY gestureCmd.openURLsInSelection "Öppna alla URL:er i markeringen">
+<!ENTITY gestureCmd.bookmarksSidebar "Visa Bokmärkes-sidpanelen">
+<!ENTITY gestureCmd.historySidebar "Visa Historik-sidpanelen">
+<!ENTITY gestureCmd.backForwardHistory "Bakåt / Framåt i historiken">
+<!ENTITY gestureCmd.previewMode "Förhandsgrandskningsläge">
+<!ENTITY gestureCmd.hybridSave "Spara som...">
+<!ENTITY gestureCmd.hybridBookmark "Bokmärk...">
+<!ENTITY gestureCmd.hybridViewSource "Visa källkod">
+<!ENTITY gestureCmd.hybridSendURL "Skicka...">
+<!ENTITY gestureCmd.hybridCopyURL "Kopiera plats">
+<!ENTITY gestureCmd.toggleFindbar "Öppna / Stäng Sidsökfältet">
+<!ENTITY gestureCmd.restartApp "Starta om Firefox">
+<!ENTITY gestureCmd.options "Inställningar">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Egenskaper">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

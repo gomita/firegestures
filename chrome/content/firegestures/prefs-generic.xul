@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://firegestures/skin/prefs.css" type="text/css"?>
+
+<!DOCTYPE prefwindow SYSTEM "chrome://firegestures/locale/prefs.dtd">
+
+<prefwindow id="PrefsUI"
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            title="FireGestures - &options;"
+            buttons="accept,cancel"
+            onload="PrefsUI.init();"
+            ondialogcancel="if (!document.documentElement.instantApply) gShouldCommit = false;"
+            onunload="PrefsUI.done();">
+
+	<prefpane id="mappingPane" label="&mappingPane;" flex="1">
+		<commandset id="mappingCommandSet" oncommand="PrefsUI.doCommand(event.target.id);">
+			<command id="cmd_edit_gesture" />
+			<command id="cmd_clear_gesture" />
+			<!-- dummy -->
+			<command id="cmd_delete_script" />
+		</commandset>
+		<tree id="mappingTree"
+		      onselect="PrefsUI.updateCommands();"
+		      ondblclick="PrefsUI.handleTreeEvent(event);"
+		      onkeypress="PrefsUI.handleTreeEvent(event);" rows="14" flex="1">
+			<treecols>
+				<treecol label="&treecol.name;" flex="5" primary="true" />
+				<splitter class="tree-splitter" />
+				<treecol label="&treecol.command;" flex="3" hidden="true" />
+				<splitter class="tree-splitter" />
+				<treecol label="&treecol.gesture;" flex="1" />
+			</treecols>
+			<treechildren flex="1" />
+		</tree>
+		<hbox id="mappingButtons" align="start">
+			<button label="&editButton.label;..."
+			        accesskey="&editButton.accesskey;"
+			        command="cmd_edit_gesture" />
+			<button label="&clearButton.label;"
+			        accesskey="&clearButton.accesskey;"
+			        command="cmd_clear_gesture" />
+		</hbox>
+	</prefpane>
+
+	<prefpane id="advancedPane" label="&advancedPane;" flex="1">
+		<!-- dummy -->
+		<preferences>
+			<preference id="pref:triggerbutton" name="extensions.firegestures.trigger_button" type="int" />
+			<preference id="pref:wheelgesture"  name="extensions.firegestures.wheelgesture"   type="bool" />
+			<preference id="pref:rockergesture" name="extensions.firegestures.rockergesture"  type="bool" />
+		</preferences>
+		<groupbox uigroup="wheelgesture">
+			<!-- dummy -->
+			<textbox hidden="true"
+			         preference="pref:triggerbutton"
+			         onsyncfrompreference="PrefsUI.updateTriggerButton();" />
+			<checkbox id="wheelgesture" hidden="true"
+			          preference="pref:wheelgesture"
+			          onsyncfrompreference="PrefsUI.updateUIGroup('wheelgesture');" />
+			<caption label="&wheelGesture;" />
+			<grid>
+				<columns>
+					<column />
+					<column />
+				</columns>
+				<rows>
+					<row align="center">
+						<label id="wheelUpLabel"
+						       value0="&wheelGesture.up.left;:"
+						       value1="&wheelGesture.up.middle;:"
+						       value2="&wheelGesture.up.right;:" />
+						<menulist id="wheelGestureU" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+					<row align="center">
+						<label id="wheelDownLabel"
+						       value0="&wheelGesture.down.left;:"
+						       value1="&wheelGesture.down.middle;:"
+						       value2="&wheelGesture.down.right;:" />
+						<menulist id="wheelGestureD" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+		<groupbox uigroup="rockergesture">
+			<!-- dummy -->
+			<checkbox id="rockergesture" hidden="true"
+			          preference="pref:rockergesture"
+			          onsyncfrompreference="PrefsUI.updateUIGroup('rockergesture');" />
+			<caption label="&rockerGesture;" />
+			<grid>
+				<columns>
+					<column />
+					<column />
+				</columns>
+				<rows>
+					<row align="center">
+						<label value="&rockerGesture.left;:" />
+						<menulist id="rockerGestureL" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+					<row align="center">
+						<label value="&rockerGesture.right;:" />
+						<menulist id="rockerGestureR" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+		<box hidden="true">
+			<menuitem id="separatorTemplate" disabled="true">
+				<label />
+				<menuseparator flex="1" />
+			</menuitem>
+		</box>
+		<!-- dummy -->
+		<menulist id="keypressGestureC" hidden="true" />
+		<menulist id="keypressGestureS" hidden="true" />
+	</prefpane>
+
+	<script type="application/x-javascript" src="chrome://firegestures/content/prefs.js" />
+
+	<stringbundle id="bundleMain" src="chrome://firegestures/locale/firegestures.properties" />
+
+</prefwindow>

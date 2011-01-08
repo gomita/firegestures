@@ -1,0 +1,33 @@
+<!ENTITY options "Možnosti">
+<!ENTITY mainPane "Všeobecne">
+<!ENTITY mappingPane "Mapovanie">
+<!ENTITY advancedPane "Pokročilé">
+<!ENTITY trail.color "Farba">
+<!ENTITY trail.size "Hrúbka">
+<!ENTITY timeout.description.1 "Zrušiť myšie gesto po">
+<!ENTITY timeout.description.2 "sekúnd bez pohybu">
+<!ENTITY wheelGesture "Gestá s kolieskom myši">
+<!ENTITY rockerGesture "Gestá s tlačidlami myši (húpacie gestá)">
+<!ENTITY rockerGesture.left "Ľavé kliknutie pri stlačenom pravom tlačidle myši">
+<!ENTITY rockerGesture.right "Pravé kliknutie pri stlačenom ľavom tlačidle myši">
+<!ENTITY keypressGesture "Gestá s klávesmi">
+<!ENTITY keypressGesture.ctrl "Gestá so stlačeným klávesom Ctrl">
+<!ENTITY keypressGesture.shift "Gestá so stlačeným klávesom Shift">
+<!ENTITY keypressGesture.open "Otvoriť odkazy pod kurzorom na novej karte">
+<!ENTITY keypressGesture.save "Uložiť odkazy pod kurzorom">
+<!ENTITY keypressGesture.copy "Kopírovať odkazy pod kurzorom">
+<!ENTITY tabwheelGesture "Gestá s kolieskom myši na paneli kariet">
+<!ENTITY tabwheelGesture.description "Prepínať karty pri posune kolieskom myši nad panelom kariet">
+<!ENTITY treecol.name "Názov">
+<!ENTITY treecol.command "Príkaz">
+<!ENTITY treecol.script "Skript">
+<!ENTITY treecol.gesture "Gesto">
+<!ENTITY editButton.label "Upraviť">
+<!ENTITY editButton.accesskey "U">
+<!ENTITY clearButton.label "Zmazať">
+<!ENTITY clearButton.accesskey "Z">
+<!ENTITY addScriptButton.label "Pridať skript">
+<!ENTITY addScriptButton.accesskey "P">
+<!ENTITY deleteScriptButton.label "Odstrániť skript">
+<!ENTITY deleteScriptButton.accesskey "O">
+<!ENTITY getScripts.label "Získať ďalšie skripty">

@@ -1,0 +1,57 @@
+<!ENTITY options "선택사항">
+<!ENTITY mainPane "일반">
+<!ENTITY mappingPane "도표">
+<!ENTITY advancedPane "고급">
+<!ENTITY mouseGesture "마우스 동작">
+<!ENTITY triggerButton "동작을 시작하게할 방아쇠 버튼">
+<!ENTITY triggerButton.left "왼쪽">
+<!ENTITY triggerButton.middle "가운데">
+<!ENTITY triggerButton.right "오른쪽">
+<!ENTITY suppress.alt "Alt키를 누르는 동안 동작을 시작하지 않습니다">
+<!ENTITY trail "꼬리 그리기">
+<!ENTITY trail.color "색상">
+<!ENTITY trail.size "크기">
+<!ENTITY status "상태 표시">
+<!ENTITY status.description.1 "상태 표시 숨김 :">
+<!ENTITY status.description.2 "초 후">
+<!ENTITY timeout "시간경과">
+<!ENTITY timeout.description.1 "움직임 없이">
+<!ENTITY timeout.description.2 "초를 경과하면 동작 취소">
+<!ENTITY mappings.title "도표">
+<!ENTITY mappings.description "설정할 도표 선택">
+<!ENTITY tools.title "도구">
+<!ENTITY tools.description "모든 도표 백업 및 복구">
+<!ENTITY tools.backup.label "백업">
+<!ENTITY tools.restore.label "복구">
+<!ENTITY tools.restore.alerttext "이것은 당신의 현재 도표의 전부를 백업으로 대체시킵니다. 정말입니까?">
+<!ENTITY wheelGesture "휠 동작">
+<!ENTITY wheelGesture.up.left "왼쪽 버튼을 누르면서 스크롤 업">
+<!ENTITY wheelGesture.up.middle "가운데 버튼을 누르면서 스크롤 업">
+<!ENTITY wheelGesture.up.right "오른쪽 버튼을 누르면서 스크롤 업">
+<!ENTITY wheelGesture.down.left "왼쪽 버튼을 누르면서 스크롤 다운">
+<!ENTITY wheelGesture.down.middle "가운데 버튼을 누르면서 스크롤 다운">
+<!ENTITY wheelGesture.down.right "오른쪽 버튼을 누르면서 스크롤 다운">
+<!ENTITY rockerGesture "록커 동작">
+<!ENTITY rockerGesture.left "오른쪽 클릭을 유지한채 왼쪽 클릭">
+<!ENTITY rockerGesture.right "왼쪽 클릭을 유지한채 오른쪽 클릭">
+<!ENTITY keypressGesture "키 동작">
+<!ENTITY keypressGesture.ctrl "Ctrl 키를 누른채 마우스 동작">
+<!ENTITY keypressGesture.shift "Shift 키를 누른채 마우스 동작">
+<!ENTITY keypressGesture.open "통과 링크를 탭으로 열린다">
+<!ENTITY keypressGesture.save "통과한 링크를 저장">
+<!ENTITY keypressGesture.copy "마우스를 올려둔 링크 위치 복사">
+<!ENTITY tabwheelGesture "탭 휠 동작">
+<!ENTITY tabwheelGesture.description "탭 막대 위에서 휠을 스크롤시 탭 전환">
+<!ENTITY treecol.name "이름">
+<!ENTITY treecol.command "명령">
+<!ENTITY treecol.script "스크립트">
+<!ENTITY treecol.gesture "동작">
+<!ENTITY editButton.label "편집">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "지우기">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "스크립트 추가">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "스크립트 삭제">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "스크립트 가져오기">

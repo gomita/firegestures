@@ -1,0 +1,50 @@
+<!ENTITY options "Beállítások">
+<!ENTITY mainPane "Általános">
+<!ENTITY mappingPane "Összerendelések">
+<!ENTITY advancedPane "Haladó">
+<!ENTITY mouseGesture "Egérmozdulatok">
+<!ENTITY triggerButton "Egérmozdulatot indító gomb">
+<!ENTITY triggerButton.left "Bal">
+<!ENTITY triggerButton.middle "Középső">
+<!ENTITY triggerButton.right "Jobb">
+<!ENTITY suppress.alt "Nincs egérmozdulat lenyomott Alt gomb közben">
+<!ENTITY trail.color "Szín">
+<!ENTITY trail.size "Méret">
+<!ENTITY mappings.title "Mozdulatok">
+<!ENTITY mappings.description "Válassza ki a szerkesztendő mozdulatot">
+<!ENTITY tools.title "Eszközök">
+<!ENTITY tools.description "Összes mozdulat mentése és visszaállítása">
+<!ENTITY tools.backup.label "Mentés">
+<!ENTITY tools.restore.label "Visszaállítás">
+<!ENTITY tools.restore.alerttext "Ez művelet lecseréli az összes jelenlegi mozdulatot a mentésben lévőkkel. Valóban le kívánja cserélni a mozdulatokat?">
+<!ENTITY wheelGesture "Görgő mozdulatok">
+<!ENTITY wheelGesture.up.left "Görgetés felfele a bal gomb lenyomásakor">
+<!ENTITY wheelGesture.up.middle "Görgetés felfele a középső gomb lenyomásakor">
+<!ENTITY wheelGesture.up.right "Görgetés felfele a jobb gomb lenyomásakor">
+<!ENTITY wheelGesture.down.left "Görgetés lefelé a bal gomb lenyomásakor">
+<!ENTITY wheelGesture.down.middle "Görgetés lefelé a középső gomb lenyomásakor">
+<!ENTITY wheelGesture.down.right "Görgetés lefelé a jobb gomb lenyomásakor">
+<!ENTITY rockerGesture "Hintázó mozdulatok">
+<!ENTITY rockerGesture.left "Bal kattintás a jobb gomb lenyomása mellett">
+<!ENTITY rockerGesture.right "Jobb kattintás a bal gomb lenyomása mellett">
+<!ENTITY keypressGesture "Billentyűzött mozdulatok">
+<!ENTITY keypressGesture.ctrl "Egérmozdulat a Ctrl gomb lenyomása mellett">
+<!ENTITY keypressGesture.shift "Egérmozdulat a Shift gomb lenyomása mellett">
+<!ENTITY keypressGesture.open "Érintett weboldalak megnyitása új lapon">
+<!ENTITY keypressGesture.save "Érintett linkek mentése">
+<!ENTITY keypressGesture.copy "Érintett linkek másolása">
+<!ENTITY tabwheelGesture "Lapváltó mozdulatok">
+<!ENTITY tabwheelGesture.description "Váltás a lapok között a Lapok eszköztáron történő gördítéssel">
+<!ENTITY treecol.name "Név">
+<!ENTITY treecol.command "Parancs">
+<!ENTITY treecol.script "Parancsfájl">
+<!ENTITY treecol.gesture "Mozdulat">
+<!ENTITY editButton.label "Szerkesztés">
+<!ENTITY editButton.accesskey "S">
+<!ENTITY clearButton.label "Törlés">
+<!ENTITY clearButton.accesskey "T">
+<!ENTITY addScriptButton.label "Parancsfájl hozzáadása">
+<!ENTITY addScriptButton.accesskey "h">
+<!ENTITY deleteScriptButton.label "Parancsfájl törlése">
+<!ENTITY deleteScriptButton.accesskey "r">
+<!ENTITY getScripts.label "Parancsfájl letöltése">

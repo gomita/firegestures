@@ -1,0 +1,52 @@
+<!ENTITY options "opcje">
+<!ENTITY mainPane "Ogólne">
+<!ENTITY mappingPane "Gesty">
+<!ENTITY advancedPane "Zaawansowane">
+<!ENTITY mouseGesture "Gesty myszy">
+<!ENTITY triggerButton "Wykonuj gest z wciśniętym przyciskiem">
+<!ENTITY triggerButton.left "lewym">
+<!ENTITY triggerButton.middle "środkowym">
+<!ENTITY triggerButton.right "prawym">
+<!ENTITY suppress.alt "Nie uruchamiaj gestu, gdy jest wciśnięty klawisz [Alt]">
+<!ENTITY trail.color "Kolor">
+<!ENTITY trail.size "Grubość linii śladu">
+<!ENTITY timeout.description.1 "Anuluj gest po upływie">
+<!ENTITY timeout.description.2 "sekund bezruchu">
+<!ENTITY mappings.title "Konfigurowanie">
+<!ENTITY mappings.description "Wybierz wzorce do konfiguracji">
+<!ENTITY tools.title "Narzędzia">
+<!ENTITY tools.description "Utwórz kopię lub odtwórz wszystkie wzorce">
+<!ENTITY tools.backup.label "Utwórz kopię">
+<!ENTITY tools.restore.label "Odtwórz">
+<!ENTITY tools.restore.alerttext "To działanie spowoduje zamienienie wszystkich aktualnych wzorców wzorcami z kopii.Czy kontynuować?">
+<!ENTITY wheelGesture "Gesty kółkiem myszy">
+<!ENTITY wheelGesture.up.left "Obrót kółkiem od siebie ze wciśniętym lpm.">
+<!ENTITY wheelGesture.up.middle "Obrót kółkiem od siebie ze wciśniętym śpm.">
+<!ENTITY wheelGesture.up.right "Obrót kółkiem od siebie ze wciśniętym ppm.">
+<!ENTITY wheelGesture.down.left "Obrót kółkiem do siebie ze wciśniętym lpm.">
+<!ENTITY wheelGesture.down.middle "Obrót kółkiem do siebie ze wciśniętym śpm.">
+<!ENTITY wheelGesture.down.right "Obrót kółkiem do siebie ze wciśniętym ppm.">
+<!ENTITY rockerGesture "Gesty przyciskami myszy">
+<!ENTITY rockerGesture.left "Prawy przycisk myszy + lewy przycisk myszy">
+<!ENTITY rockerGesture.right "Lewy przycisk myszy + prawy przycisk myszy">
+<!ENTITY keypressGesture "Gest myszy ze wciśniętym klawiszem [Ctrl] lub [Shift]">
+<!ENTITY keypressGesture.ctrl "[Ctrl]">
+<!ENTITY keypressGesture.shift "[Shift]">
+<!ENTITY keypressGesture.open "Otwiera wskazane gestem odnośniki w kartach">
+<!ENTITY keypressGesture.save "Otwiera okna zapisu wskazanych gestem odnośników">
+<!ENTITY keypressGesture.copy "Kopiuje lokalizacje wskazanego gestem odnośnika">
+<!ENTITY tabwheelGesture "Gesty kółkiem myszy na pasku kart">
+<!ENTITY tabwheelGesture.description "Po wskazaniu kursorem paska kart, obrót kółkiem przełącza karty">
+<!ENTITY treecol.name "Nazwa">
+<!ENTITY treecol.command "Polecenie">
+<!ENTITY treecol.script "Skrypt">
+<!ENTITY treecol.gesture "Gest">
+<!ENTITY editButton.label "Edytuj">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Wyczyść">
+<!ENTITY clearButton.accesskey "W">
+<!ENTITY addScriptButton.label "Dodaj skrypt">
+<!ENTITY addScriptButton.accesskey "D">
+<!ENTITY deleteScriptButton.label "Usuń skrypt">
+<!ENTITY deleteScriptButton.accesskey "U">
+<!ENTITY getScripts.label "Pobierz skrypty">

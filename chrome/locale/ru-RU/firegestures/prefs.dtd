@@ -1,0 +1,57 @@
+<!ENTITY options "Настройки">
+<!ENTITY mainPane "Общие">
+<!ENTITY mappingPane "Карта жестов">
+<!ENTITY advancedPane "Дополнительные">
+<!ENTITY mouseGesture "Жест мышью">
+<!ENTITY triggerButton "Кнопка мыши, использующаяся для выполнения жеста">
+<!ENTITY triggerButton.left "Левая">
+<!ENTITY triggerButton.middle "Средняя">
+<!ENTITY triggerButton.right "Правая">
+<!ENTITY suppress.alt "Не начинать выполнение жеста при удержании кнопки Alt">
+<!ENTITY trail "Отрисовка следа">
+<!ENTITY trail.color "Цвет">
+<!ENTITY trail.size "Размер">
+<!ENTITY status "Отображение состояния">
+<!ENTITY status.description.1 "Скрывать отображение состояния после">
+<!ENTITY status.description.2 "секунд">
+<!ENTITY timeout "Тайм-аут">
+<!ENTITY timeout.description.1 "Отменять жест после">
+<!ENTITY timeout.description.2 "секунд без движения курсора">
+<!ENTITY mappings.title "Карты жестов">
+<!ENTITY mappings.description "Выберите карту жестов для настройки">
+<!ENTITY tools.title "Инструменты">
+<!ENTITY tools.description "Резервное копирование и восстановление карт жестов">
+<!ENTITY tools.backup.label "Резервное копирование">
+<!ENTITY tools.restore.label "Восстановление">
+<!ENTITY tools.restore.alerttext "Эта операция заменит все ваши текущие схемы жестов настройками из резервной копии. Вы уверены, что хотите это сделать?">
+<!ENTITY wheelGesture "Жесты, использующие колёсико">
+<!ENTITY wheelGesture.up.left "Прокрутка вверх при удержании ЛКМ">
+<!ENTITY wheelGesture.up.middle "Прокрутка вверх при удержании СКМ">
+<!ENTITY wheelGesture.up.right "Прокрутка вверх при удержании ПКМ">
+<!ENTITY wheelGesture.down.left "Прокрутка вниз при удержании ЛКМ">
+<!ENTITY wheelGesture.down.middle "Прокрутка вниз при удержании СКМ">
+<!ENTITY wheelGesture.down.right "Прокрутка вниз при удержании ПКМ">
+<!ENTITY rockerGesture "Жесты, использующие две кнопки">
+<!ENTITY rockerGesture.left "Клик ЛКМ при удержании ПКМ">
+<!ENTITY rockerGesture.right "Клик ПКМ при удержании ЛКМ">
+<!ENTITY keypressGesture "Жесты, выполняемые при удержании клавиши">
+<!ENTITY keypressGesture.ctrl "Жест мышью при удержании Ctrl">
+<!ENTITY keypressGesture.shift "Жест мышью при удержании Shift">
+<!ENTITY keypressGesture.open "Открыть во вкладках ссылки под курсором">
+<!ENTITY keypressGesture.save "Сохранить ссылки под курсором">
+<!ENTITY keypressGesture.copy "Копировать адрес ссылки, расположенной под курсором">
+<!ENTITY tabwheelGesture "Жесты для панели вкладок">
+<!ENTITY tabwheelGesture.description "Переключать вкладки, когда над панелью вкладок прокручивается колёсико">
+<!ENTITY treecol.name "Имя">
+<!ENTITY treecol.command "Команда">
+<!ENTITY treecol.script "Схема">
+<!ENTITY treecol.gesture "Жест">
+<!ENTITY editButton.label "Редактор">
+<!ENTITY editButton.accesskey "Р">
+<!ENTITY clearButton.label "Удалить жест">
+<!ENTITY clearButton.accesskey "а">
+<!ENTITY addScriptButton.label "Добавить схему">
+<!ENTITY addScriptButton.accesskey "Д">
+<!ENTITY deleteScriptButton.label "Удалить схему">
+<!ENTITY deleteScriptButton.accesskey "У">
+<!ENTITY getScripts.label "Получить схемы">

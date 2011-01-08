@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigace">
+<!ENTITY gestureCategory.window "Okno">
+<!ENTITY gestureCategory.tab "Panel">
+<!ENTITY gestureCategory.page "Stránka">
+<!ENTITY gestureCategory.frame "Rám">
+<!ENTITY gestureCategory.link "Odkaz">
+<!ENTITY gestureCategory.image "Obrázek">
+<!ENTITY gestureCategory.selection "Výběr">
+<!ENTITY gestureCategory.tools "Nástroje">
+<!ENTITY gestureCategory.popup "Vyskakovací">
+<!ENTITY gestureCategory.hybrid "Hybridní">
+<!ENTITY gestureCategory.script "Uživatelské skripty">
+<!ENTITY gestureType.popup "Vysk.">
+<!ENTITY gestureType.hybrid "Hybrid">
+<!ENTITY gestureCmd.skipCache "Bez cache">
+<!ENTITY gestureCmd.goUpperLevel "O úroveň výše">
+<!ENTITY gestureCmd.incrementURL "Zvýšit číslo v URL">
+<!ENTITY gestureCmd.decrementURL "Snížit číslo v URL">
+<!ENTITY gestureCmd.undoCloseWindow "Vrátit zpět naposledy zavřené okno">
+<!ENTITY gestureCmd.minimizeWindow "Minimalizovat okno">
+<!ENTITY gestureCmd.maximizeWindow "Maximalizovat okno / Obnovit z maxima">
+<!ENTITY gestureCmd.previousTab "Předchozí panel">
+<!ENTITY gestureCmd.nextTab "Následující panel">
+<!ENTITY gestureCmd.duplicateTab "Duplikovat panel">
+<!ENTITY gestureCmd.closeLeftTabs "Zavřít panely nalevo">
+<!ENTITY gestureCmd.closeRightTabs "Zavřít panely napravo">
+<!ENTITY gestureCmd.scrollTop "Přejít na začátek">
+<!ENTITY gestureCmd.scrollBottom "Přejít na konec">
+<!ENTITY gestureCmd.scrollPageUp "O stránku výše">
+<!ENTITY gestureCmd.scrollPageDown "O stránku níže">
+<!ENTITY gestureCmd.backgroundTab "na pozadí">
+<!ENTITY gestureCmd.foregroundTab "na popředí">
+<!ENTITY gestureCmd.saveImageNow "Uložit obrázek">
+<!ENTITY gestureCmd.searchForSelection "Hledat výběr">
+<!ENTITY gestureCmd.searchForSelectionWith "Hledat výběr pomocí...">
+<!ENTITY gestureCmd.openLinksInSelection "Otevřít všechny odkazy ve výběru">
+<!ENTITY gestureCmd.openURLsInSelection "Otevřít všechny adresy ve výběru">
+<!ENTITY gestureCmd.bookmarksSidebar "Zobrazit postranní panel záložek">
+<!ENTITY gestureCmd.historySidebar "Zobrazit postranní panel historie">
+<!ENTITY gestureCmd.backForwardHistory "Zpět / Dopředu v historii">
+<!ENTITY gestureCmd.previewMode "Režim náhledu">
+<!ENTITY gestureCmd.hybridSave "Uložit jako...">
+<!ENTITY gestureCmd.hybridBookmark "Přidat do záložek...">
+<!ENTITY gestureCmd.hybridViewSource "Zobrazit zdrojový kód">
+<!ENTITY gestureCmd.hybridSendURL "Odeslat">
+<!ENTITY gestureCmd.hybridCopyURL "Kopírovat URL">
+<!ENTITY gestureCmd.toggleFindbar "Zobrazit / Skrýt panel vyhledávání">
+<!ENTITY gestureCmd.restartApp "Restartovat Firefox">
+<!ENTITY gestureCmd.options "možnosti">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Vlastnosti">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

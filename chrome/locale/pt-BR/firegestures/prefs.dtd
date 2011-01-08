@@ -1,0 +1,32 @@
+<!ENTITY options "Opções">
+<!ENTITY mainPane "Geral">
+<!ENTITY mappingPane "Mapeamento">
+<!ENTITY advancedPane "Avançado">
+<!ENTITY trail.color "Cor">
+<!ENTITY trail.size "Tamanho">
+<!ENTITY timeout.description.1 "Cancelar gesto do mouse após">
+<!ENTITY timeout.description.2 "segundos sem mover">
+<!ENTITY wheelGesture "Gestos de rolagem">
+<!ENTITY rockerGesture "Gestos Rocker">
+<!ENTITY rockerGesture.left "Clique esquerdo segurando o botão direito">
+<!ENTITY rockerGesture.right "Clique direito segurando botão esquerdo">
+<!ENTITY keypressGesture "Gestos de teclas pressionadas">
+<!ENTITY keypressGesture.ctrl "Gesto com mouse segurando tecla Ctrl">
+<!ENTITY keypressGesture.shift "Gesto com mouse segurando tecla Shift">
+<!ENTITY keypressGesture.open "Abrir links focalizados em abas">
+<!ENTITY keypressGesture.save "Salvar links focalizados">
+<!ENTITY tabwheelGesture "Gestos de rolagem da aba">
+<!ENTITY tabwheelGesture.description "Alternar abas quando rolar na barra de abas">
+<!ENTITY treecol.name "Nome">
+<!ENTITY treecol.command "Comando">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Gesto">
+<!ENTITY editButton.label "Editar">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Limpar">
+<!ENTITY clearButton.accesskey "L">
+<!ENTITY addScriptButton.label "Adicionar Script">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Excluir Script">
+<!ENTITY deleteScriptButton.accesskey "x">
+<!ENTITY getScripts.label "Pegar Scripts">

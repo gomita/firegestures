@@ -1,0 +1,57 @@
+<!ENTITY options "選項">
+<!ENTITY mainPane "一般設定">
+<!ENTITY mappingPane "手勢對應">
+<!ENTITY advancedPane "進階設定">
+<!ENTITY mouseGesture "滑鼠手勢">
+<!ENTITY triggerButton "要執行滑鼠手勢的按鍵">
+<!ENTITY triggerButton.left "左鍵">
+<!ENTITY triggerButton.middle "中鍵">
+<!ENTITY triggerButton.right "右鍵">
+<!ENTITY suppress.alt "當按住 Alt 鍵時不要執行滑鼠手勢">
+<!ENTITY trail "顯示手勢繪製軌跡">
+<!ENTITY trail.color "顏色">
+<!ENTITY trail.size "粗細">
+<!ENTITY status "顯示目前正在繪製的手勢過程">
+<!ENTITY status.description.1 "隱藏目前正在繪製的手勢過程，在">
+<!ENTITY status.description.2 "秒後">
+<!ENTITY timeout "啟用逾時設定">
+<!ENTITY timeout.description.1 "當滑鼠超過">
+<!ENTITY timeout.description.2 "秒 未移動時取消滑鼠手勢">
+<!ENTITY mappings.title "手勢對應">
+<!ENTITY mappings.description "選擇要修改的手勢對應">
+<!ENTITY tools.title "工具">
+<!ENTITY tools.description "備份以及回復手勢對應">
+<!ENTITY tools.backup.label "備份">
+<!ENTITY tools.restore.label "回復">
+<!ENTITY tools.restore.alerttext "將會以備份檔蓋過目前的手勢對應設定，你確定要這麼做嗎？">
+<!ENTITY wheelGesture "滾輪手勢">
+<!ENTITY wheelGesture.up.left "按住左鍵並向上滾動">
+<!ENTITY wheelGesture.up.middle "按住中鍵並向上滾動">
+<!ENTITY wheelGesture.up.right "按住右鍵並向上滾動">
+<!ENTITY wheelGesture.down.left "按住左鍵並向下滾動">
+<!ENTITY wheelGesture.down.middle "按住中鍵並向下滾動">
+<!ENTITY wheelGesture.down.right "按住右鍵並向下滾動">
+<!ENTITY rockerGesture "搖擺手勢">
+<!ENTITY rockerGesture.left "按住右鍵不放再按左鍵">
+<!ENTITY rockerGesture.right "按住左鍵不放再按右鍵">
+<!ENTITY keypressGesture "按鍵手勢">
+<!ENTITY keypressGesture.ctrl "按住 Ctrl 鍵並劃過連結">
+<!ENTITY keypressGesture.shift "按住 Shift 鍵並劃過連結">
+<!ENTITY keypressGesture.open "於分頁中開啟所有劃過的連結">
+<!ENTITY keypressGesture.save "儲存所有劃過的連結">
+<!ENTITY keypressGesture.copy "複製所有劃過的連結網址">
+<!ENTITY tabwheelGesture "分頁滾輪手勢">
+<!ENTITY tabwheelGesture.description "於分頁列上滾動滾輪切換分頁">
+<!ENTITY treecol.name "名稱">
+<!ENTITY treecol.command "命令">
+<!ENTITY treecol.script "腳本手勢">
+<!ENTITY treecol.gesture "手勢">
+<!ENTITY editButton.label "編輯">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "清除">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "新增腳本手勢">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "刪除腳本手勢">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "取得腳本手勢">

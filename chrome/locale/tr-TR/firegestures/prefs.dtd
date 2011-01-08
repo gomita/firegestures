@@ -1,0 +1,52 @@
+<!ENTITY options "Ayarlar">
+<!ENTITY mainPane "Genel">
+<!ENTITY mappingPane "Yönelimler">
+<!ENTITY advancedPane "Gelişmiş">
+<!ENTITY mouseGesture "Fare Hareketleri">
+<!ENTITY triggerButton "Hareketi başlama tuşu">
+<!ENTITY triggerButton.left "Sol">
+<!ENTITY triggerButton.middle "Orta">
+<!ENTITY triggerButton.right "Sağ">
+<!ENTITY suppress.alt "Fare hareketini Alt tuşuna basılı tutmayla başlatma">
+<!ENTITY trail.color "Renk">
+<!ENTITY trail.size "Boyut">
+<!ENTITY timeout.description.1 "Fare">
+<!ENTITY timeout.description.2 "saniye boyunca hareketsiz kalırsa işlemi iptal et">
+<!ENTITY mappings.title "Yönelimler">
+<!ENTITY mappings.description "Düzenlemek istediğiniz yönelimi seçin">
+<!ENTITY tools.title "Araçlar">
+<!ENTITY tools.description "Tüm yönelimleri yedekle ve düzenle">
+<!ENTITY tools.backup.label "Yedekle">
+<!ENTITY tools.restore.label "Düzenle">
+<!ENTITY tools.restore.alerttext "Bu işlem tüm yönelimleri yedeklediğinizdekiler ile değiştirecek. Emin misiniz?">
+<!ENTITY wheelGesture "Tekerlek Hareketleri">
+<!ENTITY wheelGesture.up.left "Sol tuşu basılı tutmayla yukarı kaydır">
+<!ENTITY wheelGesture.up.middle "Orta tuşu basılı tutmayla yukarı kaydır">
+<!ENTITY wheelGesture.up.right "Sağ tuşu basılı tutmayla yukarı kaydır">
+<!ENTITY wheelGesture.down.left "Sol tuşu basılı tutmayla aşağı kaydır">
+<!ENTITY wheelGesture.down.middle "Orta tuşu basılı tutmayla aşağı kaydır">
+<!ENTITY wheelGesture.down.right "Sağ tuşu basılı tutmayla aşağı kaydır">
+<!ENTITY rockerGesture "Kavisli Hareketler">
+<!ENTITY rockerGesture.left "Sağ-tık basılıyken sol-tık">
+<!ENTITY rockerGesture.right "Sol-tık basılıyken sağ-tık">
+<!ENTITY keypressGesture "Tuş Girdi Hareketleri">
+<!ENTITY keypressGesture.ctrl "Ctrl tuşu basılıyken fare hareketleri">
+<!ENTITY keypressGesture.shift "Shift tuşu basılıyken fare hareketleri">
+<!ENTITY keypressGesture.open "Üzerine gelinen bağlantıları sekmede aç">
+<!ENTITY keypressGesture.save "Üzerine gelinen bağlantıları kaydet">
+<!ENTITY keypressGesture.copy "Bağlantı üzerine gelince konumunu kopyala">
+<!ENTITY tabwheelGesture "Sekme Tekerlek Hareketleri">
+<!ENTITY tabwheelGesture.description "Sekme çubuğunda tekerliği döndürünce sekmeleri değiştir">
+<!ENTITY treecol.name "Ad">
+<!ENTITY treecol.command "Komut">
+<!ENTITY treecol.script "Kod">
+<!ENTITY treecol.gesture "Hareket">
+<!ENTITY editButton.label "Düzenle">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Temizle">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "Kod Ekle">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Kod Sil">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "Kod İndir">

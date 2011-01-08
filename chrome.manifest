@@ -1,0 +1,42 @@
+content	firegestures	chrome/content/firegestures/
+locale	firegestures	en-US	chrome/locale/en-US/firegestures/
+locale	firegestures	ja	chrome/locale/ja/firegestures/
+locale	firegestures	ru-RU	chrome/locale/ru-RU/firegestures/
+locale	firegestures	fr	chrome/locale/fr/firegestures/
+locale	firegestures	zh-CN	chrome/locale/zh-CN/firegestures/
+locale	firegestures	pl-PL	chrome/locale/pl-PL/firegestures/
+locale	firegestures	zh-TW	chrome/locale/zh-TW/firegestures/
+locale	firegestures	it-IT	chrome/locale/it-IT/firegestures/
+locale	firegestures	de	chrome/locale/de/firegestures/
+locale	firegestures	pt-BR	chrome/locale/pt-BR/firegestures/
+locale	firegestures	fi-FI	chrome/locale/fi-FI/firegestures/
+locale	firegestures	ko-KR	chrome/locale/ko-KR/firegestures/
+locale	firegestures	cs-CZ	chrome/locale/cs-CZ/firegestures/
+locale	firegestures	nb-NO	chrome/locale/nb-NO/firegestures/
+locale	firegestures	hu-HU	chrome/locale/hu-HU/firegestures/
+locale	firegestures	sk-SK	chrome/locale/sk-SK/firegestures/
+locale	firegestures	tr-TR	chrome/locale/tr-TR/firegestures/
+locale	firegestures	sr	chrome/locale/sr/firegestures/
+locale	firegestures	vi	chrome/locale/vi/firegestures/
+locale	firegestures	es-AR	chrome/locale/es-AR/firegestures/
+locale	firegestures	es-ES	chrome/locale/es-ES/firegestures/
+locale	firegestures	ro	chrome/locale/ro/firegestures/
+locale	firegestures	nl	chrome/locale/nl/firegestures/
+locale	firegestures	et-EE	chrome/locale/et-EE/firegestures/
+locale	firegestures	sv-SE	chrome/locale/sv-SE/firegestures/
+locale	firegestures	he	chrome/locale/he/firegestures/
+skin	firegestures	classic/1.0	chrome/skin/classic/firegestures/
+
+overlay	chrome://browser/content/browser.xul	chrome://firegestures/content/browser.xul
+overlay	chrome://global/content/viewSource.xul	chrome://firegestures/content/viewSource.xul
+overlay	chrome://global/content/viewPartialSource.xul	chrome://firegestures/content/viewSource.xul
+
+# [Firefox4]
+interfaces	components/FireGestures.xpt
+component	{1d26f3e7-d92e-4bcc-ac79-9624bb181308}	components/xdGestureService.js
+component	{ca559550-8ab4-41c5-a72f-fd931322cc7e}	components/xdGestureHandler.js
+component	{d7018e80-d6da-4cbc-b77f-8dca4d95bbbf}	components/xdGestureMapping.js
+contract	@xuldev.org/firegestures/service;1	{1d26f3e7-d92e-4bcc-ac79-9624bb181308}
+contract	@xuldev.org/firegestures/handler;1	{ca559550-8ab4-41c5-a72f-fd931322cc7e}
+contract	@xuldev.org/firegestures/mapping;1	{d7018e80-d6da-4cbc-b77f-8dca4d95bbbf}
+

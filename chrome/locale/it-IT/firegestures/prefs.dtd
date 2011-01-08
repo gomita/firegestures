@@ -1,0 +1,33 @@
+<!ENTITY options "Opzioni">
+<!ENTITY mainPane "Generale">
+<!ENTITY mappingPane "Mappatura">
+<!ENTITY advancedPane "Avanzate">
+<!ENTITY trail.color "Colore">
+<!ENTITY trail.size "Spessore">
+<!ENTITY timeout.description.1 "Annulla la gesture del mouse dopo">
+<!ENTITY timeout.description.2 "secondi senza movimento">
+<!ENTITY wheelGesture "Gesture della rotellina">
+<!ENTITY rockerGesture "Gesture del rocker">
+<!ENTITY rockerGesture.left "Clic del tasto sinistro mentre il tasto destro è premuto">
+<!ENTITY rockerGesture.right "Clic del tasto destro mentre il tasto sinistro è premuto">
+<!ENTITY keypressGesture "Gesture con tasti">
+<!ENTITY keypressGesture.ctrl "Gesture del mouse tenendo premuto il tasto Ctrl">
+<!ENTITY keypressGesture.shift "Gesture del mouse tenendo premuto il tasto Shift">
+<!ENTITY keypressGesture.open "apre i collegamenti in nuove schede al passaggio del mouse">
+<!ENTITY keypressGesture.save "salva i collegamenti al passaggio del mouse">
+<!ENTITY keypressGesture.copy "copia la destinazione del collegamento al passaggio del mouse">
+<!ENTITY tabwheelGesture "Gesture sulla barra delle schede">
+<!ENTITY tabwheelGesture.description "Naviga tra le schede quando si scorre la rotellina sulla barra delle schede">
+<!ENTITY treecol.name "Nome">
+<!ENTITY treecol.command "Comando">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Gesture">
+<!ENTITY editButton.label "Modifica">
+<!ENTITY editButton.accesskey "M">
+<!ENTITY clearButton.label "Rimuovi gesture">
+<!ENTITY clearButton.accesskey "R">
+<!ENTITY addScriptButton.label "Aggiungi script">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "Elimina script">
+<!ENTITY deleteScriptButton.accesskey "E">
+<!ENTITY getScripts.label "Trova altri script">

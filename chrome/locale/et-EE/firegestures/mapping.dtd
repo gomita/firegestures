@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigeerimine">
+<!ENTITY gestureCategory.window "Aken">
+<!ENTITY gestureCategory.tab "Kaart">
+<!ENTITY gestureCategory.page "Leht">
+<!ENTITY gestureCategory.frame "Raam">
+<!ENTITY gestureCategory.link "Link">
+<!ENTITY gestureCategory.image "Pilt">
+<!ENTITY gestureCategory.selection "Valik">
+<!ENTITY gestureCategory.tools "Tööriistad">
+<!ENTITY gestureCategory.popup "Hüpikakna Tüüp">
+<!ENTITY gestureCategory.hybrid "Hübriid Tüüp">
+<!ENTITY gestureCategory.script "Kasutaja Skriptid">
+<!ENTITY gestureType.popup "Hüpikaken">
+<!ENTITY gestureType.hybrid "Hübriid">
+<!ENTITY gestureCmd.skipCache "Jäta vahele vahemälu">
+<!ENTITY gestureCmd.goUpperLevel "Mine ülemisele tasemele">
+<!ENTITY gestureCmd.incrementURL "Kasvav Arv URL'is">
+<!ENTITY gestureCmd.decrementURL "Vähenev Arv URL'is">
+<!ENTITY gestureCmd.undoCloseWindow "Võta akna sulgemine tagasi">
+<!ENTITY gestureCmd.minimizeWindow "Minimeeri Aken">
+<!ENTITY gestureCmd.maximizeWindow "Maksimeeri Aken/Taasta Akna Suurus">
+<!ENTITY gestureCmd.previousTab "Eelmine Kaart">
+<!ENTITY gestureCmd.nextTab "Järgmine Kaart">
+<!ENTITY gestureCmd.duplicateTab "Paljunda Kaarti">
+<!ENTITY gestureCmd.closeLeftTabs "Sulge vasakul asuvad kaardid">
+<!ENTITY gestureCmd.closeRightTabs "Sulge paremal asuvad kaardid">
+<!ENTITY gestureCmd.scrollTop "Keri üles">
+<!ENTITY gestureCmd.scrollBottom "Keri alla">
+<!ENTITY gestureCmd.scrollPageUp "Leht üles">
+<!ENTITY gestureCmd.scrollPageDown "Leht alla">
+<!ENTITY gestureCmd.backgroundTab "Tausta kaart">
+<!ENTITY gestureCmd.foregroundTab "Esiplaani kaart">
+<!ENTITY gestureCmd.saveImageNow "Salvesta pilt kohe">
+<!ENTITY gestureCmd.searchForSelection "Otsi valikut">
+<!ENTITY gestureCmd.searchForSelectionWith "Otsi valikut...">
+<!ENTITY gestureCmd.openLinksInSelection "Ava kõik valitud lingid">
+<!ENTITY gestureCmd.openURLsInSelection "Ava kõik valitud URL'id">
+<!ENTITY gestureCmd.bookmarksSidebar "Näita järjehoidjate külgriba">
+<!ENTITY gestureCmd.historySidebar "Näita ajaloo külgriba">
+<!ENTITY gestureCmd.backForwardHistory "Tagasi/Edasi ajalugu">
+<!ENTITY gestureCmd.previewMode "Eelvaate Režiim">
+<!ENTITY gestureCmd.hybridSave "Salvesta kui...">
+<!ENTITY gestureCmd.hybridBookmark "Järjehoidja...">
+<!ENTITY gestureCmd.hybridViewSource "Vaata allikat">
+<!ENTITY gestureCmd.hybridSendURL "Saada...">
+<!ENTITY gestureCmd.hybridCopyURL "Kopeeri asukoht">
+<!ENTITY gestureCmd.toggleFindbar "Ava/Sulge otsinguriba">
+<!ENTITY gestureCmd.restartApp "Taaskäivita Firefox">
+<!ENTITY gestureCmd.options "Sätted">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Properties">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

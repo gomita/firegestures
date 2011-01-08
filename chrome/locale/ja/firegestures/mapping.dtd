@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "ナビゲーション">
+<!ENTITY gestureCategory.window "ウィンドウ">
+<!ENTITY gestureCategory.tab "タブ">
+<!ENTITY gestureCategory.page "ページ">
+<!ENTITY gestureCategory.frame "フレーム">
+<!ENTITY gestureCategory.link "リンク">
+<!ENTITY gestureCategory.image "画像">
+<!ENTITY gestureCategory.selection "選択範囲">
+<!ENTITY gestureCategory.tools "ツール">
+<!ENTITY gestureCategory.popup "ポップアップ型">
+<!ENTITY gestureCategory.hybrid "ハイブリッド型">
+<!ENTITY gestureCategory.script "ユーザスクリプト">
+<!ENTITY gestureType.popup "ポップアップ">
+<!ENTITY gestureType.hybrid "ハイブリッド">
+<!ENTITY gestureCmd.skipCache "キャッシュを無視">
+<!ENTITY gestureCmd.goUpperLevel "上の階層へ移動">
+<!ENTITY gestureCmd.incrementURL "URL 中の数値を増加">
+<!ENTITY gestureCmd.decrementURL "URL 中の数値を減少">
+<!ENTITY gestureCmd.undoCloseWindow "閉じたウィンドウを元に戻す">
+<!ENTITY gestureCmd.minimizeWindow "ウィンドウを最小化">
+<!ENTITY gestureCmd.maximizeWindow "ウィンドウを最大化 / 元のサイズに戻す">
+<!ENTITY gestureCmd.previousTab "前のタブへ">
+<!ENTITY gestureCmd.nextTab "次のタブへ">
+<!ENTITY gestureCmd.duplicateTab "タブを複製">
+<!ENTITY gestureCmd.closeLeftTabs "左のタブをすべて閉じる">
+<!ENTITY gestureCmd.closeRightTabs "右のタブをすべて閉じる">
+<!ENTITY gestureCmd.scrollTop "先頭へスクロール">
+<!ENTITY gestureCmd.scrollBottom "末尾へスクロール">
+<!ENTITY gestureCmd.scrollPageUp "ページアップ">
+<!ENTITY gestureCmd.scrollPageDown "ページダウン">
+<!ENTITY gestureCmd.backgroundTab "背面のタブ">
+<!ENTITY gestureCmd.foregroundTab "前面のタブ">
+<!ENTITY gestureCmd.saveImageNow "画像を今すぐ保存">
+<!ENTITY gestureCmd.searchForSelection "選択範囲を Web 検索">
+<!ENTITY gestureCmd.searchForSelectionWith "検索エンジンを選択して Web 検索">
+<!ENTITY gestureCmd.openLinksInSelection "選択範囲内のリンクをすべて開く">
+<!ENTITY gestureCmd.openURLsInSelection "選択範囲内の URL をすべて開く">
+<!ENTITY gestureCmd.bookmarksSidebar "ブックマークサイドバーを表示">
+<!ENTITY gestureCmd.historySidebar "履歴サイドバーを表示">
+<!ENTITY gestureCmd.backForwardHistory "戻る / 進むの履歴">
+<!ENTITY gestureCmd.previewMode "プレビュー表示">
+<!ENTITY gestureCmd.hybridSave "名前を付けて保存">
+<!ENTITY gestureCmd.hybridBookmark "ブックマーク">
+<!ENTITY gestureCmd.hybridViewSource "ソースを表示">
+<!ENTITY gestureCmd.hybridSendURL "URL をメールで送信...">
+<!ENTITY gestureCmd.hybridCopyURL "URL をコピー">
+<!ENTITY gestureCmd.toggleFindbar "検索バーを開く / 閉じる">
+<!ENTITY gestureCmd.restartApp "Firefox を再起動">
+<!ENTITY gestureCmd.options "設定">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "プロパティ">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

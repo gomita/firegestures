@@ -1,0 +1,57 @@
+<!ENTITY options "nastavení">
+<!ENTITY mainPane "Obecné">
+<!ENTITY mappingPane "Mapování">
+<!ENTITY advancedPane "Pokročilé">
+<!ENTITY mouseGesture "Gesta myší">
+<!ENTITY triggerButton "Tlačítko pro provedení gesta">
+<!ENTITY triggerButton.left "Levé">
+<!ENTITY triggerButton.middle "Prostřední">
+<!ENTITY triggerButton.right "Pravé">
+<!ENTITY suppress.alt "Nezačínat gesto při stisknuté klávese Alt">
+<!ENTITY trail "Kreslení stopy">
+<!ENTITY trail.color "Barva">
+<!ENTITY trail.size "Velikost">
+<!ENTITY status "Zobrazení stavu">
+<!ENTITY status.description.1 "Skrýt stav za">
+<!ENTITY status.description.2 "sekund">
+<!ENTITY timeout "Časový limit">
+<!ENTITY timeout.description.1 "Zrušit gesto po">
+<!ENTITY timeout.description.2 "sekundách bez hnutí myši">
+<!ENTITY mappings.title "Mapování">
+<!ENTITY mappings.description "Vyberte mapování ke konfiguraci">
+<!ENTITY tools.title "Nástroje">
+<!ENTITY tools.description "Zálohovat/Obnovit všechna namapování">
+<!ENTITY tools.backup.label "Záloha">
+<!ENTITY tools.restore.label "Obnovení">
+<!ENTITY tools.restore.alerttext "Budou přepsány veškeré vaše současné namapování gest. Jste si jistí?">
+<!ENTITY wheelGesture "Kolečko myši">
+<!ENTITY wheelGesture.up.left "Skrolovat nahoru při držení levého tlačítka myši">
+<!ENTITY wheelGesture.up.middle "Skrolovat nahoru při držení prostředního tlačítka myši">
+<!ENTITY wheelGesture.up.right "Skrolovat nahoru při držení pravého tlačítka myši">
+<!ENTITY wheelGesture.down.left "Skrolovat dolů při držení levého tlačítka myši">
+<!ENTITY wheelGesture.down.middle "Skrolovat dolů při držení prostředního tlačítka myši">
+<!ENTITY wheelGesture.down.right "Skrolovat dolů při držení pravého tlačítka myši">
+<!ENTITY rockerGesture "'Houpací' gesta">
+<!ENTITY rockerGesture.left "Levé kliknutí při stisknutém pravém tlačítku myši">
+<!ENTITY rockerGesture.right "Pravé kliknutí při stisknutém levém tlačítku myši">
+<!ENTITY keypressGesture "Gesta se stisknutou klávesou">
+<!ENTITY keypressGesture.ctrl "Gesto myši při stisknutém Ctrl">
+<!ENTITY keypressGesture.shift "Gesto myši při stisknutém Shift">
+<!ENTITY keypressGesture.open "Otevřít odkaz pod kurzorem do nového panelu">
+<!ENTITY keypressGesture.save "Uložit odkaz pod kurzorem">
+<!ENTITY keypressGesture.copy "Kopírovat adresu odkazu pod kurzorem">
+<!ENTITY tabwheelGesture "Skrolování na liště panelů">
+<!ENTITY tabwheelGesture.description "Přepínat panely při skrolování na liště panelů">
+<!ENTITY treecol.name "Název">
+<!ENTITY treecol.command "Příkaz">
+<!ENTITY treecol.script "Skript">
+<!ENTITY treecol.gesture "Gesto">
+<!ENTITY editButton.label "Upravit">
+<!ENTITY editButton.accesskey "U">
+<!ENTITY clearButton.label "Vymazat">
+<!ENTITY clearButton.accesskey "V">
+<!ENTITY addScriptButton.label "Přidat skript">
+<!ENTITY addScriptButton.accesskey "P">
+<!ENTITY deleteScriptButton.label "Smazat skript">
+<!ENTITY deleteScriptButton.accesskey "S">
+<!ENTITY getScripts.label "Získat další skripty">

@@ -1,0 +1,57 @@
+<!ENTITY options "Optionen">
+<!ENTITY mainPane "Allgemein">
+<!ENTITY mappingPane "Zuordnungen">
+<!ENTITY advancedPane "Erweitert">
+<!ENTITY mouseGesture "Mausgeste">
+<!ENTITY triggerButton "Maustaste zum Starten einer Geste">
+<!ENTITY triggerButton.left "Linke">
+<!ENTITY triggerButton.middle "Mittlere">
+<!ENTITY triggerButton.right "Rechte">
+<!ENTITY suppress.alt "Keine Geste starten, wenn die ALT-Taste gedrückt wird">
+<!ENTITY trail "Mausspur">
+<!ENTITY trail.color "Farbe">
+<!ENTITY trail.size "Größe">
+<!ENTITY status "Statusanzeige">
+<!ENTITY status.description.1 "Status verbergen nach">
+<!ENTITY status.description.2 "Sekunden">
+<!ENTITY timeout "Zeitbeschränkung">
+<!ENTITY timeout.description.1 "Abbruch der Mausgeste nach">
+<!ENTITY timeout.description.2 "Sekunden ohne Bewegung">
+<!ENTITY mappings.title "Fensterspezifische Zuordnungen">
+<!ENTITY mappings.description "Bitte wählen Sie das zu konfigurierende Fenster aus">
+<!ENTITY tools.title "Tools">
+<!ENTITY tools.description "Sichern/Wiederherstellen aller Zuordnungen">
+<!ENTITY tools.backup.label "Sichern">
+<!ENTITY tools.restore.label "Wiederherstellen">
+<!ENTITY tools.restore.alerttext "Sind Sie sicher, dass Sie Ihre aktuellen Zuordnungen mit einer Sicherung überschreiben wollen?">
+<!ENTITY wheelGesture "Mausradgesten">
+<!ENTITY wheelGesture.up.left "Hochscrollen mit gedrückter linker Maustaste">
+<!ENTITY wheelGesture.up.middle "Hochscrollen mit gedrückter mittlerer Maustaste">
+<!ENTITY wheelGesture.up.right "Hochscrollen mit gedrückter rechter Maustaste">
+<!ENTITY wheelGesture.down.left "Herunterscrollen mit gedrückter linker Maustaste">
+<!ENTITY wheelGesture.down.middle "Herunterscrollen mit gedrückter mittlerer Maustaste">
+<!ENTITY wheelGesture.down.right "Herunterscrollen mit gedrückter rechter Maustaste">
+<!ENTITY rockerGesture "Klickgesten">
+<!ENTITY rockerGesture.left "Linksklick mit gedrückter rechter Maustaste">
+<!ENTITY rockerGesture.right "Rechtsklick mit gedrückter linker Maustaste">
+<!ENTITY keypressGesture "Tastengesten">
+<!ENTITY keypressGesture.ctrl "Mausgeste mit gedrückter STRG-Taste">
+<!ENTITY keypressGesture.shift "Mausgeste mit gedrückter UMSCH-Taste">
+<!ENTITY keypressGesture.open "Hyperlinks unter der Spur der Mausgeste in Tabs öffnen">
+<!ENTITY keypressGesture.save "Hyperlinks unter der Spur der Mausgeste abspeichern">
+<!ENTITY keypressGesture.copy "Hyperlinks unter der Spur der Mausgeste in die Zwischenablage kopieren">
+<!ENTITY tabwheelGesture "Mausradgesten auf der Tableiste">
+<!ENTITY tabwheelGesture.description "Tabs durchblättern bei Benutzung des Mausrads auf der Tableiste">
+<!ENTITY treecol.name "Name">
+<!ENTITY treecol.command "Befehl">
+<!ENTITY treecol.script "Skript">
+<!ENTITY treecol.gesture "Mausgeste">
+<!ENTITY editButton.label "Ändern">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "Leeren">
+<!ENTITY clearButton.accesskey "R">
+<!ENTITY addScriptButton.label "Skript hinzufügen">
+<!ENTITY addScriptButton.accesskey "H">
+<!ENTITY deleteScriptButton.label "Skript löschen">
+<!ENTITY deleteScriptButton.accesskey "L">
+<!ENTITY getScripts.label "Neue Skripte herunterladen">

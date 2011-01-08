@@ -1,0 +1,221 @@
+#include "nsISupports.idl"
+
+interface nsIDOMElement;
+interface nsIDOMEvent;
+interface nsIDOMEventTarget;
+interface nsILocalFile;
+interface nsIVariant;
+interface mozIStorageConnection;
+
+interface xdIGestureService;
+interface xdIGestureHandler;
+interface xdIGestureObserver;
+interface xdIGestureMapping;
+interface xdIGestureCommand;
+
+
+[scriptable, uuid(1d26f3e7-d92e-4bcc-ac79-9624bb181308)]
+interface xdIGestureService : nsISupports
+{
+
+	/**
+	 * A wrapper function to create instance of xdIGestureObserver.
+	 */
+	xdIGestureHandler createHandler();
+
+	/**
+	 * Registers a mapping to service for later use.
+	 * @param aID   The id of the mapping to identify it. It must equal to 
+	 *              the database table name which preserves the user mapping.
+	 * @param aURI  The URI of RDF datasource which preserves the default mapping.
+	 * @param aName The name of the mapping.
+	 */
+	void registerMapping(in AUTF8String aID, in string aURI, in AUTF8String aName);
+
+	/**
+	 * Returns a registered mapping from service.
+	 * At the first-time calling, creates instance of xdIGestureMapping and initializes it.
+	 * @throws NS_ERROR_NOT_INITIALIZED if the mapping is not registered.
+	 */
+	xdIGestureMapping getMapping(in AUTF8String aID);
+
+	/**
+	 * A special version of getMapping, which returns the mapping for browser.
+	 */
+	xdIGestureMapping getMappingForBrowser();
+
+	/**
+	 * Returns meta data of all registered mappings.
+	 */
+	nsIVariant getMappingsInfo();
+
+	/**
+	 * Backups all user mappings to a file.
+	 */
+	void backupMappings(in nsILocalFile aFile);
+
+	/**
+	 * Restores all user mappings from a file.
+	 */
+	void restoreMappings(in nsILocalFile aFile);
+
+	/**
+	 * Returns database connection.
+	 * @param aForceOpen false: Returns null if database file doesn't exist.
+	 *                   true : Returns connection regardless of the file existence.
+	 */
+	mozIStorageConnection getDBConnection(in boolean aForceOpen);
+
+	/**
+	 * Returns localized string from string bundle.
+	 */
+	wstring getLocaleString(in wstring aName);
+
+};
+
+
+[scriptable, uuid(ca559550-8ab4-41c5-a72f-fd931322cc7e)]
+interface xdIGestureHandler : nsISupports
+{
+
+	/**
+	 * Get DOM element at the starting point of current mouse gesture.
+	 */
+	readonly attribute nsIDOMEventTarget sourceNode;
+
+	/**
+	 * This method starts to handle mouse gestures at |nsIDOMEventTarget|
+	 * and register |xdIGestureObserver| as a observer,
+	 * which responds to mouse gestures.
+	 * @param aDrawArea The element where an user can perform gestures.
+	 * @param aObserver The gesture observer which is called back from handler.
+	 */
+	void attach(in nsIDOMElement aDrawArea, in xdIGestureObserver aObserver);
+
+	/**
+	 * This method stops to handle mouse gestures.
+	 */
+	void detach();
+
+	/**
+	 * This method opens a popup at pointer and aborts the current mouse gesture.
+	 */
+	void openPopupAtPointer(in nsIDOMElement aPopup);
+
+};
+
+
+[scriptable, uuid(c0db6b26-01d2-4060-91ff-b54af54bdd92)]
+interface xdIGestureObserver : nsISupports
+{
+
+	/**
+	 * Called when the direction is changed in progress of mouse gesture.
+	 */
+	void onDirectionChanged(in nsIDOMEvent event, in ACString aDirectionChain);
+
+	/**
+	 * Called when user perform mouse gesture.
+	 */
+	void onMouseGesture(in nsIDOMEvent event, in ACString aDirectionChain);
+
+	/**
+	 * Called when user perform some extra gestures.
+	 */
+	void onExtraGesture(in nsIDOMEvent event, in ACString aGestureType);
+
+};
+
+
+[scriptable, uuid(d7018e80-d6da-4cbc-b77f-8dca4d95bbbf)]
+interface xdIGestureMapping : nsISupports
+{
+
+	/**
+	 * Types of commands.
+	 */
+	const unsigned short TYPE_CATEGORY = 0;
+	const unsigned short TYPE_NORMAL   = 1;
+	const unsigned short TYPE_SCRIPT   = 2;
+
+	/**
+	 * The id of mapping, which equals to the table name.
+	 */
+	readonly attribute AUTF8String id;
+
+	/**
+	 * The name of the mapping.
+	 */
+	readonly attribute AUTF8String name;
+
+	/**
+	 * Initializes mapping.
+	 */
+	void init(in AUTF8String aID, in string aURI, in AUTF8String aName);
+
+	/**
+	 * Finalizes mapping.
+	 */
+	void finalize();
+
+	/**
+	 * Returns xdIGestureCommand object for given direction.
+	 * Returns undefined if there are no definition for the given direction.
+	 */
+	xdIGestureCommand getCommandForDirection(in ACString aDirection);
+
+	/**
+	 * Opens options window to configure mapping.
+	 */
+	void configure();
+
+	/**
+	 * Returns 2D array of mapping.
+	 */
+	nsIVariant getMappingArray();
+
+	/**
+	 * Flushes user mapping to local disk.
+	 */
+	void saveUserMapping(in nsIVariant aItems);
+
+	/**
+	 * API for third-party extensions to add script-type commands.
+	 * Does not add command if there is one which has same script.
+	 * @param aItems Array of JavaScript object which has the following properties:
+	 *               name     : name of the command.
+	 *               script   : script of the command.
+	 *               direction: default normal gesture to be assigned to the command (e.g. "LRUD").
+	 */
+	void addScriptCommands(in nsIVariant aItems);
+
+};
+
+
+[scriptable, uuid(2a8d26ee-6b43-4e73-9352-7632c128b006)]
+interface xdIGestureCommand : nsISupports
+{
+
+	/**
+	 * Represents the type of the command.
+	 */
+	readonly attribute PRUint8 type;
+
+	/**
+	 * Represents the localized name of the command.
+	 */
+	readonly attribute AString name;
+
+	/**
+	 * Represents the value of the command.
+	 */
+	readonly attribute AString value;
+
+	/**
+	 * Represents the direction of the command.
+	 */
+	readonly attribute ACString direction;
+
+};
+
+

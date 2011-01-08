@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigation">
+<!ENTITY gestureCategory.window "Window">
+<!ENTITY gestureCategory.tab "Tab">
+<!ENTITY gestureCategory.page "Page">
+<!ENTITY gestureCategory.frame "Frame">
+<!ENTITY gestureCategory.link "Link">
+<!ENTITY gestureCategory.image "Image">
+<!ENTITY gestureCategory.selection "Selection">
+<!ENTITY gestureCategory.tools "Tools">
+<!ENTITY gestureCategory.popup "Popup Type">
+<!ENTITY gestureCategory.hybrid "Hybrid Type">
+<!ENTITY gestureCategory.script "User Scripts">
+<!ENTITY gestureType.popup "Popup">
+<!ENTITY gestureType.hybrid "Hybrid">
+<!ENTITY gestureCmd.skipCache "Skip Cache">
+<!ENTITY gestureCmd.goUpperLevel "Go Upper Level">
+<!ENTITY gestureCmd.incrementURL "Increment Number in URL">
+<!ENTITY gestureCmd.decrementURL "Decrement Number in URL">
+<!ENTITY gestureCmd.undoCloseWindow "Undo Close Window">
+<!ENTITY gestureCmd.minimizeWindow "Minimize Window">
+<!ENTITY gestureCmd.maximizeWindow "Maximize Window / Restore Window Size">
+<!ENTITY gestureCmd.previousTab "Previous Tab">
+<!ENTITY gestureCmd.nextTab "Next Tab">
+<!ENTITY gestureCmd.duplicateTab "Duplicate Tab">
+<!ENTITY gestureCmd.closeLeftTabs "Close Left Tabs">
+<!ENTITY gestureCmd.closeRightTabs "Close Right Tabs">
+<!ENTITY gestureCmd.scrollTop "Scroll to Top">
+<!ENTITY gestureCmd.scrollBottom "Scroll to Bottom">
+<!ENTITY gestureCmd.scrollPageUp "Page Up">
+<!ENTITY gestureCmd.scrollPageDown "Page Down">
+<!ENTITY gestureCmd.backgroundTab "Background Tab">
+<!ENTITY gestureCmd.foregroundTab "Foreground Tab">
+<!ENTITY gestureCmd.saveImageNow "Save Image Now">
+<!ENTITY gestureCmd.searchForSelection "Search for Selection">
+<!ENTITY gestureCmd.searchForSelectionWith "Search for Selection with...">
+<!ENTITY gestureCmd.openLinksInSelection "Open All Links in Selection">
+<!ENTITY gestureCmd.openURLsInSelection "Open All URLs in Selection">
+<!ENTITY gestureCmd.bookmarksSidebar "Show Bookmarks Sidebar">
+<!ENTITY gestureCmd.historySidebar "Show History Sidebar">
+<!ENTITY gestureCmd.backForwardHistory "Back / Forward History">
+<!ENTITY gestureCmd.previewMode "Preview Mode">
+<!ENTITY gestureCmd.hybridSave "Save As...">
+<!ENTITY gestureCmd.hybridBookmark "Bookmark...">
+<!ENTITY gestureCmd.hybridViewSource "View Source">
+<!ENTITY gestureCmd.hybridSendURL "Send...">
+<!ENTITY gestureCmd.hybridCopyURL "Copy Location">
+<!ENTITY gestureCmd.toggleFindbar "Open / Close Find Bar">
+<!ENTITY gestureCmd.restartApp "Restart Firefox">
+<!ENTITY gestureCmd.options "Options">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Properties">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

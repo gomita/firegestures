@@ -1,0 +1,57 @@
+<!ENTITY options "設定">
+<!ENTITY mainPane "一般">
+<!ENTITY mappingPane "マッピング">
+<!ENTITY advancedPane "詳細">
+<!ENTITY mouseGesture "マウスジェスチャ">
+<!ENTITY triggerButton "ジェスチャを開始するために押すボタン">
+<!ENTITY triggerButton.left "左">
+<!ENTITY triggerButton.middle "中">
+<!ENTITY triggerButton.right "右">
+<!ENTITY suppress.alt "Alt キーを押しているときはジェスチャを開始しない">
+<!ENTITY trail "軌跡の描画">
+<!ENTITY trail.color "色">
+<!ENTITY trail.size "サイズ">
+<!ENTITY status "ステータス表示">
+<!ENTITY status.description.1 "ジェスチャ完了の">
+<!ENTITY status.description.2 "秒後にステータス表示を消去する">
+<!ENTITY timeout "タイムアウト">
+<!ENTITY timeout.description.1 "ジェスチャ中に">
+<!ENTITY timeout.description.2 "秒間静止したら自動的に中止する">
+<!ENTITY mappings.title "マッピング">
+<!ENTITY mappings.description "選択したマッピングを設定できます。">
+<!ENTITY tools.title "ツール">
+<!ENTITY tools.description "すべてのマッピングをバックアップ / 復元できます。">
+<!ENTITY tools.backup.label "バックアップ">
+<!ENTITY tools.restore.label "復元">
+<!ENTITY tools.restore.alerttext "現在のマッピングはすべてバックアップで置き換えられます。本当に復元しますか？">
+<!ENTITY wheelGesture "ホイールジェスチャ">
+<!ENTITY wheelGesture.up.left "左ボタンを押しながら上スクロール">
+<!ENTITY wheelGesture.up.middle "中ボタンを押しながら上スクロール">
+<!ENTITY wheelGesture.up.right "右ボタンを押しながら上スクロール">
+<!ENTITY wheelGesture.down.left "左ボタンを押しながら下スクロール">
+<!ENTITY wheelGesture.down.middle "中ボタンを押しながら下スクロール">
+<!ENTITY wheelGesture.down.right "右ボタンを押しながら下スクロール">
+<!ENTITY rockerGesture "ロッカージェスチャ">
+<!ENTITY rockerGesture.left "右ボタンを押しながら左クリック">
+<!ENTITY rockerGesture.right "左ボタンを押しながら右クリック">
+<!ENTITY keypressGesture "キープレスジェスチャ">
+<!ENTITY keypressGesture.ctrl "Ctrl キーを押しながらジェスチャ">
+<!ENTITY keypressGesture.shift "Shift キーを押しながらジェスチャ">
+<!ENTITY keypressGesture.open "マウスが通過したリンクをタブで開く">
+<!ENTITY keypressGesture.save "マウスが通過したリンク先を保存">
+<!ENTITY keypressGesture.copy "マウスが通過したリンクの URL をコピー">
+<!ENTITY tabwheelGesture "タブホイールジェスチャ">
+<!ENTITY tabwheelGesture.description "タブバー上でホイール回転したとき、タブを切り替える">
+<!ENTITY treecol.name "名前">
+<!ENTITY treecol.command "コマンド">
+<!ENTITY treecol.script "スクリプト">
+<!ENTITY treecol.gesture "ジェスチャ">
+<!ENTITY editButton.label "編集">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "消去">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "スクリプトを追加">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "スクリプトを削除">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "スクリプトを入手">

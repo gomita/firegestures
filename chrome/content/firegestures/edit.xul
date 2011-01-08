@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://firegestures/locale/prefs.dtd">
+
+<dialog id="EditUI"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="FireGestures - &editButton.label;"
+        buttons="accept,cancel"
+        onload="EditUI.init();"
+        onunload="EditUI.uninit();"
+        ondialogaccept="return EditUI.accept();">
+
+	<script type="application/x-javascript" src="chrome://firegestures/content/edit.js" />
+
+	<grid flex="1">
+		<columns>
+			<column />
+			<column flex="1" />
+		</columns>
+		<rows>
+			<row align="center">
+				<label value="&treecol.name;:" />
+				<textbox id="gestureName" />
+			</row>
+			<row align="center">
+				<label value="&treecol.command;:" />
+				<textbox id="gestureCommand" readonly="true" />
+			</row>
+			<row flex="1">
+				<label value="&treecol.script;:" style="margin-top: 6px;" />
+				<textbox id="gestureScript" multiline="true" rows="8" wrap="off"
+				         style="font-family: monospace; font-size: 10pt;" flex="1" />
+			</row>
+			<row align="center">
+				<label value="&treecol.gesture;:" />
+				<textbox id="gestureDirection"
+				         oninput="this.value = this.value.toUpperCase();" />
+			</row>
+		</rows>
+	</grid>
+
+	<browser id="drawArea" src="about:blank"
+	         style="width: 360px; height: 240px; border: 1px solid black; margin-top: 8px; overflow: hidden;" />
+
+</dialog>
