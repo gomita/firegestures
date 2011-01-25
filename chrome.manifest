@@ -25,6 +25,7 @@ locale	firegestures	nl	chrome/locale/nl/firegestures/
 locale	firegestures	et-EE	chrome/locale/et-EE/firegestures/
 locale	firegestures	sv-SE	chrome/locale/sv-SE/firegestures/
 locale	firegestures	he	chrome/locale/he/firegestures/
+locale	firegestures	ar	chrome/locale/ar/firegestures/
 skin	firegestures	classic/1.0	chrome/skin/classic/firegestures/
 
 overlay	chrome://browser/content/browser.xul	chrome://firegestures/content/browser.xul

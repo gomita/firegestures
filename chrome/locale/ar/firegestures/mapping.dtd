@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "تصفح">
+<!ENTITY gestureCategory.window "نافذة">
+<!ENTITY gestureCategory.tab "علامة تبويب">
+<!ENTITY gestureCategory.page "صفحة">
+<!ENTITY gestureCategory.frame "إطار">
+<!ENTITY gestureCategory.link "وصلة">
+<!ENTITY gestureCategory.image "صورة">
+<!ENTITY gestureCategory.selection "الإختيار">
+<!ENTITY gestureCategory.tools "الأدوات">
+<!ENTITY gestureCategory.popup "نوع المنبثق">
+<!ENTITY gestureCategory.hybrid "نوع الهجين">
+<!ENTITY gestureCategory.script "سكريبتات المستخدم">
+<!ENTITY gestureType.popup "منبثق">
+<!ENTITY gestureType.hybrid "هجين">
+<!ENTITY gestureCmd.skipCache "تخطي الكاش">
+<!ENTITY gestureCmd.goUpperLevel "إذهب إلي المستوي الأعلي">
+<!ENTITY gestureCmd.incrementURL "رقم زائد في الرابط">
+<!ENTITY gestureCmd.decrementURL "رقم ناقص في الرابط">
+<!ENTITY gestureCmd.undoCloseWindow "أعد النافذة المغلقة">
+<!ENTITY gestureCmd.minimizeWindow "صغر النافذة">
+<!ENTITY gestureCmd.maximizeWindow "كبر النافذة / أعد حجم النافذة">
+<!ENTITY gestureCmd.previousTab "علامة التبويب السابقة">
+<!ENTITY gestureCmd.nextTab "علامة التبويب التالية">
+<!ENTITY gestureCmd.duplicateTab "علامة تبويب مزدوجة">
+<!ENTITY gestureCmd.closeLeftTabs "أغلق علامات التبويب في اليسار">
+<!ENTITY gestureCmd.closeRightTabs "أغلق علامات التبويب في اليمين">
+<!ENTITY gestureCmd.scrollTop "إسحب إلي الأعلي">
+<!ENTITY gestureCmd.scrollBottom "إسحب إلي الأسفل">
+<!ENTITY gestureCmd.scrollPageUp "أعلي الصفحة">
+<!ENTITY gestureCmd.scrollPageDown "أسفل الصفحة">
+<!ENTITY gestureCmd.backgroundTab "علامة التبويب الخلفية">
+<!ENTITY gestureCmd.foregroundTab "علامة التبويب الأمامية">
+<!ENTITY gestureCmd.saveImageNow "إحفظ الصورة الآن">
+<!ENTITY gestureCmd.searchForSelection "إبحث عن الإختيار">
+<!ENTITY gestureCmd.searchForSelectionWith "إبحث عن الإختيار مع…">
+<!ENTITY gestureCmd.openLinksInSelection "إفتح كل الوصلات في الإختيار">
+<!ENTITY gestureCmd.openURLsInSelection "إفتح كل الروابط في الإختيار">
+<!ENTITY gestureCmd.bookmarksSidebar "أظهر شريط العلامات الجانبي">
+<!ENTITY gestureCmd.historySidebar "أظهر شريط التاريخ الجانبي">
+<!ENTITY gestureCmd.backForwardHistory "إرجع / تقدم تاريخ">
+<!ENTITY gestureCmd.previewMode "وضع العرض">
+<!ENTITY gestureCmd.hybridSave "إحفظ علي هيئة">
+<!ENTITY gestureCmd.hybridBookmark "علامة…">
+<!ENTITY gestureCmd.hybridViewSource "أظهر المصدر">
+<!ENTITY gestureCmd.hybridSendURL "أرسل…">
+<!ENTITY gestureCmd.hybridCopyURL "إنسخ المكان">
+<!ENTITY gestureCmd.toggleFindbar "إفتح / أغلق شريط البحث">
+<!ENTITY gestureCmd.restartApp "أعد تشغيل فايرفوكس">
+<!ENTITY gestureCmd.options "خيارات">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "الخصائص">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">
