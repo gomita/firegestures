@@ -1,0 +1,57 @@
+<!ENTITY options "Indstillinger">
+<!ENTITY mainPane "Hoved">
+<!ENTITY mappingPane "Tilknytning">
+<!ENTITY advancedPane "Avanceret">
+<!ENTITY mouseGesture "Musebevægelse">
+<!ENTITY triggerButton "Udløserknap der starter en bevægelse">
+<!ENTITY triggerButton.left "Venstre">
+<!ENTITY triggerButton.middle "Midterste">
+<!ENTITY triggerButton.right "Højre">
+<!ENTITY suppress.alt "Start ikke en bevægelse når Alt-tasten holdes nede">
+<!ENTITY trail "Sportegning">
+<!ENTITY trail.color "Farve">
+<!ENTITY trail.size "Størrelse">
+<!ENTITY status "Statusvisning">
+<!ENTITY status.description.1 "Skjul statusvisning efter">
+<!ENTITY status.description.2 "sekunder">
+<!ENTITY timeout "Timeout">
+<!ENTITY timeout.description.1 "Annuller bevægelse efter">
+<!ENTITY timeout.description.2 "sekunder uden bevægelse">
+<!ENTITY mappings.title "Tilknytninger">
+<!ENTITY mappings.description "Vælg en tilknytning at indstille">
+<!ENTITY tools.title "Funktioner">
+<!ENTITY tools.description "Sikkerhedskopier og gendan alle tilknytninger">
+<!ENTITY tools.backup.label "Sikkerhedskopier">
+<!ENTITY tools.restore.label "Gendan">
+<!ENTITY tools.restore.alerttext "Dette vil erstatte alle dine nuværende tilknytninger med sikkerhedskopien. Er du sikker?">
+<!ENTITY wheelGesture "Hjulbevægelse">
+<!ENTITY wheelGesture.up.left "Rul op med venstre museknap holdt nede">
+<!ENTITY wheelGesture.up.middle "Rul op med midterste museknap holdt nede">
+<!ENTITY wheelGesture.up.right "Rul op med højre museknap holdt nede">
+<!ENTITY wheelGesture.down.left "Rul ned med venstre museknap holdt nede">
+<!ENTITY wheelGesture.down.middle "Rul ned med midterste museknap holdt nede">
+<!ENTITY wheelGesture.down.right "Rul ned med højre museknap holdt nede">
+<!ENTITY rockerGesture "Klikbevægelse">
+<!ENTITY rockerGesture.left "Venstreklik med højre museknap holdt nede">
+<!ENTITY rockerGesture.right "Højreklik med venstre museknap holdt nede">
+<!ENTITY keypressGesture "Tastebevægelser">
+<!ENTITY keypressGesture.ctrl "Musebevægelse med Ctrl-tasten holdt nede">
+<!ENTITY keypressGesture.shift "Musebevægelse med Shift-tasten holdt nede">
+<!ENTITY keypressGesture.open "Åbn links under markøren i faneblade">
+<!ENTITY keypressGesture.save "Gem links under markøren">
+<!ENTITY keypressGesture.copy "Kopier linkadresse under markøren">
+<!ENTITY tabwheelGesture "Hjulbevægelser på faneblade">
+<!ENTITY tabwheelGesture.description "Skift faneblade når musehjulet rulles på fanebladslinjen">
+<!ENTITY treecol.name "Navn">
+<!ENTITY treecol.command "Kommando">
+<!ENTITY treecol.script "Script">
+<!ENTITY treecol.gesture "Bevægelse">
+<!ENTITY editButton.label "Rediger">
+<!ENTITY editButton.accesskey "R">
+<!ENTITY clearButton.label "Ryd">
+<!ENTITY clearButton.accesskey "y">
+<!ENTITY addScriptButton.label "Tilføj script">
+<!ENTITY addScriptButton.accesskey "T">
+<!ENTITY deleteScriptButton.label "Slet script">
+<!ENTITY deleteScriptButton.accesskey "S">
+<!ENTITY getScripts.label "Hent scripts">

@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Navigation">
+<!ENTITY gestureCategory.window "Vindue">
+<!ENTITY gestureCategory.tab "Faneblad">
+<!ENTITY gestureCategory.page "Side">
+<!ENTITY gestureCategory.frame "Ramme">
+<!ENTITY gestureCategory.link "Link">
+<!ENTITY gestureCategory.image "Billede">
+<!ENTITY gestureCategory.selection "Markering">
+<!ENTITY gestureCategory.tools "Funktioner">
+<!ENTITY gestureCategory.popup "Pop op-type">
+<!ENTITY gestureCategory.hybrid "Hybridtype">
+<!ENTITY gestureCategory.script "Bruger-scripts">
+<!ENTITY gestureType.popup "Pop op">
+<!ENTITY gestureType.hybrid "Hybrid">
+<!ENTITY gestureCmd.skipCache "Forbigå cache">
+<!ENTITY gestureCmd.goUpperLevel "Gå et niveau op">
+<!ENTITY gestureCmd.incrementURL "Forøg nummer i URL">
+<!ENTITY gestureCmd.decrementURL "Formindsk nummer i URL">
+<!ENTITY gestureCmd.undoCloseWindow "Fortryd lukning af vindue">
+<!ENTITY gestureCmd.minimizeWindow "Minimer vindue">
+<!ENTITY gestureCmd.maximizeWindow "Maksimer vindue / Gendan vinduesstørrelse">
+<!ENTITY gestureCmd.previousTab "Forrige faneblad">
+<!ENTITY gestureCmd.nextTab "Næste faneblad">
+<!ENTITY gestureCmd.duplicateTab "Dupliker faneblad">
+<!ENTITY gestureCmd.closeLeftTabs "Luk faneblade til venstre">
+<!ENTITY gestureCmd.closeRightTabs "Luk faneblade til højre">
+<!ENTITY gestureCmd.scrollTop "Rul til toppen">
+<!ENTITY gestureCmd.scrollBottom "Rul til bunden">
+<!ENTITY gestureCmd.scrollPageUp "Side op">
+<!ENTITY gestureCmd.scrollPageDown "Side ned">
+<!ENTITY gestureCmd.backgroundTab "Faneblad i baggrunden">
+<!ENTITY gestureCmd.foregroundTab "Faneblad i forgrunden">
+<!ENTITY gestureCmd.saveImageNow "Gem billede nu">
+<!ENTITY gestureCmd.searchForSelection "Søg efter det markerede">
+<!ENTITY gestureCmd.searchForSelectionWith "Søg efter det markerede med…">
+<!ENTITY gestureCmd.openLinksInSelection "Åbn alle markerede links">
+<!ENTITY gestureCmd.openURLsInSelection "Åbn alle markerede URL'er">
+<!ENTITY gestureCmd.bookmarksSidebar "Vis bogmærker i sidebjælken">
+<!ENTITY gestureCmd.historySidebar "Vis historik i sidebjælken">
+<!ENTITY gestureCmd.backForwardHistory "Tilbage / Fremad i historik">
+<!ENTITY gestureCmd.previewMode "Miniaturevisning">
+<!ENTITY gestureCmd.hybridSave "Gem som…">
+<!ENTITY gestureCmd.hybridBookmark "Bogmærk…">
+<!ENTITY gestureCmd.hybridViewSource "Vis sidens kildekode">
+<!ENTITY gestureCmd.hybridSendURL "Send…">
+<!ENTITY gestureCmd.hybridCopyURL "Kopier linkadresse">
+<!ENTITY gestureCmd.toggleFindbar "Åbn / Luk søgebjælke">
+<!ENTITY gestureCmd.restartApp "Genstart Firefox">
+<!ENTITY gestureCmd.options "Indstillinger">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Egenskaber">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">
