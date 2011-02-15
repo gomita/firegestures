@@ -8,8 +8,13 @@
 <!ENTITY triggerButton.middle "Medio">
 <!ENTITY triggerButton.right "Derecha">
 <!ENTITY suppress.alt "No comenzar un gesto manteniendo apretada la tecla Alt">
+<!ENTITY trail "Dibujo del sendero">
 <!ENTITY trail.color "Color">
 <!ENTITY trail.size "Tamaño">
+<!ENTITY status "Pantalla de estado">
+<!ENTITY status.description.1 "Oculte la pantalla de estado luego de">
+<!ENTITY status.description.2 "segundos.">
+<!ENTITY timeout "Tiempo de espera agotado.">
 <!ENTITY timeout.description.1 "Terminar el gesto del ratón luego de">
 <!ENTITY timeout.description.2 "segundos sin movimientos">
 <!ENTITY mappings.title "Mapeos">
