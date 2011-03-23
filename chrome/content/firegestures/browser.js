@@ -763,8 +763,11 @@ var FireGestures = {
 				if (tabs.length < 1)
 					return;	// just in case
 				for (var i = 0; i < tabs.length; i++) {
-					var menuitem = popup.appendChild(document.createElement("menuitem"));
 					var tab = tabs[i];
+					// [Firefox4] exclude tab in other group
+					if (tab.hidden)
+						continue;
+					var menuitem = popup.appendChild(document.createElement("menuitem"));
 					menuitem.setAttribute("class", "menuitem-iconic bookmark-item");
 					menuitem.setAttribute("label", tab.label);
 					menuitem.setAttribute("crop", tab.getAttribute("crop"));
