@@ -1,0 +1,57 @@
+<!ENTITY options "خيارات">
+<!ENTITY mainPane "رئيسي">
+<!ENTITY mappingPane "تعيين">
+<!ENTITY advancedPane "متقدم">
+<!ENTITY mouseGesture "حركات الفأرة">
+<!ENTITY triggerButton "إضغط علي الزر لبدء حركة">
+<!ENTITY triggerButton.left "يسار">
+<!ENTITY triggerButton.middle "وسط">
+<!ENTITY triggerButton.right "يمين">
+<!ENTITY suppress.alt "لا تبدأ حركة و أنت مستمر في الضغط علي مفتاح Alt">
+<!ENTITY trail "رسم الأثر">
+<!ENTITY trail.color "لون">
+<!ENTITY trail.size "الحجم">
+<!ENTITY status "عرض الحالة">
+<!ENTITY status.description.1 "إخفي عرض الحالة بعد">
+<!ENTITY status.description.2 "ثواني">
+<!ENTITY timeout "نفد الوقت">
+<!ENTITY timeout.description.1 "إلغي الحركة بعد">
+<!ENTITY timeout.description.2 "ثواني بدون حركة">
+<!ENTITY mappings.title "تعيينات">
+<!ENTITY mappings.description "إختر تعيين لضبط">
+<!ENTITY tools.title "الأدوات">
+<!ENTITY tools.description "إنسخ احتياطياً و أعد كل التعيينات">
+<!ENTITY tools.backup.label "إنسخ احتياطياُ">
+<!ENTITY tools.restore.label "أغد">
+<!ENTITY tools.restore.alerttext "هذا سيبدل كل تعييناتك الحالية بالنسخة الاحتياطية. هل أنت متأكد؟">
+<!ENTITY wheelGesture "حركات العجلة">
+<!ENTITY wheelGesture.up.left "إسحب إلي الأعلي  مستمراً في الضغط علي الزر الأيسر">
+<!ENTITY wheelGesture.up.middle "إسحب إلي الأعلي  مستمراً في الضغط علي الزر الأوسط">
+<!ENTITY wheelGesture.up.right "إسحب إلي الأعلي  مستمراً في الضغط علي الزر الأيمن">
+<!ENTITY wheelGesture.down.left "إسحب إلي الأسفل  مستمراً في الضغط علي الزر الأيسر">
+<!ENTITY wheelGesture.down.middle "إسحب إلي الأسفل  مستمراً في الضغط علي الزر الأوسط">
+<!ENTITY wheelGesture.down.right "إسحب إلي الأسفل  مستمراً في الضغط علي الزر الأيمن">
+<!ENTITY rockerGesture "حركات الهزاز">
+<!ENTITY rockerGesture.left "إنقر يساراً مستمراً في الضغط علي الزر الأيمن">
+<!ENTITY rockerGesture.right "إنقر يميناً مستمراً في الضغط علي الزر الأيسر">
+<!ENTITY keypressGesture "حركات الضغط علي المفتاح">
+<!ENTITY keypressGesture.ctrl "حركة الفأرة مع الضغط علي مفتاح Ctrl">
+<!ENTITY keypressGesture.shift "حركة الفأرة مع الضغط علي مفتاح Shift">
+<!ENTITY keypressGesture.open "إفتح الوصلات العائمة في علامات التبويب">
+<!ENTITY keypressGesture.save "إحفظ الوصلات العائمة">
+<!ENTITY keypressGesture.copy "إنسخ أماكن الوصلات العائمة">
+<!ENTITY tabwheelGesture "حركات علامة تبويب العجلة">
+<!ENTITY tabwheelGesture.description "بدِّل علامات التبويب في أثناء سحب العجلة علي شريط علامة التبويب">
+<!ENTITY treecol.name "الاسم">
+<!ENTITY treecol.command "الأمر">
+<!ENTITY treecol.script "السكريبت">
+<!ENTITY treecol.gesture "الحركة">
+<!ENTITY editButton.label "عدِّل">
+<!ENTITY editButton.accesskey "E">
+<!ENTITY clearButton.label "إمسح">
+<!ENTITY clearButton.accesskey "C">
+<!ENTITY addScriptButton.label "أضف سكريبت">
+<!ENTITY addScriptButton.accesskey "A">
+<!ENTITY deleteScriptButton.label "إحذف سكريبت">
+<!ENTITY deleteScriptButton.accesskey "D">
+<!ENTITY getScripts.label "إحصل علي سكريبتات">
