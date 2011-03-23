@@ -8,10 +8,15 @@
 <!ENTITY triggerButton.middle "środkowym">
 <!ENTITY triggerButton.right "prawym">
 <!ENTITY suppress.alt "Nie uruchamiaj gestu, gdy jest wciśnięty klawisz [Alt]">
+<!ENTITY trail "Ślad gestu">
 <!ENTITY trail.color "Kolor">
-<!ENTITY trail.size "Grubość linii śladu">
-<!ENTITY timeout.description.1 "Anuluj gest po upływie">
-<!ENTITY timeout.description.2 "sekund bezruchu">
+<!ENTITY trail.size "Rozmiar">
+<!ENTITY status "Wskaźnik stanu">
+<!ENTITY status.description.1 "Ukryj wskaźnik stanu po">
+<!ENTITY status.description.2 "s">
+<!ENTITY timeout "Limit czasu">
+<!ENTITY timeout.description.1 "Anuluj gest po">
+<!ENTITY timeout.description.2 "sekundach bez ruchu">
 <!ENTITY mappings.title "Konfigurowanie">
 <!ENTITY mappings.description "Wybierz wzorce do konfiguracji">
 <!ENTITY tools.title "Narzędzia">

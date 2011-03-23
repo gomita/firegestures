@@ -8,8 +8,15 @@
 <!ENTITY triggerButton.middle "Középső">
 <!ENTITY triggerButton.right "Jobb">
 <!ENTITY suppress.alt "Nincs egérmozdulat lenyomott Alt gomb közben">
+<!ENTITY trail "Útvonal kirajzolása">
 <!ENTITY trail.color "Szín">
 <!ENTITY trail.size "Méret">
+<!ENTITY status "Állapotjelző">
+<!ENTITY status.description.1 "Állapotjelző elrejtése">
+<!ENTITY status.description.2 "másodperc múlva">
+<!ENTITY timeout "Időtúllépés">
+<!ENTITY timeout.description.1 "Mozdulat megszakítása">
+<!ENTITY timeout.description.2 "másodperc tétlenség után">
 <!ENTITY mappings.title "Mozdulatok">
 <!ENTITY mappings.description "Válassza ki a szerkesztendő mozdulatot">
 <!ENTITY tools.title "Eszközök">
