@@ -645,16 +645,21 @@ var FireGestures = {
 				"gBrowser.warnAboutClosingTabs2 = " + 
 				gBrowser.warnAboutClosingTabs.toString()
 				.replace("(aAll)", "(aAll, aTabsToClose)")
-				.replace("--tabsToClose;", "tabsToClose = aTabsToClose;")
+				// [Firefox3.6]
+				.replace(/var numTabs = [^;]+;/, "var numTabs = aTabsToClose;")
+				.replace("--tabsToClose;", "")
+				// [Firefox4]
+				.replace(/var tabsToClose = [^;]+;/, "var tabsToClose = aTabsToClose;")
 			);
+		var tabs = Array.slice(gBrowser.mTabs);
 		var pos = gBrowser.mCurrentTab._tPos;
-		var start = (aLeftRight == "left") ? pos - 1 : gBrowser.mTabs.length - 1;
-		var stop  = (aLeftRight == "left") ? 0 : pos + 1;
-		var tabsToClose = start - stop + 1;
-		if (tabsToClose < 1 || !gBrowser.warnAboutClosingTabs2(false, tabsToClose))
+		var start = aLeftRight == "left" ? 0   : pos + 1;
+		var stop  = aLeftRight == "left" ? pos : tabs.length;
+		tabs = tabs.slice(start, stop).filter(function(tab) !tab.pinned && !tab.hidden);
+		// alert(tabs.map(function(tab) "[" + tab._tPos + "] " + tab.label).join("\n"));
+		if (!gBrowser.warnAboutClosingTabs2(false, tabs.length))
 			return;
-		for (var i = start; i >= stop; i--)
-			gBrowser.removeTab(gBrowser.mTabs[i]);
+		tabs.reverse().forEach(function(tab) gBrowser.removeTab(tab));
 	},
 
 
