@@ -162,9 +162,15 @@ var FireGestures = {
 				break;
 			case "cmd_close": 
 				// [Firefox4] enables tab closing animation
+				// [Firefox4] don't close app tab
+				if (gBrowser.mCurrentTab.pinned)
+					throw "Blocked closing app tab.";
 				gBrowser.removeCurrentTab({ animate: true });
 				break;
 			case "FireGestures:CloseTabOrWindow": 
+				// [Firefox4] don't close app tab
+				if (gBrowser.mCurrentTab.pinned)
+					throw "Blocked closing app tab.";
 				if (gBrowser.mTabs.length > 1)
 					document.getElementById("cmd_close").doCommand();
 				else
