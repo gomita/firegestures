@@ -338,7 +338,8 @@ var FireGestures = {
 				if (onCanvas)
 					this.checkURL(mediaURL, doc);
 				var skipPrompt = aCommand == "FireGestures:SaveImageNow";
-				saveURL(mediaURL, onCanvas ? "canvas.png" : null, null, false, skipPrompt, doc.documentURIObject);
+				saveImageURL(mediaURL, onCanvas ? "canvas.png" : null, "SaveImageTitle", 
+				             false, skipPrompt, doc.documentURIObject);
 				break;
 			case "FireGestures:WebSearch": 
 				BrowserSearch.loadSearch(getBrowserSelection(), true);
