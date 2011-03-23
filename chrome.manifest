@@ -2,6 +2,7 @@ content	firegestures	chrome/content/firegestures/
 locale	firegestures	en-US	chrome/locale/en-US/firegestures/
 locale	firegestures	ja	chrome/locale/ja/firegestures/
 locale	firegestures	cs-CZ	chrome/locale/cs-CZ/firegestures/
+locale	firegestures	da	chrome/locale/da/firegestures/
 locale	firegestures	de	chrome/locale/de/firegestures/
 locale	firegestures	es-AR	chrome/locale/es-AR/firegestures/
 locale	firegestures	es-ES	chrome/locale/es-ES/firegestures/

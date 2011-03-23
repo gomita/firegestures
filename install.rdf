@@ -31,6 +31,16 @@
 		</em:localized>
 		<em:localized>
 			<Description>
+				<em:locale>da</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Executes various commands with mouse gestures.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:translator>Joergen</em:translator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
 				<em:locale>de</em:locale>
 				<em:name>FireGestures</em:name>
 				<em:description>Führt verschiedene Aktionen mit Hilfe von Mausgesten aus</em:description>
