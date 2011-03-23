@@ -67,12 +67,24 @@ xdGestureHandler.prototype = {
 	// xdIGestureObserver
 	_gestureObserver: null,
 
+	// [Firefox4]
+	_isFx4: false,
+
 	attach: function FGH_attach(aDrawArea, aObserver) {
+		var appInfo = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
+		this._isFx4 = parseFloat(appInfo.version) >= 4.0;
 		this._drawArea = aDrawArea;
 		this._gestureObserver = aObserver;
 		this._drawArea.addEventListener("mousedown", this, true);
-		this._drawArea.addEventListener("mousemove", this, true);
-		this._drawArea.addEventListener("mouseup", this, true);
+		if (this._isFx4) {
+			var root = this._drawArea.ownerDocument.defaultView.document.documentElement;
+			root.addEventListener("mousemove", this, true);
+			root.addEventListener("mouseup", this, true);
+		}
+		else {
+			this._drawArea.addEventListener("mousemove", this, true);
+			this._drawArea.addEventListener("mouseup", this, true);
+		}
 		this._drawArea.addEventListener("contextmenu", this, true);
 		this._drawArea.addEventListener("draggesture", this, true);
 		this._reloadPrefs();
@@ -83,8 +95,15 @@ xdGestureHandler.prototype = {
 
 	detach: function FGH_detach() {
 		this._drawArea.removeEventListener("mousedown", this, true);
-		this._drawArea.removeEventListener("mousemove", this, true);
-		this._drawArea.removeEventListener("mouseup", this, true);
+		if (this._isFx4) {
+			var root = this._drawArea.ownerDocument.defaultView.document.documentElement;
+			root.removeEventListener("mousemove", this, true);
+			root.removeEventListener("mouseup", this, true);
+		}
+		else {
+			this._drawArea.removeEventListener("mousemove", this, true);
+			this._drawArea.removeEventListener("mouseup", this, true);
+		}
 		this._drawArea.removeEventListener("contextmenu", this, true);
 		this._drawArea.removeEventListener("draggesture", this, true);
 		var prefBranch2 = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch2);
