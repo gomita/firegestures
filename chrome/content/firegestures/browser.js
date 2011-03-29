@@ -640,6 +640,14 @@ var FireGestures = {
 	},
 
 	closeMultipleTabs: function(aLeftRight) {
+		if ("closeLeftTabs" in gBrowser) {
+			// [TabMixPlus]
+			if (aLeftRight == "left")
+				gBrowser.closeLeftTabs(gBrowser.mCurrentTab);
+			else
+				gBrowser.closeRightTabs(gBrowser.mCurrentTab);
+			return;
+		}
 		// hack to make another version of built-in warnAboutClosingTabs
 		if ("warnAboutClosingTabs2" in gBrowser == false)
 			window.eval(
