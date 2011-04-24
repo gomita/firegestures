@@ -8,8 +8,13 @@
 <!ENTITY triggerButton.middle "Centre">
 <!ENTITY triggerButton.right "Droite">
 <!ENTITY suppress.alt "Ne pas effectuer de mouvement en maintenant la touche Alt">
+<!ENTITY trail "Dessin de la trace">
 <!ENTITY trail.color "Couleur">
 <!ENTITY trail.size "Taille">
+<!ENTITY status "Affichage du statut">
+<!ENTITY status.description.1 "Masquer le statut après">
+<!ENTITY status.description.2 "secondes">
+<!ENTITY timeout "Délai">
 <!ENTITY timeout.description.1 "Annuler le geste de la souris après">
 <!ENTITY timeout.description.2 "secondes sans mouvement">
 <!ENTITY mappings.title "Correspondances">

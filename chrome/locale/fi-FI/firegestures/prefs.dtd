@@ -1,4 +1,4 @@
-<!ENTITY options "asetukset">
+<!ENTITY options "Asetukset">
 <!ENTITY mainPane "Yleiset">
 <!ENTITY mappingPane "Eleet">
 <!ENTITY advancedPane "Lisäasetukset">
@@ -7,36 +7,41 @@
 <!ENTITY triggerButton.left "Vasen">
 <!ENTITY triggerButton.middle "Keski">
 <!ENTITY triggerButton.right "Oikea">
-<!ENTITY suppress.alt "Älä tee elettä jos Alt-näppäin painettuna">
+<!ENTITY suppress.alt "Ei elettä jos Alt-näppäin alhaalla">
+<!ENTITY trail "Vanapiirros">
 <!ENTITY trail.color "Väri">
 <!ENTITY trail.size "Koko">
-<!ENTITY timeout.description.1 "Peru hiiriele kun kulunut">
+<!ENTITY status "Tilannenäyttö">
+<!ENTITY status.description.1 "Piilota tilannenäyttö">
+<!ENTITY status.description.2 "sekunnin jälkeen">
+<!ENTITY timeout "Aikaviive">
+<!ENTITY timeout.description.1 "Peru ele kun on kulunut">
 <!ENTITY timeout.description.2 "sekuntia ilman liikettä">
-<!ENTITY mappings.title "Kartoitukset">
-<!ENTITY mappings.description "Valitse muokattava kartoitus">
+<!ENTITY mappings.title "Tallennetut elesarjat">
+<!ENTITY mappings.description "Valitse elesarja jota haluat muuttaa">
 <!ENTITY tools.title "Työkalut">
-<!ENTITY tools.description "Varmista ja palauta kartoitukset">
+<!ENTITY tools.description "Varmista ja palauta elesarjat">
 <!ENTITY tools.backup.label "Varmista">
 <!ENTITY tools.restore.label "Palauta">
-<!ENTITY tools.restore.alerttext "Tämä korvaa kaikki kartoituksesi varmuuskopiosta löytyvillä. Oletko varma?">
+<!ENTITY tools.restore.alerttext "Tämä korvaa kaikki nykyiset tallennetut elesarjat varmuuskopiosta löytyvillä. Oletko varma?">
 <!ENTITY wheelGesture "Rullaeleet">
-<!ENTITY wheelGesture.up.left "Rulla ylös vasen pohjassa">
-<!ENTITY wheelGesture.up.middle "Rulla ylös keskinäppäin pohjassa">
-<!ENTITY wheelGesture.up.right "Rulla ylös oikea pohjassa">
-<!ENTITY wheelGesture.down.left "Rulla alas vasen pohjassa">
-<!ENTITY wheelGesture.down.middle "Rulla alas keskinäppäin pohjassa">
-<!ENTITY wheelGesture.down.right "Rulla alas oikea pohjassa">
+<!ENTITY wheelGesture.up.left "Rullaus ylös vasen pohjassa">
+<!ENTITY wheelGesture.up.middle "Rullaus ylös keskin. pohjassa">
+<!ENTITY wheelGesture.up.right "Rullaus ylös oikea pohjassa">
+<!ENTITY wheelGesture.down.left "Rullaus alas vasen pohjassa">
+<!ENTITY wheelGesture.down.middle "Rullaus alas keskin. pohjassa">
+<!ENTITY wheelGesture.down.right "Rullaus alas oikea pohjassa">
 <!ENTITY rockerGesture "Keinueleet">
-<!ENTITY rockerGesture.left "Vasemman napsautus, oikea pohjassa">
-<!ENTITY rockerGesture.right "Oikean napsautus, vasen pohjassa">
-<!ENTITY keypressGesture "Näppäimiin yhdistetty ele">
+<!ENTITY rockerGesture.left "Vasen napsautus oikea pohjassa">
+<!ENTITY rockerGesture.right "Oikea napsautus vasen pohjassa">
+<!ENTITY keypressGesture "Näppäinele">
 <!ENTITY keypressGesture.ctrl "Hiiriele Ctrl-näppäin pohjassa">
-<!ENTITY keypressGesture.shift "Hiiriele Vaihto-näppäin pohjassa">
-<!ENTITY keypressGesture.open "avaa ylivedetyt linkit välilehtiin">
-<!ENTITY keypressGesture.save "tallenna ylivedetyt linkit">
-<!ENTITY keypressGesture.copy "Kopioi linkki leijumalla päällä">
+<!ENTITY keypressGesture.shift "Hiiriele vaihto-näppäin pohjassa">
+<!ENTITY keypressGesture.open "Avaa ylivedetyt linkit välilehtiin">
+<!ENTITY keypressGesture.save "Tallenna ylivedetyt linkit">
+<!ENTITY keypressGesture.copy "Kopioi ylivedetyt linkit">
 <!ENTITY tabwheelGesture "Välilehtipalkin rullaeleet">
-<!ENTITY tabwheelGesture.description "Siirry välilehdissä pyörittämällä rullaa välilehtipalkin päällä">
+<!ENTITY tabwheelGesture.description "Vaihda välilehteä rullalla välilehtipalkin päällä">
 <!ENTITY treecol.name "Nimi">
 <!ENTITY treecol.command "Komento">
 <!ENTITY treecol.script "Komentosarja">

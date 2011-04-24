@@ -32,17 +32,17 @@
 <!ENTITY gestureCmd.foregroundTab "Filă în prim-plan">
 <!ENTITY gestureCmd.saveImageNow "Salvează imaginea acum">
 <!ENTITY gestureCmd.searchForSelection "Caută textul selectat">
-<!ENTITY gestureCmd.searchForSelectionWith "Caută textul selectat cu...">
+<!ENTITY gestureCmd.searchForSelectionWith "Caută textul selectat cu…">
 <!ENTITY gestureCmd.openLinksInSelection "Deschide toate legăturile în selecție">
 <!ENTITY gestureCmd.openURLsInSelection "Deschide toate adresele în selecție">
 <!ENTITY gestureCmd.bookmarksSidebar "Afișează panoul lateral cu semne de carte">
 <!ENTITY gestureCmd.historySidebar "Afișează panoul lateral cu istoricul">
 <!ENTITY gestureCmd.backForwardHistory "Element precedent/următor">
 <!ENTITY gestureCmd.previewMode "Mod previzualizare">
-<!ENTITY gestureCmd.hybridSave "Salvează ca...">
-<!ENTITY gestureCmd.hybridBookmark "Semn de carte...">
+<!ENTITY gestureCmd.hybridSave "Salvează ca…">
+<!ENTITY gestureCmd.hybridBookmark "Semn de carte…">
 <!ENTITY gestureCmd.hybridViewSource "Afișează codul sursă">
-<!ENTITY gestureCmd.hybridSendURL "Trimite...">
+<!ENTITY gestureCmd.hybridSendURL "Trimite…">
 <!ENTITY gestureCmd.hybridCopyURL "Copiază adresa locației">
 <!ENTITY gestureCmd.toggleFindbar "Afișează/Ascunde bara de căutare">
 <!ENTITY gestureCmd.restartApp "Repornește Firefox">
