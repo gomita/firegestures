@@ -1,0 +1,57 @@
+<!ENTITY options "Parinktys">
+<!ENTITY mainPane "Pagrindinės">
+<!ENTITY mappingPane "Susiejimai">
+<!ENTITY advancedPane "Papildomos">
+<!ENTITY mouseGesture "Pelės gestai">
+<!ENTITY triggerButton "Norėdami paleisti gestą, spauskite šį mygtuką">
+<!ENTITY triggerButton.left "Kairysis">
+<!ENTITY triggerButton.middle "Vidurinis">
+<!ENTITY triggerButton.right "Dešinysis">
+<!ENTITY suppress.alt "Nepaleisti gesto kol laikomas Alt klavišas ">
+<!ENTITY trail "Šliūžės piešimas">
+<!ENTITY trail.color "Spalva">
+<!ENTITY trail.size "Dydis">
+<!ENTITY status "Būsenos rodymas">
+<!ENTITY status.description.1 "Slėpti būsenos rodymą po">
+<!ENTITY status.description.2 "sekundžių">
+<!ENTITY timeout "Laiko limitas">
+<!ENTITY timeout.description.1 "Atšaukti gestą po">
+<!ENTITY timeout.description.2 "sekundžių be veiksmo">
+<!ENTITY mappings.title "Susiejimai">
+<!ENTITY mappings.description "Pasirinkite kuriuos susiejimus konfigūruoti">
+<!ENTITY tools.title "Įrankiai">
+<!ENTITY tools.description "Susiejimų atsarginė kopija ir atstatymas">
+<!ENTITY tools.backup.label "Atsarginė kopija">
+<!ENTITY tools.restore.label "Atstatyti">
+<!ENTITY tools.restore.alerttext "Tai pakeis visus dabartinius jūsų susiejimus su tais kurie yra atsarginėj kopijoje. Jūs įsitikinę?">
+<!ENTITY wheelGesture "Pelės ratuko gestai">
+<!ENTITY wheelGesture.up.left "Sukti į viršų laikant kairyjį mygtuką">
+<!ENTITY wheelGesture.up.middle "Sukti į viršų laikant vidurinįjį mygtuką">
+<!ENTITY wheelGesture.up.right "Sukti į viršų laikant dešinįjį mygtuką">
+<!ENTITY wheelGesture.down.left "Sukti žemyn laikant kairįjį mygtuką">
+<!ENTITY wheelGesture.down.middle "Sukti žemyn laikant kairyjį mygtuką">
+<!ENTITY wheelGesture.down.right "Sukti žemyn laikant dešinįjį mygtuką">
+<!ENTITY rockerGesture "Rocker gestai">
+<!ENTITY rockerGesture.left "Kairysis spragtelėjimas laikant dešinįjį mygtuką">
+<!ENTITY rockerGesture.right "Dešinysis spragtelėjimas laikant kairįjį mygtuką">
+<!ENTITY keypressGesture "Klavišų paspaudimo gestai">
+<!ENTITY keypressGesture.ctrl "Pelės gestas laikant nuspaustą Shift klavišą">
+<!ENTITY keypressGesture.shift "Pelės gestas laikant nuspaustą Ctrl klavišą">
+<!ENTITY keypressGesture.open "Atverti nuorodas kortelėse">
+<!ENTITY keypressGesture.save "Išsaugoti nuorodas">
+<!ENTITY keypressGesture.copy "Kopijuoti nuorodos vietą">
+<!ENTITY tabwheelGesture "Kortelių ratuko gestai">
+<!ENTITY tabwheelGesture.description "Perjungti korteles kai slenkama su ratuku kortelių juostoj">
+<!ENTITY treecol.name "Pavadinimas">
+<!ENTITY treecol.command "Komanda">
+<!ENTITY treecol.script "Scenarijus">
+<!ENTITY treecol.gesture "Gestas">
+<!ENTITY editButton.label "Keisti">
+<!ENTITY editButton.accesskey "K">
+<!ENTITY clearButton.label "Išvalyti">
+<!ENTITY clearButton.accesskey "I">
+<!ENTITY addScriptButton.label "Pridėti scenarijų">
+<!ENTITY addScriptButton.accesskey "P">
+<!ENTITY deleteScriptButton.label "Ištrinti scenarijų">
+<!ENTITY deleteScriptButton.accesskey "t">
+<!ENTITY getScripts.label "Gauti scenarijų">

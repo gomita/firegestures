@@ -1,0 +1,61 @@
+<!ENTITY gestureCategory.navigation "Naršymas">
+<!ENTITY gestureCategory.window "Langas">
+<!ENTITY gestureCategory.tab "Kortelė">
+<!ENTITY gestureCategory.page "Puslapis">
+<!ENTITY gestureCategory.frame "Rėmelis">
+<!ENTITY gestureCategory.link "Nuoroda">
+<!ENTITY gestureCategory.image "Paveikslėlis">
+<!ENTITY gestureCategory.selection "Pasirinkimas">
+<!ENTITY gestureCategory.tools "Įrankiai">
+<!ENTITY gestureCategory.popup "Iššokančio lango tipas">
+<!ENTITY gestureCategory.hybrid "Mišrus tipas">
+<!ENTITY gestureCategory.script "Naudotojo scenarijai">
+<!ENTITY gestureType.popup "Iššokantis langas">
+<!ENTITY gestureType.hybrid "Mišrus">
+<!ENTITY gestureCmd.skipCache "Praleisti podėlį">
+<!ENTITY gestureCmd.goUpperLevel "Eiti lygiu aukščiau">
+<!ENTITY gestureCmd.incrementURL "Skaičiaus, adreso lauke, padidinimas">
+<!ENTITY gestureCmd.decrementURL "Skaičiaus, adreso lauke, sumažinimas">
+<!ENTITY gestureCmd.undoCloseWindow "Atšaukti lango užvėrimą">
+<!ENTITY gestureCmd.minimizeWindow "Sumažinti langą">
+<!ENTITY gestureCmd.maximizeWindow "Padidinti langą / Atstatyti lango dydį">
+<!ENTITY gestureCmd.previousTab "Ankstesnė kortelė">
+<!ENTITY gestureCmd.nextTab "Sekanti kortelė">
+<!ENTITY gestureCmd.duplicateTab "Dubliuoti kortelę">
+<!ENTITY gestureCmd.closeLeftTabs "Užverti korteles esančias į kairę nuo dabartinės">
+<!ENTITY gestureCmd.closeRightTabs "Užverti korteles esančias į dešinę nuo dabartinės">
+<!ENTITY gestureCmd.scrollTop "Slinkti iki viršaus">
+<!ENTITY gestureCmd.scrollBottom "Slinkti iki apačios">
+<!ENTITY gestureCmd.scrollPageUp "Puslapis aukštyn">
+<!ENTITY gestureCmd.scrollPageDown "Puslapis žemyn">
+<!ENTITY gestureCmd.backgroundTab "Foninė kortelė">
+<!ENTITY gestureCmd.foregroundTab "Priekinė kortelė">
+<!ENTITY gestureCmd.saveImageNow "Išsaugoti paveikslėlį dabar">
+<!ENTITY gestureCmd.searchForSelection "Ieškoti pasirinkimo">
+<!ENTITY gestureCmd.searchForSelectionWith "Ieškoti pasirinkimo su...">
+<!ENTITY gestureCmd.openLinksInSelection "Atverti visas pasirinktas nuorodas">
+<!ENTITY gestureCmd.openURLsInSelection "Atverti visus pasirinktus URL">
+<!ENTITY gestureCmd.bookmarksSidebar "Šoninėje juostoje rodyti žymeles">
+<!ENTITY gestureCmd.historySidebar "Šoninėje juostoje rodyti istoriją">
+<!ENTITY gestureCmd.backForwardHistory "Atgal / Pirmyn istorija">
+<!ENTITY gestureCmd.previewMode "Peržiūros režimas">
+<!ENTITY gestureCmd.hybridSave "Išsaugoti kaip...">
+<!ENTITY gestureCmd.hybridBookmark "Žymelė...">
+<!ENTITY gestureCmd.hybridViewSource "Žiūrėti pradinį kodą">
+<!ENTITY gestureCmd.hybridSendURL "Siųsti...">
+<!ENTITY gestureCmd.hybridCopyURL "Kopijuoti vietą">
+<!ENTITY gestureCmd.toggleFindbar "Atverti / Užverti paieškos juostą">
+<!ENTITY gestureCmd.restartApp "Paleisti iš naujo Firefox">
+<!ENTITY gestureCmd.options "Parinktys">
+<!-- [Firefox3.6] -->
+<!ENTITY metadataCmd.label "Savybės">
+<!-- [Firefox4] For the backward compatibility, leave them empty. -->
+<!ENTITY clearRecentHistoryCmd.label "">
+<!ENTITY clearRecentHistory.label "">
+<!ENTITY openTabInNewWindow.label "">
+<!ENTITY moveToNewWindow.label "">
+<!ENTITY pinAppTab.label "">
+<!ENTITY unpinAppTab.label "">
+<!ENTITY inspectMenu.label "">
+<!ENTITY webConsoleCmd.label "">
+<!ENTITY viewTabGroups.label "">

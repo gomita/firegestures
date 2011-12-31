@@ -161,6 +161,16 @@
 		</em:localized>
 		<em:localized>
 			<Description>
+				<em:locale>lt</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Executes various commands with mouse gestures.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:translator>gymka</em:translator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
 				<em:locale>nb-NO</em:locale>
 				<em:name>FireGestures</em:name>
 				<em:description>Utfør kommandoer med musebevegelser</em:description>
