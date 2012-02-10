@@ -7,7 +7,7 @@
 		<em:id>firegestures@xuldev.org</em:id>
 		<em:type>2</em:type>
 		<em:name>FireGestures</em:name>
-		<em:version>1.6.7</em:version>
+		<em:version>1.6.8</em:version>
 		<em:description>Executes various commands with mouse gestures.</em:description>
 		<em:creator>Gomita</em:creator>
 		<em:localized>
@@ -309,7 +309,7 @@
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>4.0</em:minVersion>
-				<em:maxVersion>10.*</em:maxVersion>
+				<em:maxVersion>12.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 	</Description>
