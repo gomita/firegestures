@@ -241,28 +241,16 @@ var FireGestures = {
 				document.getElementById(aCommand).doCommand();
 				break;
 			case "FireGestures:ScrollTop": 
+				this.sendKeyEvent({ keyCode: "DOM_VK_HOME" });
+				break;
 			case "FireGestures:ScrollBottom": 
+				this.sendKeyEvent({ keyCode: "DOM_VK_END" });
+				break;
 			case "FireGestures:ScrollPageUp": 
+				this.sendKeyEvent({ keyCode: "DOM_VK_PAGE_UP" });
+				break;
 			case "FireGestures:ScrollPageDown": 
-				// replace command for |goDoCommand|
-				switch (aCommand) {
-					case "FireGestures:ScrollTop"     : aCommand = "cmd_scrollTop"; break;
-					case "FireGestures:ScrollBottom"  : aCommand = "cmd_scrollBottom"; break;
-					case "FireGestures:ScrollPageUp"  : aCommand = "cmd_scrollPageUp"; break;
-					case "FireGestures:ScrollPageDown": aCommand = "cmd_scrollPageDown"; break;
-				}
-				try { goDoCommand(aCommand); }
-				catch (ex) {
-					// sometimes scroll commands don't work
-					alert(aCommand + " failed:\n" + ex);	// #debug
-					var win = this.focusedWindow;
-					switch (aCommand) {
-						case "cmd_scrollTop"     : win.scroll(0, 0); break;
-						case "cmd_scrollBottom"  : win.scroll(0, 71582788); break;
-						case "cmd_scrollPageUp"  : win.scrollBy(0, win.outerHeight * -0.8); break;
-						case "cmd_scrollPageDown": win.scrollBy(0, win.outerHeight * 0.8); break;
-					}
-				}
+				this.sendKeyEvent({ keyCode: "DOM_VK_PAGE_DOWN" });
 				break;
 			case "FireGestures:ShowOnlyThisFrame": 
 				var docURL = this.sourceNode.ownerDocument.location.href;
@@ -669,6 +657,20 @@ var FireGestures = {
 		if (!gBrowser.warnAboutClosingTabs2(false, tabs.length))
 			return;
 		tabs.reverse().forEach(function(tab) gBrowser.removeTab(tab));
+	},
+
+	sendKeyEvent: function(aOptions) {
+		var evt = this.sourceNode.ownerDocument.createEvent("KeyEvents");
+		evt.initKeyEvent(
+			"keypress", true, true, null, 
+			aOptions.ctrl  || false, 
+			aOptions.alt   || false, 
+			aOptions.shift || false, 
+			aOptions.meta  || false, 
+			aOptions.keyCode ? evt[aOptions.keyCode] : null, 
+			aOptions.key ? aOptions.key.charCodeAt(0) : null
+		);
+		this.sourceNode.dispatchEvent(evt);
 	},
 
 
