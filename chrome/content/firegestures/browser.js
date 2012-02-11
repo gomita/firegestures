@@ -241,10 +241,16 @@ var FireGestures = {
 				document.getElementById(aCommand).doCommand();
 				break;
 			case "FireGestures:ScrollTop": 
-				this.sendKeyEvent({ keyCode: "DOM_VK_HOME" });
+				if (gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
+					goDoCommand("cmd_scrollTop");
+				else
+					this.sendKeyEvent({ keyCode: "DOM_VK_HOME" });
 				break;
 			case "FireGestures:ScrollBottom": 
-				this.sendKeyEvent({ keyCode: "DOM_VK_END" });
+				if (gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
+					goDoCommand("cmd_scrollBottom");
+				else
+					this.sendKeyEvent({ keyCode: "DOM_VK_END" });
 				break;
 			case "FireGestures:ScrollPageUp": 
 				this.sendKeyEvent({ keyCode: "DOM_VK_PAGE_UP" });
