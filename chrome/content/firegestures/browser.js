@@ -241,13 +241,17 @@ var FireGestures = {
 				document.getElementById(aCommand).doCommand();
 				break;
 			case "FireGestures:ScrollTop": 
-				if (gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
+				if (this.sourceNode instanceof HTMLInputElement || 
+				    this.sourceNode instanceof HTMLTextAreaElement || 
+				    gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
 					goDoCommand("cmd_scrollTop");
 				else
 					this.sendKeyEvent({ keyCode: "DOM_VK_HOME" });
 				break;
 			case "FireGestures:ScrollBottom": 
-				if (gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
+				if (this.sourceNode instanceof HTMLInputElement || 
+				    this.sourceNode instanceof HTMLTextAreaElement || 
+				    gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
 					goDoCommand("cmd_scrollBottom");
 				else
 					this.sendKeyEvent({ keyCode: "DOM_VK_END" });
