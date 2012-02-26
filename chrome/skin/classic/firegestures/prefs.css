@@ -16,15 +16,6 @@ radio[pane="advancedPane"] {
 	-moz-image-region: rect(0px, 64px, 32px, 32px);
 }
 
-radio[pane] .paneButtonIcon {
-	opacity: 0.8;
-}
-
-radio[pane]:hover .paneButtonIcon,
-radio[pane][selected="true"] .paneButtonIcon {
-	opacity: 1.0;
-}
-
 #trailSampleOuter {
 	background-color: white;
 	min-height: 1.5em;
