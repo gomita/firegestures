@@ -373,17 +373,19 @@ xdGestureHandler.prototype = {
 	},
 
 	_displayContextMenu: function FGH__displayContextMenu(event) {
-		// this fixes the problem: the list of alternative words doesn't display in the context menu
-		// when right-clicking on a misspelled word, because of a wrong value of |document.popupRangeOffset|.
-		with (this._drawArea.ownerDocument.defaultView) {
-			if (!nsContextMenu.prototype._setTargetInternal) {
-				nsContextMenu.prototype._setTargetInternal = nsContextMenu.prototype.setTarget;
-				nsContextMenu.prototype.setTarget = function(aNode, aRangeParent, aRangeOffset) {
-					this._setTargetInternal(aNode, aRangeParent, this._rangeOffset);
-				};
-				log("*** REPLACED nsContextMenu.prototype.setTarget");	// #debug
+		if ("nsContextMenu" in this._drawArea.ownerDocument.defaultView) {
+			// this fixes the problem: the list of alternative words doesn't display in the context menu
+			// when right-clicking on a misspelled word, because of a wrong value of |document.popupRangeOffset|.
+			with (this._drawArea.ownerDocument.defaultView) {
+				if (!nsContextMenu.prototype._setTargetInternal) {
+					nsContextMenu.prototype._setTargetInternal = nsContextMenu.prototype.setTarget;
+					nsContextMenu.prototype.setTarget = function(aNode, aRangeParent, aRangeOffset) {
+						this._setTargetInternal(aNode, aRangeParent, this._rangeOffset);
+					};
+					log("*** REPLACED nsContextMenu.prototype.setTarget");	// #debug
+				}
+				nsContextMenu.prototype._rangeOffset = event.rangeOffset;
 			}
-			nsContextMenu.prototype._rangeOffset = event.rangeOffset;
 		}
 		this._enableContextMenu(true);
 		// open the context menu artificially
