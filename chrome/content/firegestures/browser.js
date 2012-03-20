@@ -53,6 +53,18 @@ var FireGestures = {
 	// _statusDisplay  >  0   : display status for the specified milliseconds
 	_statusDisplay: null,
 
+	canStartGesture: function(event) {
+		if (gInPrintPreviewMode) {
+			dump("*** suppress starting gesture in print preview mode\n");	// #debug
+			return false;
+		}
+		if ("Tilt" in window && Tilt.tiltButton.checked) {
+			dump("*** suppress starting gesture in Tilt 3D View\n");	// #debug
+			return false;
+		}
+		return true;
+	},
+
 	onDirectionChanged: function(event, aDirectionChain) {
 		if (this._statusDisplay === null) {
 			const prefName = "extensions.firegestures.status_display";
@@ -67,8 +79,6 @@ var FireGestures = {
 
 	onMouseGesture: function(event, aDirection) {
 		// dump("onMouseGesture(" + aDirection + ")\n");	// #debug
-		if (gInPrintPreviewMode)
-			return;
 		try {
 			var command = this._gestureMapping.getCommandForDirection(aDirection);
 			if (!command)
@@ -92,8 +102,6 @@ var FireGestures = {
 
 	onExtraGesture: function(event, aGesture) {
 		// dump("onExtraGesture(" + aGesture + ")\n");	// #debug
-		if (gInPrintPreviewMode)
-			return;
 		this.clearStatusText(0);
 		switch (aGesture) {
 			case "wheel-up": 

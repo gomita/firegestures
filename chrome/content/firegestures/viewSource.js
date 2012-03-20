@@ -30,6 +30,10 @@ var FireGesturesViewSource = {
 
 	/* ::::: xdIGestureObserver ::::: */
 
+	canStartGesture: function(event) {
+		return true;
+	},
+
 	onDirectionChanged: function(event, aDirectionChain) {},
 
 	onMouseGesture: function(event, aDirectionChain) {

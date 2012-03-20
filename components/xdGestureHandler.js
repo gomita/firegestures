@@ -168,6 +168,8 @@ xdGestureHandler.prototype = {
 	handleEvent: function FGH_handleEvent(event) {
 		switch (event.type) {
 			case "mousedown": 
+				if (!this._gestureObserver.canStartGesture(event))
+					break;
 				if (event.button == 0) {
 					// suppress starting gesture on textboxes and textarea elements etc.
 					var targetName = event.target.localName.toUpperCase();
@@ -175,7 +177,7 @@ xdGestureHandler.prototype = {
 						log("*** ignore left-click on form element (" + targetName + ")");	// #debug
 						break;
 					}
-					// supress starting gesture when dragging scrollbar
+					// suppress starting gesture when dragging scrollbar
 					targetName = event.originalTarget.localName;
 					if (targetName == "scrollbarbutton" || targetName == "slider" || targetName == "thumb") {
 						log("*** ignore left-click on scrollbar element (" + targetName + ")");	// #debug

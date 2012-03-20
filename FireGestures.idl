@@ -110,6 +110,11 @@ interface xdIGestureObserver : nsISupports
 {
 
 	/**
+	 * Returns false to suppress starting gesture for some reason otherwise true.
+	 */
+	boolean canStartGesture(in nsIDOMEvent event);
+
+	/**
 	 * Called when the direction is changed in progress of mouse gesture.
 	 */
 	void onDirectionChanged(in nsIDOMEvent event, in ACString aDirectionChain);
