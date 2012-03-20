@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "名前を付けて保存">
 <!ENTITY gestureCmd.hybridBookmark "ブックマーク">
 <!ENTITY gestureCmd.hybridViewSource "ソースを表示">
+<!ENTITY gestureCmd.hybridProperties "プロパティ">
 <!ENTITY gestureCmd.hybridSendURL "URL をメールで送信...">
 <!ENTITY gestureCmd.hybridCopyURL "URL をコピー">
 <!ENTITY gestureCmd.toggleFindbar "検索バーを開く / 閉じる">
 <!ENTITY gestureCmd.restartApp "Firefox を再起動">
 <!ENTITY gestureCmd.options "設定">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "プロパティ">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

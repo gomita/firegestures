@@ -383,11 +383,6 @@ xdGestureCommand.prototype = {
 ////////////////////////////////////////////////////////////////////////////////
 // XPCOM registration
 
-if (XPCOMUtils.generateNSGetFactory)
-	// [Firefox4]
-	var NSGetFactory = XPCOMUtils.generateNSGetFactory([xdGestureMapping]);
-else
-	// [Firefox3.6]
-	var NSGetModule = XPCOMUtils.generateNSGetModule([xdGestureMapping]);
+var NSGetFactory = XPCOMUtils.generateNSGetFactory([xdGestureMapping]);
 
 

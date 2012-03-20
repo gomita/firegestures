@@ -35,7 +35,6 @@ overlay	chrome://browser/content/browser.xul	chrome://firegestures/content/brows
 overlay	chrome://global/content/viewSource.xul	chrome://firegestures/content/viewSource.xul
 overlay	chrome://global/content/viewPartialSource.xul	chrome://firegestures/content/viewSource.xul
 
-# [Firefox4]
 interfaces	components/FireGestures.xpt
 component	{1d26f3e7-d92e-4bcc-ac79-9624bb181308}	components/xdGestureService.js
 component	{ca559550-8ab4-41c5-a72f-fd931322cc7e}	components/xdGestureHandler.js

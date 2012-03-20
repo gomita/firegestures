@@ -30,11 +30,6 @@ var FireGestures = {
 		this._gestureMapping = gestureSvc.getMappingForBrowser();
 		this._getLocaleString = gestureSvc.getLocaleString;
 		this._statusTextField = document.getElementById("statusbar-display");
-		if (!this._statusTextField) {
-			// [Firefox4] replace methods
-			this.setStatusText = this._setStatusText2;
-			this.clearStatusText = this._clearStatusText2;
-		}
 	},
 
 	uninit: function() {
@@ -161,14 +156,14 @@ var FireGestures = {
 				window.windowState == window.STATE_MAXIMIZED ? window.restore() : window.maximize();
 				break;
 			case "cmd_close": 
-				// [Firefox4] enables tab closing animation
-				// [Firefox4] don't close app tab
+				// enables tab closing animation
+				// don't close app tab
 				if (gBrowser.mCurrentTab.pinned)
 					throw "Blocked closing app tab.";
 				gBrowser.removeCurrentTab({ animate: true });
 				break;
 			case "FireGestures:CloseTabOrWindow": 
-				// [Firefox4] don't close app tab
+				// don't close app tab
 				if (gBrowser.mCurrentTab.pinned)
 					throw "Blocked closing app tab.";
 				if (gBrowser.mTabs.length > 1)
@@ -652,10 +647,6 @@ var FireGestures = {
 				"gBrowser.warnAboutClosingTabs2 = " + 
 				gBrowser.warnAboutClosingTabs.toString()
 				.replace("(aAll)", "(aAll, aTabsToClose)")
-				// [Firefox3.6]
-				.replace(/var numTabs = [^;]+;/, "var numTabs = aTabsToClose;")
-				.replace("--tabsToClose;", "")
-				// [Firefox4]
 				.replace(/var tabsToClose = [^;]+;/, "var tabsToClose = aTabsToClose;")
 			);
 		var tabs = Array.slice(gBrowser.mTabs);
@@ -705,47 +696,6 @@ var FireGestures = {
 		this._clearStatusTimer = window.setTimeout(callback, aMillisec, this);
 	},
 
-	// [Firefox4] another version of setStatusText
-	_setStatusText2: function(aText) {
-		if (!this._statusTextField) {
-			this._statusTextField = document.createElement("hbox");
-			this._statusTextField.id = "firegestures-status";
-			this._statusTextField.setAttribute("style", 
-				"position: fixed; border: 1px solid ThreeDShadow; " + 
-				"background-color: -moz-dialog; color: -moz-dialogtext; " + 
-				"margin: 4px; box-shadow: 2px 2px 2px rgba(0,0,0,0.5); " + 
-				"-moz-transition-property: opacity; opacity: 0; "
-			);
-			this._statusTextField.setAttribute("onmouseover", "this.hidden = true;");
-			this._statusTextField.appendChild(document.createElement("label"));
-			document.documentElement.appendChild(this._statusTextField);
-		}
-		if (this._statusTextField.hidden)
-			this._statusTextField.hidden = false;
-		if (this._statusTextField.style.opacity == 0) {
-			var box = gBrowser.mPanelContainer.boxObject;
-			var rootBox = document.documentElement.boxObject;
-			var left = box.x - rootBox.x;
-			var bottom = rootBox.y + rootBox.height - box.y - box.height;
-			this._statusTextField.style.left = left.toString() + "px";
-			this._statusTextField.style.bottom = bottom.toString() + "px";
-		}
-		this._statusTextField.firstChild.value = aText;
-		this._statusTextField.style.MozTransitionDuration = "0s";
-		this._statusTextField.style.MozTransitionDelay = "0s";
-		this._statusTextField.style.opacity = 1;
-	},
-
-	// [Firefox4] another version of setStatusText
-	_clearStatusText2: function(aMillisec) {
-		if (!this._statusTextField)
-			// assume that _clearStatusText2 is called before _setStatusText2
-			return;
-		this._statusTextField.style.MozTransitionDuration = "0.5s";
-		this._statusTextField.style.MozTransitionDelay = (aMillisec / 1000).toString() + "s";
-		this._statusTextField.style.opacity = 0;
-	},
-
 
 	/* ::::: POPUP ::::: */
 
@@ -785,7 +735,7 @@ var FireGestures = {
 					return;	// just in case
 				for (var i = 0; i < tabs.length; i++) {
 					var tab = tabs[i];
-					// [Firefox4] exclude tab in other group
+					// exclude tab in other group
 					if (tab.hidden)
 						continue;
 					var menuitem = popup.appendChild(document.createElement("menuitem"));
@@ -960,15 +910,10 @@ var FireGestures = {
 							var submission = engine.getSubmission(selText, null);
 							if (!submission)
 								break;
-							if ("LightWeightThemeWebInstaller" in window)
-								// [Firefox3.6]
-								gBrowser.loadOneTab(submission.uri.spec, {
-									postData: submission.postData,
-									relatedToCurrent: true
-								});
-							else
-								// [Firefox3.5]
-								gBrowser.loadOneTab(submission.uri.spec, null, null, submission.postData, null, false);
+							gBrowser.loadOneTab(submission.uri.spec, {
+								postData: submission.postData,
+								relatedToCurrent: true
+							});
 							break;
 						default: 
 							eval(activeItem.getAttribute("oncommand"));

@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "새 이름으로저장">
 <!ENTITY gestureCmd.hybridBookmark "북마크에 추가">
 <!ENTITY gestureCmd.hybridViewSource "소스 보기">
+<!ENTITY gestureCmd.hybridProperties "속성">
 <!ENTITY gestureCmd.hybridSendURL "보내기...">
 <!ENTITY gestureCmd.hybridCopyURL "위치 복사">
 <!ENTITY gestureCmd.toggleFindbar "검색 막대 열기/닫기">
 <!ENTITY gestureCmd.restartApp "Firefox 재시작">
 <!ENTITY gestureCmd.options "선택사항">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "속성">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

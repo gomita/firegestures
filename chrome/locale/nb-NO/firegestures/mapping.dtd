@@ -42,11 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Lagre som ...">
 <!ENTITY gestureCmd.hybridBookmark "Legg til bokmerke ...">
 <!ENTITY gestureCmd.hybridViewSource "Vis kildekode">
+<!ENTITY gestureCmd.hybridProperties "Egenskaper">
 <!ENTITY gestureCmd.hybridSendURL "Send ...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopier adresse">
 <!ENTITY gestureCmd.toggleFindbar "Åpne/lukke søkelinja">
 <!ENTITY gestureCmd.restartApp "Start Firefox på nytt">
 <!ENTITY gestureCmd.options "Innstillinger">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Egenskaper">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->

@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Mentés másként…">
 <!ENTITY gestureCmd.hybridBookmark "Könyvjelző…">
 <!ENTITY gestureCmd.hybridViewSource "Oldal forrása">
+<!ENTITY gestureCmd.hybridProperties "Tulajdonságok">
 <!ENTITY gestureCmd.hybridSendURL "Küldés…">
 <!ENTITY gestureCmd.hybridCopyURL "Útvonal másolása">
 <!ENTITY gestureCmd.toggleFindbar "Keresés megnyitása/bezárása">
 <!ENTITY gestureCmd.restartApp "Firefox újraindítása">
 <!ENTITY gestureCmd.options "Beállítások">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Tulajdonságok">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

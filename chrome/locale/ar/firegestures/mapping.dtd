@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "إحفظ علي هيئة">
 <!ENTITY gestureCmd.hybridBookmark "علامة…">
 <!ENTITY gestureCmd.hybridViewSource "أظهر المصدر">
+<!ENTITY gestureCmd.hybridProperties "الخصائص">
 <!ENTITY gestureCmd.hybridSendURL "أرسل…">
 <!ENTITY gestureCmd.hybridCopyURL "إنسخ المكان">
 <!ENTITY gestureCmd.toggleFindbar "إفتح / أغلق شريط البحث">
 <!ENTITY gestureCmd.restartApp "أعد تشغيل فايرفوكس">
 <!ENTITY gestureCmd.options "خيارات">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "الخصائص">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

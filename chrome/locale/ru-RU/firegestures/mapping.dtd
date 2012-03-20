@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Сохранить как...">
 <!ENTITY gestureCmd.hybridBookmark "Закладка...">
 <!ENTITY gestureCmd.hybridViewSource "Просмотреть исходный код">
+<!ENTITY gestureCmd.hybridProperties "Свойства">
 <!ENTITY gestureCmd.hybridSendURL "Отправить...">
 <!ENTITY gestureCmd.hybridCopyURL "Копировать адрес">
 <!ENTITY gestureCmd.toggleFindbar "Открыть / Закрыть панель поиска">
 <!ENTITY gestureCmd.restartApp "Перезапустить Firefox">
 <!ENTITY gestureCmd.options "Настройки">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Свойства">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

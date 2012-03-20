@@ -564,30 +564,10 @@ CustomTreeView.prototype = {
 	},
 
 	getSourceIndexFromDrag: function(dataTransfer) {
-		if (dataTransfer) {
-			// [Firefox3.6]
-			if (!dataTransfer.types.contains(DRAGDROP_FLAVOR))
-				return -1;
-			else
-				return parseInt(dataTransfer.getData(DRAGDROP_FLAVOR));
-		}
-		// [Firefox3.5]
-		var dragService = Cc["@mozilla.org/widget/dragservice;1"].getService(Ci.nsIDragService);
-		var dragSession = dragService.getCurrentSession();
-		var xferData = Cc["@mozilla.org/widget/transferable;1"].createInstance(Ci.nsITransferable);
-		xferData.addDataFlavor(DRAGDROP_FLAVOR);
-		dragSession.getData(xferData, 0);
-		var obj = {}, len = {};
-		var sourceIndex = -1;
-		try {
-			xferData.getAnyTransferData({}, obj, len);
-		}
-		catch (ex) {}
-		if (obj.value) {
-			sourceIndex = obj.value.QueryInterface(Ci.nsISupportsString).data;
-			sourceIndex = parseInt(sourceIndex.substring(0, len.value), 10);
-		}
-		return sourceIndex;
+		if (!dataTransfer.types.contains(DRAGDROP_FLAVOR))
+			return -1;
+		else
+			return parseInt(dataTransfer.getData(DRAGDROP_FLAVOR));
 	},
 
 	/* ::::: nsITreeView ::::: */

@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Tallenna nimellä...">
 <!ENTITY gestureCmd.hybridBookmark "Luo kirjanmerkki...">
 <!ENTITY gestureCmd.hybridViewSource "Näytä lähdekoodi">
+<!ENTITY gestureCmd.hybridProperties "Ominaisuudet">
 <!ENTITY gestureCmd.hybridSendURL "Lähetä...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopioi sijainti">
 <!ENTITY gestureCmd.toggleFindbar "Avaa / sulje etsintäpalkki">
 <!ENTITY gestureCmd.restartApp "Käynnistä Firefox uudelleen">
 <!ENTITY gestureCmd.options "Asetukset">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Ominaisuudet">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

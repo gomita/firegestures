@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Uložit jako...">
 <!ENTITY gestureCmd.hybridBookmark "Přidat do záložek...">
 <!ENTITY gestureCmd.hybridViewSource "Zobrazit zdrojový kód">
+<!ENTITY gestureCmd.hybridProperties "Vlastnosti">
 <!ENTITY gestureCmd.hybridSendURL "Odeslat">
 <!ENTITY gestureCmd.hybridCopyURL "Kopírovat URL">
 <!ENTITY gestureCmd.toggleFindbar "Zobrazit / Skrýt panel vyhledávání">
 <!ENTITY gestureCmd.restartApp "Restartovat Firefox">
 <!ENTITY gestureCmd.options "možnosti">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Vlastnosti">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

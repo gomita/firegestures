@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Opslaan Als...">
 <!ENTITY gestureCmd.hybridBookmark "Bladwijzer...">
 <!ENTITY gestureCmd.hybridViewSource "Bron Bekijken">
+<!ENTITY gestureCmd.hybridProperties "Eigenschappen">
 <!ENTITY gestureCmd.hybridSendURL "Verzenden...">
 <!ENTITY gestureCmd.hybridCopyURL "Locatie Kopiëren">
 <!ENTITY gestureCmd.toggleFindbar "Zoekbalk Openen / Sluiten">
 <!ENTITY gestureCmd.restartApp "Firefox Herstarten">
 <!ENTITY gestureCmd.options "Opties">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Eigenschappen">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

@@ -167,8 +167,7 @@
                    FG:direction="URD" />
   <RDF:Description RDF:about="urn:History:UndoCloseWindow"
                    FG:type="1"
-                   FG:name="&gestureCmd.undoCloseWindow;"
-                   FG:flags="min:firefox3.5" />
+                   FG:name="&gestureCmd.undoCloseWindow;" />
   <RDF:Description RDF:about="urn:FireGestures:MinimizeWindow"
                    FG:type="1"
                    FG:name="&gestureCmd.minimizeWindow;"
@@ -214,12 +213,10 @@
                    FG:name="&gestureCmd.duplicateTab;" />
   <RDF:Description RDF:about="urn:FireGestures:DetachTab"
                    FG:type="1"
-                   FG:name="&openTabInNewWindow.label;&moveToNewWindow.label;"
-                   FG:flags="min:firefox3.5" />
+                   FG:name="&moveToNewWindow.label;" />
   <RDF:Description RDF:about="urn:FireGestures:TogglePinTab"
                    FG:type="1"
-                   FG:name="&pinAppTab.label; / &unpinAppTab.label;"
-                   FG:flags="min:firefox4" />
+                   FG:name="&pinAppTab.label; / &unpinAppTab.label;" />
   <RDF:Description RDF:about="urn:FireGestures:ReloadAllTabs"
                    FG:type="1"
                    FG:name="&reloadAllTabs.label;" />
@@ -234,8 +231,7 @@
                    FG:name="&gestureCmd.closeRightTabs;" />
   <RDF:Description RDF:about="urn:Browser:ToggleTabView"
                    FG:type="1"
-                   FG:name="&viewTabGroups.label;"
-                   FG:flags="min:firefox4" />
+                   FG:name="&viewTabGroups.label;" />
   <!-- page -->
   <RDF:Description RDF:about="urn:cmd_textZoomEnlarge"
                    FG:type="1"
@@ -382,25 +378,22 @@
                    FG:name="&downloads.label;" />
   <RDF:Description RDF:about="urn:Tools:PrivateBrowsing"
                    FG:type="1"
-                   FG:name="&privateBrowsingCmd.start.label; / &privateBrowsingCmd.stop.label;"
-                   FG:flags="min:firefox3.5" />
+                   FG:name="&privateBrowsingCmd.start.label; / &privateBrowsingCmd.stop.label;" />
   <RDF:Description RDF:about="urn:Tools:Addons"
                    FG:type="1"
                    FG:name="&addons.label;" />
   <RDF:Description RDF:about="urn:Tools:Sanitize"
                    FG:type="1"
-                   FG:name="&clearRecentHistoryCmd.label;&clearRecentHistory.label;" />
+                   FG:name="&clearRecentHistory.label;" />
   <RDF:Description RDF:about="urn:Tools:Inspect"
                    FG:type="1"
-                   FG:name="&inspectMenu.label;"
-                   FG:flags="min:firefox4" />
+                   FG:name="&inspectMenu.label;" />
   <RDF:Description RDF:about="urn:FireGestures:ErrorConsole"
                    FG:type="1"
                    FG:name="&errorConsoleCmd.label;" />
   <RDF:Description RDF:about="urn:FireGestures:WebConsole"
                    FG:type="1"
-                   FG:name="&webConsoleCmd.label;"
-                   FG:flags="min:firefox4" />
+                   FG:name="&webConsoleCmd.label;" />
   <RDF:Description RDF:about="urn:FireGestures:BookmarksSidebar"
                    FG:type="1"
                    FG:name="&gestureCmd.bookmarksSidebar;" />
@@ -412,8 +405,7 @@
                    FG:name="&gestureCmd.toggleFindbar;" />
   <RDF:Description RDF:about="urn:FireGestures:RestartApp"
                    FG:type="1"
-                   FG:name="&gestureCmd.restartApp;"
-                   FG:flags="min:firefox3.5" />
+                   FG:name="&gestureCmd.restartApp;" />
   <RDF:Description RDF:about="urn:FireGestures:Preferences"
                    FG:type="1"
                    FG:name="FireGestures - &gestureCmd.options;"
@@ -432,8 +424,7 @@
                    FG:extra="wheel-down" />
   <RDF:Description RDF:about="urn:Browser:ShowAllTabs"
                    FG:type="1"
-                   FG:name="[&gestureType.popup;] &listAllTabs.label; (&gestureCmd.previewMode;)"
-                   FG:flags="min:firefox3.6" />
+                   FG:name="[&gestureType.popup;] &listAllTabs.label; (&gestureCmd.previewMode;)" />
   <RDF:Description RDF:about="urn:FireGestures:ClosedTabsPopup"
                    FG:type="1"
                    FG:name="[&gestureType.popup;] &historyUndoMenu.label;" />
@@ -463,8 +454,7 @@
                    FG:name="[&gestureType.hybrid;] &gestureCmd.hybridViewSource; (&gestureCategory.selection; / &gestureCategory.frame; / &gestureCategory.page;)" />
   <RDF:Description RDF:about="urn:FireGestures:HybridMetaData"
                    FG:type="1"
-                   FG:name="[&gestureType.hybrid;] &metadataCmd.label; (&gestureCategory.link; / &gestureCategory.image; / &gestureCategory.frame; / &gestureCategory.page;)"
-                   FG:flags="max:firefox3.5" />
+                   FG:name="[&gestureType.hybrid;] &gestureCmd.hybridProperties; (&gestureCategory.link; / &gestureCategory.image; / &gestureCategory.frame; / &gestureCategory.page;)" />
   <!-- script -->
   <RDF:Description RDF:about="urn:category:script"
                    FG:type="0"

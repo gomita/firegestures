@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Guardar como...">
 <!ENTITY gestureCmd.hybridBookmark "Añadir a marcadores...">
 <!ENTITY gestureCmd.hybridViewSource "Ver fuente">
+<!ENTITY gestureCmd.hybridProperties "Propiedades">
 <!ENTITY gestureCmd.hybridSendURL "Enviar...">
 <!ENTITY gestureCmd.hybridCopyURL "Copiar ubicación">
 <!ENTITY gestureCmd.toggleFindbar "Abrir / Cerrar barra de búsqueda">
 <!ENTITY gestureCmd.restartApp "Reiniciar Firefox">
 <!ENTITY gestureCmd.options "Opciones">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Propiedades">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Salvesta kui...">
 <!ENTITY gestureCmd.hybridBookmark "Järjehoidja...">
 <!ENTITY gestureCmd.hybridViewSource "Vaata allikat">
+<!ENTITY gestureCmd.hybridProperties "Properties">
 <!ENTITY gestureCmd.hybridSendURL "Saada...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopeeri asukoht">
 <!ENTITY gestureCmd.toggleFindbar "Ava/Sulge otsinguriba">
 <!ENTITY gestureCmd.restartApp "Taaskäivita Firefox">
 <!ENTITY gestureCmd.options "Sätted">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Properties">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

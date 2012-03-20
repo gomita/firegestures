@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Spara som...">
 <!ENTITY gestureCmd.hybridBookmark "Bokmärk...">
 <!ENTITY gestureCmd.hybridViewSource "Visa källkod">
+<!ENTITY gestureCmd.hybridProperties "Egenskaper">
 <!ENTITY gestureCmd.hybridSendURL "Skicka...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopiera plats">
 <!ENTITY gestureCmd.toggleFindbar "Öppna / Stäng Sidsökfältet">
 <!ENTITY gestureCmd.restartApp "Starta om Firefox">
 <!ENTITY gestureCmd.options "Inställningar">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Egenskaper">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

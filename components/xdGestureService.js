@@ -210,11 +210,6 @@ xdGestureService.prototype = {
 ////////////////////////////////////////////////////////////////////////////////
 // XPCOM registration
 
-if (XPCOMUtils.generateNSGetFactory)
-	// [Firefox4]
-	var NSGetFactory = XPCOMUtils.generateNSGetFactory([xdGestureService]);
-else
-	// [Firefox3.6]
-	var NSGetModule = XPCOMUtils.generateNSGetModule([xdGestureService]);
+var NSGetFactory = XPCOMUtils.generateNSGetFactory([xdGestureService]);
 
 

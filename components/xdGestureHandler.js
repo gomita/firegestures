@@ -67,24 +67,14 @@ xdGestureHandler.prototype = {
 	// xdIGestureObserver
 	_gestureObserver: null,
 
-	// [Firefox4]
-	_isFx4: false,
-
 	attach: function FGH_attach(aDrawArea, aObserver) {
 		var appInfo = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
-		this._isFx4 = parseFloat(appInfo.version) >= 4.0;
 		this._drawArea = aDrawArea;
 		this._gestureObserver = aObserver;
 		this._drawArea.addEventListener("mousedown", this, true);
-		if (this._isFx4) {
-			var root = this._drawArea.ownerDocument.defaultView.document.documentElement;
-			root.addEventListener("mousemove", this, true);
-			root.addEventListener("mouseup", this, true);
-		}
-		else {
-			this._drawArea.addEventListener("mousemove", this, true);
-			this._drawArea.addEventListener("mouseup", this, true);
-		}
+		var root = this._drawArea.ownerDocument.defaultView.document.documentElement;
+		root.addEventListener("mousemove", this, true);
+		root.addEventListener("mouseup", this, true);
 		this._drawArea.addEventListener("contextmenu", this, true);
 		this._drawArea.addEventListener("draggesture", this, true);
 		this._reloadPrefs();
@@ -95,15 +85,9 @@ xdGestureHandler.prototype = {
 
 	detach: function FGH_detach() {
 		this._drawArea.removeEventListener("mousedown", this, true);
-		if (this._isFx4) {
-			var root = this._drawArea.ownerDocument.defaultView.document.documentElement;
-			root.removeEventListener("mousemove", this, true);
-			root.removeEventListener("mouseup", this, true);
-		}
-		else {
-			this._drawArea.removeEventListener("mousemove", this, true);
-			this._drawArea.removeEventListener("mouseup", this, true);
-		}
+		var root = this._drawArea.ownerDocument.defaultView.document.documentElement;
+		root.removeEventListener("mousemove", this, true);
+		root.removeEventListener("mouseup", this, true);
 		this._drawArea.removeEventListener("contextmenu", this, true);
 		this._drawArea.removeEventListener("draggesture", this, true);
 		var prefBranch2 = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch2);
@@ -399,8 +383,6 @@ xdGestureHandler.prototype = {
 	},
 
 	_enableContextMenu: function FGH__enableContextMenu(aEnable) {
-		// [Firefox3.6] in view-source window
-		// [Firefox4] in main window and view-source window
 		// If 'dom.event.contextmenu.enabled' is false,
 		// there is a problem that context menu is not suppressed
 		// by preventDefault and stopPropagation for DOM contextmenu event.
@@ -705,11 +687,6 @@ xdGestureHandler.prototype = {
 ////////////////////////////////////////////////////////////////////////////////
 // XPCOM registration
 
-if (XPCOMUtils.generateNSGetFactory)
-	// [Firefox4]
-	var NSGetFactory = XPCOMUtils.generateNSGetFactory([xdGestureHandler]);
-else
-	// [Firefox3.6]
-	var NSGetModule = XPCOMUtils.generateNSGetModule([xdGestureHandler]);
+var NSGetFactory = XPCOMUtils.generateNSGetFactory([xdGestureHandler]);
 
 

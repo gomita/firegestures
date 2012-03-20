@@ -42,20 +42,9 @@
 <!ENTITY gestureCmd.hybridSave "Salvează ca…">
 <!ENTITY gestureCmd.hybridBookmark "Semn de carte…">
 <!ENTITY gestureCmd.hybridViewSource "Afișează codul sursă">
+<!ENTITY gestureCmd.hybridProperties "Proprietăți">
 <!ENTITY gestureCmd.hybridSendURL "Trimite…">
 <!ENTITY gestureCmd.hybridCopyURL "Copiază adresa locației">
 <!ENTITY gestureCmd.toggleFindbar "Afișează/Ascunde bara de căutare">
 <!ENTITY gestureCmd.restartApp "Repornește Firefox">
 <!ENTITY gestureCmd.options "Opțiuni">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Proprietăți">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">
