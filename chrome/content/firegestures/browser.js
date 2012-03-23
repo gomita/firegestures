@@ -860,8 +860,10 @@ var FireGestures = {
 		popup.addEventListener("DOMMenuItemInactive", this, false);
 		this._gestureHandler.openPopupAtPointer(popup);
 		document.documentElement.addEventListener("mouseup", this, true);
-		if (aWheelGesture)
+		if (aWheelGesture) {
 			document.documentElement.addEventListener("DOMMouseScroll", this, true);
+			popup.addEventListener("mouseover", this, false);
+		}
 	},
 
 	handleEvent: function(event) {
@@ -893,6 +895,13 @@ var FireGestures = {
 				break;
 			case "DOMMenuItemInactive": 
 				XULBrowserWindow.setOverLink("", null);
+				break;
+			case "mouseover": 
+				if (event.target.parentNode != popup)
+					break;
+				this._activateMenuItem(false);
+				this._popupActiveItem = event.target;
+				this._activateMenuItem(true);
 				break;
 			case "mouseup": 
 				// do something for the active menuitem
@@ -929,7 +938,7 @@ var FireGestures = {
 				}
 				popup.hidePopup();
 				break;
-			case"popupshowing": 
+			case "popupshowing": 
 				// [Linux] this needs to fire DOMMouseScroll events outside popup
 				var boxObj = popup.popupBoxObject;
 				if ("setConsumeRollupEvent" in boxObj) {
@@ -946,6 +955,7 @@ var FireGestures = {
 				popup.removeEventListener("popupshowing", this, true);
 				popup.removeEventListener("popupshown", this, true);
 				popup.removeEventListener("popuphiding", this, true);
+				popup.removeEventListener("mouseover", this, false);
 				document.documentElement.removeEventListener("mouseup", this, true);
 				document.documentElement.removeEventListener("DOMMouseScroll", this, true);
 				while (popup.hasChildNodes())
