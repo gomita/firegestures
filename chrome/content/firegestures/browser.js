@@ -125,14 +125,14 @@ var FireGestures = {
 						this.checkURL(linkURL, event.target.ownerDocument);
 						this._linkURLs.push(linkURL);
 						this._linkElts.push(event.target);
-						event.target.style.MozOutline = "1px dashed darkorange";
+						event.target.style.outline = "1px dashed darkorange";
 					}
 					catch(ex) {}	// unsafe link
 				}
 				break;
 			case "keypress-stop": 
 				for (var i = 0; i < this._linkURLs.length; i++) {
-					this._linkElts[i].style.MozOutline = "";
+					this._linkElts[i].style.outline = "";
 					this._linkElts[i] = null;	// just in case
 				}
 				this._linkURLs = null;
