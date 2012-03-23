@@ -440,11 +440,9 @@ var FireGestures = {
 			case "FireGestures:SaveHoveredLinks": 
 				var delay = 0;
 				var doc = this.sourceNode.ownerDocument;
-				var ref = 'makeURI("' + doc.location.href + '", "' + doc.characterSet + '")';
+				var ref = makeURI(doc.location.href, doc.characterSet);
 				this._linkURLs.forEach(function(aURL) {
-					window.setTimeout(
-						'saveURL("' + aURL + '", null, null, false, true, ' + ref + ');', delay
-					);
+					window.setTimeout(function() { saveURL(aURL, null, null, false, true, ref); }, delay);
 					delay += 1000;
 				});
 				break;
