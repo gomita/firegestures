@@ -86,6 +86,10 @@ var EditUI = {
 
 	/* ::::: xdIGestureObserver ::::: */
 
+	canStartGesture: function(event) {
+		return true;
+	},
+
 	onDirectionChanged: function(event, aDirection) {
 		gDirectionTextbox.value = aDirection;
 	},
