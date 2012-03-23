@@ -237,7 +237,7 @@ xdGestureHandler.prototype = {
 				if (this._state == STATE_GESTURE || this._state == STATE_KEYPRESS) {
 					if (this._mouseGestureEnabled) {
 						// keypress gesture
-						if (this._keypressGestureEnabled && (event.ctrlKey || event.shiftKey)) {
+						if (this._keypressGestureEnabled && (event.ctrlKey || event.metaKey || event.shiftKey)) {
 							var type = this._state == STATE_GESTURE ? "keypress-start" : "keypress-progress";
 							this._state = STATE_KEYPRESS;
 							this._invokeExtraGesture(event, type);
@@ -274,7 +274,7 @@ xdGestureHandler.prototype = {
 					// keypress gesture
 					if (this._state == STATE_KEYPRESS) {
 						this._state = STATE_READY;
-						if (event.ctrlKey)
+						if (event.ctrlKey || event.metaKey)
 							this._invokeExtraGesture(event, "keypress-ctrl");
 						else if (event.shiftKey)
 							this._invokeExtraGesture(event, "keypress-shift");
