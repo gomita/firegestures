@@ -717,6 +717,11 @@ var FireGestures = {
 		// if there is a popup element which has the specifed id, reuse it
 		const POPUP_ID = "FireGesturesPopup";
 		var popup = document.getElementById(POPUP_ID);
+		if (this._isMac && popup) {
+			// XXX [Mac] to build popup as xul:panel or xul:menupopup, remove old element first.
+			popup.parentNode.removeChild(popup);
+			popup = null;
+		}
 		if (!popup) {
 			// XXX [Mac] use xul:panel instead of xul:menupopup to fix the problem that
 			// no DOMMouseScroll events sent outside the popup.
@@ -724,7 +729,7 @@ var FireGestures = {
 			// 1) css rules for 'menupopup > menuitem' are not applied
 			// 2) set _moz-menuactive="true" to a xul:menuitem has no effect
 			// 3) set default="true" to a xul:menuitem has no effect
-			if (this._isMac) {
+			if (this._isMac && aWheelGesture) {
 				popup = document.createElement("panel");
 				popup.setAttribute("noautohide", "true");
 			}
