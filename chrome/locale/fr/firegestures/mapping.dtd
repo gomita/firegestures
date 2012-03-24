@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Ouvrir / fermer la barre de recherche">
 <!ENTITY gestureCmd.restartApp "Redémarrer Firefox">
 <!ENTITY gestureCmd.options "Options">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

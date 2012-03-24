@@ -47,3 +47,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Mở/Đóng Thanh tìm kiếm">
 <!ENTITY gestureCmd.restartApp "Khởi động lại Firefox">
 <!ENTITY gestureCmd.options "Tùy chọn">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

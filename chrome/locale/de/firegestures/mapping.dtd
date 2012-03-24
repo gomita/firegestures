@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Suchleiste öffnen/schließen">
 <!ENTITY gestureCmd.restartApp "Firefox neu starten">
 <!ENTITY gestureCmd.options "Optionen">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

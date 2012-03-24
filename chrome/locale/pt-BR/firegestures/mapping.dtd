@@ -40,3 +40,6 @@
 <!ENTITY gestureCmd.hybridViewSource "Ver código-fonte">
 <!ENTITY gestureCmd.toggleFindbar "Abrir / Fechar barra de localizar">
 <!ENTITY gestureCmd.options "Opções">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Ava/Sulge otsinguriba">
 <!ENTITY gestureCmd.restartApp "Taaskäivita Firefox">
 <!ENTITY gestureCmd.options "Sätted">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

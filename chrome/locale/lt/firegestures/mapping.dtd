@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Atverti / Užverti paieškos juostą">
 <!ENTITY gestureCmd.restartApp "Paleisti iš naujo Firefox">
 <!ENTITY gestureCmd.options "Parinktys">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

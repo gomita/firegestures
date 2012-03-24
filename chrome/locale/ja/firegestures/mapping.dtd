@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "検索バーを開く / 閉じる">
 <!ENTITY gestureCmd.restartApp "Firefox を再起動">
 <!ENTITY gestureCmd.options "設定">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

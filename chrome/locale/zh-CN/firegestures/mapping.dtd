@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "打开/关闭 查找栏">
 <!ENTITY gestureCmd.restartApp "重启Firefox">
 <!ENTITY gestureCmd.options "选项">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

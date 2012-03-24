@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "開啟╱關閉搜尋列">
 <!ENTITY gestureCmd.restartApp "重新啟動 Firefox">
 <!ENTITY gestureCmd.options "選項">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

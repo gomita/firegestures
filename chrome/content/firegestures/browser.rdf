@@ -92,6 +92,8 @@
     <RDF:li RDF:resource="urn:Tools:Inspect" />
     <RDF:li RDF:resource="urn:FireGestures:ErrorConsole" />
     <RDF:li RDF:resource="urn:FireGestures:WebConsole" />
+    <RDF:li RDF:resource="urn:Tools:Scratchpad" />
+    <RDF:li RDF:resource="urn:Tools:StyleEditor" />
     <RDF:li RDF:resource="urn:FireGestures:BookmarksSidebar" />
     <RDF:li RDF:resource="urn:FireGestures:HistorySidebar" />
     <RDF:li RDF:resource="urn:FireGestures:FindBar" />
@@ -394,6 +396,14 @@
   <RDF:Description RDF:about="urn:FireGestures:WebConsole"
                    FG:type="1"
                    FG:name="&webConsoleCmd.label;" />
+  <RDF:Description RDF:about="urn:Tools:Scratchpad"
+                   FG:type="1"
+                   FG:name="&scratchpad.label;"
+                   FG:flags="min:firefox10" />
+  <RDF:Description RDF:about="urn:Tools:StyleEditor"
+                   FG:type="1"
+                   FG:name="&styleeditor.label;"
+                   FG:flags="min:firefox11" />
   <RDF:Description RDF:about="urn:FireGestures:BookmarksSidebar"
                    FG:type="1"
                    FG:name="&gestureCmd.bookmarksSidebar;" />

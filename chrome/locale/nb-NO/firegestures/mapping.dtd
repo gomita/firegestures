@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Åpne/lukke søkelinja">
 <!ENTITY gestureCmd.restartApp "Start Firefox på nytt">
 <!ENTITY gestureCmd.options "Innstillinger">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

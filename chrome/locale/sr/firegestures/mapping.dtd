@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Отвори/затвори траку за претрагу">
 <!ENTITY gestureCmd.restartApp "Поново покрени Фајерфокс">
 <!ENTITY gestureCmd.options "Опције">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

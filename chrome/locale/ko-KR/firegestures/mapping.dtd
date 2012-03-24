@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "검색 막대 열기/닫기">
 <!ENTITY gestureCmd.restartApp "Firefox 재시작">
 <!ENTITY gestureCmd.options "선택사항">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Otwórz/Zamknij pasek wyszukiwania">
 <!ENTITY gestureCmd.restartApp "Uruchom ponownie Firefoksa">
 <!ENTITY gestureCmd.options "opcje">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

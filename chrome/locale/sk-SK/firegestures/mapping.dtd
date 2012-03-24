@@ -42,3 +42,6 @@
 <!ENTITY gestureCmd.hybridCopyURL "Kopírovať umiestnenie">
 <!ENTITY gestureCmd.toggleFindbar "Otvoriť / Zavrieť lištu vyhľadávania">
 <!ENTITY gestureCmd.options "Možnosti">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

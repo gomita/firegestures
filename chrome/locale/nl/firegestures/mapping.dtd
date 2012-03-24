@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Zoekbalk Openen / Sluiten">
 <!ENTITY gestureCmd.restartApp "Firefox Herstarten">
 <!ENTITY gestureCmd.options "Opties">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

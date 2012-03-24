@@ -47,3 +47,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Arama Çubuğunu Aç/ Kapat">
 <!ENTITY gestureCmd.restartApp "Firefox&apos;u Baştan Başlat">
 <!ENTITY gestureCmd.options "Ayarlar">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

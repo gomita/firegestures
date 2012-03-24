@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "פתיחת / סגירת סרגל החיפוש">
 <!ENTITY gestureCmd.restartApp "אתחול Firefox">
 <!ENTITY gestureCmd.options "אפשרויות">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

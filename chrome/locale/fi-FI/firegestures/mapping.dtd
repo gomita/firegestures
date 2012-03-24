@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Avaa / sulje etsintäpalkki">
 <!ENTITY gestureCmd.restartApp "Käynnistä Firefox uudelleen">
 <!ENTITY gestureCmd.options "Asetukset">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">

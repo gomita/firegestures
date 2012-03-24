@@ -48,3 +48,6 @@
 <!ENTITY gestureCmd.toggleFindbar "Zobrazit / Skrýt panel vyhledávání">
 <!ENTITY gestureCmd.restartApp "Restartovat Firefox">
 <!ENTITY gestureCmd.options "možnosti">
+<!-- For the backward compatibility, leave them empty. -->
+<!ENTITY scratchpad.label "">
+<!ENTITY styleeditor.label "">
