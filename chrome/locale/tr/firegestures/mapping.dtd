@@ -41,20 +41,9 @@
 <!ENTITY gestureCmd.hybridSave "Farklı Kaydet...">
 <!ENTITY gestureCmd.hybridBookmark "Yer İmi...">
 <!ENTITY gestureCmd.hybridViewSource "Kaynağı Göster">
+<!ENTITY gestureCmd.hybridProperties "Özellikler">
 <!ENTITY gestureCmd.hybridSendURL "Gönder...">
 <!ENTITY gestureCmd.hybridCopyURL "Konumu Kopyala">
 <!ENTITY gestureCmd.toggleFindbar "Arama Çubuğunu Aç/ Kapat">
 <!ENTITY gestureCmd.restartApp "Firefox&apos;u Baştan Başlat">
 <!ENTITY gestureCmd.options "Ayarlar">
-<!-- [Firefox3.6] -->
-<!ENTITY metadataCmd.label "Özellikler">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">

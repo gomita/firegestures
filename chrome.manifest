@@ -13,7 +13,7 @@ locale	firegestures	fi-FI	chrome/locale/fi-FI/firegestures/
 locale	firegestures	fr	chrome/locale/fr/firegestures/
 locale	firegestures	he	chrome/locale/he/firegestures/
 locale	firegestures	hu-HU	chrome/locale/hu-HU/firegestures/
-locale	firegestures	it-IT	chrome/locale/it-IT/firegestures/
+locale	firegestures	it	chrome/locale/it/firegestures/
 locale	firegestures	ko-KR	chrome/locale/ko-KR/firegestures/
 locale	firegestures	lt	chrome/locale/lt/firegestures/
 locale	firegestures	nb-NO	chrome/locale/nb-NO/firegestures/
@@ -25,7 +25,7 @@ locale	firegestures	ru-RU	chrome/locale/ru-RU/firegestures/
 locale	firegestures	sk-SK	chrome/locale/sk-SK/firegestures/
 locale	firegestures	sr	chrome/locale/sr/firegestures/
 locale	firegestures	sv-SE	chrome/locale/sv-SE/firegestures/
-locale	firegestures	tr-TR	chrome/locale/tr-TR/firegestures/
+locale	firegestures	tr	chrome/locale/tr/firegestures/
 locale	firegestures	vi	chrome/locale/vi/firegestures/
 locale	firegestures	zh-CN	chrome/locale/zh-CN/firegestures/
 locale	firegestures	zh-TW	chrome/locale/zh-TW/firegestures/

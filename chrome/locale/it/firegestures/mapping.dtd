@@ -44,13 +44,3 @@
 <!ENTITY gestureCmd.hybridCopyURL "Copia destinazione">
 <!ENTITY gestureCmd.toggleFindbar "Apri/Chiudi Barra di Ricerca">
 <!ENTITY gestureCmd.options "Opzioni">
-<!-- [Firefox4] For the backward compatibility, leave them empty. -->
-<!ENTITY clearRecentHistoryCmd.label "">
-<!ENTITY clearRecentHistory.label "">
-<!ENTITY openTabInNewWindow.label "">
-<!ENTITY moveToNewWindow.label "">
-<!ENTITY pinAppTab.label "">
-<!ENTITY unpinAppTab.label "">
-<!ENTITY inspectMenu.label "">
-<!ENTITY webConsoleCmd.label "">
-<!ENTITY viewTabGroups.label "">
