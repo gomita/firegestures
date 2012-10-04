@@ -47,6 +47,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Mở/Đóng Thanh tìm kiếm">
 <!ENTITY gestureCmd.restartApp "Khởi động lại Firefox">
 <!ENTITY gestureCmd.options "Tùy chọn">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Co rút thành Thẻ Tí Hon">
+<!ENTITY unpinTab.label "Dừng co rút Thẻ">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

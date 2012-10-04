@@ -48,6 +48,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Отвори/затвори траку за претрагу">
 <!ENTITY gestureCmd.restartApp "Поново покрени Фајерфокс">
 <!ENTITY gestureCmd.options "Опције">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Закачи као јазичак апликације">
+<!ENTITY unpinTab.label "Откачи језичак">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

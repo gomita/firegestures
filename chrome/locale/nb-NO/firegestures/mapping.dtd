@@ -48,6 +48,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Åpne/lukke søkelinja">
 <!ENTITY gestureCmd.restartApp "Start Firefox på nytt">
 <!ENTITY gestureCmd.options "Innstillinger">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Gjør om til applikasjonsfane">
+<!ENTITY unpinTab.label "Gjør om til vanlig fane">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

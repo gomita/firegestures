@@ -40,6 +40,9 @@
 <!ENTITY gestureCmd.hybridViewSource "Ver código-fonte">
 <!ENTITY gestureCmd.toggleFindbar "Abrir / Fechar barra de localizar">
 <!ENTITY gestureCmd.options "Opções">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Afixar como aplicativo">
+<!ENTITY unpinTab.label "Desafixar aba">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

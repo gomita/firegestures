@@ -48,6 +48,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Abrir/Cerrar la barra de búsqueda">
 <!ENTITY gestureCmd.restartApp "Arranque nuevamente a Firefox">
 <!ENTITY gestureCmd.options "Opciones">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Pegar como pestaña de aplicación">
+<!ENTITY unpinTab.label "Despegar pestaña">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

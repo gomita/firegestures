@@ -48,6 +48,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Keresés megnyitása/bezárása">
 <!ENTITY gestureCmd.restartApp "Firefox újraindítása">
 <!ENTITY gestureCmd.options "Beállítások">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Rögzítés alkalmazáslapként">
+<!ENTITY unpinTab.label "Lap feloldása">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

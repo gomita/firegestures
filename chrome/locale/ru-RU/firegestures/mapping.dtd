@@ -48,6 +48,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Открыть / Закрыть панель поиска">
 <!ENTITY gestureCmd.restartApp "Перезапустить Firefox">
 <!ENTITY gestureCmd.options "Настройки">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Закрепить вкладку">
+<!ENTITY unpinTab.label "Открепить вкладку">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

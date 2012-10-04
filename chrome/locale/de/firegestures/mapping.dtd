@@ -48,6 +48,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Suchleiste öffnen/schließen">
 <!ENTITY gestureCmd.restartApp "Firefox neu starten">
 <!ENTITY gestureCmd.options "Optionen">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Als App-Tab anpinnen">
+<!ENTITY unpinTab.label "Tab nicht mehr anpinnen">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">

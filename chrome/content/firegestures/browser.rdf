@@ -218,7 +218,7 @@
                    FG:name="&moveToNewWindow.label;" />
   <RDF:Description RDF:about="urn:FireGestures:TogglePinTab"
                    FG:type="1"
-                   FG:name="&pinAppTab.label; / &unpinAppTab.label;" />
+                   FG:name="&pinTab.label; / &unpinTab.label;" />
   <RDF:Description RDF:about="urn:FireGestures:ReloadAllTabs"
                    FG:type="1"
                    FG:name="&reloadAllTabs.label;" />

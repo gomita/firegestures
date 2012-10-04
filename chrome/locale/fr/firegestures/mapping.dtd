@@ -48,6 +48,9 @@
 <!ENTITY gestureCmd.toggleFindbar "Ouvrir / fermer la barre de recherche">
 <!ENTITY gestureCmd.restartApp "Redémarrer Firefox">
 <!ENTITY gestureCmd.options "Options">
+<!-- For the compatibility with Firefox 17 or older. -->
+<!ENTITY pinTab.label "Épingler cet onglet">
+<!ENTITY unpinTab.label "Relâcher l'onglet">
 <!-- For the backward compatibility, leave them empty. -->
 <!ENTITY scratchpad.label "">
 <!ENTITY styleeditor.label "">
