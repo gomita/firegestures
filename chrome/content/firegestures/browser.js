@@ -318,7 +318,7 @@ var FireGestures = {
 				var doc = this.sourceNode.ownerDocument;
 				this.checkURL(linkURL, doc);
 				saveURL(linkURL, this.getLinkText(), null, true, false,
-				        makeURI(doc.location.href, doc.characterSet));
+				        makeURI(doc.location.href, doc.characterSet), doc);
 				break;
 			case "FireGestures:ViewImage": 
 				var imageURL = this.getImageURL();
@@ -340,7 +340,7 @@ var FireGestures = {
 					this.checkURL(mediaURL, doc);
 				var skipPrompt = aCommand == "FireGestures:SaveImageNow";
 				saveImageURL(mediaURL, onCanvas ? "canvas.png" : null, "SaveImageTitle", 
-				             false, skipPrompt, doc.documentURIObject);
+				             false, skipPrompt, doc.documentURIObject, doc);
 				break;
 			case "FireGestures:WebSearch": 
 				BrowserSearch.loadSearch(getBrowserSelection(), true);
@@ -442,7 +442,7 @@ var FireGestures = {
 				var doc = this.sourceNode.ownerDocument;
 				var ref = makeURI(doc.location.href, doc.characterSet);
 				this._linkURLs.forEach(function(aURL) {
-					window.setTimeout(function() { saveURL(aURL, null, null, false, true, ref); }, delay);
+					window.setTimeout(function() { saveURL(aURL, null, null, false, true, ref, doc); }, delay);
 					delay += 1000;
 				});
 				break;
