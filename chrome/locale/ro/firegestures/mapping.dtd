@@ -51,6 +51,3 @@
 <!-- For the compatibility with Firefox 17 or older. -->
 <!ENTITY pinTab.label "Fixează sus ca o filă de aplicație">
 <!ENTITY unpinTab.label "Anulează fixarea">
-<!-- For the backward compatibility, leave them empty. -->
-<!ENTITY scratchpad.label "">
-<!ENTITY styleeditor.label "">

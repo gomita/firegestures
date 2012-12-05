@@ -51,6 +51,3 @@
 <!-- For the compatibility with Firefox 17 or older. -->
 <!ENTITY pinTab.label "Fijar pestaña">
 <!ENTITY unpinTab.label "Desanclar pestaña">
-<!-- For the backward compatibility, leave them empty. -->
-<!ENTITY scratchpad.label "">
-<!ENTITY styleeditor.label "">

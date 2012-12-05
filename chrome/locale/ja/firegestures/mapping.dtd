@@ -51,6 +51,3 @@
 <!-- For the compatibility with Firefox 17 or older. -->
 <!ENTITY pinTab.label "タブをピン留め">
 <!ENTITY unpinTab.label "タブのピン留めを外す">
-<!-- For the backward compatibility, leave them empty. -->
-<!ENTITY scratchpad.label "">
-<!ENTITY styleeditor.label "">

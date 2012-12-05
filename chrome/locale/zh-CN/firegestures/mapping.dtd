@@ -51,6 +51,3 @@
 <!-- For the compatibility with Firefox 17 or older. -->
 <!ENTITY pinTab.label "固定为应用标签页">
 <!ENTITY unpinTab.label "取消固定标签页">
-<!-- For the backward compatibility, leave them empty. -->
-<!ENTITY scratchpad.label "">
-<!ENTITY styleeditor.label "">

@@ -51,6 +51,3 @@
 <!-- For the compatibility with Firefox 17 or older. -->
 <!ENTITY pinTab.label "Kiinnitä ohjelmalehti">
 <!ENTITY unpinTab.label "Irrota välilehti">
-<!-- For the backward compatibility, leave them empty. -->
-<!ENTITY scratchpad.label "">
-<!ENTITY styleeditor.label "">

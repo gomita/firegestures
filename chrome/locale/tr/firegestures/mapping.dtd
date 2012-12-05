@@ -50,6 +50,3 @@
 <!-- For the compatibility with Firefox 17 or older. -->
 <!ENTITY pinTab.label "Uygulama sekmesi olarak sabitle">
 <!ENTITY unpinTab.label "Normal sekmeye dönüştür">
-<!-- For the backward compatibility, leave them empty. -->
-<!ENTITY scratchpad.label "">
-<!ENTITY styleeditor.label "">
