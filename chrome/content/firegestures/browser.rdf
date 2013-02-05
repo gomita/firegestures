@@ -87,7 +87,6 @@
     <RDF:li RDF:resource="urn:category:tools" />
     <RDF:li RDF:resource="urn:Tools:Downloads" />
     <RDF:li RDF:resource="urn:Tools:Addons" />
-    <RDF:li RDF:resource="urn:Tools:PrivateBrowsing" />
     <RDF:li RDF:resource="urn:Tools:Sanitize" />
     <RDF:li RDF:resource="urn:FireGestures:ErrorConsole" />
     <RDF:li RDF:resource="urn:FireGestures:BookmarksSidebar" />
@@ -374,9 +373,6 @@
   <RDF:Description RDF:about="urn:Tools:Downloads"
                    FG:type="1"
                    FG:name="&downloads.label;" />
-  <RDF:Description RDF:about="urn:Tools:PrivateBrowsing"
-                   FG:type="1"
-                   FG:name="&privateBrowsingCmd.start.label; / &privateBrowsingCmd.stop.label;" />
   <RDF:Description RDF:about="urn:Tools:Addons"
                    FG:type="1"
                    FG:name="&addons.label;" />
