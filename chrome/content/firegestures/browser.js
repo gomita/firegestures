@@ -766,20 +766,19 @@ var FireGestures = {
 					throw "No back/forward history for this tab.";
 				var curIdx = sessionHistory.index;
 				for (var i = 0; i < sessionHistory.count; i++) {
-					var entry = sessionHistory.getEntryAtIndex(i, false);
+					let entry = sessionHistory.getEntryAtIndex(i, false);
 					if (!entry)
 						continue;
-					var menuitem = document.createElement("menuitem");
+					let menuitem = document.createElement("menuitem");
 					popup.insertBefore(menuitem, popup.firstChild);
 					menuitem.setAttribute("label", entry.title);
 					menuitem.setAttribute("statustext", entry.URI.spec);
-					try {
-						var iconURL = Cc["@mozilla.org/browser/favicon-service;1"]
-						              .getService(Ci.nsIFaviconService)
-						              .getFaviconForPage(entry.URI).spec;
+					PlacesUtils.favicons.getFaviconURLForPage(entry.URI, function(aURI) {
+						if (!aURI)
+							return;
+						let iconURL = PlacesUtils.favicons.getFaviconLinkForIcon(aURI).spec;
 						menuitem.style.listStyleImage = "url(" + iconURL + ")";
-					}
-					catch (ex) {}
+					});
 					menuitem.index = i;
 					if (i == curIdx) {
 						menuitem.style.listStyleImage = "";
