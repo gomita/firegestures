@@ -28,12 +28,6 @@ radio[pane="advancedPane"] {
 	width: 32px;
 }
 
-treechildren::-moz-tree-cell-text(category) {
-	color: #707070;
-	margin-left: 6px;
-	margin-right: 2px;
-}
-
 treechildren::-moz-tree-drop-feedback {
 	width: 1000px;
 	margin-left: -100px;

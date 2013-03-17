@@ -576,12 +576,9 @@ CustomTreeView.prototype = {
 		return gMappingArray.length;
 	},
 	selection: null,
-	getRowProperties: function(index, properties) {},
-	getCellProperties: function(row, col, properties) {
-		if (col.index == 0 && this.isSeparator(row))
-			properties.AppendElement(this.atomSvc.getAtom("category"));
-	},
-	getColumnProperties: function(col, properties) {},
+	getRowProperties: function(index) {},
+	getCellProperties: function(row, col) {},
+	getColumnProperties: function(col) {},
 	isContainer: function(index) { return false; },
 	isContainerOpen: function(index) { return false; },
 	isContainerEmpty: function(index) { return false; },
