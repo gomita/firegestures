@@ -575,33 +575,11 @@ xdGestureHandler.prototype = {
 		else
 			return;
 		var insertionNode = doc.documentElement ? doc.documentElement : doc;
-		if (doc.getBoxObjectFor) {
-			// [Firefox3.5]
-			var box = doc.getBoxObjectFor(insertionNode);
-			this._trailOffsetX = box.screenX;
-			this._trailOffsetY = box.screenY;
-			this._trailZoom = 1;
-			var tabbrowser = this._drawArea.ownerDocument.defaultView.gBrowser;
-			// gesture_mappings  : gBrowser is a xul:tabbrowser element
-			// viewsource_mapping: gBrowser is a xul:browser element
-			if (tabbrowser && (tabbrowser.mCurrentBrowser || tabbrowser).markupDocumentViewer.fullZoom != 1) {
-				// get the zoom factor which is more accurate than nsIMarkupDocumentViewer.fullZoom
-				var dot = doc.createElementNS(HTML_NS, "xdTrailDot");
-				dot.style.top = "1048576px";	// arbitrary large value
-				dot.style.position = "absolute";
-				insertionNode.appendChild(dot);
-				this._trailZoom = (doc.getBoxObjectFor(dot).screenY - this._trailOffsetY) / dot.offsetTop;
-				insertionNode.removeChild(dot);
-			}
-		}
-		else {
-			// [Firefox3.6]
-			var win = doc.defaultView;
-			this._trailZoom = win.QueryInterface(Ci.nsIInterfaceRequestor).
-			                  getInterface(Ci.nsIDOMWindowUtils).screenPixelsPerCSSPixel;
-			this._trailOffsetX = (win.mozInnerScreenX - win.scrollX) * this._trailZoom;
-			this._trailOffsetY = (win.mozInnerScreenY - win.scrollY) * this._trailZoom;
-		}
+		var win = doc.defaultView;
+		this._trailZoom = win.QueryInterface(Ci.nsIInterfaceRequestor).
+		                  getInterface(Ci.nsIDOMWindowUtils).screenPixelsPerCSSPixel;
+		this._trailOffsetX = (win.mozInnerScreenX - win.scrollX) * this._trailZoom;
+		this._trailOffsetY = (win.mozInnerScreenY - win.scrollY) * this._trailZoom;
 		if (this._trailZoom != 1) log("_trailZoom: " + this._trailZoom);	// #debug
 		this._trailArea = doc.createElementNS(HTML_NS, "xdTrailArea");
 		insertionNode.appendChild(this._trailArea);
