@@ -567,13 +567,13 @@ xdGestureHandler.prototype = {
 
 	// called from _startGesture
 	createTrail: function FGH_createTrail(event) {
-		var doc;
-		if (event.view.top.document instanceof Ci.nsIDOMHTMLDocument)
-			doc = event.view.top.document;
-		else if (event.view.document instanceof Ci.nsIDOMHTMLDocument)
-			doc = event.view.document;
-		else
+		// [Firefox22] cannot access |event.view.top| directly
+		var win = event.view;
+		if (win.top.document instanceof Ci.nsIDOMHTMLDocument)
+			win = win.top;
+		else if (win.document instanceof Ci.nsIDOMHTMLDocument === false)
 			return;
+		var doc = win.document;
 		var insertionNode = doc.documentElement ? doc.documentElement : doc;
 		var win = doc.defaultView;
 		this._trailZoom = win.QueryInterface(Ci.nsIInterfaceRequestor).
