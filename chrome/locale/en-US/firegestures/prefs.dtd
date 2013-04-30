@@ -48,6 +48,9 @@
 <!ENTITY swipe.right "Swipe rightward">
 <!ENTITY swipe.up "Swipe upward">
 <!ENTITY swipe.down "Swipe downward">
+<!ENTITY swipe.continuous "Mouse gesture with continuous swipes">
+<!ENTITY swipe.continuous.1 "Time to wait for next direction">
+<!ENTITY swipe.continuous.2 "seconds">
 <!ENTITY treecol.name "Name">
 <!ENTITY treecol.command "Command">
 <!ENTITY treecol.script "Script">

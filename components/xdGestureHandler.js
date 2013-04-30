@@ -64,6 +64,12 @@ xdGestureHandler.prototype = {
 	// current direction chain e.g. LRLRUDUD
 	_directionChain: "",
 
+	// nsITimer to handle gesture timeout
+	_gestureTimer: null,
+
+	// nsITimer to handle swipe gesture
+	_swipeTimer: null,
+
 	// xdIGestureObserver
 	_gestureObserver: null,
 
@@ -93,6 +99,10 @@ xdGestureHandler.prototype = {
 		var prefBranch2 = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch2);
 		prefBranch2.removeObserver(PREFS_DOMAIN, this);
 		this._clearTimeout();
+		if (this._swipeTimer) {
+			this._swipeTimer.cancel();
+			this._swipeTimer = null;
+		}
 		this.sourceNode = null;
 		this._drawArea = null;
 		this._gestureObserver = null;
@@ -128,6 +138,7 @@ xdGestureHandler.prototype = {
 		this._trailSize      = getPref("mousetrail.size");
 		this._trailColor     = getPref("mousetrail.color");
 		this._gestureTimeout = getPref("gesture_timeout");
+		this._swipeTimeout   = getPref("swipe_timeout");
 		this._mouseGestureEnabled    = getPref("mousegesture");
 		this._wheelGestureEnabled    = getPref("wheelgesture");
 		this._rockerGestureEnabled   = getPref("rockergesture");
@@ -351,18 +362,46 @@ xdGestureHandler.prototype = {
 				event.preventDefault();
 				if (this._state != STATE_READY)
 					return;
+				// single swipe gesture
+				if (this._swipeTimeout == 0) {
+					var direction;
+					switch (event.direction) {
+						case event.DIRECTION_LEFT : direction = "left";  break;
+						case event.DIRECTION_RIGHT: direction = "right"; break;
+						case event.DIRECTION_UP   : direction = "up";    break;
+						case event.DIRECTION_DOWN : direction = "down";  break;
+					}
+					this.sourceNode = event.target;
+					this._lastX = event.screenX;
+					this._lastY = event.screenY;
+					this._invokeExtraGesture(event, "swipe-" + direction);
+					this.sourceNode = null;
+					return;
+				}
+				// continuous swipe gesture
+				if (this._swipeTimer) {
+					this._swipeTimer.cancel();
+					this._swipeTimer = null;
+				}
+				this._swipeTimer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
+				this._swipeTimer.initWithCallback(this, this._swipeTimeout, Ci.nsITimer.TYPE_ONE_SHOT);
+				if (!this._directionChain) {
+					this.sourceNode = event.target;
+					this._lastX = event.screenX;
+					this._lastY = event.screenY;
+				}
 				var direction;
 				switch (event.direction) {
-					case event.DIRECTION_LEFT : direction = "left";  break;
-					case event.DIRECTION_RIGHT: direction = "right"; break;
-					case event.DIRECTION_UP   : direction = "up";    break;
-					case event.DIRECTION_DOWN : direction = "down";  break;
+					case event.DIRECTION_LEFT : direction = "L"; break;
+					case event.DIRECTION_RIGHT: direction = "R"; break;
+					case event.DIRECTION_UP   : direction = "U"; break;
+					case event.DIRECTION_DOWN : direction = "D"; break;
 				}
-				this.sourceNode = event.target;
-				this._lastX = event.screenX;
-				this._lastY = event.screenY;
-				this._invokeExtraGesture(event, "swipe-" + direction);
-				this.sourceNode = null;
+				var lastDirection = this._directionChain.charAt(this._directionChain.length - 1);
+				if (direction != lastDirection) {
+					this._directionChain += direction;
+					this._gestureObserver.onDirectionChanged(event, this._directionChain);
+				}
 				break;
 		}
 		// #debug-begin
@@ -545,8 +584,6 @@ xdGestureHandler.prototype = {
 
 	/* ::::: nsITimerCallback ::::: */
 
-	_gestureTimer: null,
-
 	// start timer for gesture timeout
 	_setTimeout: function FGH__setTimeout(aMsec) {
 		this._clearTimeout();
@@ -563,12 +600,22 @@ xdGestureHandler.prototype = {
 	},
 
 	notify: function(aTimer) {
-		log("gesture-timeout");	// #debug
-		this._suppressContext = true;
-		this._shouldFireContext = false;
-		this._directionChain = "";
-		this._stopGesture();
-		this._gestureObserver.onExtraGesture(null, "gesture-timeout");
+		switch (aTimer) {
+			case this._gestureTimer: 
+				log("gesture-timeout");	// #debug
+				this._suppressContext = true;
+				this._shouldFireContext = false;
+				this._directionChain = "";
+				this._stopGesture();
+				this._gestureObserver.onExtraGesture(null, "gesture-timeout");
+				break;
+			case this._swipeTimer: 
+				this._gestureObserver.onMouseGesture(null, this._directionChain);
+				this.sourceNode = null;
+				this._directionChain = "";
+				this._swipeTimer = null;
+				break;
+		}
 	},
 
 	openPopupAtPointer: function FGH_openPopupAtPointer(aPopup) {

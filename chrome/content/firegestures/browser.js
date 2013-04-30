@@ -159,7 +159,8 @@ var FireGestures = {
 				break;
 			case "FireGestures:MinimizeWindow": 
 				// Fixed bug: window gets focused rapidly after minimizing with rocker gesture
-				event.preventDefault();
+				if (event)
+					event.preventDefault();
 				window.minimize();
 				break;
 			case "FireGestures:MaximizeWindow": 
@@ -446,7 +447,7 @@ var FireGestures = {
 			case "FireGestures:BFHistoryPopup": 
 			case "FireGestures:ClosedTabsPopup": 
 			case "FireGestures:WebSearchPopup": 
-				this._buildPopup(aCommand, event.type == "DOMMouseScroll");
+				this._buildPopup(aCommand, event && event.type == "DOMMouseScroll");
 				break;
 			case "FireGestures:OpenHoveredLinks": 
 				var doc = this.sourceNode.ownerDocument;
@@ -725,7 +726,7 @@ var FireGestures = {
 	_popupActiveItem: null,
 
 	generatePopup: function(event, aAttrsList) {
-		this._buildPopup("FireGestures:CustomPopup", event.type == "DOMMouseScroll", aAttrsList);
+		this._buildPopup("FireGestures:CustomPopup", event && event.type == "DOMMouseScroll", aAttrsList);
 	},
 
 	_buildPopup: function(aCommand, aWheelGesture, aAttrsList) {

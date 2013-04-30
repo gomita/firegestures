@@ -48,6 +48,9 @@
 <!ENTITY swipe.right "右方向へスワイプ">
 <!ENTITY swipe.up "上方向へスワイプ">
 <!ENTITY swipe.down "下方向へスワイプ">
+<!ENTITY swipe.continuous "連続的なスワイプによるマウスジェスチャ">
+<!ENTITY swipe.continuous.1 "次の方向のスワイプまでの待ち時間">
+<!ENTITY swipe.continuous.2 "秒">
 <!ENTITY treecol.name "名前">
 <!ENTITY treecol.command "コマンド">
 <!ENTITY treecol.script "スクリプト">

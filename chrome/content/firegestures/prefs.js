@@ -213,6 +213,15 @@ var PrefsUI = {
 
 	updateSwipeGestureUIGroup: function() {
 		this.updateUIGroup("swipegesture");
+		if (getElement("pref:swipegesture").value) {
+			this.updateUIGroup("swipetimeout");
+			// enable/disable single swipe UI
+			var enable = getElement("pref:swipetimeout").value == 0;
+			var elts = document.querySelectorAll('[uigroup="swipegesture"] > grid *');
+			Array.forEach(elts, function(elt) {
+				elt.disabled = !enable;
+			});
+		}
 	},
 
 	updateUIGroup: function(aGroupName) {

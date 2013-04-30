@@ -127,6 +127,7 @@
 	<prefpane id="swipePane" label="&swipePane;" flex="1">
 		<preferences>
 			<preference id="pref:swipegesture" name="extensions.firegestures.swipegesture"  type="bool" />
+			<preference id="pref:swipetimeout" name="extensions.firegestures.swipe_timeout" type="int" />
 		</preferences>
 		<groupbox uigroup="swipegesture">
 			<!-- dummy -->
@@ -166,6 +167,10 @@
 					</row>
 				</rows>
 			</grid>
+			<!-- dummy -->
+			<textbox id="swipetimeout" hidden="true"
+			         preference="pref:swipetimeout"
+			         onsyncfrompreference="return PrefsUI.updateSwipeGestureUIGroup();" />
 		</groupbox>
 	</prefpane>
 

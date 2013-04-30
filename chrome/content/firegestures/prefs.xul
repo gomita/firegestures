@@ -281,6 +281,7 @@
 	<prefpane id="swipePane" label="&swipePane;" flex="1">
 		<preferences>
 			<preference id="pref:swipegesture" name="extensions.firegestures.swipegesture"  type="bool" />
+			<preference id="pref:swipetimeout" name="extensions.firegestures.swipe_timeout" type="int" />
 		</preferences>
 		<groupbox uigroup="swipegesture">
 			<caption>
@@ -320,6 +321,19 @@
 					</row>
 				</rows>
 			</grid>
+			<separator class="groove" />
+			<checkbox id="swipetimeout" label="&swipe.continuous;"
+			          preference="pref:swipetimeout"
+			          onsyncfrompreference="return PrefsUI.updateSwipeGestureUIGroup();"
+			          onsynctopreference="return this.checked ? 500 : 0;" />
+			<hbox align="center" class="indent" uigroup="swipetimeout">
+				<label value="&swipe.continuous.1;:" />
+				<textbox type="number" min="0" max="2" increment="0.1" decimalplaces="1" size="3"
+				         preference="pref:swipetimeout"
+				         onsyncfrompreference="return getElement('pref:swipetimeout').value / 1000;"
+				         onsynctopreference="return this.value * 1000;" />
+				<label value="&swipe.continuous.2;" />
+			</hbox>
 		</groupbox>
 	</prefpane>
 
