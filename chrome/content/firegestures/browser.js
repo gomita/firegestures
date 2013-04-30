@@ -510,7 +510,7 @@ var FireGestures = {
 	getImageURL: function(aNode) {
 		if (!aNode)
 			aNode = this.sourceNode;
-		if (aNode instanceof HTMLImageElement && aNode.src)
+		if (aNode instanceof Ci.nsIImageLoadingContent && aNode.src)
 			return aNode.src;
 		else if (aNode instanceof HTMLCanvasElement)
 			return aNode.toDataURL();
