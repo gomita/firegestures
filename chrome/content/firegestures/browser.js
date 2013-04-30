@@ -289,7 +289,11 @@ var FireGestures = {
 				var linkURL = this.getLinkURL();
 				if (!linkURL)
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
-				openNewWindowWith(linkURL, this.sourceNode.ownerDocument, null, false);
+				var doc = this.sourceNode.ownerDocument;
+				urlSecurityCheck(linkURL, doc.nodePrincipal);
+				openLinkIn(linkURL, "window", {
+					charset: doc.characterSet, referrerURI: doc.documentURIObject
+				});
 				break;
 			case "FireGestures:OpenLinkInBgTab": 
 			case "FireGestures:OpenLinkInFgTab": 
@@ -297,11 +301,11 @@ var FireGestures = {
 				if (!linkURL)
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
 				var doc = this.sourceNode.ownerDocument;
-				this.checkURL(linkURL, doc);
-				var charset = window.content.document.characterSet;
-				var referer = makeURI(doc.location.href);
-				var background = aCommand == "FireGestures:OpenLinkInBgTab";
-				gBrowser.loadOneTab(linkURL, referer, charset, null, background, false);
+				urlSecurityCheck(linkURL, doc.nodePrincipal);
+				openLinkIn(linkURL, "tab", {
+					charset: doc.characterSet, referrerURI: doc.documentURIObject, 
+					inBackground: aCommand == "FireGestures:OpenLinkInBgTab"
+				});
 				break;
 			// @see browser.xul menuitem#context-bookmarklink@oncommand
 			case "FireGestures:AddBookmarkForLink": 
