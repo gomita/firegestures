@@ -115,6 +115,7 @@ xdGestureMapping.prototype = {
 	_reloadMapping: function FGM__reloadMapping() {
 		this._mapping = null;
 		this._getUserMapping() || this._getDefaultMapping();
+		this._dumpMapping();	// #debug
 	},
 
 	// obtain user mapping
@@ -145,6 +146,21 @@ xdGestureMapping.prototype = {
 		}
 		catch(ex) { Cu.reportError(ex); }
 		finally { stmt.reset(); stmt.finalize(); }
+		// in case that updating add-on, find resource which has FG:extra property, 
+		// and set default mapping for swipe gestures.
+		var swipes = ["swipe-left", "swipe-right", "swipe-up", "swipe-down"];
+		if (swipes.every(function(swipe) this._mapping[swipe] === undefined, this)) {
+			this.log("*** set default mapping for swipe gestures");	// #debug
+			swipes.forEach(function(swipe) {
+				var prop    = this.rdfSvc.GetResource(RDF_NS + "extra");
+				var target  = this.rdfSvc.GetLiteral(swipe);
+				var res     = this._dataSource.GetSource(prop, target, true);
+				var command = res.Value.substr(("urn:").length);
+				var name    = this._getLocalizedNameForCommand(command);
+				this._mapping[swipe] = new xdGestureCommand(TYPE_NORMAL, name, command);
+				this.log([swipe, command, name].join("\t"));	// #debug
+			}, this);
+		}
 		return true;
 	},
 
@@ -198,7 +214,7 @@ xdGestureMapping.prototype = {
 			dump([
 				direction, command.type, 
 				command.value.replace(/\r|\n|\t/g, " ").substr(0, 100), 
-				command.name ? command.name.toSource() : ""
+				command.name
 			].join("\t") + "\n");
 		}
 		dump("---\n");

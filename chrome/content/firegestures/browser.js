@@ -30,6 +30,8 @@ var FireGestures = {
 		this._gestureMapping = gestureSvc.getMappingForBrowser();
 		this._getLocaleString = gestureSvc.getLocaleString;
 		this._statusTextField = document.getElementById("statusbar-display");
+		// disable built-in swipe gesture
+		window.removeEventListener("MozSwipeGesture", gGestureSupport, true);
 	},
 
 	uninit: function() {
@@ -101,8 +103,12 @@ var FireGestures = {
 			case "rocker-right": 
 			case "keypress-ctrl": 
 			case "keypress-shift": 
+			case "swipe-left": 
+			case "swipe-right": 
+			case "swipe-up": 
+			case "swipe-down": 
 				this.onMouseGesture(event, aGesture);
-				return;
+				break;
 			case "keypress-start": 
 				this.clearStatusText(0);
 				this._linkURLs = [];

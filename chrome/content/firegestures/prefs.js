@@ -20,6 +20,10 @@ const kExtraArray1 = [
 	["wheelGestureD",  "wheel-down"  ],
 	["rockerGestureL", "rocker-left" ],
 	["rockerGestureR", "rocker-right"],
+	["swipeGestureL",  "swipe-left"  ],
+	["swipeGestureR",  "swipe-right" ],
+	["swipeGestureU",  "swipe-up"    ],
+	["swipeGestureD",  "swipe-down"  ],
 ];
 
 const kExtraArray2 = [
@@ -104,7 +108,7 @@ var PrefsUI = {
 
 	done: function() {
 		if (gShouldCommit) {
-			// wheel gestures and rocker gestures
+			// wheel gestures and rocker gestures and swipe gestures
 			for each (let [id, direction] in kExtraArray1) {
 				var menuList = getElement(id);
 				var type = parseInt(menuList.selectedItem.getAttribute(FG_TYPE_ATTR), 10);
@@ -115,7 +119,7 @@ var PrefsUI = {
 				var menuList = getElement(id);
 				gMappingArray.push([TYPE_NORMAL, menuList.label, menuList.value, direction]);
 			}
-			// gMappingArray.forEach(function(aItem) { dump(aItem.toSource() + "\n"); });	// #debug
+			// gMappingArray.forEach(function(aItem) { dump(aItem.toString() + "\n"); });	// #debug
 			// flush the dumped mapping to file
 			try {
 				this._gestureMapping.saveUserMapping(gMappingArray);
@@ -129,7 +133,7 @@ var PrefsUI = {
 		this._gestureSvc = null;
 	},
 
-	// populate menu for wheel gestures and rocker gestures
+	// populate menu for wheel gestures and rocker gestures and swipe gestures
 	rebuildExtraMenus1: function() {
 		dump("rebuildExtraMenus1\n");	// #debug
 		for each (let [id, direction] in kExtraArray1) {
@@ -205,6 +209,10 @@ var PrefsUI = {
 			this.updateUIGroup("status");
 			this.updateUIGroup("timeout");
 		}
+	},
+
+	updateSwipeGestureUIGroup: function() {
+		this.updateUIGroup("swipegesture");
 	},
 
 	updateUIGroup: function(aGroupName) {

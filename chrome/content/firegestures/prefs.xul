@@ -122,7 +122,7 @@
 		      onselect="PrefsUI.updateCommands();"
 		      ondblclick="PrefsUI.handleTreeEvent(event);"
 		      onkeypress="PrefsUI.handleTreeEvent(event);"
-		      rows="16" flex="1">
+		      rows="18" flex="1">
 			<treecols>
 				<treecol label="&treecol.name;" flex="5" primary="true" />
 				<splitter class="tree-splitter" />
@@ -276,6 +276,51 @@
 				<menuseparator flex="1" />
 			</menuitem>
 		</box>
+	</prefpane>
+
+	<prefpane id="swipePane" label="&swipePane;" flex="1">
+		<preferences>
+			<preference id="pref:swipegesture" name="extensions.firegestures.swipegesture"  type="bool" />
+		</preferences>
+		<groupbox uigroup="swipegesture">
+			<caption>
+				<checkbox id="swipegesture" label="&swipe;"
+				          preference="pref:swipegesture"
+				          onsyncfrompreference="PrefsUI.updateSwipeGestureUIGroup();" />
+			</caption>
+			<grid>
+				<columns>
+					<column />
+					<column />
+				</columns>
+				<rows>
+					<row align="center">
+						<label value="&swipe.left;:" />
+						<menulist id="swipeGestureL" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+					<row align="center">
+						<label value="&swipe.right;:" />
+						<menulist id="swipeGestureR" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+					<row align="center">
+						<label value="&swipe.up;:" />
+						<menulist id="swipeGestureU" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+					<row align="center">
+						<label value="&swipe.down;:" />
+						<menulist id="swipeGestureD" sizetopopup="none" oncommand="gShouldCommit = true;">
+							<menupopup />
+						</menulist>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
 	</prefpane>
 
 	<script type="application/x-javascript" src="chrome://firegestures/content/prefs.js" />

@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Main">
 <!ENTITY mappingPane "Mapping">
 <!ENTITY advancedPane "Advanced">
+<!ENTITY swipePane "Swipe">
 <!ENTITY mouseGesture "Mouse Gestures">
 <!ENTITY triggerButton "Trigger button to start a gesture">
 <!ENTITY triggerButton.left "Left">
@@ -42,6 +43,11 @@
 <!ENTITY keypressGesture.copy "Copy hovered link locations">
 <!ENTITY tabwheelGesture "Tab Wheel Gestures">
 <!ENTITY tabwheelGesture.description "Switch tabs when scrolling wheel on tab bar">
+<!ENTITY swipe "Swipe Gestures">
+<!ENTITY swipe.left "Swipe leftward">
+<!ENTITY swipe.right "Swipe rightward">
+<!ENTITY swipe.up "Swipe upward">
+<!ENTITY swipe.down "Swipe downward">
 <!ENTITY treecol.name "Name">
 <!ENTITY treecol.command "Command">
 <!ENTITY treecol.script "Script">

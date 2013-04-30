@@ -16,6 +16,12 @@ radio[pane="advancedPane"] {
 	-moz-image-region: rect(0px, 64px, 32px, 32px);
 }
 
+radio[pane="swipePane"] {
+	/* [ToDo] */
+	list-style-image: url("chrome://firegestures/skin/prefs.png");
+	-moz-image-region: rect(0px, 64px, 32px, 32px);
+}
+
 #trailSampleOuter {
 	background-color: white;
 	min-height: 1.5em;

@@ -17,6 +17,8 @@ var FireGesturesViewSource = {
 		this._gestureHandler = gestureSvc.createHandler();
 		this._gestureHandler.attach(getBrowser(), this);
 		this._gestureMapping = gestureSvc.getMapping("viewsource_mapping");
+		// disable built-in swipe gesture
+		window.removeEventListener("MozSwipeGesture", HandleSwipeGesture, true);
 	},
 
 	uninit: function() {

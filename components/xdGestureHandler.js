@@ -132,6 +132,7 @@ xdGestureHandler.prototype = {
 		this._wheelGestureEnabled    = getPref("wheelgesture");
 		this._rockerGestureEnabled   = getPref("rockergesture");
 		this._keypressGestureEnabled = getPref("keypressgesture");
+		this._swipeGestureEnabled    = getPref("swipegesture");
 		// prefs for wheel gestures and rocker gestures
 		this._drawArea.removeEventListener("DOMMouseScroll", this, true);
 		this._drawArea.removeEventListener("click", this, true);
@@ -154,6 +155,12 @@ xdGestureHandler.prototype = {
 			prefSvc.setBoolPref("middlemouse.contentLoadURL", false);
 			// alert("middlemouse.contentLoadURL has been changed.");	// #debug
 		}
+		// prefs for swipe gesture
+		// add event listener to window in order to support swipe on browser chrome and Panorama
+		var win = this._drawArea.ownerDocument.defaultView;
+		win.removeEventListener("MozSwipeGesture", this, true);
+		if (this._swipeGestureEnabled)
+			win.addEventListener("MozSwipeGesture", this, true);
 		// XXXreloading prefs is not a kind of gesture, but we can use it to communicate with xul window.
 		this._gestureObserver.onExtraGesture(null, "reload-prefs");
 		// log("_reloadPrefs");	// #debug
@@ -339,6 +346,23 @@ xdGestureHandler.prototype = {
 				// STATE_ROCKER : except draggesture events which are fired while sequential rocker-right
 				if (this._state != STATE_ROCKER)
 					this._isMouseDownL = false;
+				break;
+			case "MozSwipeGesture": 
+				event.preventDefault();
+				if (this._state != STATE_READY)
+					return;
+				var direction;
+				switch (event.direction) {
+					case event.DIRECTION_LEFT : direction = "left";  break;
+					case event.DIRECTION_RIGHT: direction = "right"; break;
+					case event.DIRECTION_UP   : direction = "up";    break;
+					case event.DIRECTION_DOWN : direction = "down";  break;
+				}
+				this.sourceNode = event.target;
+				this._lastX = event.screenX;
+				this._lastY = event.screenY;
+				this._invokeExtraGesture(event, "swipe-" + direction);
+				this.sourceNode = null;
 				break;
 		}
 		// #debug-begin

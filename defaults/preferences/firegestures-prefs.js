@@ -3,6 +3,7 @@ pref("extensions.firegestures.wheelgesture", true);
 pref("extensions.firegestures.rockergesture", false);
 pref("extensions.firegestures.keypressgesture", true);
 pref("extensions.firegestures.tabwheelgesture", false);
+pref("extensions.firegestures.swipegesture", true);
 pref("extensions.firegestures.trigger_button", 2);
 pref("extensions.firegestures.suppress.alt", false);
 pref("extensions.firegestures.mousetrail", true);

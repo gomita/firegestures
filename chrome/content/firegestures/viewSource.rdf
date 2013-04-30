@@ -45,18 +45,17 @@
   <!-- navigation -->
   <RDF:Description RDF:about="urn:category:navigation"
                    FG:type="0"
-                   FG:name="&gestureCategory.navigation;"
-                   FG:flags="firefox3.5" />
+                   FG:name="&gestureCategory.navigation;" />
   <RDF:Description RDF:about="urn:Browser:Back"
                    FG:type="1"
                    FG:name="&backCmd.label;"
                    FG:direction="L"
-                   FG:flags="firefox3.5" />
+                   FG:extra="swipe-left" />
   <RDF:Description RDF:about="urn:Browser:Forward"
                    FG:type="1"
                    FG:name="&forwardCmd.label;"
                    FG:direction="R"
-                   FG:flags="firefox3.5" />
+                   FG:extra="swipe-right" />
   <!-- file -->
   <RDF:Description RDF:about="urn:category:file"
                    FG:type="0"
@@ -133,11 +132,13 @@
   <RDF:Description RDF:about="urn:cmd_scrollTop"
                    FG:type="1"
                    FG:name="&gestureCmd.scrollTop;"
-                   FG:direction="LU" />
+                   FG:direction="LU"
+                   FG:extra="swipe-up" />
   <RDF:Description RDF:about="urn:cmd_scrollBottom"
                    FG:type="1"
                    FG:name="&gestureCmd.scrollBottom;"
-                   FG:direction="LD" />
+                   FG:direction="LD"
+                   FG:extra="swipe-down" />
   <RDF:Description RDF:about="urn:cmd_scrollPageUp"
                    FG:type="1"
                    FG:name="&gestureCmd.scrollPageUp;" />

@@ -2,6 +2,7 @@
 <!ENTITY mainPane "一般">
 <!ENTITY mappingPane "マッピング">
 <!ENTITY advancedPane "詳細">
+<!ENTITY swipePane "スワイプ">
 <!ENTITY mouseGesture "マウスジェスチャ">
 <!ENTITY triggerButton "ジェスチャを開始するために押すボタン">
 <!ENTITY triggerButton.left "左">
@@ -42,6 +43,11 @@
 <!ENTITY keypressGesture.copy "マウスが通過したリンクの URL をコピー">
 <!ENTITY tabwheelGesture "タブホイールジェスチャ">
 <!ENTITY tabwheelGesture.description "タブバー上でホイール回転したとき、タブを切り替える">
+<!ENTITY swipe "スワイプジェスチャ">
+<!ENTITY swipe.left "左方向へスワイプ">
+<!ENTITY swipe.right "右方向へスワイプ">
+<!ENTITY swipe.up "上方向へスワイプ">
+<!ENTITY swipe.down "下方向へスワイプ">
 <!ENTITY treecol.name "名前">
 <!ENTITY treecol.command "コマンド">
 <!ENTITY treecol.script "スクリプト">
