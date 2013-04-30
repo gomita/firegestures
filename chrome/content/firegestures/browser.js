@@ -47,12 +47,6 @@ var FireGestures = {
 
 	/* ::::: xdIGestureObserver ::::: */
 
-	// cached value of 'status_display' preference
-	// _statusDisplay === null: not cached
-	// _statusDisplay === 0   : don't display status
-	// _statusDisplay  >  0   : display status for the specified milliseconds
-	_statusDisplay: null,
-
 	canStartGesture: function(event) {
 		if (gInPrintPreviewMode) {
 			dump("*** suppress starting gesture in print preview mode\n");	// #debug
@@ -66,15 +60,11 @@ var FireGestures = {
 	},
 
 	onDirectionChanged: function(event, aDirectionChain) {
-		if (this._statusDisplay === null) {
-			const prefName = "extensions.firegestures.status_display";
-			this._statusDisplay = (gPrefService || Services.prefs).getIntPref(prefName);
+		if (this._statusDisplay > 0) {
+			var command = this._gestureMapping.getCommandForDirection(aDirectionChain);
+			var name = command ? " (" + command.name + ")" : "";
+			this.setStatusText(this._getLocaleString("GESTURE") + ": " + aDirectionChain + name);
 		}
-		if (this._statusDisplay === 0)
-			return;
-		var command = this._gestureMapping.getCommandForDirection(aDirectionChain);
-		var name = command ? " (" + command.name + ")" : "";
-		this.setStatusText(this._getLocaleString("GESTURE") + ": " + aDirectionChain + name);
 	},
 
 	onMouseGesture: function(event, aDirection) {
@@ -89,20 +79,21 @@ var FireGestures = {
 				this._performAction(event, command.value);
 		}
 		catch(ex) {
-			this.setStatusText(
-				ex ? 
-				this._getLocaleString("GESTURE_FAILED")  + ": " + aDirection + " (" + ex + ")" :
-				this._getLocaleString("GESTURE_UNKNOWN") + ": " + aDirection
-			);
+			if (this._statusDisplay > 0) {
+				this.setStatusText(
+					ex ? 
+					this._getLocaleString("GESTURE_FAILED")  + ": " + aDirection + " (" + ex + ")" :
+					this._getLocaleString("GESTURE_UNKNOWN") + ": " + aDirection
+				);
+			}
 			if (ex) Cu.reportError(ex);	// #debug
 		}
-		this.clearStatusText(this._statusDisplay);
-		this._statusDisplay = null;
+		if (this._statusDisplay > 0)
+			this.clearStatusText(this._statusDisplay);
 	},
 
 	onExtraGesture: function(event, aGesture) {
 		// dump("onExtraGesture(" + aGesture + ")\n");	// #debug
-		this.clearStatusText(0);
 		switch (aGesture) {
 			case "wheel-up": 
 			case "wheel-down": 
@@ -113,6 +104,7 @@ var FireGestures = {
 				this.onMouseGesture(event, aGesture);
 				return;
 			case "keypress-start": 
+				this.clearStatusText(0);
 				this._linkURLs = [];
 				this._linkElts = [];
 				break;
@@ -140,6 +132,10 @@ var FireGestures = {
 				break;
 			case "gesture-timeout": 
 				this.clearStatusText(0);
+				break;
+			case "reload-prefs": 
+				var pref = "extensions.firegestures.status_display";
+				this._statusDisplay = Services.prefs.getIntPref(pref);
 				break;
 		}
 	},

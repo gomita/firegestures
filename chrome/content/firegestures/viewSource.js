@@ -49,6 +49,8 @@ var FireGesturesViewSource = {
 			return;
 		if (aGestureType == "gesture-timeout")
 			return;
+		if (aGestureType == "reload-prefs")
+			return;
 		this.onMouseGesture(event, aGestureType);
 	},
 

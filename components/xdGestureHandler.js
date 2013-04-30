@@ -96,7 +96,6 @@ xdGestureHandler.prototype = {
 		this.sourceNode = null;
 		this._drawArea = null;
 		this._gestureObserver = null;
-		this._prefs = null;
 		// log("detach()");	// #debug
 	},
 
@@ -155,7 +154,9 @@ xdGestureHandler.prototype = {
 			prefSvc.setBoolPref("middlemouse.contentLoadURL", false);
 			// alert("middlemouse.contentLoadURL has been changed.");	// #debug
 		}
-		// log("_reloadPrefs " + this._prefs.toSource());	// #debug
+		// XXXreloading prefs is not a kind of gesture, but we can use it to communicate with xul window.
+		this._gestureObserver.onExtraGesture(null, "reload-prefs");
+		// log("_reloadPrefs");	// #debug
 	},
 
 	_state: STATE_READY,
