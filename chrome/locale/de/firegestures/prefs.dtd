@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Allgemein">
 <!ENTITY mappingPane "Zuordnungen">
 <!ENTITY advancedPane "Erweitert">
+<!ENTITY swipePane "Wischen">
 <!ENTITY mouseGesture "Mausgeste">
 <!ENTITY triggerButton "Maustaste zum Starten einer Geste">
 <!ENTITY triggerButton.left "Linke">
@@ -42,6 +43,13 @@
 <!ENTITY keypressGesture.copy "Hyperlinks unter der Spur der Mausgeste in die Zwischenablage kopieren">
 <!ENTITY tabwheelGesture "Mausradgesten auf der Tableiste">
 <!ENTITY tabwheelGesture.description "Tabs durchblättern bei Benutzung des Mausrads auf der Tableiste">
+<!ENTITY swipe "Wischgesten">
+<!ENTITY swipe.left "Nach links wischen">
+<!ENTITY swipe.right "Nach rechts wischen">
+<!ENTITY swipe.up "Nach oben wischen">
+<!ENTITY swipe.down "Nach unten wischen">
+<!ENTITY swipe.continuous.1 "Max. Wartezeit für Richtungsänderung">
+<!ENTITY swipe.continuous.2 "Sekunden">
 <!ENTITY treecol.name "Name">
 <!ENTITY treecol.command "Befehl">
 <!ENTITY treecol.script "Skript">

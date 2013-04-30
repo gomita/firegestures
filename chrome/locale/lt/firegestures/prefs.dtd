@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Pagrindinės">
 <!ENTITY mappingPane "Susiejimai">
 <!ENTITY advancedPane "Papildomos">
+<!ENTITY swipePane "Perbraukimas">
 <!ENTITY mouseGesture "Pelės gestai">
 <!ENTITY triggerButton "Norėdami paleisti gestą, spauskite šį mygtuką">
 <!ENTITY triggerButton.left "Kairysis">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Kopijuoti nuorodos vietą">
 <!ENTITY tabwheelGesture "Kortelių ratuko gestai">
 <!ENTITY tabwheelGesture.description "Perjungti korteles kai slenkama su ratuku kortelių juostoj">
+<!ENTITY swipe "Perbraukimo gestai">
+<!ENTITY swipe.left "Perbraukti kairėn">
+<!ENTITY swipe.right "Perbraukti dešinėn">
+<!ENTITY swipe.up "Perbraukti aukštyn">
+<!ENTITY swipe.down "Perbraukti žemyn">
+<!ENTITY swipe.continuous "Pelės gestas su besitęsiančiais perbraukimais">
+<!ENTITY swipe.continuous.1 "Kiek laukti sekančios krypties">
+<!ENTITY swipe.continuous.2 "sekundes (-džių)">
 <!ENTITY treecol.name "Pavadinimas">
 <!ENTITY treecol.command "Komanda">
 <!ENTITY treecol.script "Scenarijus">

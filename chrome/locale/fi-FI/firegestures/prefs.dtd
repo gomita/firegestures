@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Yleiset">
 <!ENTITY mappingPane "Eleet">
 <!ENTITY advancedPane "Lisäasetukset">
+<!ENTITY swipePane "Pyyhkäisy">
 <!ENTITY mouseGesture "Hiirieleet">
 <!ENTITY triggerButton "Eleen aloitusnäppäin">
 <!ENTITY triggerButton.left "Vasen">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Kopioi ylivedetyt linkit">
 <!ENTITY tabwheelGesture "Välilehtipalkin rullaeleet">
 <!ENTITY tabwheelGesture.description "Vaihda välilehteä rullalla välilehtipalkin päällä">
+<!ENTITY swipe "Pyyhkäisyeleet">
+<!ENTITY swipe.left "Pyyhkäisy vasemmalle">
+<!ENTITY swipe.right "Pyyhkäisy oikealle">
+<!ENTITY swipe.up "Pyyhkäisy ylös">
+<!ENTITY swipe.down "Pyyhkäisy alas">
+<!ENTITY swipe.continuous "Hiiriele jatkuvalla pyyhinnällä">
+<!ENTITY swipe.continuous.1 "Suunnanvaihdon odotusaika">
+<!ENTITY swipe.continuous.2 "sekuntia">
 <!ENTITY treecol.name "Nimi">
 <!ENTITY treecol.command "Komento">
 <!ENTITY treecol.script "Komentosarja">

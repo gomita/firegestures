@@ -1,7 +1,8 @@
-<!ENTITY options "opcje">
+<!ENTITY options "Opcje">
 <!ENTITY mainPane "Ogólne">
 <!ENTITY mappingPane "Gesty">
 <!ENTITY advancedPane "Zaawansowane">
+<!ENTITY swipePane "Przesunięcia">
 <!ENTITY mouseGesture "Gesty myszy">
 <!ENTITY triggerButton "Wykonuj gest z wciśniętym przyciskiem">
 <!ENTITY triggerButton.left "lewym">
@@ -23,25 +24,33 @@
 <!ENTITY tools.description "Utwórz kopię lub odtwórz wszystkie wzorce">
 <!ENTITY tools.backup.label "Utwórz kopię">
 <!ENTITY tools.restore.label "Odtwórz">
-<!ENTITY tools.restore.alerttext "To działanie spowoduje zamienienie wszystkich aktualnych wzorców wzorcami z kopii.Czy kontynuować?">
+<!ENTITY tools.restore.alerttext "To działanie spowoduje zamienienie wszystkich aktualnych wzorców wzorcami z kopii.Czy chcesz kontynuować?">
 <!ENTITY wheelGesture "Gesty kółkiem myszy">
-<!ENTITY wheelGesture.up.left "Obrót kółkiem od siebie ze wciśniętym lpm.">
-<!ENTITY wheelGesture.up.middle "Obrót kółkiem od siebie ze wciśniętym śpm.">
-<!ENTITY wheelGesture.up.right "Obrót kółkiem od siebie ze wciśniętym ppm.">
-<!ENTITY wheelGesture.down.left "Obrót kółkiem do siebie ze wciśniętym lpm.">
-<!ENTITY wheelGesture.down.middle "Obrót kółkiem do siebie ze wciśniętym śpm.">
-<!ENTITY wheelGesture.down.right "Obrót kółkiem do siebie ze wciśniętym ppm.">
+<!ENTITY wheelGesture.up.left "Obrót kółkiem od siebie z wciśniętym l.p.m.">
+<!ENTITY wheelGesture.up.middle "Obrót kółkiem od siebie z wciśniętym ś.p.m.">
+<!ENTITY wheelGesture.up.right "Obrót kółkiem od siebie z wciśniętym p.p.m.">
+<!ENTITY wheelGesture.down.left "Obrót kółkiem do siebie z wciśniętym l.p.m.">
+<!ENTITY wheelGesture.down.middle "Obrót kółkiem do siebie z wciśniętym ś.p.m.">
+<!ENTITY wheelGesture.down.right "Obrót kółkiem do siebie z wciśniętym p.p.m.">
 <!ENTITY rockerGesture "Gesty przyciskami myszy">
 <!ENTITY rockerGesture.left "Prawy przycisk myszy + lewy przycisk myszy">
 <!ENTITY rockerGesture.right "Lewy przycisk myszy + prawy przycisk myszy">
-<!ENTITY keypressGesture "Gest myszy ze wciśniętym klawiszem [Ctrl] lub [Shift]">
+<!ENTITY keypressGesture "Gest myszy z wciśniętym klawiszem [Ctrl] lub [Shift]">
 <!ENTITY keypressGesture.ctrl "[Ctrl]">
 <!ENTITY keypressGesture.shift "[Shift]">
-<!ENTITY keypressGesture.open "Otwiera wskazane gestem odnośniki w kartach">
+<!ENTITY keypressGesture.open "Otwiera w kartach wskazane gestem odnośniki">
 <!ENTITY keypressGesture.save "Otwiera okna zapisu wskazanych gestem odnośników">
 <!ENTITY keypressGesture.copy "Kopiuje lokalizacje wskazanego gestem odnośnika">
 <!ENTITY tabwheelGesture "Gesty kółkiem myszy na pasku kart">
 <!ENTITY tabwheelGesture.description "Po wskazaniu kursorem paska kart, obrót kółkiem przełącza karty">
+<!ENTITY swipe "Gesty przesunięcia">
+<!ENTITY swipe.left "Przesunięcie w lewo">
+<!ENTITY swipe.right "Przesunięcie w prawo">
+<!ENTITY swipe.up "Przesunięcie w górę">
+<!ENTITY swipe.down "Przesunięcie w dół">
+<!ENTITY swipe.continuous "Gesty myszy z trwającymi przesunięciami">
+<!ENTITY swipe.continuous.1 "Odstęp czasu przed kolejnym kierunkiem">
+<!ENTITY swipe.continuous.2 "s">
 <!ENTITY treecol.name "Nazwa">
 <!ENTITY treecol.command "Polecenie">
 <!ENTITY treecol.script "Skrypt">

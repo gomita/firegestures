@@ -1,7 +1,8 @@
 <!ENTITY options "Опције">
-<!ENTITY mainPane "Основно">
+<!ENTITY mainPane "Опште">
 <!ENTITY mappingPane "Мапирања">
 <!ENTITY advancedPane "Напредно">
+<!ENTITY swipePane "Bрзо превлачење">
 <!ENTITY mouseGesture "Гестикулације мишем">
 <!ENTITY triggerButton "Дугме за покретање гестикулације">
 <!ENTITY triggerButton.left "лево">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Умножи локације веза на које је нанесен показивач">
 <!ENTITY tabwheelGesture "Гестикулације језичака точкићем миша">
 <!ENTITY tabwheelGesture.description "Замени језичке када котрљам точкића на клизачу">
+<!ENTITY swipe "Гестикулације брзим превлачењем">
+<!ENTITY swipe.left "брзо превлачење улево">
+<!ENTITY swipe.right "брзо превлачење удесно">
+<!ENTITY swipe.up "брзо превлачење нагоре">
+<!ENTITY swipe.down "брзо превлачење надоле">
+<!ENTITY swipe.continuous "Гестикулација брзим непрекидним превлачењем миша">
+<!ENTITY swipe.continuous.1 "Време чекања на следећи правац">
+<!ENTITY swipe.continuous.2 "секунди">
 <!ENTITY treecol.name "Назив">
 <!ENTITY treecol.command "Наредба">
 <!ENTITY treecol.script "Скрипта">

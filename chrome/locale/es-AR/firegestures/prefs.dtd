@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Principal">
 <!ENTITY mappingPane "Mapeo">
 <!ENTITY advancedPane "Avanzado">
+<!ENTITY swipePane "Barrer">
 <!ENTITY mouseGesture "Gestos del ratón">
 <!ENTITY triggerButton "Disparar el botón para comenzar un gesto">
 <!ENTITY triggerButton.left "Izquierda">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Copiar las ubicaciones de los enlaces seleccionados por el ratón al pasar sobre ellos">
 <!ENTITY tabwheelGesture "Gestos de la rueda de pestañas">
 <!ENTITY tabwheelGesture.description "Cambiar pestañas cuando la rueda se desplace sobre la barra de pestañas">
+<!ENTITY swipe "Gestos de barrido">
+<!ENTITY swipe.left "Barrer hacia la izquierda">
+<!ENTITY swipe.right "Barrer hacia la derecha">
+<!ENTITY swipe.up "Barrer hacia arriba">
+<!ENTITY swipe.down "Barrer hacia abajo">
+<!ENTITY swipe.continuous "Barrido continuo">
+<!ENTITY swipe.continuous.1 "Tiempo para esperar la próxima dirección">
+<!ENTITY swipe.continuous.2 "segundos">
 <!ENTITY treecol.name "Nombre">
 <!ENTITY treecol.command "Comando">
 <!ENTITY treecol.script "Archivo de comandos">

@@ -12,7 +12,7 @@
 <!ENTITY gestureCategory.script "Skrypty użytkownika">
 <!ENTITY gestureType.popup "Menu">
 <!ENTITY gestureType.hybrid "Hybrydowy">
-<!ENTITY gestureCmd.skipCache "pomiń bufor">
+<!ENTITY gestureCmd.skipCache "Pomiń bufor">
 <!ENTITY gestureCmd.goUpperLevel "Przejdź poziom wyżej">
 <!ENTITY gestureCmd.incrementURL "Zwiększ liczbę w adresie URL">
 <!ENTITY gestureCmd.decrementURL "Zmniejsz liczbę w adresie URL">

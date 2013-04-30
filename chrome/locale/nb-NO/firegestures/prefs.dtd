@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Generelt">
 <!ENTITY mappingPane "Funksjoner">
 <!ENTITY advancedPane "Avansert">
+<!ENTITY swipePane "Fingerbevegelser">
 <!ENTITY mouseGesture "Musebevegelser">
 <!ENTITY triggerButton "Utløserknapp for å starte en bevegelse">
 <!ENTITY triggerButton.left "Venstre">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Kopier lenkemål">
 <!ENTITY tabwheelGesture "Musehjulbevegelser på fanelinja">
 <!ENTITY tabwheelGesture.description "Bytt faner ved rulling på fanelinja">
+<!ENTITY swipe "Fingerbevegelser">
+<!ENTITY swipe.left "Dra mot venstre">
+<!ENTITY swipe.right "Dra mot høyre">
+<!ENTITY swipe.up "Dra oppover">
+<!ENTITY swipe.down "Dra nedover">
+<!ENTITY swipe.continuous "Nontinuerlige fingerbevegelser">
+<!ENTITY swipe.continuous.1 "Ventetid for retningsendring">
+<!ENTITY swipe.continuous.2 "sekunder">
 <!ENTITY treecol.name "Navn">
 <!ENTITY treecol.command "Kommando">
 <!ENTITY treecol.script "Skript">

@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Hoved">
 <!ENTITY mappingPane "Tilknytning">
 <!ENTITY advancedPane "Avanceret">
+<!ENTITY swipePane "Stryg">
 <!ENTITY mouseGesture "Musebevægelse">
 <!ENTITY triggerButton "Udløserknap der starter en bevægelse">
 <!ENTITY triggerButton.left "Venstre">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Kopier linkadresse under markøren">
 <!ENTITY tabwheelGesture "Hjulbevægelser på faneblade">
 <!ENTITY tabwheelGesture.description "Skift faneblade når musehjulet rulles på fanebladslinjen">
+<!ENTITY swipe "Strygebevægelser">
+<!ENTITY swipe.left "Stryg mod venstre">
+<!ENTITY swipe.right "Stryg mod højre">
+<!ENTITY swipe.up "Stryg opad">
+<!ENTITY swipe.down "Stryg nedad">
+<!ENTITY swipe.continuous "Musebevægelser med gentagne stryg">
+<!ENTITY swipe.continuous.1 "Tid der skal ventes på næste retning">
+<!ENTITY swipe.continuous.2 "sekunder">
 <!ENTITY treecol.name "Navn">
 <!ENTITY treecol.command "Kommando">
 <!ENTITY treecol.script "Script">

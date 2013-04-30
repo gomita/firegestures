@@ -2,6 +2,7 @@
 <!ENTITY mainPane "ראשי">
 <!ENTITY mappingPane "מיפוי">
 <!ENTITY advancedPane "מתקדם">
+<!ENTITY swipePane "גרירה (Swipe)">
 <!ENTITY mouseGesture "מחוות עכבר">
 <!ENTITY triggerButton "כפתור להתחלת פעולת המחווה">
 <!ENTITY triggerButton.left "שמאלי">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "שמירת המיקום של הקישור שעוברים מעליו">
 <!ENTITY tabwheelGesture "מחוות גלילת לשונית">
 <!ENTITY tabwheelGesture.description "החלפת לשוניות כאשר גוללים על סרגל הלשוניות">
+<!ENTITY swipe "מחוות גרירה">
+<!ENTITY swipe.left "גרירה לשמאל">
+<!ENTITY swipe.right "גרירה לימין">
+<!ENTITY swipe.up "גרירה למעלה">
+<!ENTITY swipe.down "גרירה למטה">
+<!ENTITY swipe.continuous "מחוות עכבר עם גרירות מתמשכות">
+<!ENTITY swipe.continuous.1 "זמן המתנה לכיוון הבא">
+<!ENTITY swipe.continuous.2 "שניות">
 <!ENTITY treecol.name "שם">
 <!ENTITY treecol.command "פקודה">
 <!ENTITY treecol.script "תסריט">

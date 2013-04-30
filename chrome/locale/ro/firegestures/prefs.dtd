@@ -2,7 +2,7 @@
 <!ENTITY mainPane "General">
 <!ENTITY mappingPane "Asignări">
 <!ENTITY advancedPane "Complex">
-<!ENTITY mouseGesture "Mișcări maus">
+<!ENTITY mouseGesture "Mișcări cu mausul">
 <!ENTITY triggerButton "Declanșează începutul mișcării cu butonul din">
 <!ENTITY triggerButton.left "Stânga">
 <!ENTITY triggerButton.middle "Mijloc">
@@ -24,7 +24,7 @@
 <!ENTITY tools.backup.label "Arhivează">
 <!ENTITY tools.restore.label "Restaurează">
 <!ENTITY tools.restore.alerttext "Toate asignările curente vor fi înlocuite cu cele arhivate. Continuați?">
-<!ENTITY wheelGesture "Mișcări rotiță maus">
+<!ENTITY wheelGesture "Mișcări cu rotița mausului">
 <!ENTITY wheelGesture.up.left "Rotire în sus cu butonul stâng apăsat">
 <!ENTITY wheelGesture.up.middle "Rotire în sus cu butonul din mijloc apăsat">
 <!ENTITY wheelGesture.up.right "Rotire în sus cu butonul drept apăsat">
@@ -35,13 +35,19 @@
 <!ENTITY rockerGesture.left "Clic-stânga cu butonul drept apăsat">
 <!ENTITY rockerGesture.right "Clic-dreapta cu butonul stâng apăsat">
 <!ENTITY keypressGesture "Mișcări cu taste apăsate">
-<!ENTITY keypressGesture.ctrl "Mișcare maus cu tasta Ctrl apăsată">
-<!ENTITY keypressGesture.shift "Mișcare maus cu tasta Shift apăsată">
+<!ENTITY keypressGesture.ctrl "Mișcare cu tasta Ctrl apăsată">
+<!ENTITY keypressGesture.shift "Mișcare cu tasta Shift apăsată">
 <!ENTITY keypressGesture.open "Deschide legăturile survolate în file">
 <!ENTITY keypressGesture.save "Salvează legăturile survolate">
 <!ENTITY keypressGesture.copy "Copiază legăturile survolate">
-<!ENTITY tabwheelGesture "Mișcări rotiță maus pe file">
+<!ENTITY tabwheelGesture "Mișcări cu rotița mausului pe file">
 <!ENTITY tabwheelGesture.description "Comută filele la rotirea rotiței pe bara de file">
+<!ENTITY swipe.left "Mișcare spre stânga">
+<!ENTITY swipe.right "Mișcare spre dreapta">
+<!ENTITY swipe.up "Mișcare în sus">
+<!ENTITY swipe.down "Mișcare în jos">
+<!ENTITY swipe.continuous.1 "Așteptare înaintea schimbării direcției">
+<!ENTITY swipe.continuous.2 "secunde">
 <!ENTITY treecol.name "Denumire">
 <!ENTITY treecol.command "Comandă">
 <!ENTITY treecol.script "Script">

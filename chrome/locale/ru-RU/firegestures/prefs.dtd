@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Общие">
 <!ENTITY mappingPane "Карта жестов">
 <!ENTITY advancedPane "Дополнительные">
+<!ENTITY swipePane "Скольжение">
 <!ENTITY mouseGesture "Жест мышью">
 <!ENTITY triggerButton "Кнопка мыши, использующаяся для выполнения жеста">
 <!ENTITY triggerButton.left "Левая">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Копировать адрес ссылки, расположенной под курсором">
 <!ENTITY tabwheelGesture "Жесты для панели вкладок">
 <!ENTITY tabwheelGesture.description "Переключать вкладки, когда над панелью вкладок прокручивается колёсико">
+<!ENTITY swipe "Жесты скольжением">
+<!ENTITY swipe.left "Скольжение влево">
+<!ENTITY swipe.right "Скольжение вправо">
+<!ENTITY swipe.up "Скольжение вверх">
+<!ENTITY swipe.down "Скольжение вниз">
+<!ENTITY swipe.continuous "Жесты мышью при помощи последовательных скольжений">
+<!ENTITY swipe.continuous.1 "Время ожидания следующего направления">
+<!ENTITY swipe.continuous.2 "секунд">
 <!ENTITY treecol.name "Имя">
 <!ENTITY treecol.command "Команда">
 <!ENTITY treecol.script "Схема">

@@ -2,6 +2,7 @@
 <!ENTITY mainPane "常规">
 <!ENTITY mappingPane "映射">
 <!ENTITY advancedPane "高级">
+<!ENTITY swipePane "滑动">
 <!ENTITY mouseGesture "鼠标手势">
 <!ENTITY triggerButton "鼠标手势触发按钮">
 <!ENTITY triggerButton.left "左">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "复制鼠标划过的链接地址">
 <!ENTITY tabwheelGesture "标签栏滚轮手势">
 <!ENTITY tabwheelGesture.description "在标签栏滚动滚轮切换标签页">
+<!ENTITY swipe "滑动手势">
+<!ENTITY swipe.left "向左滑动">
+<!ENTITY swipe.right "向右滑动">
+<!ENTITY swipe.up "向上滑动">
+<!ENTITY swipe.down "向下滑动">
+<!ENTITY swipe.continuous "连续滑动鼠标手势">
+<!ENTITY swipe.continuous.1 "等待下一个方向的时间">
+<!ENTITY swipe.continuous.2 "秒">
 <!ENTITY treecol.name "名称">
 <!ENTITY treecol.command "命令">
 <!ENTITY treecol.script "脚本">
