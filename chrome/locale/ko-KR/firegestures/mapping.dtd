@@ -48,6 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "검색 막대 열기/닫기">
 <!ENTITY gestureCmd.restartApp "Firefox 재시작">
 <!ENTITY gestureCmd.options "선택사항">
-<!-- For the compatibility with Firefox 17 or older. -->
-<!ENTITY pinTab.label "앱 탭 지정">
-<!ENTITY unpinTab.label "일반 탭으로">

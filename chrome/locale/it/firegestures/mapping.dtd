@@ -44,6 +44,3 @@
 <!ENTITY gestureCmd.hybridCopyURL "Copia destinazione">
 <!ENTITY gestureCmd.toggleFindbar "Apri/Chiudi Barra di Ricerca">
 <!ENTITY gestureCmd.options "Opzioni">
-<!-- For the compatibility with Firefox 17 or older. -->
-<!ENTITY pinTab.label "Blocca come Scheda applicazione">
-<!ENTITY unpinTab.label "Sblocca scheda">
