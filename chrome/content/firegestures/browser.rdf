@@ -24,6 +24,7 @@
     <RDF:li RDF:resource="urn:FireGestures:DecrementURL" />
     <RDF:li RDF:resource="urn:category:window" />
     <RDF:li RDF:resource="urn:cmd_newNavigator" />
+    <RDF:li RDF:resource="urn:Tools:PrivateBrowsing" />
     <RDF:li RDF:resource="urn:cmd_closeWindow" />
     <RDF:li RDF:resource="urn:History:UndoCloseWindow" />
     <RDF:li RDF:resource="urn:FireGestures:MinimizeWindow" />
@@ -71,9 +72,10 @@
     <RDF:li RDF:resource="urn:FireGestures:ViewFrameSource" />
     <RDF:li RDF:resource="urn:FireGestures:ViewFrameInfo" />
     <RDF:li RDF:resource="urn:category:link" />
-    <RDF:li RDF:resource="urn:FireGestures:OpenLink" />
     <RDF:li RDF:resource="urn:FireGestures:OpenLinkInBgTab" />
     <RDF:li RDF:resource="urn:FireGestures:OpenLinkInFgTab" />
+    <RDF:li RDF:resource="urn:FireGestures:OpenLink" />
+    <RDF:li RDF:resource="urn:FireGestures:OpenLinkInPrivateWindow" />
     <RDF:li RDF:resource="urn:FireGestures:AddBookmarkForLink" />
     <RDF:li RDF:resource="urn:FireGestures:SaveLink" />
     <RDF:li RDF:resource="urn:category:image" />
@@ -158,6 +160,9 @@
                    FG:type="1"
                    FG:name="&newNavigatorCmd.label;"
                    FG:direction="DRU" />
+  <RDF:Description RDF:about="urn:Tools:PrivateBrowsing"
+                   FG:type="1"
+                   FG:name="&newPrivateWindow.label;" />
   <RDF:Description RDF:about="urn:cmd_closeWindow"
                    FG:type="1"
                    FG:name="&closeWindow.label;"
@@ -320,9 +325,6 @@
   <RDF:Description RDF:about="urn:category:link"
                    FG:type="0"
                    FG:name="&gestureCategory.link;" />
-  <RDF:Description RDF:about="urn:FireGestures:OpenLink"
-                   FG:type="1"
-                   FG:name="&openLinkCmd.label;" />
   <RDF:Description RDF:about="urn:FireGestures:OpenLinkInBgTab"
                    FG:type="1"
                    FG:name="&openLinkCmdInTab.label; (&gestureCmd.backgroundTab;)"
@@ -331,6 +333,12 @@
                    FG:type="1"
                    FG:name="&openLinkCmdInTab.label; (&gestureCmd.foregroundTab;)"
                    FG:direction="U" />
+  <RDF:Description RDF:about="urn:FireGestures:OpenLink"
+                   FG:type="1"
+                   FG:name="&openLinkCmd.label;" />
+  <RDF:Description RDF:about="urn:FireGestures:OpenLinkInPrivateWindow"
+                   FG:type="1"
+                   FG:name="&openLinkInPrivateWindowCmd.label;" />
   <RDF:Description RDF:about="urn:FireGestures:AddBookmarkForLink"
                    FG:type="1"
                    FG:name="&bookmarkThisLinkCmd.label;" />

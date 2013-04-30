@@ -307,6 +307,17 @@ var FireGestures = {
 					inBackground: aCommand == "FireGestures:OpenLinkInBgTab"
 				});
 				break;
+			// @see nsContextMenu::openLinkInPrivateWindow()
+			case "FireGestures:OpenLinkInPrivateWindow": 
+				var linkURL = this.getLinkURL();
+				if (!linkURL)
+					throw this._getLocaleString("ERROR_NOT_ON_LINK");
+				var doc = this.sourceNode.ownerDocument;
+				urlSecurityCheck(linkURL, doc.nodePrincipal);
+				openLinkIn(linkURL, "window", {
+					charset: doc.characterSet, referrerURI: doc.documentURIObject, private: true
+				});
+				break;
 			// @see browser.xul menuitem#context-bookmarklink@oncommand
 			case "FireGestures:AddBookmarkForLink": 
 				var linkURL = this.getLinkURL();
