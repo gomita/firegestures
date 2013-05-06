@@ -13,6 +13,8 @@ var FireGestures = {
 
 	_clearStatusTimer: null,
 
+	_statusDisplay: null,
+
 	get _isMac() {
 		delete this._isMac;
 		return this._isMac = navigator.platform.indexOf("Mac") >= 0;
@@ -293,7 +295,7 @@ var FireGestures = {
 				if (!linkURL)
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
 				var doc = this.sourceNode.ownerDocument;
-				urlSecurityCheck(linkURL, doc.nodePrincipal);
+				this.checkURL(linkURL, doc);
 				openLinkIn(linkURL, "window", {
 					charset: doc.characterSet, referrerURI: doc.documentURIObject
 				});
@@ -304,7 +306,7 @@ var FireGestures = {
 				if (!linkURL)
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
 				var doc = this.sourceNode.ownerDocument;
-				urlSecurityCheck(linkURL, doc.nodePrincipal);
+				this.checkURL(linkURL, doc);
 				openLinkIn(linkURL, "tab", {
 					charset: doc.characterSet, referrerURI: doc.documentURIObject, 
 					inBackground: aCommand == "FireGestures:OpenLinkInBgTab"
@@ -316,7 +318,7 @@ var FireGestures = {
 				if (!linkURL)
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
 				var doc = this.sourceNode.ownerDocument;
-				urlSecurityCheck(linkURL, doc.nodePrincipal);
+				this.checkURL(linkURL, doc);
 				openLinkIn(linkURL, "window", {
 					charset: doc.characterSet, referrerURI: doc.documentURIObject, private: true
 				});
