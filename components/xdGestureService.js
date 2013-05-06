@@ -149,7 +149,7 @@ xdGestureService.prototype = {
 		this._dbFile = null;
 		this._initService();
 		// reload all registered mappings if it is already initialized
-		for each (var { id: id, uri: uri, name: name } in this.getMappingsInfo()) {
+		for (let { id: id, uri: uri, name: name } of this.getMappingsInfo()) {
 			var mapping = this._namedMappings[id];
 			if (mapping) {
 				log("reload mapping: " + id);	// #debug

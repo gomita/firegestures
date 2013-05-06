@@ -279,7 +279,7 @@ xdGestureMapping.prototype = {
 				// if command is not assigned normal mouse gesture, add it as non-gesture-assigned item
 				if (!directions.some(function(direction) { return /^[LRUD]*$/.test(direction); }))
 					directions.unshift("");
-				for each (var direction in directions)
+				for (let direction of directions)
 					items.push([type, name, command, direction, flags]);
 			}
 			// if user mapping does not exist, get the default gesture
@@ -318,7 +318,7 @@ xdGestureMapping.prototype = {
 		dbConn.executeSimpleSQL("DROP TABLE IF EXISTS " + this.id);
 		dbConn.createTable(this.id, "type INTEGER, name TEXT, command TEXT, direction TEXT");
 		dbConn.beginTransaction();
-		for each (let [type, name, command, direction] in aItems) {
+		for (let [type, name, command, direction] of aItems) {
 			// put the following items to database
 			// * normal commands which have gesture and command
 			// * script-type commands
@@ -351,12 +351,12 @@ xdGestureMapping.prototype = {
 		this._ensureInit();
 		var added = false;
 		var items = this.getMappingArray();
-		outer: for each (let aItem in aItems) {
+		outer: for (let aItem of aItems) {
 			// do not overwrite an existing gesture
 			if (this.getCommandForDirection(aItem.direction))
 				aItem.direction = "";
 			// avoid duplication
-			inner: for each (let [ type, , script, ] in items) {
+			inner: for (let [ type, , script, ] of items) {
 				if (type != TYPE_SCRIPT)
 					continue inner;
 				if (script == aItem.script)

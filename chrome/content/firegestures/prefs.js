@@ -109,13 +109,13 @@ var PrefsUI = {
 	done: function() {
 		if (gShouldCommit) {
 			// wheel gestures and rocker gestures and swipe gestures
-			for each (let [id, direction] in kExtraArray1) {
+			for (let [id, direction] of kExtraArray1) {
 				var menuList = getElement(id);
 				var type = parseInt(menuList.selectedItem.getAttribute(FG_TYPE_ATTR), 10);
 				gMappingArray.push([type, menuList.label, menuList.value, direction]);
 			}
 			// keypress gesture
-			for each (let [id, direction] in kExtraArray2) {
+			for (let [id, direction] of kExtraArray2) {
 				var menuList = getElement(id);
 				gMappingArray.push([TYPE_NORMAL, menuList.label, menuList.value, direction]);
 			}
@@ -136,7 +136,7 @@ var PrefsUI = {
 	// populate menu for wheel gestures and rocker gestures and swipe gestures
 	rebuildExtraMenus1: function() {
 		dump("rebuildExtraMenus1\n");	// #debug
-		for each (let [id, direction] in kExtraArray1) {
+		for (let [id, direction] of kExtraArray1) {
 			var menuList = getElement(id);
 			var commandName  = null;
 			var commandValue = null;
@@ -158,7 +158,7 @@ var PrefsUI = {
 			// append '...' item
 			menuList.appendItem("...", "").setAttribute(FG_TYPE_ATTR, TYPE_NORMAL);
 			var selItem = null;
-			for each (let [type, name, command] in gMappingArray) {
+			for (let [type, name, command] of gMappingArray) {
 				if (type == TYPE_CATEGORY) {
 					var newItem = getElement("separatorTemplate").cloneNode(true);
 					newItem.id = null;
@@ -184,7 +184,7 @@ var PrefsUI = {
 	// populate menu for keypress gestures
 	rebuildExtraMenus2: function() {
 		dump("rebuildExtraMenus2\n");	// #debug
-		for each (let [id, direction] in kExtraArray2) {
+		for (let [id, direction] of kExtraArray2) {
 			var menuList = getElement(id);
 			var command = this._gestureMapping.getCommandForDirection(direction);
 			if (!command)
@@ -279,7 +279,7 @@ var PrefsUI = {
 		if (menuPopup.hasAttribute("_generated"))
 			return;
 		menuPopup.setAttribute("_generated", "true");
-		for each (let { id: id, name: name } in this._gestureSvc.getMappingsInfo()) {
+		for (let { id: id, name: name } of this._gestureSvc.getMappingsInfo()) {
 			var menuItem = document.createElement("menuitem");
 			menuItem.setAttribute("id", id);
 			menuItem.setAttribute("label", name);

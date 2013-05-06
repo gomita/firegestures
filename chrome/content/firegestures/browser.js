@@ -593,7 +593,7 @@ var FireGestures = {
 		if ("TreeStyleTabService" in window)
 			TreeStyleTabService.readyToOpenChildTab(gBrowser.selectedTab, true);
 		var pos = gBrowser.mCurrentTab._tPos;
-		for each (aURL in aURLs) {
+		for (let aURL of aURLs) {
 			var tab = gBrowser.loadOneTab(aURL, aReferer, aCharset, null, true, false);
 			if (aNextToCurrent)
 				gBrowser.moveTabTo(tab, ++pos);
@@ -859,7 +859,7 @@ var FireGestures = {
 				popup.setAttribute("_moz-selectedtext", getBrowserSelection());
 				break;
 			case "FireGestures:CustomPopup": 
-				for each (var aAttrs in aAttrsList) {
+				for (let aAttrs of aAttrsList) {
 					var menuitem;
 					if (!aAttrs) {
 						menuitem = document.createElement("menuseparator");
