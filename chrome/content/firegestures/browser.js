@@ -606,6 +606,10 @@ var FireGestures = {
 	// go to upper directory of the current URL
 	goUpperLevel: function() {
 		var uri = gBrowser.currentURI;
+		if (uri.schemeIs("about")) {
+			loadURI("about:about");
+			return;
+		}
 		if (uri.path == "/")
 			return;
 		var pathList = uri.path.split("/");
