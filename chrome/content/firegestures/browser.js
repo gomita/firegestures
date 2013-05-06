@@ -588,15 +588,15 @@ var FireGestures = {
 	},
 
 	// open multiple URLs next to the current tab
-	openURLs: function(aURLs, aReferer, aCharset, aNextToCurrent) {
+	openURLs: function(aURLs, aReferer, aCharset) {
 		// [TreeStyleTab]
 		if ("TreeStyleTabService" in window)
 			TreeStyleTabService.readyToOpenChildTab(gBrowser.selectedTab, true);
-		var pos = gBrowser.mCurrentTab._tPos;
 		for (let aURL of aURLs) {
-			var tab = gBrowser.loadOneTab(aURL, aReferer, aCharset, null, true, false);
-			if (aNextToCurrent)
-				gBrowser.moveTabTo(tab, ++pos);
+			gBrowser.loadOneTab(aURL, {
+				referrerURI: aReferer, charset: aCharset, 
+				inBackground: true, relatedToCurrent: true
+			});
 		}
 		// [TreeStyleTab]
 		if ("TreeStyleTabService" in window)
