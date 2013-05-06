@@ -341,8 +341,9 @@ var FireGestures = {
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
 				var doc = this.sourceNode.ownerDocument;
 				this.checkURL(linkURL, doc);
-				saveURL(linkURL, this.getLinkText(), null, true, false,
-				        makeURI(doc.location.href, doc.characterSet), doc);
+				// XXX using saveHelper is a bit hackish but good to handle appropriate MIME-type
+				var linkText = gatherTextUnder(this.sourceNode);
+				nsContextMenu.prototype.saveHelper(linkURL, linkText, null, true, doc);
 				break;
 			case "FireGestures:ViewImage": 
 				var imageURL = this.getImageURL();
