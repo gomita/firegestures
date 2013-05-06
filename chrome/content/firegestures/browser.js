@@ -610,8 +610,13 @@ var FireGestures = {
 			loadURI("about:about");
 			return;
 		}
-		if (uri.path == "/")
+		if (uri.path == "/") {
+			// http://www.example.com/   => http://example.com/
+			// https://www.google.co.jp/ => https://google.co.jp/
+			if (/:\/\/[^\.]+\.([^\.]+)\./.test(uri.prePath))
+				loadURI(RegExp.leftContext + "://" + RegExp.$1 + "." + RegExp.rightContext + "/");
 			return;
+		}
 		var pathList = uri.path.split("/");
 		if (!pathList.pop())
 			pathList.pop();
