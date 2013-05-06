@@ -309,9 +309,11 @@ var FireGestures = {
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
 				var doc = this.sourceNode.ownerDocument;
 				this.checkURL(linkURL, doc);
-				openLinkIn(linkURL, "tab", {
-					charset: doc.characterSet, referrerURI: doc.documentURIObject, 
-					inBackground: aCommand == "FireGestures:OpenLinkInBgTab"
+				// [TreeStyleTab] the next line will be replaced to open child tab
+				gBrowser.loadOneTab(linkURL, {
+					referrerURI: doc.documentURIObject, charset: doc.characterSet, 
+					inBackground: aCommand == "FireGestures:OpenLinkInBgTab", 
+					relatedToCurrent: true
 				});
 				break;
 			// @see nsContextMenu::openLinkInPrivateWindow()
@@ -591,7 +593,7 @@ var FireGestures = {
 	openURLs: function(aURLs, aReferer, aCharset) {
 		// [TreeStyleTab]
 		if ("TreeStyleTabService" in window)
-			TreeStyleTabService.readyToOpenChildTab(gBrowser.selectedTab, true);
+			TreeStyleTabService.readyToOpenChildTab(gBrowser, true);
 		for (let aURL of aURLs) {
 			gBrowser.loadOneTab(aURL, {
 				referrerURI: aReferer, charset: aCharset, 
@@ -600,7 +602,7 @@ var FireGestures = {
 		}
 		// [TreeStyleTab]
 		if ("TreeStyleTabService" in window)
-			TreeStyleTabService.stopToOpenChildTab(gBrowser.selectedTab);
+			TreeStyleTabService.stopToOpenChildTab(gBrowser);
 	},
 
 	// go to upper directory of the current URL
@@ -962,6 +964,7 @@ var FireGestures = {
 							var submission = engine.getSubmission(selText, null);
 							if (!submission)
 								break;
+							// [TreeStyleTab] the next line will be replaced to open child tab
 							gBrowser.loadOneTab(submission.uri.spec, {
 								postData: submission.postData,
 								relatedToCurrent: true
