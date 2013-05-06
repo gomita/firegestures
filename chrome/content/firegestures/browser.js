@@ -56,7 +56,9 @@ var FireGestures = {
 			dump("*** suppress starting gesture in print preview mode\n");	// #debug
 			return false;
 		}
-		if ("Tilt" in window && Tilt.tiltButton.checked) {
+		// XXX a hackish way to detect whether the current tab is in Tilt mode
+		if (event.target instanceof HTMLCanvasElement && 
+		    event.target.parentNode instanceof Ci.nsIDOMXULElement) {
 			dump("*** suppress starting gesture in Tilt 3D View\n");	// #debug
 			return false;
 		}
