@@ -903,8 +903,10 @@ var FireGestures = {
 				this._popupActiveItem = activeItem;
 				this._activateMenuItem(true);
 				// autoscroll to ensure the active menuitem is visible
-				var scrollbox = document.getAnonymousNodes(popup)[0];
-				scrollbox.ensureElementIsVisible(activeItem);
+				if (!this._isMac) {
+					var scrollbox = document.getAnonymousNodes(popup)[0];
+					scrollbox.ensureElementIsVisible(activeItem);
+				}
 				break;
 			case "DOMMenuItemActive": 
 				var statusText = event.target.getAttribute("statustext");
