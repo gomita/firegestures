@@ -554,6 +554,22 @@ var FireGestures = {
 			return aNode.src;
 		else if (aNode instanceof HTMLCanvasElement)
 			return aNode.toDataURL();
+		// background image
+		// @see nsContextMenu::setTarget()
+		if (aNode instanceof HTMLHtmlElement)
+			aNode = aNode.ownerDocument.body;
+		var win = aNode.ownerDocument.defaultView;
+		while (aNode) {
+			if (aNode.nodeType == Node.ELEMENT_NODE) {
+				var url = win.getComputedStyle(aNode, "").getPropertyCSSValue("background-image");
+				if (url instanceof CSSValueList && url.length > 0) {
+					url = url[0];
+					if (url.primitiveType == CSSPrimitiveValue.CSS_URI)
+						return makeURLAbsolute(aNode.baseURI, url.getStringValue());
+				}
+			}
+			aNode = aNode.parentNode;
+		}
 		return null;
 	},
 
