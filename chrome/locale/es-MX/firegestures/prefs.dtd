@@ -1,13 +1,14 @@
 <!ENTITY options "Opciones">
 <!ENTITY mainPane "Principal">
-<!ENTITY mappingPane "Mapeo">
+<!ENTITY mappingPane "Asignando">
 <!ENTITY advancedPane "Avanzado">
+<!ENTITY swipePane "Deslizamiento">
 <!ENTITY mouseGesture "Gestos del ratón">
 <!ENTITY triggerButton "Botón para iniciar los gestos">
 <!ENTITY triggerButton.left "Izquierdo">
 <!ENTITY triggerButton.middle "Central">
 <!ENTITY triggerButton.right "Derecho">
-<!ENTITY suppress.alt "Pulsar la tecla Alt nulifica los gestos">
+<!ENTITY suppress.alt "No inicar gestos si se pulsa Alt">
 <!ENTITY trail "Dibujar rastro">
 <!ENTITY trail.color "Color">
 <!ENTITY trail.size "Tamaño">
@@ -17,23 +18,23 @@
 <!ENTITY timeout "Límite de tiempo">
 <!ENTITY timeout.description.1 "Cancelar gesto tras">
 <!ENTITY timeout.description.2 "segundos sin movimiento.">
-<!ENTITY mappings.title "Mapeos">
-<!ENTITY mappings.description "Elija el mapeo a configurar">
+<!ENTITY mappings.title "Asignaciones">
+<!ENTITY mappings.description "Elija la asignación a configurar">
 <!ENTITY tools.title "Herramientas">
-<!ENTITY tools.description "Respaldar o Restaurar todos los mapeos">
+<!ENTITY tools.description "Respaldar o Restaurar todas las asignaciones">
 <!ENTITY tools.backup.label "Respaldar">
 <!ENTITY tools.restore.label "Restaurar">
-<!ENTITY tools.restore.alerttext "Esto reemplazará todos sus mapeos actuales con los del respaldo. ¿Está seguro?">
+<!ENTITY tools.restore.alerttext "Esto reemplazará todas sus asignaciones actuales con las del respaldo. ¿Está seguro?">
 <!ENTITY wheelGesture "Gestos Rueda">
-<!ENTITY wheelGesture.up.left "Giro arriba mientras se oprime el botón izquierdo">
+<!ENTITY wheelGesture.up.left "Girar hacia arriba mientras se oprime el botón izquierdo">
 <!ENTITY wheelGesture.up.middle "Girar hacia arriba mientras se oprime el botón central">
 <!ENTITY wheelGesture.up.right "Girar hacia arriba mientras se oprime el botón derecho">
 <!ENTITY wheelGesture.down.left "Girar hacia abajo mientras se oprime el botón derecho">
 <!ENTITY wheelGesture.down.middle "Girar hacia abajo mientras se oprime el botón central">
 <!ENTITY wheelGesture.down.right "Girar hacia abajo mientras se oprime el botón derecho">
 <!ENTITY rockerGesture "Gestos Rocker">
-<!ENTITY rockerGesture.left "Click izquierdo mientras se oprime el botón derecho">
-<!ENTITY rockerGesture.right "Click derecho mientras se oprime el botón izquierdo">
+<!ENTITY rockerGesture.left "Clic izquierdo mientras se oprime el botón derecho">
+<!ENTITY rockerGesture.right "Clic derecho mientras se oprime el botón izquierdo">
 <!ENTITY keypressGesture "Gestos Keypress (teclas auxiliares)">
 <!ENTITY keypressGesture.ctrl "Gestos del ratón mientras se oprime la tecla Ctrl">
 <!ENTITY keypressGesture.shift "Gestos del ratón mientras se oprime la tecla Shift">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Copiar dirección de los enlaces abarcados por el gesto">
 <!ENTITY tabwheelGesture "Gestos Rueda en pestañas">
 <!ENTITY tabwheelGesture.description "Rotar enfoque de pestaña al girar la rueda sobre la barra de pestañas">
+<!ENTITY swipe "Gestos de deslizamiento">
+<!ENTITY swipe.left "Deslizar hacia la izquierda">
+<!ENTITY swipe.right "Deslizar hacia la derecha">
+<!ENTITY swipe.up "Deslizar hacia arriba">
+<!ENTITY swipe.down "Deslizar hacia abajo">
+<!ENTITY swipe.continuous "Gestos con deslizamientos continuos">
+<!ENTITY swipe.continuous.1 "Tiempo para detectar siguiente dirección">
+<!ENTITY swipe.continuous.2 "segundos">
 <!ENTITY treecol.name "Nombre">
 <!ENTITY treecol.command "Comando">
 <!ENTITY treecol.script "Código">
