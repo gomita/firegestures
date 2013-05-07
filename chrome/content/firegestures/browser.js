@@ -360,12 +360,27 @@ var FireGestures = {
 				if (!mediaURL)
 					throw this._getLocaleString("ERROR_NOT_ON_IMAGE");
 				var doc = this.sourceNode.ownerDocument;
-				var onCanvas = this.sourceNode instanceof HTMLCanvasElement;
-				if (onCanvas)
-					this.checkURL(mediaURL, doc);
 				var skipPrompt = aCommand == "FireGestures:SaveImageNow";
-				saveImageURL(mediaURL, onCanvas ? "canvas.png" : null, "SaveImageTitle", 
-				             false, skipPrompt, doc.documentURIObject, doc);
+				if (this.sourceNode instanceof HTMLVideoElement || 
+				    this.sourceNode instanceof HTMLAudioElement) {
+					// save video and audio
+					this.checkURL(mediaURL, doc);
+					var dialogTitle = this.sourceNode instanceof HTMLVideoElement
+					                ? "SaveVideoTitle" : "SaveAudioTitle";
+					// FIXME saveHelper always shows prompt
+					nsContextMenu.prototype.saveHelper(mediaURL, null, dialogTitle, false, doc);
+				}
+				else if (this.sourceNode instanceof HTMLCanvasElement) {
+					// save canvas
+					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", 
+					             false, skipPrompt, doc.documentURIObject, doc);
+				}
+				else {
+					// save image
+					this.checkURL(mediaURL, doc);
+					saveImageURL(mediaURL, null, "SaveImageTitle", 
+					             false, skipPrompt, doc.documentURIObject, doc);
+				}
 				break;
 			case "FireGestures:WebSearch": 
 				BrowserSearch.loadSearch(getBrowserSelection(), true);
