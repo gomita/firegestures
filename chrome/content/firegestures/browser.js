@@ -582,13 +582,10 @@ var FireGestures = {
 	getMediaURL: function(aNode) {
 		if (!aNode)
 			aNode = this.sourceNode;
-		var imageURL = this.getImageURL(aNode);
-		if (imageURL)
-			return imageURL;
-		else if (aNode instanceof HTMLVideoElement || aNode instanceof HTMLAudioElement)
+		if (aNode instanceof HTMLVideoElement || aNode instanceof HTMLAudioElement)
 			return aNode.currentSrc || aNode.src;
 		else
-			return null;
+			return this.getImageURL(aNode);
 	},
 
 	getSelectedText: function() {
