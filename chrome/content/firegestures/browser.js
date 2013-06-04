@@ -51,6 +51,10 @@ var FireGestures = {
 
 	/* ::::: xdIGestureObserver ::::: */
 
+	get fullZoom() {
+		return gBrowser.mCurrentBrowser.markupDocumentViewer.fullZoom;
+	},
+
 	canStartGesture: function(event) {
 		if (gInPrintPreviewMode) {
 			dump("*** suppress starting gesture in print preview mode\n");	// #debug

@@ -648,11 +648,10 @@ xdGestureHandler.prototype = {
 		var doc = win.document;
 		var insertionNode = doc.documentElement ? doc.documentElement : doc;
 		var win = doc.defaultView;
-		this._trailZoom = win.QueryInterface(Ci.nsIInterfaceRequestor).
-		                  getInterface(Ci.nsIDOMWindowUtils).screenPixelsPerCSSPixel;
+		this._trailZoom = this._gestureObserver.fullZoom;
+		if (this._trailZoom != 1) log("fullZoom: " + this._trailZoom);	// #debug
 		this._trailOffsetX = (win.mozInnerScreenX - win.scrollX) * this._trailZoom;
 		this._trailOffsetY = (win.mozInnerScreenY - win.scrollY) * this._trailZoom;
-		if (this._trailZoom != 1) log("_trailZoom: " + this._trailZoom);	// #debug
 		this._trailArea = doc.createElementNS(HTML_NS, "xdTrailArea");
 		insertionNode.appendChild(this._trailArea);
 		this._trailDot = doc.createElementNS(HTML_NS, "xdTrailDot");

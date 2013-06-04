@@ -110,6 +110,11 @@ interface xdIGestureObserver : nsISupports
 {
 
 	/**
+	 * Get the full zoom ratio.
+	 */
+	readonly attribute float fullZoom;
+
+	/**
 	 * Returns false to suppress starting gesture for some reason otherwise true.
 	 */
 	boolean canStartGesture(in nsIDOMEvent event);

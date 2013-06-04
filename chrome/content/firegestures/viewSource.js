@@ -32,6 +32,10 @@ var FireGesturesViewSource = {
 
 	/* ::::: xdIGestureObserver ::::: */
 
+	get fullZoom() {
+		return gBrowser.markupDocumentViewer.fullZoom;
+	},
+
 	canStartGesture: function(event) {
 		return true;
 	},
