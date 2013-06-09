@@ -619,7 +619,14 @@ xdGestureHandler.prototype = {
 	},
 
 	openPopupAtPointer: function FGH_openPopupAtPointer(aPopup) {
-		aPopup.openPopupAtScreen(this._lastX, this._lastY, false);
+		var ratio = 1;
+		var os = Cc["@mozilla.org/system-info;1"].getService(Ci.nsIPropertyBag2).getProperty("name");
+		if (os == "Darwin") {
+			// [Mac] multiply openPopupAtScreen args by layout.css.devPixelsPerPx
+			ratio = aPopup.ownerDocument.defaultView.QueryInterface(Ci.nsIInterfaceRequestor).
+		            getInterface(Ci.nsIDOMWindowUtils).screenPixelsPerCSSPixel;
+		}
+		aPopup.openPopupAtScreen(this._lastX * ratio, this._lastY * ratio, false);
 		// stop gesture
 		this._directionChain = "";
 		// _stopGesture is called twice when popup is open from wheel gesture,
