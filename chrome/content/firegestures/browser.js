@@ -719,22 +719,29 @@ var FireGestures = {
 				gBrowser.closeRightTabs(gBrowser.mCurrentTab);
 			return;
 		}
-		// hack to make another version of built-in warnAboutClosingTabs
-		if ("warnAboutClosingTabs2" in gBrowser == false)
-			window.eval(
-				"gBrowser.warnAboutClosingTabs2 = " + 
-				gBrowser.warnAboutClosingTabs.toString()
-				.replace("(aAll)", "(aAll, aTabsToClose)")
-				.replace(/var tabsToClose = [^;]+;/, "var tabsToClose = aTabsToClose;")
-			);
 		var tabs = Array.slice(gBrowser.mTabs);
 		var pos = gBrowser.mCurrentTab._tPos;
 		var start = aLeftRight == "left" ? 0   : pos + 1;
 		var stop  = aLeftRight == "left" ? pos : tabs.length;
 		tabs = tabs.slice(start, stop).filter(function(tab) !tab.pinned && !tab.hidden);
 		// alert(tabs.map(function(tab) "[" + tab._tPos + "] " + tab.label).join("\n"));
-		if (!gBrowser.warnAboutClosingTabs2(false, tabs.length))
-			return;
+		// @see warnAboutClosingTabs in tabbrowser.xml
+		var shouldPrompt = Services.prefs.getBoolPref("browser.tabs.warnOnCloseOtherTabs");
+		if (shouldPrompt && tabs.length > 1) {
+			var ps = Services.prompt;
+			var bundle = gBrowser.mStringBundle;
+			window.focus();
+			var ret = ps.confirmEx(
+				window, 
+				bundle.getString("tabs.closeWarningTitle"), 
+				bundle.getFormattedString("tabs.closeWarningMultipleTabs", [tabs.length]), 
+				ps.BUTTON_TITLE_IS_STRING * ps.BUTTON_POS_0 + ps.BUTTON_TITLE_CANCEL * ps.BUTTON_POS_1, 
+				bundle.getString("tabs.closeButtonMultiple"), 
+				null, null, null, {}
+			);
+			if (ret != 0)
+				return;
+		}
 		tabs.reverse().forEach(function(tab) gBrowser.removeTab(tab));
 	},
 
