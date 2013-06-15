@@ -1,55 +1,55 @@
 <!ENTITY options "Opciones">
-<!ENTITY mainPane "Principal">
-<!ENTITY mappingPane "Asignando">
-<!ENTITY advancedPane "Avanzado">
-<!ENTITY swipePane "Deslizamiento">
-<!ENTITY mouseGesture "Gestos del ratón">
+<!ENTITY mainPane "Principales">
+<!ENTITY mappingPane "Asignaciones">
+<!ENTITY advancedPane "Avanzadas">
+<!ENTITY swipePane "Deslizamientos">
+<!ENTITY mouseGesture "Activar gestos del mouse">
 <!ENTITY triggerButton "Botón para iniciar los gestos">
 <!ENTITY triggerButton.left "Izquierdo">
 <!ENTITY triggerButton.middle "Central">
 <!ENTITY triggerButton.right "Derecho">
-<!ENTITY suppress.alt "No inicar gestos si se pulsa Alt">
+<!ENTITY suppress.alt "No iniciar los gestos si se mantiene pulsada la tecla Alt">
 <!ENTITY trail "Dibujar rastro">
 <!ENTITY trail.color "Color">
-<!ENTITY trail.size "Tamaño">
-<!ENTITY status "Mostrar detalles en barra de estado">
-<!ENTITY status.description.1 "Ocultar detalles de barra de estado tras">
+<!ENTITY trail.size "Grosor">
+<!ENTITY status "Mostrar detalles del gesto en la barra de estado">
+<!ENTITY status.description.1 "Ocultar detalles de la barra de estado tras">
 <!ENTITY status.description.2 "segundos.">
 <!ENTITY timeout "Límite de tiempo">
-<!ENTITY timeout.description.1 "Cancelar gesto tras">
+<!ENTITY timeout.description.1 "Cancelar el gesto tras">
 <!ENTITY timeout.description.2 "segundos sin movimiento.">
 <!ENTITY mappings.title "Asignaciones">
-<!ENTITY mappings.description "Elija la asignación a configurar">
+<!ENTITY mappings.description "Elija el grupo de asignaciones a configurar">
 <!ENTITY tools.title "Herramientas">
 <!ENTITY tools.description "Respaldar o Restaurar todas las asignaciones">
 <!ENTITY tools.backup.label "Respaldar">
 <!ENTITY tools.restore.label "Restaurar">
 <!ENTITY tools.restore.alerttext "Esto reemplazará todas sus asignaciones actuales con las del respaldo. ¿Está seguro?">
-<!ENTITY wheelGesture "Gestos Rueda">
-<!ENTITY wheelGesture.up.left "Girar hacia arriba mientras se oprime el botón izquierdo">
-<!ENTITY wheelGesture.up.middle "Girar hacia arriba mientras se oprime el botón central">
-<!ENTITY wheelGesture.up.right "Girar hacia arriba mientras se oprime el botón derecho">
-<!ENTITY wheelGesture.down.left "Girar hacia abajo mientras se oprime el botón derecho">
-<!ENTITY wheelGesture.down.middle "Girar hacia abajo mientras se oprime el botón central">
-<!ENTITY wheelGesture.down.right "Girar hacia abajo mientras se oprime el botón derecho">
-<!ENTITY rockerGesture "Gestos Rocker">
-<!ENTITY rockerGesture.left "Clic izquierdo mientras se oprime el botón derecho">
-<!ENTITY rockerGesture.right "Clic derecho mientras se oprime el botón izquierdo">
-<!ENTITY keypressGesture "Gestos Keypress (teclas auxiliares)">
-<!ENTITY keypressGesture.ctrl "Gestos del ratón mientras se oprime la tecla Ctrl">
-<!ENTITY keypressGesture.shift "Gestos del ratón mientras se oprime la tecla Shift">
+<!ENTITY wheelGesture "Activar Gestos Rueda (con la ruedita del mouse)">
+<!ENTITY wheelGesture.up.left "Al girar hacia arriba mientras se oprime el botón izquierdo">
+<!ENTITY wheelGesture.up.middle "Al girar hacia arriba mientras se oprime el botón central">
+<!ENTITY wheelGesture.up.right "Al girar hacia arriba mientras se oprime el botón derecho">
+<!ENTITY wheelGesture.down.left "Al girar hacia abajo mientras se oprime el botón izquierdo">
+<!ENTITY wheelGesture.down.middle "Al girar hacia abajo mientras se oprime el botón central">
+<!ENTITY wheelGesture.down.right "Al girar hacia abajo mientras se oprime el botón derecho">
+<!ENTITY rockerGesture "Activar Gestos &quot;Rocker&quot; (combinando los botones)">
+<!ENTITY rockerGesture.left "Al hacer clic izquierdo mientras se oprime el botón derecho">
+<!ENTITY rockerGesture.right "Al hacer clic derecho mientras se oprime el botón izquierdo">
+<!ENTITY keypressGesture "Activar Gestos &quot;Keypress&quot; (teclas auxiliares)">
+<!ENTITY keypressGesture.ctrl "Al realizar un gesto mientras se oprime la tecla Ctrl">
+<!ENTITY keypressGesture.shift "Al realizar un gesto mientras se oprime la tecla Shift">
 <!ENTITY keypressGesture.open "Abrir en pestañas los enlaces abarcados por el gesto">
 <!ENTITY keypressGesture.save "Guardar los enlaces abarcados por el gesto">
-<!ENTITY keypressGesture.copy "Copiar dirección de los enlaces abarcados por el gesto">
-<!ENTITY tabwheelGesture "Gestos Rueda en pestañas">
-<!ENTITY tabwheelGesture.description "Rotar enfoque de pestaña al girar la rueda sobre la barra de pestañas">
-<!ENTITY swipe "Gestos de deslizamiento">
-<!ENTITY swipe.left "Deslizar hacia la izquierda">
-<!ENTITY swipe.right "Deslizar hacia la derecha">
-<!ENTITY swipe.up "Deslizar hacia arriba">
-<!ENTITY swipe.down "Deslizar hacia abajo">
-<!ENTITY swipe.continuous "Gestos con deslizamientos continuos">
-<!ENTITY swipe.continuous.1 "Tiempo para detectar siguiente dirección">
+<!ENTITY keypressGesture.copy "Copiar direcciones de los enlaces abarcados por el gesto">
+<!ENTITY tabwheelGesture "Activar Gestos Rueda en Pestañas">
+<!ENTITY tabwheelGesture.description "Rotar el enfoque de pestaña al girar la rueda sobre la barra de pestañas">
+<!ENTITY swipe "Activar Gestos de Deslizamiento">
+<!ENTITY swipe.left "Al realizar deslizamiento hacia la izquierda">
+<!ENTITY swipe.right "Al relizar deslizamiento hacia la derecha">
+<!ENTITY swipe.up "Al realizar deslizamiento hacia arriba">
+<!ENTITY swipe.down "Al realizar deslizamiento hacia abajo">
+<!ENTITY swipe.continuous "Usar gestos con deslizamientos continuos">
+<!ENTITY swipe.continuous.1 "Pausa para indicar cambio de dirección">
 <!ENTITY swipe.continuous.2 "segundos">
 <!ENTITY treecol.name "Nombre">
 <!ENTITY treecol.command "Comando">
@@ -63,4 +63,4 @@
 <!ENTITY addScriptButton.accesskey "A">
 <!ENTITY deleteScriptButton.label "Borrar código">
 <!ENTITY deleteScriptButton.accesskey "B">
-<!ENTITY getScripts.label "Obtener más códigos">
+<!ENTITY getScripts.label "Obtener más códigos de comandos">

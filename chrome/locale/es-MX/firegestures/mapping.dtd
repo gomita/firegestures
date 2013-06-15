@@ -9,13 +9,13 @@
 <!ENTITY gestureCategory.tools "Herramientas">
 <!ENTITY gestureCategory.popup "Tipo emergente">
 <!ENTITY gestureCategory.hybrid "Tipo híbrido">
-<!ENTITY gestureCategory.script "Códigos de usuario">
+<!ENTITY gestureCategory.script "Comandos definidos por el usuario">
 <!ENTITY gestureType.popup "Emergente">
 <!ENTITY gestureType.hybrid "Híbrido">
 <!ENTITY gestureCmd.skipCache "Ignorar caché">
 <!ENTITY gestureCmd.goUpperLevel "Subir un nivel">
-<!ENTITY gestureCmd.incrementURL "Incrementar número en URL">
-<!ENTITY gestureCmd.decrementURL "Disminuir número en URL">
+<!ENTITY gestureCmd.incrementURL "Incrementar número en la URL">
+<!ENTITY gestureCmd.decrementURL "Disminuir número en la URL">
 <!ENTITY gestureCmd.undoCloseWindow "Re-abrir ventana cerrada">
 <!ENTITY gestureCmd.minimizeWindow "Minimizar ventana">
 <!ENTITY gestureCmd.maximizeWindow "Maximizar/Restaurar tamaño de ventana">
@@ -32,19 +32,19 @@
 <!ENTITY gestureCmd.foregroundTab "Pestaña en primer plano">
 <!ENTITY gestureCmd.saveImageNow "Guardar imagen ya">
 <!ENTITY gestureCmd.searchForSelection "Buscar selección">
-<!ENTITY gestureCmd.searchForSelectionWith "Buscar selección con...">
-<!ENTITY gestureCmd.openLinksInSelection "Abrir todos los enlaces en la selección">
-<!ENTITY gestureCmd.openURLsInSelection "Abrir todas las URL en la selección">
-<!ENTITY gestureCmd.bookmarksSidebar "Mostrar pánel lateral de marcadores">
-<!ENTITY gestureCmd.historySidebar "Mostrar pánel lateral de historial">
+<!ENTITY gestureCmd.searchForSelectionWith "Buscar selección con…">
+<!ENTITY gestureCmd.openLinksInSelection "Abrir todos los enlaces contenidos en la selección">
+<!ENTITY gestureCmd.openURLsInSelection "Abrir todas las drecciones URL contenidas en la selección">
+<!ENTITY gestureCmd.bookmarksSidebar "Mostrar pánel lateral de Marcadores">
+<!ENTITY gestureCmd.historySidebar "Mostrar pánel lateral de Historial">
 <!ENTITY gestureCmd.backForwardHistory "Retroceder/Avanzar en el Historial">
-<!ENTITY gestureCmd.previewMode "Modo Vista Previa">
-<!ENTITY gestureCmd.hybridSave "Guardar como...">
-<!ENTITY gestureCmd.hybridBookmark "Marcador...">
+<!ENTITY gestureCmd.previewMode "Modo de Vista Previa">
+<!ENTITY gestureCmd.hybridSave "Guardar como…">
+<!ENTITY gestureCmd.hybridBookmark "Marcador…">
 <!ENTITY gestureCmd.hybridViewSource "Ver código fuente">
 <!ENTITY gestureCmd.hybridProperties "Propiedades">
-<!ENTITY gestureCmd.hybridSendURL "Enviar...">
+<!ENTITY gestureCmd.hybridSendURL "Enviar…">
 <!ENTITY gestureCmd.hybridCopyURL "Copiar dirección">
 <!ENTITY gestureCmd.toggleFindbar "Abrir/Cerrar la barra de búsqueda">
-<!ENTITY gestureCmd.restartApp "Reiniciar Firefox">
+<!ENTITY gestureCmd.restartApp "Re-iniciar Firefox">
 <!ENTITY gestureCmd.options "Opciones">

@@ -2,6 +2,7 @@
 <!ENTITY mainPane "일반">
 <!ENTITY mappingPane "도표">
 <!ENTITY advancedPane "고급">
+<!ENTITY swipePane "Swipe">
 <!ENTITY mouseGesture "마우스 동작">
 <!ENTITY triggerButton "동작을 시작하게할 방아쇠 버튼">
 <!ENTITY triggerButton.left "왼쪽">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "마우스를 올려둔 링크 위치 복사">
 <!ENTITY tabwheelGesture "탭 휠 동작">
 <!ENTITY tabwheelGesture.description "탭 막대 위에서 휠을 스크롤시 탭 전환">
+<!ENTITY swipe "Swipe 동작">
+<!ENTITY swipe.left "왼편으로 Swipe">
+<!ENTITY swipe.right "오른편으로 Swipe">
+<!ENTITY swipe.up "위로 swipe">
+<!ENTITY swipe.down "아래로 swipe">
+<!ENTITY swipe.continuous "연속 Swipe 마우스 동작">
+<!ENTITY swipe.continuous.1 "다음 방향으로 기다리는 시간:">
+<!ENTITY swipe.continuous.2 "초">
 <!ENTITY treecol.name "이름">
 <!ENTITY treecol.command "명령">
 <!ENTITY treecol.script "스크립트">
