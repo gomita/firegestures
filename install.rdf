@@ -7,7 +7,7 @@
 		<em:id>firegestures@xuldev.org</em:id>
 		<em:type>2</em:type>
 		<em:name>FireGestures</em:name>
-		<em:version>1.7.5</em:version>
+		<em:version>1.7.6</em:version>
 		<em:description>Executes various commands with mouse gestures.</em:description>
 		<em:creator>Gomita</em:creator>
 		<em:localized>
@@ -302,7 +302,6 @@
 			</Description>
 		</em:localized>
 		<em:contributor>tsukkee (testing with Mac OS X)</em:contributor>
-		<em:iconURL>chrome://firegestures/skin/icon.png</em:iconURL>
 		<em:optionsURL>chrome://firegestures/content/prefs.xul</em:optionsURL>
 		<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
 		<em:targetApplication>
