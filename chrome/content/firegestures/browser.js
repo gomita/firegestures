@@ -157,10 +157,10 @@ var FireGestures = {
 	_performAction: function(event, aCommand) {
 		switch (aCommand) {
 			case "Browser:Back": 
-				BrowserBack(event);
+				BrowserBack(event && event.type == "MozSwipeGesture" ? event : undefined);
 				break;
 			case "Browser:Forward": 
-				BrowserForward(event);
+				BrowserForward(event && event.type == "MozSwipeGesture" ? event : undefined);
 				break;
 			case "FireGestures:GoUpperLevel": 
 				this.goUpperLevel();
