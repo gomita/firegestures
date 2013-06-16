@@ -461,11 +461,9 @@ var FireGestures = {
 				clipboard.copyString(url);
 				break;
 			case "FireGestures:HybridMetaData": 
-				if (this.getLinkURL() || this.getImageURL())
-					window.openDialog(
-						"chrome://browser/content/metaData.xul", "_blank", 
-						"scrollbars,resizable,chrome,dialog=no", this.sourceNode
-					);
+				// 'View Image Info' works only for plain images
+				if (this.sourceNode instanceof Ci.nsIImageLoadingContent && this.sourceNode.src)
+					BrowserPageInfo(this.sourceNode.ownerDocument, "mediaTab", this.sourceNode);
 				else
 					BrowserPageInfo(this.sourceNode.ownerDocument);
 				break;

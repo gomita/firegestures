@@ -458,7 +458,7 @@
                    FG:name="[&gestureType.hybrid;] &gestureCmd.hybridViewSource; (&gestureCategory.selection; / &gestureCategory.frame; / &gestureCategory.page;)" />
   <RDF:Description RDF:about="urn:FireGestures:HybridMetaData"
                    FG:type="1"
-                   FG:name="[&gestureType.hybrid;] &gestureCmd.hybridProperties; (&gestureCategory.link; / &gestureCategory.image; / &gestureCategory.frame; / &gestureCategory.page;)" />
+                   FG:name="[&gestureType.hybrid;] &gestureCmd.hybridProperties; (&gestureCategory.image; / &gestureCategory.frame; / &gestureCategory.page;)" />
   <!-- script -->
   <RDF:Description RDF:about="urn:category:script"
                    FG:type="0"
