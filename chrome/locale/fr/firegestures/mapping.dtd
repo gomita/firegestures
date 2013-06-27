@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Voir la panneau latéral de marque-pages">
 <!ENTITY gestureCmd.historySidebar "Voir la panneau latéral de l&apos;historique">
 <!ENTITY gestureCmd.backForwardHistory "Précédent / suivant">
-<!ENTITY gestureCmd.previewMode "Mode aperçu">
 <!ENTITY gestureCmd.hybridSave "Enregistrer sous…">
 <!ENTITY gestureCmd.hybridBookmark "Marquer…">
 <!ENTITY gestureCmd.hybridViewSource "Voir le code source">

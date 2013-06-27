@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Visa Bokmärkes-sidpanelen">
 <!ENTITY gestureCmd.historySidebar "Visa Historik-sidpanelen">
 <!ENTITY gestureCmd.backForwardHistory "Bakåt / Framåt i historiken">
-<!ENTITY gestureCmd.previewMode "Förhandsgrandskningsläge">
 <!ENTITY gestureCmd.hybridSave "Spara som...">
 <!ENTITY gestureCmd.hybridBookmark "Bokmärk...">
 <!ENTITY gestureCmd.hybridViewSource "Visa källkod">

@@ -100,7 +100,6 @@
     <RDF:li RDF:resource="urn:category:popup" />
     <RDF:li RDF:resource="urn:FireGestures:BFHistoryPopup" />
     <RDF:li RDF:resource="urn:FireGestures:AllTabsPopup" />
-    <RDF:li RDF:resource="urn:Browser:ShowAllTabs" />
     <RDF:li RDF:resource="urn:FireGestures:ClosedTabsPopup" />
     <RDF:li RDF:resource="urn:FireGestures:WebSearchPopup" />
     <RDF:li RDF:resource="urn:category:hybrid" />
@@ -426,9 +425,6 @@
                    FG:type="1"
                    FG:name="[&gestureType.popup;] &listAllTabs.label;"
                    FG:extra="wheel-down" />
-  <RDF:Description RDF:about="urn:Browser:ShowAllTabs"
-                   FG:type="1"
-                   FG:name="[&gestureType.popup;] &listAllTabs.label; (&gestureCmd.previewMode;)" />
   <RDF:Description RDF:about="urn:FireGestures:ClosedTabsPopup"
                    FG:type="1"
                    FG:name="[&gestureType.popup;] &historyUndoMenu.label;" />

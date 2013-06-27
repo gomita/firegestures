@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "显示书签侧边栏">
 <!ENTITY gestureCmd.historySidebar "显示历史侧边栏">
 <!ENTITY gestureCmd.backForwardHistory "后退/前进 历史">
-<!ENTITY gestureCmd.previewMode "预览模式">
 <!ENTITY gestureCmd.hybridSave "另存为...">
 <!ENTITY gestureCmd.hybridBookmark "加到书签...">
 <!ENTITY gestureCmd.hybridViewSource "查看源代码">

@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Wyświetl zakładki w panelu bocznym">
 <!ENTITY gestureCmd.historySidebar "Wyświetl historię w panelu bocznym">
 <!ENTITY gestureCmd.backForwardHistory "Historia Wstecz/Do przodu">
-<!ENTITY gestureCmd.previewMode "Tryb podglądu">
 <!ENTITY gestureCmd.hybridSave "Zapisz jako…">
 <!ENTITY gestureCmd.hybridBookmark "Dodaj zakładkę…">
 <!ENTITY gestureCmd.hybridViewSource "Pokaż źródło">

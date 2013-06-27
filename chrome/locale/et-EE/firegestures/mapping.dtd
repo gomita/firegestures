@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Näita järjehoidjate külgriba">
 <!ENTITY gestureCmd.historySidebar "Näita ajaloo külgriba">
 <!ENTITY gestureCmd.backForwardHistory "Tagasi/Edasi ajalugu">
-<!ENTITY gestureCmd.previewMode "Eelvaate Režiim">
 <!ENTITY gestureCmd.hybridSave "Salvesta kui...">
 <!ENTITY gestureCmd.hybridBookmark "Järjehoidja...">
 <!ENTITY gestureCmd.hybridViewSource "Vaata allikat">

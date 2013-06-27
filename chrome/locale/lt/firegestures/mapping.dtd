@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Šoninėje juostoje rodyti žymeles">
 <!ENTITY gestureCmd.historySidebar "Šoninėje juostoje rodyti istoriją">
 <!ENTITY gestureCmd.backForwardHistory "Atgal / Pirmyn istorija">
-<!ENTITY gestureCmd.previewMode "Peržiūros režimas">
 <!ENTITY gestureCmd.hybridSave "Išsaugoti kaip...">
 <!ENTITY gestureCmd.hybridBookmark "Žymelė...">
 <!ENTITY gestureCmd.hybridViewSource "Žiūrėti pradinį kodą">

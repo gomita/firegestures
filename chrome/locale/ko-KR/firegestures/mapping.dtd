@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "북마크 탐색창 표시">
 <!ENTITY gestureCmd.historySidebar "열어본 페이지 목록 창 표시">
 <!ENTITY gestureCmd.backForwardHistory "이전/이후 방문 기록">
-<!ENTITY gestureCmd.previewMode "미리보기 모드">
 <!ENTITY gestureCmd.hybridSave "새 이름으로저장">
 <!ENTITY gestureCmd.hybridBookmark "북마크에 추가">
 <!ENTITY gestureCmd.hybridViewSource "소스 보기">

@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Bladwijzerbalk Tonen">
 <!ENTITY gestureCmd.historySidebar "Geschiedenisbalk Tonen">
 <!ENTITY gestureCmd.backForwardHistory "Terug / Vooruit in Geschiedenis">
-<!ENTITY gestureCmd.previewMode "Voorbeeldmodus">
 <!ENTITY gestureCmd.hybridSave "Opslaan Als...">
 <!ENTITY gestureCmd.hybridBookmark "Bladwijzer...">
 <!ENTITY gestureCmd.hybridViewSource "Bron Bekijken">

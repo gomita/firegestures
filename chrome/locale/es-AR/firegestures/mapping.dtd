@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Mostrar la barra lateral de marcadores">
 <!ENTITY gestureCmd.historySidebar "Mostrar la barra lateral del historial">
 <!ENTITY gestureCmd.backForwardHistory "Historial anterior/posterior">
-<!ENTITY gestureCmd.previewMode "En modo Vista Previa">
 <!ENTITY gestureCmd.hybridSave "Guardar como...">
 <!ENTITY gestureCmd.hybridBookmark "Marcador...">
 <!ENTITY gestureCmd.hybridViewSource "Ver origen">

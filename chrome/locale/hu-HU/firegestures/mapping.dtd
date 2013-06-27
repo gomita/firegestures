@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Könyvjelző oldalsáv megjelenítése">
 <!ENTITY gestureCmd.historySidebar "Előzmények oldalsáv megjelenítése">
 <!ENTITY gestureCmd.backForwardHistory "Előző/következő története">
-<!ENTITY gestureCmd.previewMode "Előnézet mód">
 <!ENTITY gestureCmd.hybridSave "Mentés másként…">
 <!ENTITY gestureCmd.hybridBookmark "Könyvjelző…">
 <!ENTITY gestureCmd.hybridViewSource "Oldal forrása">

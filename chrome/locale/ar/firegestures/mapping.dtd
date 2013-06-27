@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "أظهر شريط العلامات الجانبي">
 <!ENTITY gestureCmd.historySidebar "أظهر شريط التاريخ الجانبي">
 <!ENTITY gestureCmd.backForwardHistory "إرجع / تقدم تاريخ">
-<!ENTITY gestureCmd.previewMode "وضع العرض">
 <!ENTITY gestureCmd.hybridSave "إحفظ علي هيئة">
 <!ENTITY gestureCmd.hybridBookmark "علامة…">
 <!ENTITY gestureCmd.hybridViewSource "أظهر المصدر">

@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Прикажи забелешке у бочној траци">
 <!ENTITY gestureCmd.historySidebar "Прикажи историјат у бочној траци">
 <!ENTITY gestureCmd.backForwardHistory "Назад/напред историјат">
-<!ENTITY gestureCmd.previewMode "Начин приказа">
 <!ENTITY gestureCmd.hybridSave "Сачувај као...">
 <!ENTITY gestureCmd.hybridBookmark "Забележи...">
 <!ENTITY gestureCmd.hybridViewSource "Погледај извор">

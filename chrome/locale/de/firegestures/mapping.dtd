@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Lesezeichenleiste anzeigen">
 <!ENTITY gestureCmd.historySidebar "Chronikleiste anzeigen">
 <!ENTITY gestureCmd.backForwardHistory "Chronik vor/zurück">
-<!ENTITY gestureCmd.previewMode "Vorschaumodus">
 <!ENTITY gestureCmd.hybridSave "Speichern unter...">
 <!ENTITY gestureCmd.hybridBookmark "Lesezeichen...">
 <!ENTITY gestureCmd.hybridViewSource "Quelltext anzeigen">

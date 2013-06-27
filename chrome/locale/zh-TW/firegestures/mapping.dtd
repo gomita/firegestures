@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "於側邊欄顯示書籤">
 <!ENTITY gestureCmd.historySidebar "於側邊欄顯示瀏覽記錄">
 <!ENTITY gestureCmd.backForwardHistory "上╱下一頁瀏覽記錄">
-<!ENTITY gestureCmd.previewMode "預覽模式">
 <!ENTITY gestureCmd.hybridSave "另存新檔...">
 <!ENTITY gestureCmd.hybridBookmark "加入書籤...">
 <!ENTITY gestureCmd.hybridViewSource "檢視原始碼">

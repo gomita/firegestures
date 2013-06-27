@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Näytä kirjanmerkkipaneeli">
 <!ENTITY gestureCmd.historySidebar "Näytä sivuhistoriapaneeli">
 <!ENTITY gestureCmd.backForwardHistory "Eteen-/taaksepäin sivuhistoriassa">
-<!ENTITY gestureCmd.previewMode "Esikatselu">
 <!ENTITY gestureCmd.hybridSave "Tallenna nimellä...">
 <!ENTITY gestureCmd.hybridBookmark "Luo kirjanmerkki...">
 <!ENTITY gestureCmd.hybridViewSource "Näytä lähdekoodi">

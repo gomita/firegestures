@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Afișează panoul lateral cu semne de carte">
 <!ENTITY gestureCmd.historySidebar "Afișează panoul lateral cu istoricul">
 <!ENTITY gestureCmd.backForwardHistory "Element precedent/următor">
-<!ENTITY gestureCmd.previewMode "Mod previzualizare">
 <!ENTITY gestureCmd.hybridSave "Salvează ca…">
 <!ENTITY gestureCmd.hybridBookmark "Semn de carte…">
 <!ENTITY gestureCmd.hybridViewSource "Afișează codul sursă">

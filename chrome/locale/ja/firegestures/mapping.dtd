@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "ブックマークサイドバーを表示">
 <!ENTITY gestureCmd.historySidebar "履歴サイドバーを表示">
 <!ENTITY gestureCmd.backForwardHistory "戻る / 進むの履歴">
-<!ENTITY gestureCmd.previewMode "プレビュー表示">
 <!ENTITY gestureCmd.hybridSave "名前を付けて保存">
 <!ENTITY gestureCmd.hybridBookmark "ブックマーク">
 <!ENTITY gestureCmd.hybridViewSource "ソースを表示">

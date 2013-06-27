@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Zobrazit postranní panel záložek">
 <!ENTITY gestureCmd.historySidebar "Zobrazit postranní panel historie">
 <!ENTITY gestureCmd.backForwardHistory "Zpět / Dopředu v historii">
-<!ENTITY gestureCmd.previewMode "Režim náhledu">
 <!ENTITY gestureCmd.hybridSave "Uložit jako...">
 <!ENTITY gestureCmd.hybridBookmark "Přidat do záložek...">
 <!ENTITY gestureCmd.hybridViewSource "Zobrazit zdrojový kód">

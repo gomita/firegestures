@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Открыть боковую панель с закладками">
 <!ENTITY gestureCmd.historySidebar "Открыть боковую панель с историей посещений">
 <!ENTITY gestureCmd.backForwardHistory "Назад / Вперёд по истории посещений">
-<!ENTITY gestureCmd.previewMode "Режим предварительного просмотра">
 <!ENTITY gestureCmd.hybridSave "Сохранить как...">
 <!ENTITY gestureCmd.hybridBookmark "Закладка...">
 <!ENTITY gestureCmd.hybridViewSource "Просмотреть исходный код">

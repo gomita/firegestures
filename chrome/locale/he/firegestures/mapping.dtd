@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "הצגת סרגל-צד סימניות">
 <!ENTITY gestureCmd.historySidebar "הצגת סרגל-צד ההיסטוריה">
 <!ENTITY gestureCmd.backForwardHistory "היסטוריה קדימה / אחורה">
-<!ENTITY gestureCmd.previewMode "מצב תצוגה מקדימה">
 <!ENTITY gestureCmd.hybridSave "שמירה בשם...">
 <!ENTITY gestureCmd.hybridBookmark "סימניות...">
 <!ENTITY gestureCmd.hybridViewSource "הצגת המקור">

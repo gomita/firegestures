@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Vis bogmærker i sidebjælken">
 <!ENTITY gestureCmd.historySidebar "Vis historik i sidebjælken">
 <!ENTITY gestureCmd.backForwardHistory "Tilbage / Fremad i historik">
-<!ENTITY gestureCmd.previewMode "Miniaturevisning">
 <!ENTITY gestureCmd.hybridSave "Gem som…">
 <!ENTITY gestureCmd.hybridBookmark "Bogmærk…">
 <!ENTITY gestureCmd.hybridViewSource "Vis sidens kildekode">

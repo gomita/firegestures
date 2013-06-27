@@ -38,7 +38,6 @@
 <!ENTITY gestureCmd.bookmarksSidebar "Show Bookmarks Sidebar">
 <!ENTITY gestureCmd.historySidebar "Show History Sidebar">
 <!ENTITY gestureCmd.backForwardHistory "Back / Forward History">
-<!ENTITY gestureCmd.previewMode "Preview Mode">
 <!ENTITY gestureCmd.hybridSave "Save As...">
 <!ENTITY gestureCmd.hybridBookmark "Bookmark...">
 <!ENTITY gestureCmd.hybridViewSource "View Source">
