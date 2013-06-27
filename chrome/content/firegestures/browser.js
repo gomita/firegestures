@@ -1071,12 +1071,8 @@ var FireGestures = {
 			this._popupActiveItem.removeAttribute("_moz-menuactive");
 		if (!this._isWin) {
 			// [Mac][Linux]
-			if (aActive) {
-				var cssText = "background-color: -moz-menuhover; color: -moz-menuhovertext;";
-				this._popupActiveItem.setAttribute("style", cssText);
-			}
-			else
-				this._popupActiveItem.removeAttribute("style");
+			this._popupActiveItem.style.backgroundColor = aActive ? "-moz-menuhover" : "";
+			this._popupActiveItem.style.color = aActive ? "-moz-menuhovertext" : "";
 		}
 		// dispatch event to show statustext
 		var evt = document.createEvent("Events");
