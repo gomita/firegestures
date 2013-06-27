@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Save Image Now">
 <!ENTITY gestureCmd.searchForSelection "Search for Selection">
 <!ENTITY gestureCmd.searchForSelectionWith "Search for Selection with...">
+<!ENTITY gestureCmd.allScripts "All User Scripts">
 <!ENTITY gestureCmd.openLinksInSelection "Open All Links in Selection">
 <!ENTITY gestureCmd.openURLsInSelection "Open All URLs in Selection">
 <!ENTITY gestureCmd.bookmarksSidebar "Show Bookmarks Sidebar">

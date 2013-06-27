@@ -9,7 +9,7 @@
 <!ENTITY gestureCategory.tools "ツール">
 <!ENTITY gestureCategory.popup "ポップアップ型">
 <!ENTITY gestureCategory.hybrid "ハイブリッド型">
-<!ENTITY gestureCategory.script "ユーザスクリプト">
+<!ENTITY gestureCategory.script "ユーザースクリプト">
 <!ENTITY gestureType.popup "ポップアップ">
 <!ENTITY gestureType.hybrid "ハイブリッド">
 <!ENTITY gestureCmd.skipCache "キャッシュを無視">
@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "画像を今すぐ保存">
 <!ENTITY gestureCmd.searchForSelection "選択範囲を Web 検索">
 <!ENTITY gestureCmd.searchForSelectionWith "検索エンジンを選択して Web 検索">
+<!ENTITY gestureCmd.allScripts "すべてのユーザースクリプト">
 <!ENTITY gestureCmd.openLinksInSelection "選択範囲内のリンクをすべて開く">
 <!ENTITY gestureCmd.openURLsInSelection "選択範囲内の URL をすべて開く">
 <!ENTITY gestureCmd.bookmarksSidebar "ブックマークサイドバーを表示">

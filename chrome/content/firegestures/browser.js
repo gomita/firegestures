@@ -479,6 +479,23 @@ var FireGestures = {
 			case "FireGestures:WebSearchPopup": 
 				this._buildPopup(aCommand, event && event.type == "DOMMouseScroll");
 				break;
+			case "FireGestures:AllScriptsPopup": 
+				const kTypeCol    = 0;
+				const kNameCol    = 1;
+				const kCommandCol = 2;
+				var items = this._gestureMapping.getMappingArray().filter(function(item) {
+					return item[kTypeCol] == this._gestureMapping.TYPE_SCRIPT;
+				}, this);
+				var names = items.map(function(item) item[kNameCol]);
+				var ret = {};
+				var ok = Services.prompt.select(
+					window, "FireGestures", this._getLocaleString("CHOOSE_SCRIPT"), 
+					names.length, names, ret
+				);
+				if (!ok || ret.value < 0)
+					return;
+				new Function("event", items[ret.value][kCommandCol])(event);
+				break;
 			case "FireGestures:OpenHoveredLinks": 
 				var doc = this.sourceNode.ownerDocument;
 				var referer = makeURI(doc.location.href);

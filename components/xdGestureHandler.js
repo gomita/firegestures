@@ -556,6 +556,7 @@ xdGestureHandler.prototype = {
 		this._isMouseDownL = false;
 		this._isMouseDownM = false;
 		this._isMouseDownR = false;
+		this._clearTimeout();
 		// clear trail drawing
 		if (this._trailEnabled)
 			this.eraseTrail();
@@ -569,7 +570,6 @@ xdGestureHandler.prototype = {
 		}
 		this.sourceNode = null;
 		this._directionChain = "";
-		this._clearTimeout();
 	},
 
 
