@@ -844,7 +844,7 @@ var FireGestures = {
 					if (tab.hidden)
 						continue;
 					var menuitem = popup.appendChild(document.createElement("menuitem"));
-					menuitem.setAttribute("class", "menuitem-iconic bookmark-item");
+					menuitem.setAttribute("class", "menuitem-iconic alltabs-item menuitem-with-favicon");
 					menuitem.setAttribute("label", tab.label);
 					menuitem.setAttribute("crop", tab.getAttribute("crop"));
 					menuitem.setAttribute("image", tab.getAttribute("image"));
@@ -867,24 +867,23 @@ var FireGestures = {
 					popup.insertBefore(menuitem, popup.firstChild);
 					menuitem.setAttribute("label", entry.title);
 					menuitem.setAttribute("statustext", entry.URI.spec);
-					PlacesUtils.favicons.getFaviconURLForPage(entry.URI, function(aURI) {
-						if (!aURI)
-							return;
-						let iconURL = PlacesUtils.favicons.getFaviconLinkForIcon(aURI).spec;
-						menuitem.style.listStyleImage = "url(" + iconURL + ")";
-					});
 					menuitem.index = i;
 					if (i == curIdx) {
-						menuitem.style.listStyleImage = "";
 						menuitem.setAttribute("type", "radio");
 						menuitem.setAttribute("checked", "true");
 						menuitem.className = "unified-nav-current";
 						activeItem = menuitem;
 					}
 					else {
+						PlacesUtils.favicons.getFaviconURLForPage(entry.URI, function(aURI) {
+							if (!aURI)
+								return;
+							let iconURL = PlacesUtils.favicons.getFaviconLinkForIcon(aURI).spec;
+							menuitem.style.listStyleImage = "url(" + iconURL + ")";
+						});
 						menuitem.className = i < curIdx
-						                   ? "unified-nav-back menuitem-iconic"
-						                   : "unified-nav-forward menuitem-iconic";
+						                   ? "unified-nav-back menuitem-iconic menuitem-with-favicon"
+						                   : "unified-nav-forward menuitem-iconic menuitem-with-favicon";
 					}
 				}
 				break;
@@ -896,7 +895,7 @@ var FireGestures = {
 				for (var i = 0; i < undoItems.length; i++) {
 					var menuitem = popup.appendChild(document.createElement("menuitem"));
 					menuitem.setAttribute("label", undoItems[i].title);
-					menuitem.setAttribute("class", "menuitem-iconic bookmark-item");
+					menuitem.setAttribute("class", "menuitem-iconic bookmark-item menuitem-with-favicon");
 					menuitem.index = i;
 					var iconURL = undoItems[i].image;
 					if (iconURL)
@@ -911,7 +910,7 @@ var FireGestures = {
 				for (var i = engines.length - 1; i >= 0; --i) {
 					var menuitem = document.createElement("menuitem");
 					menuitem.setAttribute("label", engines[i].name);
-					menuitem.setAttribute("class", "menuitem-iconic");
+					menuitem.setAttribute("class", "menuitem-iconic searchbar-engine-menuitem menuitem-with-favicon");
 					if (engines[i].iconURI)
 						menuitem.setAttribute("src", engines[i].iconURI.spec);
 					popup.insertBefore(menuitem, popup.firstChild);
