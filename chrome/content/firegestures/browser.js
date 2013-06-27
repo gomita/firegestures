@@ -15,9 +15,9 @@ var FireGestures = {
 
 	_statusDisplay: null,
 
-	get _isMac() {
-		delete this._isMac;
-		return this._isMac = navigator.platform.indexOf("Mac") >= 0;
+	get _isWin() {
+		delete this._isWin;
+		return this._isWin = navigator.platform.startsWith("Win");
 	},
 
 	init: function() {
@@ -515,7 +515,7 @@ var FireGestures = {
 				if (this._linkURLs.length < 1)
 					// do not copy empty string to prevent clearing clipboard
 					return;
-				var newLine = this._isMac ? "\n" : "\r\n";
+				var newLine = this._isWin ? "\r\n" : "\n";
 				var urls = this._linkURLs.join(newLine);
 				if (this._linkURLs.length > 1)
 					urls += newLine;
@@ -809,19 +809,19 @@ var FireGestures = {
 		// if there is a popup element which has the specifed id, reuse it
 		const POPUP_ID = "FireGesturesPopup";
 		var popup = document.getElementById(POPUP_ID);
-		if (this._isMac && popup) {
-			// XXX [Mac] to build popup as xul:panel or xul:menupopup, remove old element first.
+		if (!this._isWin && popup) {
+			// XXX [Mac][Linux] to build popup as xul:panel or xul:menupopup, remove old element first.
 			popup.parentNode.removeChild(popup);
 			popup = null;
 		}
 		if (!popup) {
-			// XXX [Mac] use xul:panel instead of xul:menupopup to fix the problem that
+			// XXX [Mac][Linux] use xul:panel instead of xul:menupopup to fix the problem that
 			// no DOMMouseScroll events sent outside the popup.
 			// However, this hack has a few of side effects:
 			// 1) css rules for 'menupopup > menuitem' are not applied
 			// 2) set _moz-menuactive="true" to a xul:menuitem has no effect
 			// 3) set default="true" to a xul:menuitem has no effect
-			if (this._isMac && aWheelGesture) {
+			if (!this._isWin && aWheelGesture) {
 				popup = document.createElement("panel");
 				popup.setAttribute("noautohide", "true");
 			}
@@ -977,8 +977,8 @@ var FireGestures = {
 					activeItem = event.detail > 0 ? popup.firstChild : popup.lastChild;
 				this._popupActiveItem = activeItem;
 				this._activateMenuItem(true);
-				// autoscroll to ensure the active menuitem is visible
-				if (!this._isMac) {
+				// [Windows] autoscroll to ensure the active menuitem is visible
+				if (this._isWin) {
 					var scrollbox = document.getAnonymousNodes(popup)[0];
 					scrollbox.ensureElementIsVisible(activeItem);
 				}
@@ -1069,8 +1069,8 @@ var FireGestures = {
 			this._popupActiveItem.setAttribute("_moz-menuactive", "true");
 		else
 			this._popupActiveItem.removeAttribute("_moz-menuactive");
-		if (this._isMac) {
-			// [Mac]
+		if (!this._isWin) {
+			// [Mac][Linux]
 			if (aActive) {
 				var cssText = "background-color: -moz-menuhover; color: -moz-menuhovertext;";
 				this._popupActiveItem.setAttribute("style", cssText);
