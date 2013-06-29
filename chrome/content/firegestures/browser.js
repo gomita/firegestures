@@ -891,7 +891,7 @@ var FireGestures = {
 				var ss = Cc["@mozilla.org/browser/sessionstore;1"].getService(Ci.nsISessionStore);
 				if (ss.getClosedTabCount(window) == 0)
 					throw "No restorable tabs in this window.";
-				var undoItems = eval("(" + ss.getClosedTabData(window) + ")");
+				var undoItems = JSON.parse(ss.getClosedTabData(window));
 				for (var i = 0; i < undoItems.length; i++) {
 					var menuitem = popup.appendChild(document.createElement("menuitem"));
 					menuitem.setAttribute("label", undoItems[i].title);
