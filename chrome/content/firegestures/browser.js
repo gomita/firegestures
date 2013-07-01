@@ -703,8 +703,7 @@ var FireGestures = {
 		if (!sel)
 			throw "No selection";
 		var URLs = [];
-		sel = sel.split("\n");
-		sel.forEach(function(str) {
+		sel.split("\n").forEach(function(str) {
 			// at least 8 chars continuously
 			str = str.match(/([\w\+\-\=\$;:\?\.%,!#~\*\/@&]{8,})/);
 			// regard string as non-URL if there are no periods
