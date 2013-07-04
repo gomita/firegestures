@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Išsaugoti paveikslėlį dabar">
 <!ENTITY gestureCmd.searchForSelection "Ieškoti pasirinkimo">
 <!ENTITY gestureCmd.searchForSelectionWith "Ieškoti pasirinkimo su...">
+<!ENTITY gestureCmd.allScripts "Visi scenarijai">
 <!ENTITY gestureCmd.openLinksInSelection "Atverti visas pasirinktas nuorodas">
 <!ENTITY gestureCmd.openURLsInSelection "Atverti visus pasirinktus URL">
 <!ENTITY gestureCmd.bookmarksSidebar "Šoninėje juostoje rodyti žymeles">

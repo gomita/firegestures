@@ -2,6 +2,7 @@
 <!ENTITY mainPane "General">
 <!ENTITY mappingPane "Asignări">
 <!ENTITY advancedPane "Complex">
+<!ENTITY swipePane "Touchpad">
 <!ENTITY mouseGesture "Mișcări cu mausul">
 <!ENTITY triggerButton "Declanșează începutul mișcării cu butonul din">
 <!ENTITY triggerButton.left "Stânga">
@@ -42,10 +43,12 @@
 <!ENTITY keypressGesture.copy "Copiază legăturile survolate">
 <!ENTITY tabwheelGesture "Mișcări cu rotița mausului pe file">
 <!ENTITY tabwheelGesture.description "Comută filele la rotirea rotiței pe bara de file">
-<!ENTITY swipe.left "Mișcare spre stânga">
-<!ENTITY swipe.right "Mișcare spre dreapta">
-<!ENTITY swipe.up "Mișcare în sus">
-<!ENTITY swipe.down "Mișcare în jos">
+<!ENTITY swipe "Alunecări pe touchpad">
+<!ENTITY swipe.left "Alunecare spre stânga">
+<!ENTITY swipe.right "Alunecare spre dreapta">
+<!ENTITY swipe.up "Alunecare în sus">
+<!ENTITY swipe.down "Alunecare în jos">
+<!ENTITY swipe.continuous "Mișcări prin alunecare continuă">
 <!ENTITY swipe.continuous.1 "Așteptare înaintea schimbării direcției">
 <!ENTITY swipe.continuous.2 "secunde">
 <!ENTITY treecol.name "Denumire">

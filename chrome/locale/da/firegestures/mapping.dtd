@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Gem billede nu">
 <!ENTITY gestureCmd.searchForSelection "Søg efter det markerede">
 <!ENTITY gestureCmd.searchForSelectionWith "Søg efter det markerede med…">
+<!ENTITY gestureCmd.allScripts "Alle scripts">
 <!ENTITY gestureCmd.openLinksInSelection "Åbn alle markerede links">
 <!ENTITY gestureCmd.openURLsInSelection "Åbn alle markerede URL'er">
 <!ENTITY gestureCmd.bookmarksSidebar "Vis bogmærker i sidebjælken">

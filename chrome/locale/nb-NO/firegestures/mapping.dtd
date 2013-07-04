@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Lagre bilde nå">
 <!ENTITY gestureCmd.searchForSelection "Søk etter utvalg">
 <!ENTITY gestureCmd.searchForSelectionWith "Søke etter utvalg med ...">
+<!ENTITY gestureCmd.allScripts "Alle skripter">
 <!ENTITY gestureCmd.openLinksInSelection "Åpne alle lenker i utvalget">
 <!ENTITY gestureCmd.openURLsInSelection "Åpne alle nettadresser i utvalget">
 <!ENTITY gestureCmd.bookmarksSidebar "Vis bokmerker i sidestolpen">

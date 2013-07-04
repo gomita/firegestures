@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "立即保存图片">
 <!ENTITY gestureCmd.searchForSelection "搜索所选文本">
 <!ENTITY gestureCmd.searchForSelectionWith "搜索所选文本用...">
+<!ENTITY gestureCmd.allScripts "全部脚本">
 <!ENTITY gestureCmd.openLinksInSelection "打开选中的所有链接">
 <!ENTITY gestureCmd.openURLsInSelection "打开选中的所有URL">
 <!ENTITY gestureCmd.bookmarksSidebar "显示书签侧边栏">

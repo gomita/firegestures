@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Guardar la imagen ahora">
 <!ENTITY gestureCmd.searchForSelection "Buscar la selección">
 <!ENTITY gestureCmd.searchForSelectionWith "Buscar la selección con...">
+<!ENTITY gestureCmd.allScripts "Todos los archivos de comandos,">
 <!ENTITY gestureCmd.openLinksInSelection "Abrir todos los enlaces en la selección">
 <!ENTITY gestureCmd.openURLsInSelection "Abrir todas las URL en la selección">
 <!ENTITY gestureCmd.bookmarksSidebar "Mostrar la barra lateral de marcadores">

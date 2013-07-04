@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Сохранить изображение">
 <!ENTITY gestureCmd.searchForSelection "Поиск по выделенному фрагменту">
 <!ENTITY gestureCmd.searchForSelectionWith "Поиск по выделенному фрагменту с помощью...">
+<!ENTITY gestureCmd.allScripts "Все сценарии">
 <!ENTITY gestureCmd.openLinksInSelection "Открыть все ссылки в выделенном фрагменте">
 <!ENTITY gestureCmd.openURLsInSelection "Открыть все URL в выделенном фрагменте">
 <!ENTITY gestureCmd.bookmarksSidebar "Открыть боковую панель с закладками">

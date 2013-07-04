@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Tallenna kuva heti">
 <!ENTITY gestureCmd.searchForSelection "Etsi valinta">
 <!ENTITY gestureCmd.searchForSelectionWith "Etsi valintaa hakukoneella...">
+<!ENTITY gestureCmd.allScripts "Kaikki komentosarjat">
 <!ENTITY gestureCmd.openLinksInSelection "Avaa kaikki linkit valinnasta">
 <!ENTITY gestureCmd.openURLsInSelection "Avaa kaikki URLit valinnasta">
 <!ENTITY gestureCmd.bookmarksSidebar "Näytä kirjanmerkkipaneeli">

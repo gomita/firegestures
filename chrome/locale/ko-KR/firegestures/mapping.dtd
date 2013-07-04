@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "그림 즉시 저장">
 <!ENTITY gestureCmd.searchForSelection "선택한 문장 검색">
 <!ENTITY gestureCmd.searchForSelectionWith "선택한 문장을 다음으로 검색">
+<!ENTITY gestureCmd.allScripts "모든 사용자 스크립트">
 <!ENTITY gestureCmd.openLinksInSelection "선택한 문장 내 모든 연결 열기">
 <!ENTITY gestureCmd.openURLsInSelection "선택한 문장 내 모든 URL 열기">
 <!ENTITY gestureCmd.bookmarksSidebar "북마크 탐색창 표시">

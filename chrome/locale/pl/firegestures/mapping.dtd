@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Zapisz obrazek teraz">
 <!ENTITY gestureCmd.searchForSelection "Wyszukaj zaznaczone">
 <!ENTITY gestureCmd.searchForSelectionWith "Wyszukaj zaznaczone w…">
+<!ENTITY gestureCmd.allScripts "Wszystkie skrypty">
 <!ENTITY gestureCmd.openLinksInSelection "Otwórz wszystkie odnośniki z zaznaczenia">
 <!ENTITY gestureCmd.openURLsInSelection "Otwórz wszystkie adresy URL z zaznaczenia">
 <!ENTITY gestureCmd.bookmarksSidebar "Wyświetl zakładki w panelu bocznym">

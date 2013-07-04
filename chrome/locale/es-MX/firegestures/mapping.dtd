@@ -9,7 +9,7 @@
 <!ENTITY gestureCategory.tools "Herramientas">
 <!ENTITY gestureCategory.popup "Tipo emergente">
 <!ENTITY gestureCategory.hybrid "Tipo híbrido">
-<!ENTITY gestureCategory.script "Comandos definidos por el usuario">
+<!ENTITY gestureCategory.script "Comandos agregados por el usuario">
 <!ENTITY gestureType.popup "Emergente">
 <!ENTITY gestureType.hybrid "Híbrido">
 <!ENTITY gestureCmd.skipCache "Ignorar caché">
@@ -24,17 +24,18 @@
 <!ENTITY gestureCmd.duplicateTab "Duplicar pestaña">
 <!ENTITY gestureCmd.closeLeftTabs "Cerrar pestañas de la izquierda">
 <!ENTITY gestureCmd.closeRightTabs "Cerrar pestañas de la derecha">
-<!ENTITY gestureCmd.scrollTop "Inicio de página">
-<!ENTITY gestureCmd.scrollBottom "Final de página">
+<!ENTITY gestureCmd.scrollTop "Regresar al inicio de la página">
+<!ENTITY gestureCmd.scrollBottom "Ir al final de la página">
 <!ENTITY gestureCmd.scrollPageUp "Avanzar una página">
 <!ENTITY gestureCmd.scrollPageDown "Retroceder una página">
-<!ENTITY gestureCmd.backgroundTab "Pestaña en segundo plano">
-<!ENTITY gestureCmd.foregroundTab "Pestaña en primer plano">
+<!ENTITY gestureCmd.backgroundTab "en segundo plano">
+<!ENTITY gestureCmd.foregroundTab "en primer plano">
 <!ENTITY gestureCmd.saveImageNow "Guardar imagen ya">
 <!ENTITY gestureCmd.searchForSelection "Buscar selección">
 <!ENTITY gestureCmd.searchForSelectionWith "Buscar selección con…">
-<!ENTITY gestureCmd.openLinksInSelection "Abrir todos los enlaces contenidos en la selección">
-<!ENTITY gestureCmd.openURLsInSelection "Abrir todas las drecciones URL contenidas en la selección">
+<!ENTITY gestureCmd.allScripts "Comandos del usuario">
+<!ENTITY gestureCmd.openLinksInSelection "Abrir los enlaces contenidos en la selección">
+<!ENTITY gestureCmd.openURLsInSelection "Abrir las direcciones URL contenidas en la selección">
 <!ENTITY gestureCmd.bookmarksSidebar "Mostrar pánel lateral de Marcadores">
 <!ENTITY gestureCmd.historySidebar "Mostrar pánel lateral de Historial">
 <!ENTITY gestureCmd.backForwardHistory "Retroceder/Avanzar en el Historial">

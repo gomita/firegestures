@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Сачувај слику">
 <!ENTITY gestureCmd.searchForSelection "Потражи одабрано">
 <!ENTITY gestureCmd.searchForSelectionWith "Потражи одабрано користећи...">
+<!ENTITY gestureCmd.allScripts "Све скрипте">
 <!ENTITY gestureCmd.openLinksInSelection "Отвори све везе у одабраном">
 <!ENTITY gestureCmd.openURLsInSelection "Отвори све адресе у одабраном">
 <!ENTITY gestureCmd.bookmarksSidebar "Прикажи забелешке у бочној траци">

@@ -25,7 +25,7 @@
 <!ENTITY tools.backup.label "Respaldar">
 <!ENTITY tools.restore.label "Restaurar">
 <!ENTITY tools.restore.alerttext "Esto reemplazará todas sus asignaciones actuales con las del respaldo. ¿Está seguro?">
-<!ENTITY wheelGesture "Activar Gestos Rueda (con la ruedita del mouse)">
+<!ENTITY wheelGesture "Activar Gestos Rueda (usando la ruedita del mouse)">
 <!ENTITY wheelGesture.up.left "Al girar hacia arriba mientras se oprime el botón izquierdo">
 <!ENTITY wheelGesture.up.middle "Al girar hacia arriba mientras se oprime el botón central">
 <!ENTITY wheelGesture.up.right "Al girar hacia arriba mientras se oprime el botón derecho">
@@ -41,13 +41,13 @@
 <!ENTITY keypressGesture.open "Abrir en pestañas los enlaces abarcados por el gesto">
 <!ENTITY keypressGesture.save "Guardar los enlaces abarcados por el gesto">
 <!ENTITY keypressGesture.copy "Copiar direcciones de los enlaces abarcados por el gesto">
-<!ENTITY tabwheelGesture "Activar Gestos Rueda en Pestañas">
+<!ENTITY tabwheelGesture "Activar Gestos Rueda en Pestañas (otra vez la ruedita)">
 <!ENTITY tabwheelGesture.description "Rotar el enfoque de pestaña al girar la rueda sobre la barra de pestañas">
 <!ENTITY swipe "Activar Gestos de Deslizamiento">
-<!ENTITY swipe.left "Al realizar deslizamiento hacia la izquierda">
-<!ENTITY swipe.right "Al relizar deslizamiento hacia la derecha">
-<!ENTITY swipe.up "Al realizar deslizamiento hacia arriba">
-<!ENTITY swipe.down "Al realizar deslizamiento hacia abajo">
+<!ENTITY swipe.left "Deslizamiento hacia la izquierda">
+<!ENTITY swipe.right "Deslizamiento hacia la derecha">
+<!ENTITY swipe.up "Deslizamiento hacia arriba">
+<!ENTITY swipe.down "Deslizamiento hacia abajo">
 <!ENTITY swipe.continuous "Usar gestos con deslizamientos continuos">
 <!ENTITY swipe.continuous.1 "Pausa para indicar cambio de dirección">
 <!ENTITY swipe.continuous.2 "segundos">

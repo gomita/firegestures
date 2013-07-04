@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Salvează imaginea acum">
 <!ENTITY gestureCmd.searchForSelection "Caută textul selectat">
 <!ENTITY gestureCmd.searchForSelectionWith "Caută textul selectat cu…">
+<!ENTITY gestureCmd.allScripts "Toate scripturile personale">
 <!ENTITY gestureCmd.openLinksInSelection "Deschide toate legăturile în selecție">
 <!ENTITY gestureCmd.openURLsInSelection "Deschide toate adresele în selecție">
 <!ENTITY gestureCmd.bookmarksSidebar "Afișează panoul lateral cu semne de carte">
