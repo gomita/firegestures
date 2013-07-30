@@ -34,6 +34,7 @@ skin	firegestures	classic/1.0	chrome/skin/classic/firegestures/
 overlay	chrome://browser/content/browser.xul	chrome://firegestures/content/browser.xul
 overlay	chrome://global/content/viewSource.xul	chrome://firegestures/content/viewSource.xul
 overlay	chrome://global/content/viewPartialSource.xul	chrome://firegestures/content/viewSource.xul
+overlay	chrome://global/content/selectDialog.xul	chrome://firegestures/content/selectDialog.xul
 
 interfaces	components/FireGestures.xpt
 component	{1d26f3e7-d92e-4bcc-ac79-9624bb181308}	components/xdGestureService.js
