@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "שמירת התמונה כעת">
 <!ENTITY gestureCmd.searchForSelection "חיפוש הבחירה">
 <!ENTITY gestureCmd.searchForSelectionWith "חיפוש הבחירה באמצעות..">
+<!ENTITY gestureCmd.allScripts "כל תסריטי המשתמש">
 <!ENTITY gestureCmd.openLinksInSelection "פתיחת כל הקישורים שבבחירה">
 <!ENTITY gestureCmd.openURLsInSelection "פתיחת כל הכתובות אינטרנט שבבחירה">
 <!ENTITY gestureCmd.bookmarksSidebar "הצגת סרגל-צד סימניות">
