@@ -899,6 +899,14 @@ var FireGestures = {
 					var iconURL = undoItems[i].image;
 					if (iconURL)
 						menuitem.setAttribute("image", iconURL);
+					// show title and URL in tooltip
+					let tabData = undoItems[i].state;
+					let activeIndex = (tabData.index || tabData.entries.length) - 1;
+					if (activeIndex >= 0 && tabData.entries[activeIndex]) {
+						let title = tabData.entries[activeIndex].title;
+						let url   = tabData.entries[activeIndex].url;
+						menuitem.setAttribute("tooltiptext", title + "\n" + url);
+					}
 				}
 				break;
 			case "FireGestures:WebSearchPopup": 
