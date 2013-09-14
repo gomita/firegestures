@@ -777,6 +777,9 @@ var FireGestures = {
 	/* ::::: STATUS BAR ::::: */
 
 	setStatusText: function(aText) {
+		// [Firefox26] status panel will be generated dynamically @see Bug 821687
+		if (!this._statusTextField)
+			this._statusTextField = gBrowser.getStatusPanel();
 		this._statusTextField.label = aText;
 	},
 
