@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "打开/关闭 查找栏">
 <!ENTITY gestureCmd.restartApp "重启Firefox">
 <!ENTITY gestureCmd.options "选项">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

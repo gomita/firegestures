@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Keresés megnyitása/bezárása">
 <!ENTITY gestureCmd.restartApp "Firefox újraindítása">
 <!ENTITY gestureCmd.options "Beállítások">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

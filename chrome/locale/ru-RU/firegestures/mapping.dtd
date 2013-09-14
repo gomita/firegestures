@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Открыть / Закрыть панель поиска">
 <!ENTITY gestureCmd.restartApp "Перезапустить Firefox">
 <!ENTITY gestureCmd.options "Настройки">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

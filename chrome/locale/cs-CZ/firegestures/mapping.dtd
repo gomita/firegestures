@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Zobrazit / Skrýt panel vyhledávání">
 <!ENTITY gestureCmd.restartApp "Restartovat Firefox">
 <!ENTITY gestureCmd.options "možnosti">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

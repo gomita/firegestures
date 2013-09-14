@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "إفتح / أغلق شريط البحث">
 <!ENTITY gestureCmd.restartApp "أعد تشغيل فايرفوكس">
 <!ENTITY gestureCmd.options "خيارات">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

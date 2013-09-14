@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Ava/Sulge otsinguriba">
 <!ENTITY gestureCmd.restartApp "Taaskäivita Firefox">
 <!ENTITY gestureCmd.options "Sätted">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

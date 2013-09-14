@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "検索バーを開く / 閉じる">
 <!ENTITY gestureCmd.restartApp "Firefox を再起動">
 <!ENTITY gestureCmd.options "設定">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

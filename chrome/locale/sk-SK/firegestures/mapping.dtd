@@ -42,3 +42,5 @@
 <!ENTITY gestureCmd.hybridCopyURL "Kopírovať umiestnenie">
 <!ENTITY gestureCmd.toggleFindbar "Otvoriť / Zavrieť lištu vyhľadávania">
 <!ENTITY gestureCmd.options "Možnosti">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

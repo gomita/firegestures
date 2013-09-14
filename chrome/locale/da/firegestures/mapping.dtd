@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Åbn / Luk søgebjælke">
 <!ENTITY gestureCmd.restartApp "Genstart Firefox">
 <!ENTITY gestureCmd.options "Indstillinger">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

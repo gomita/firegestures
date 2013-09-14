@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Öppna / Stäng Sidsökfältet">
 <!ENTITY gestureCmd.restartApp "Starta om Firefox">
 <!ENTITY gestureCmd.options "Inställningar">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

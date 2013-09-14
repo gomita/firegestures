@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Mở/Đóng Thanh tìm kiếm">
 <!ENTITY gestureCmd.restartApp "Khởi động lại Firefox">
 <!ENTITY gestureCmd.options "Tùy chọn">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

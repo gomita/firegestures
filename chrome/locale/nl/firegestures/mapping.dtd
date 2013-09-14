@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Zoekbalk Openen / Sluiten">
 <!ENTITY gestureCmd.restartApp "Firefox Herstarten">
 <!ENTITY gestureCmd.options "Opties">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

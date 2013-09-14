@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "검색 막대 열기/닫기">
 <!ENTITY gestureCmd.restartApp "Firefox 재시작">
 <!ENTITY gestureCmd.options "선택사항">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Arama Çubuğunu Aç/ Kapat">
 <!ENTITY gestureCmd.restartApp "Firefox&apos;u Baştan Başlat">
 <!ENTITY gestureCmd.options "Ayarlar">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

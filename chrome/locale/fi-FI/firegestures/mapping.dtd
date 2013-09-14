@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Avaa / sulje etsintäpalkki">
 <!ENTITY gestureCmd.restartApp "Käynnistä Firefox uudelleen">
 <!ENTITY gestureCmd.options "Asetukset">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

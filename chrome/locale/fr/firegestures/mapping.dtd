@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Ouvrir / fermer la barre de recherche">
 <!ENTITY gestureCmd.restartApp "Redémarrer Firefox">
 <!ENTITY gestureCmd.options "Options">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

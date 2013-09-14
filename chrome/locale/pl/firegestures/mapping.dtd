@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Otwórz/Zamknij pasek wyszukiwania">
 <!ENTITY gestureCmd.restartApp "Uruchom ponownie Firefoksa">
 <!ENTITY gestureCmd.options "opcje">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

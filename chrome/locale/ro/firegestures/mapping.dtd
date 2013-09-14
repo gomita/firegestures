@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Afișează/Ascunde bara de căutare">
 <!ENTITY gestureCmd.restartApp "Repornește Firefox">
 <!ENTITY gestureCmd.options "Opțiuni">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

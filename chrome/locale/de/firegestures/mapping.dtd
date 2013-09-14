@@ -47,3 +47,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Suchleiste öffnen/schließen">
 <!ENTITY gestureCmd.restartApp "Firefox neu starten">
 <!ENTITY gestureCmd.options "Optionen">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">

@@ -48,3 +48,5 @@
 <!ENTITY gestureCmd.toggleFindbar "Atverti / Užverti paieškos juostą">
 <!ENTITY gestureCmd.restartApp "Paleisti iš naujo Firefox">
 <!ENTITY gestureCmd.options "Parinktys">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">
