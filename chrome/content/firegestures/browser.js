@@ -32,6 +32,9 @@ var FireGestures = {
 		this._gestureMapping = gestureSvc.getMappingForBrowser();
 		this._getLocaleString = gestureSvc.getLocaleString;
 		this._statusTextField = document.getElementById("statusbar-display");
+		// [Firefox26] status panel will be generated dynamically @see Bug 821687
+		if (!this._statusTextField)
+			this._statusTextField = gBrowser.getStatusPanel();
 		// disable built-in swipe gesture
 		window.removeEventListener("MozSwipeGesture", gGestureSupport, true);
 	},
@@ -777,9 +780,6 @@ var FireGestures = {
 	/* ::::: STATUS BAR ::::: */
 
 	setStatusText: function(aText) {
-		// [Firefox26] status panel will be generated dynamically @see Bug 821687
-		if (!this._statusTextField)
-			this._statusTextField = gBrowser.getStatusPanel();
 		this._statusTextField.label = aText;
 	},
 
