@@ -202,6 +202,10 @@ xdGestureHandler.prototype = {
 						log("*** ignore left-click on scrollbar element (" + targetName + ")");	// #debug
 						break;
 					}
+					if (this._triggerButton == 0 && targetName == "select") {
+						log("*** ignore left-click on select element");	// #debug
+						break;
+					}
 					this._isMouseDownL = true;
 					this._isMouseDownM = false;	// fixed invalid state of _isMouseDownM after autoscrolling
 					// any gestures with left-button - start
