@@ -2,6 +2,7 @@
 <!ENTITY mainPane "Általános">
 <!ENTITY mappingPane "Összerendelések">
 <!ENTITY advancedPane "Haladó">
+<!ENTITY swipePane "Csúsztatás">
 <!ENTITY mouseGesture "Egérmozdulatok">
 <!ENTITY triggerButton "Egérmozdulatot indító gomb">
 <!ENTITY triggerButton.left "Bal">
@@ -42,6 +43,14 @@
 <!ENTITY keypressGesture.copy "Érintett linkek másolása">
 <!ENTITY tabwheelGesture "Lapváltó mozdulatok">
 <!ENTITY tabwheelGesture.description "Váltás a lapok között a Lapok eszköztáron történő gördítéssel">
+<!ENTITY swipe "Csúsztató mozdulatok">
+<!ENTITY swipe.left "Csúsztatás balra">
+<!ENTITY swipe.right "Csúsztatás jobbra">
+<!ENTITY swipe.up "Csúsztatás felfelé">
+<!ENTITY swipe.down "Csúsztatás lefelé">
+<!ENTITY swipe.continuous "Egérmozdulatok folyamatos csúsztatásokkal">
+<!ENTITY swipe.continuous.1 "Várakozás két csúsztatás között">
+<!ENTITY swipe.continuous.2 "másodperc">
 <!ENTITY treecol.name "Név">
 <!ENTITY treecol.command "Parancs">
 <!ENTITY treecol.script "Parancsfájl">

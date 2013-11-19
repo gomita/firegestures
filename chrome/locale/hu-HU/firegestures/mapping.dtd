@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "Kép mentése">
 <!ENTITY gestureCmd.searchForSelection "Keresés a kiválasztásra">
 <!ENTITY gestureCmd.searchForSelectionWith "Keresés a kiválasztásra ezzel…">
+<!ENTITY gestureCmd.allScripts "Minden felhasználói parancsfájl">
 <!ENTITY gestureCmd.openLinksInSelection "Kiválasztás linkjeinek megnyitása">
 <!ENTITY gestureCmd.openURLsInSelection "Kiválasztás URL címek megnyitása">
 <!ENTITY gestureCmd.bookmarksSidebar "Könyvjelző oldalsáv megjelenítése">
