@@ -264,26 +264,16 @@ var FireGestures = {
 				document.getElementById(aCommand).doCommand();
 				break;
 			case "FireGestures:ScrollTop": 
-				if (this.sourceNode instanceof HTMLInputElement || 
-				    this.sourceNode instanceof HTMLTextAreaElement || 
-				    gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
-					goDoCommand("cmd_scrollTop");
-				else
-					this.sendKeyEvent({ keyCode: "DOM_VK_HOME" });
+				this._performScrollAction("cmd_scrollTop", "DOM_VK_HOME");
 				break;
 			case "FireGestures:ScrollBottom": 
-				if (this.sourceNode instanceof HTMLInputElement || 
-				    this.sourceNode instanceof HTMLTextAreaElement || 
-				    gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
-					goDoCommand("cmd_scrollBottom");
-				else
-					this.sendKeyEvent({ keyCode: "DOM_VK_END" });
+				this._performScrollAction("cmd_scrollBottom", "DOM_VK_END");
 				break;
 			case "FireGestures:ScrollPageUp": 
-				this.sendKeyEvent({ keyCode: "DOM_VK_PAGE_UP" });
+				this._performScrollAction("cmd_scrollPageUp", "DOM_VK_PAGE_UP");
 				break;
 			case "FireGestures:ScrollPageDown": 
-				this.sendKeyEvent({ keyCode: "DOM_VK_PAGE_DOWN" });
+				this._performScrollAction("cmd_scrollPageDown", "DOM_VK_PAGE_DOWN");
 				break;
 			case "FireGestures:ShowOnlyThisFrame": 
 				var docURL = this.sourceNode.ownerDocument.location.href;
@@ -530,6 +520,17 @@ var FireGestures = {
 				if (cmd && cmd.getAttribute("disabled") != "true")
 					cmd.doCommand();
 		}
+	},
+
+	_performScrollAction: function(aCommand, aKeyCode) {
+		// [Mac][Linux] to fix #70, always use goDoCommand
+		if (!this._isWin || 
+		    this.sourceNode instanceof HTMLInputElement || 
+		    this.sourceNode instanceof HTMLTextAreaElement || 
+		    gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
+			goDoCommand(aCommand);
+		else
+			this.sendKeyEvent({ keyCode: aKeyCode });
 	},
 
 	get sourceNode() {
