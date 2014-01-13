@@ -802,59 +802,73 @@ var FireGestures = {
 
 	/* ::::: POPUP ::::: */
 
-	_popupActiveItem: null,
-
 	generatePopup: function(event, aAttrsList) {
 		this._buildPopup("FireGestures:CustomPopup", event && event.type == "DOMMouseScroll", aAttrsList);
 	},
 
 	_buildPopup: function(aCommand, aWheelGesture, aAttrsList) {
-		// if there is a popup element which has the specifed id, reuse it
 		const POPUP_ID = "FireGesturesPopup";
 		var popup = document.getElementById(POPUP_ID);
-		if (!this._isWin && popup) {
-			// XXX [Mac][Linux] to build popup as xul:panel or xul:menupopup, remove old element first.
-			popup.parentNode.removeChild(popup);
-			popup = null;
-		}
-		if (!popup) {
-			// XXX [Mac][Linux] use xul:panel instead of xul:menupopup to fix the problem that
-			// no DOMMouseScroll events sent outside the popup.
-			// However, this hack has a few of side effects:
-			// 1) css rules for 'menupopup > menuitem' are not applied
-			// 2) set _moz-menuactive="true" to a xul:menuitem has no effect
-			// 3) set default="true" to a xul:menuitem has no effect
-			if (!this._isWin && aWheelGesture) {
-				popup = document.createElement("panel");
-				popup.setAttribute("noautohide", "true");
-			}
-			else {
+		var first = false;
+		if (this._isWin) {
+			// [Windows] if popup already exists, reuse it
+			if (!popup) {
 				popup = document.createElement("menupopup");
+				first = true;
 			}
-			popup.id = POPUP_ID;
-			document.getElementById("mainPopupSet").appendChild(popup);
 		}
-		popup.setAttribute("_moz-gesturecommand", aCommand);
-		var activeItem = null;
+		else {
+			// [Mac][Linux] always create new popup, since it might be a xul:panel or xul:menupopup
+			if (popup)
+				popup.parentNode.removeChild(popup);
+			popup = document.createElement(aWheelGesture ? "panel" : "menupopup");
+			first = true;
+		}
+		if (first) {
+			document.getElementById("mainPopupSet").appendChild(popup);
+			popup.id = POPUP_ID;
+			popup.style.MozBinding = "url('chrome://firegestures/content/bindings.xml#popup')";
+			popup.style.maxWidth = "42em";
+		}
+		// populate menu items
 		switch (aCommand) {
 			case "FireGestures:AllTabsPopup": 
 				var tabs = gBrowser.mTabs;
+				var tabContainer = gBrowser.tabContainer;
 				if (tabs.length < 1)
 					return;	// just in case
+				var pinned;
 				for (var i = 0; i < tabs.length; i++) {
-					var tab = tabs[i];
+					let tab = tabs[i];
 					// exclude tab in other group
 					if (tab.hidden)
 						continue;
-					var menuitem = popup.appendChild(document.createElement("menuitem"));
+					if (pinned && !tab.pinned)
+						popup.appendChild(document.createElement("menuseparator"));
+					pinned = tab.pinned;
+					let menuitem = popup.appendChild(document.createElement("menuitem"));
+					tabContainer.mAllTabsPopup._setMenuitemAttributes(menuitem, tab);
 					menuitem.setAttribute("class", "menuitem-iconic alltabs-item menuitem-with-favicon");
-					menuitem.setAttribute("label", tab.label);
-					menuitem.setAttribute("crop", tab.getAttribute("crop"));
-					menuitem.setAttribute("image", tab.getAttribute("image"));
 					menuitem.setAttribute("statustext", tab.linkedBrowser.currentURI.spec);
 					menuitem.index = i;
 					if (tab.selected)
-						activeItem = menuitem;
+						menuitem.setAttribute("default", "true");
+				}
+				// decorate menuitem which of tab is visible in overflowed tab strip
+				// @see tabbrowser.xml: _updateTabsVisibilityStatus
+				if (tabContainer.getAttribute("overflow") != "true")
+					break;
+				var tabstrip = tabContainer.mTabstrip.scrollBoxObject;
+				for (var i = 0; i < popup.childNodes.length; i++) {
+					let menuitem = popup.childNodes[i];
+					if (menuitem.localName != "menuitem")
+						continue;	// exclude menuseparator
+					let tab = gBrowser.mTabs[menuitem.index].boxObject;
+					if (tab.screenX >= tabstrip.screenX && 
+					    tab.screenY >= tabstrip.screenY && 
+					    tab.screenX + tab.width  <= tabstrip.screenX + tabstrip.width && 
+					    tab.screenY + tab.height <= tabstrip.screenY + tabstrip.height)
+						menuitem.setAttribute("tabIsVisible", "true");
 				}
 				break;
 			case "FireGestures:BFHistoryPopup": 
@@ -874,8 +888,8 @@ var FireGestures = {
 					if (i == curIdx) {
 						menuitem.setAttribute("type", "radio");
 						menuitem.setAttribute("checked", "true");
+						menuitem.setAttribute("default", "true");
 						menuitem.className = "unified-nav-current";
-						activeItem = menuitem;
 					}
 					else {
 						PlacesUtils.favicons.getFaviconURLForPage(entry.URI, function(aURI) {
@@ -896,11 +910,11 @@ var FireGestures = {
 					throw "No restorable tabs in this window.";
 				var undoItems = JSON.parse(ss.getClosedTabData(window));
 				for (var i = 0; i < undoItems.length; i++) {
-					var menuitem = popup.appendChild(document.createElement("menuitem"));
+					let menuitem = popup.appendChild(document.createElement("menuitem"));
 					menuitem.setAttribute("label", undoItems[i].title);
 					menuitem.setAttribute("class", "menuitem-iconic bookmark-item menuitem-with-favicon");
 					menuitem.index = i;
-					var iconURL = undoItems[i].image;
+					let iconURL = undoItems[i].image;
 					if (iconURL)
 						menuitem.setAttribute("image", iconURL);
 					// show title and URL in tooltip
@@ -927,9 +941,6 @@ var FireGestures = {
 					popup.insertBefore(menuitem, popup.firstChild);
 					menuitem.engine = engines[i];
 				}
-				// caching the search string in advance fixes the problem: 
-				// cannot get the selection when opening popup with popupType = tooltip
-				popup.setAttribute("_moz-selectedtext", getBrowserSelection());
 				break;
 			case "FireGestures:CustomPopup": 
 				for (let aAttrs of aAttrsList) {
@@ -939,7 +950,7 @@ var FireGestures = {
 					}
 					else {
 						menuitem = document.createElement("menuitem");
-						for (var [name, val] in Iterator(aAttrs)) {
+						for (let [name, val] in Iterator(aAttrs)) {
 							menuitem.setAttribute(name, val);
 						}
 					}
@@ -947,53 +958,21 @@ var FireGestures = {
 				}
 				break;
 		}
-		if (activeItem)
-			// emphasis the default selection
-			activeItem.setAttribute("default", "true");
-		else
-			// regard the first item as the default
-			activeItem = popup.firstChild;
-		if (aWheelGesture) {
-			this._popupActiveItem = activeItem;
-			// setting _moz-menuactive of menuitem after popupshown otherwise it has no effect
-			popup.addEventListener("popupshown", this, true);
-		}
-		document.popupNode = null;
-		document.tooltipNode = null;
-		popup.addEventListener("popupshowing", this, true);
-		popup.addEventListener("popuphiding", this, true);
+		// open popup
+		popup.setAttribute("wheelscroll", aWheelGesture ? "true" : "false");
+		popup.setAttribute("_gesturecommand", aCommand);
 		popup.addEventListener("DOMMenuItemActive", this, false);
 		popup.addEventListener("DOMMenuItemInactive", this, false);
+		popup.addEventListener("command", this, false);
+		popup.addEventListener("popuphiding", this, false);
+		document.popupNode = null;
+		document.tooltipNode = null;
 		this._gestureHandler.openPopupAtPointer(popup);
-		document.documentElement.addEventListener("mouseup", this, true);
-		if (aWheelGesture) {
-			document.documentElement.addEventListener("DOMMouseScroll", this, true);
-			popup.addEventListener("mouseover", this, false);
-		}
 	},
 
 	handleEvent: function(event) {
-		// dump("FireGestures.handleEvent(" + event.type + ") " + new Date().toString() + "\n");	// #debug
 		var popup = document.getElementById("FireGesturesPopup");
 		switch (event.type) {
-			case "DOMMouseScroll": 
-				// prevent scrolling content and propagating to xdIGestureHandler
-				event.preventDefault();
-				event.stopPropagation();
-				// change the active menuitem
-				this._activateMenuItem(false);
-				var activeItem = this._popupActiveItem;
-				activeItem = event.detail > 0 ? activeItem.nextSibling : activeItem.previousSibling;
-				if (!activeItem)
-					activeItem = event.detail > 0 ? popup.firstChild : popup.lastChild;
-				this._popupActiveItem = activeItem;
-				this._activateMenuItem(true);
-				// [Windows] autoscroll to ensure the active menuitem is visible
-				if (this._isWin) {
-					var scrollbox = document.getAnonymousNodes(popup)[0];
-					scrollbox.ensureElementIsVisible(activeItem);
-				}
-				break;
 			case "DOMMenuItemActive": 
 				var statusText = event.target.getAttribute("statustext");
 				if (statusText == "about:blank")
@@ -1004,91 +983,45 @@ var FireGestures = {
 			case "DOMMenuItemInactive": 
 				XULBrowserWindow.setOverLink("", null);
 				break;
-			case "mouseover": 
-				if (event.target.parentNode != popup)
+			case "command": 
+				var item = popup.currentItem || event.target;
+				if (popup.defaultItem == item)
 					break;
-				this._activateMenuItem(false);
-				this._popupActiveItem = event.target;
-				this._activateMenuItem(true);
-				break;
-			case "mouseup": 
-				// do something for the active menuitem
-				// if invoked by wheelgesture, get it from _popupActiveItem
-				// if invoked by mousegesture, get it from event.target since _popupActiveItem is null
-				var activeItem = this._popupActiveItem || event.target;
-				if (activeItem.localName == "menuitem" && !activeItem.hasAttribute("default")) {
-					switch (popup.getAttribute("_moz-gesturecommand")) {
-						case "FireGestures:AllTabsPopup": 
-							gBrowser.selectedTab = gBrowser.mTabs[activeItem.index];
+				switch (popup.getAttribute("_gesturecommand")) {
+					case "FireGestures:AllTabsPopup": 
+						gBrowser.selectedTab = gBrowser.mTabs[item.index];
+						break;
+					case "FireGestures:BFHistoryPopup": 
+						gBrowser.webNavigation.gotoIndex(item.index);
+						break;
+					case "FireGestures:ClosedTabsPopup": 
+						undoCloseTab(item.index);
+						break;
+					case "FireGestures:WebSearchPopup": 
+						var engine = item.engine;
+						if (!engine)
 							break;
-						case "FireGestures:BFHistoryPopup": 
-							gBrowser.webNavigation.gotoIndex(activeItem.index);
+						var submission = engine.getSubmission(getBrowserSelection(), null);
+						if (!submission)
 							break;
-						case "FireGestures:ClosedTabsPopup": 
-							undoCloseTab(activeItem.index);
-							break;
-						case "FireGestures:WebSearchPopup": 
-							var selText = popup.getAttribute("_moz-selectedtext");
-							var engine = activeItem.engine;
-							if (!engine)
-								break;
-							var submission = engine.getSubmission(selText, null);
-							if (!submission)
-								break;
-							// [TreeStyleTab] the next line will be replaced to open child tab
-							gBrowser.loadOneTab(submission.uri.spec, {
-								postData: submission.postData,
-								relatedToCurrent: true
-							});
-							break;
-						default: 
-							eval(activeItem.getAttribute("oncommand"));
-					}
+						// [TreeStyleTab] the next line will be replaced to open child tab
+						gBrowser.loadOneTab(submission.uri.spec, {
+							postData: submission.postData,
+							relatedToCurrent: true
+						});
+						break;
+					default: 
+						eval(item.getAttribute("oncommand"));
 				}
-				popup.hidePopup();
-				break;
-			case "popupshowing": 
-				// [Linux] this needs to fire DOMMouseScroll events outside popup
-				var boxObj = popup.popupBoxObject;
-				if ("setConsumeRollupEvent" in boxObj) {
-					boxObj.setConsumeRollupEvent(boxObj.ROLLUP_NO_CONSUME);
-					// dump("*** nsIPopupBoxObject#setConsumeRollupEvent(ROLLUP_NO_CONSUME)\n");	// #debug
-				}
-				break;
-			case "popupshown": 
-				this._activateMenuItem(true);
 				break;
 			case "popuphiding": 
-				this._activateMenuItem(false);
-				this._popupActiveItem = null;
-				popup.removeEventListener("popupshowing", this, true);
-				popup.removeEventListener("popupshown", this, true);
-				popup.removeEventListener("popuphiding", this, true);
-				popup.removeEventListener("mouseover", this, false);
-				document.documentElement.removeEventListener("mouseup", this, true);
-				document.documentElement.removeEventListener("DOMMouseScroll", this, true);
-				while (popup.hasChildNodes())
-					popup.removeChild(popup.lastChild);
+				popup.removeAttribute("_gesturecommand");
+				popup.removeEventListener("DOMMenuItemActive", this, false);
+				popup.removeEventListener("DOMMenuItemInactive", this, false);
+				popup.removeEventListener("command", this, false);
+				popup.removeEventListener("popuphiding", this, false);
 				break;
 		}
-	},
-
-	_activateMenuItem: function(aActive) {
-		if (!this._popupActiveItem)
-			return;
-		if (aActive)
-			this._popupActiveItem.setAttribute("_moz-menuactive", "true");
-		else
-			this._popupActiveItem.removeAttribute("_moz-menuactive");
-		if (!this._isWin) {
-			// [Mac][Linux]
-			this._popupActiveItem.style.backgroundColor = aActive ? "-moz-menuhover" : "";
-			this._popupActiveItem.style.color = aActive ? "-moz-menuhovertext" : "";
-		}
-		// dispatch event to show statustext
-		var evt = document.createEvent("Events");
-		evt.initEvent(aActive ? "DOMMenuItemActive" : "DOMMenuItemInactive", true, true);
-		this._popupActiveItem.dispatchEvent(evt);
 	},
 
 

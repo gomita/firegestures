@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+
+<bindings id="FireGesturesBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xbl="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<binding id="popup" role="xul:menupopup"
+	         extends="chrome://global/content/bindings/popup.xml#popup-base">
+		<content wheelscroll="false">
+			<xul:arrowscrollbox anonid="scrollbox" class="popup-internal-box" flex="1" orient="vertical"
+			                    smoothscroll="false">
+				<children />
+			</xul:arrowscrollbox>
+		</content>
+		<implementation implements="nsIDOMEventListener">
+			<constructor><![CDATA[
+				this.style.MozAppearance = "menupopup";
+				if (this.localName == "panel")
+					this.setAttribute("noautohide", "true");
+			]]></constructor>
+			<field name="_currentItem">null</field>
+			<property name="currentItem">
+				<getter><![CDATA[
+					return this._currentItem;
+				]]></getter>
+				<setter><![CDATA[
+					if (this.currentItem) {
+						// clear the old selection
+						this.currentItem.removeAttribute("_moz-menuactive");
+						// dispatch event to hide statustext
+						var evt = this.ownerDocument.createEvent("Events");
+						evt.initEvent("DOMMenuItemInactive", true, true);
+						this.currentItem.dispatchEvent(evt);
+						this._currentItem = null;
+					}
+					if (!val)
+						return;
+					// activate the new selection
+					this._currentItem = val;
+					val.setAttribute("_moz-menuactive", "true");
+					// dispatch event to show statustext
+					var evt = this.ownerDocument.createEvent("Events");
+					evt.initEvent("DOMMenuItemActive", true, true);
+					val.dispatchEvent(evt);
+					// autoscroll to ensure the current item is visible
+					var scrollbox = document.getAnonymousElementByAttribute(this, "anonid", "scrollbox");
+					scrollbox.ensureElementIsVisible(val);
+				]]></setter>
+			</property>
+			<property name="defaultItem" readonly="true">
+				<getter><![CDATA[
+					return this.querySelector("menuitem[default='true']");
+				]]></getter>
+			</property>
+			<method name="handleEvent">
+				<parameter name="event" />
+				<body><![CDATA[
+					switch (event.type) {
+						case "mouseover": 
+							if (event.target.parentNode != this)
+								break;
+							this.currentItem = event.target;
+							break;
+						case "DOMMouseScroll": 
+							// prevent scrolling content
+							event.preventDefault();
+							event.stopPropagation();
+							// change the current item excluding menuseparator
+							var elt = this.currentItem;
+							do {
+								elt = event.detail < 0 ? elt.previousSibling || this.lastChild
+								                       : elt.nextSibling     || this.firstChild;
+								if (elt.localName == "menuitem")
+									break;
+							}
+							while (elt != this.currentItem);
+							this.currentItem = elt;
+							break;
+						case "MozMousePixelScroll": 
+							// [Mac] prevent scrolling content
+							event.preventDefault();
+							event.stopPropagation();
+							break;
+						case "mouseup": 
+							// fire command event on popup
+							var evt = this.ownerDocument.createEvent("xulcommandevent");
+							evt.initCommandEvent(
+								"command", true, true, this.ownerDocument.defaultView, 0, 
+								false, false, false, false, null
+							);
+							this.dispatchEvent(evt);
+							this.hidePopup();
+							break;
+					}
+				]]></body>
+			</method>
+		</implementation>
+		<handlers>
+			<handler event="popupshown" phase="target"><![CDATA[
+				// [Mac] since popup.css does not define menuitem[default="true"] rule,
+				// we need to change raw css style for xul:menuitem element.
+				if (this.defaultItem)
+					this.defaultItem.style.fontWeight = "bold";
+				if (this.getAttribute("wheelscroll") == "true") {
+					this.currentItem = this.defaultItem || this.firstChild;
+					// add event listeners
+					this.addEventListener("mouseover", this, false);
+					this.ownerDocument.documentElement.addEventListener("DOMMouseScroll", this, true);
+					this.ownerDocument.documentElement.addEventListener("MozMousePixelScroll", this, true);
+					this.ownerDocument.documentElement.addEventListener("mouseup", this, true);
+				}
+			]]></handler>
+			<handler event="popuphiding" phase="target"><![CDATA[
+				if (this.getAttribute("wheelscroll") == "true") {
+					// remove event listeners
+					this.removeEventListener("mouseover", this, false);
+					this.ownerDocument.documentElement.removeEventListener("DOMMouseScroll", this, true);
+					this.ownerDocument.documentElement.removeEventListener("MozMousePixelScroll", this, true);
+					this.ownerDocument.documentElement.removeEventListener("mouseup", this, true);
+				}
+				this._currentItem = null;
+				// remove all items
+				while (this.hasChildNodes())
+					this.removeChild(this.lastChild);
+			]]></handler>
+		</handlers>
+	</binding>
+
+</bindings>
