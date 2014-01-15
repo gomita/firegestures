@@ -115,7 +115,7 @@ xdGestureMapping.prototype = {
 	_reloadMapping: function FGM__reloadMapping() {
 		this._mapping = null;
 		this._getUserMapping() || this._getDefaultMapping();
-		this._dumpMapping();	// #debug
+		// this._dumpMapping();	// #debug
 	},
 
 	// obtain user mapping

@@ -122,7 +122,7 @@
 		      onselect="PrefsUI.updateCommands();"
 		      ondblclick="PrefsUI.handleTreeEvent(event);"
 		      onkeypress="PrefsUI.handleTreeEvent(event);"
-		      rows="18" flex="1">
+		      rows="16" flex="1">
 			<treecols>
 				<treecol label="&treecol.name;" flex="5" primary="true" />
 				<splitter class="tree-splitter" />
