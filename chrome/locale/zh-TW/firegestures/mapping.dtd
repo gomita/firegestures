@@ -33,6 +33,7 @@
 <!ENTITY gestureCmd.saveImageNow "立刻儲存圖片">
 <!ENTITY gestureCmd.searchForSelection "搜尋選取的文字">
 <!ENTITY gestureCmd.searchForSelectionWith "以選取的搜尋引擎搜尋文字">
+<!ENTITY gestureCmd.allScripts "所有使用者腳本">
 <!ENTITY gestureCmd.openLinksInSelection "開啟選取範圍內的所有鏈結">
 <!ENTITY gestureCmd.openURLsInSelection "開啟選取範圍內的所有網址">
 <!ENTITY gestureCmd.bookmarksSidebar "於側邊欄顯示書籤">

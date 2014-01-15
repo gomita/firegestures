@@ -20,9 +20,9 @@
 <!ENTITY mappings.title "Correspondances">
 <!ENTITY mappings.description "Choisir une correspondance à configurer">
 <!ENTITY tools.title "Outils">
-<!ENTITY tools.description "Réinitialiser et restaurer toutes les correspondances">
-<!ENTITY tools.backup.label "Réinitialiser">
-<!ENTITY tools.restore.label "Restaurer">
+<!ENTITY tools.description "Exporter puis importer les règlages">
+<!ENTITY tools.backup.label "Exporter">
+<!ENTITY tools.restore.label "Importer">
 <!ENTITY tools.restore.alerttext "Cela remplacera toutes les correspondances actuelles en les réinitialisant. Voulez-vous vraiment continuer ?">
 <!ENTITY wheelGesture "Gestes avec la molette">
 <!ENTITY wheelGesture.up.left "Défiler vers le haut en maintenant le clic gauche">
@@ -34,14 +34,14 @@
 <!ENTITY rockerGesture "Gestes à clics">
 <!ENTITY rockerGesture.left "Clic gauche en maintenant le clic droit">
 <!ENTITY rockerGesture.right "Clic droit en maintenant le clic gauche">
-<!ENTITY keypressGesture "Gestes avec l&apos;appui sur des touches">
+<!ENTITY keypressGesture "Gestes avec l'appui sur des touches">
 <!ENTITY keypressGesture.ctrl "Geste de la souris en maintenant la touche Ctrl">
 <!ENTITY keypressGesture.shift "Geste de la souris en maintenant la touche Maj">
 <!ENTITY keypressGesture.open "Ouvrir dans des onglets les liens survolés">
 <!ENTITY keypressGesture.save "Enregistrer les liens survolés">
 <!ENTITY keypressGesture.copy "Copier les adresses des liens survolés">
 <!ENTITY tabwheelGesture "Gestes avec la molette, pour les onglets">
-<!ENTITY tabwheelGesture.description "Changer d&apos;onglet en faisant tourner la molette sur la barre d&apos;onglets">
+<!ENTITY tabwheelGesture.description "Changer d'onglet en faisant tourner la molette sur la barre d'onglets">
 <!ENTITY treecol.name "Nom">
 <!ENTITY treecol.command "Commande">
 <!ENTITY treecol.script "Script">

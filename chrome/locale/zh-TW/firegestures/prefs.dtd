@@ -2,6 +2,7 @@
 <!ENTITY mainPane "一般設定">
 <!ENTITY mappingPane "手勢對應">
 <!ENTITY advancedPane "進階設定">
+<!ENTITY swipePane "滑動">
 <!ENTITY mouseGesture "滑鼠手勢">
 <!ENTITY triggerButton "要執行滑鼠手勢的按鍵">
 <!ENTITY triggerButton.left "左鍵">
@@ -35,13 +36,21 @@
 <!ENTITY rockerGesture.left "按住右鍵不放再按左鍵">
 <!ENTITY rockerGesture.right "按住左鍵不放再按右鍵">
 <!ENTITY keypressGesture "按鍵手勢">
-<!ENTITY keypressGesture.ctrl "按住 Ctrl 鍵並劃過連結">
-<!ENTITY keypressGesture.shift "按住 Shift 鍵並劃過連結">
-<!ENTITY keypressGesture.open "於分頁中開啟所有劃過的連結">
-<!ENTITY keypressGesture.save "儲存所有劃過的連結">
-<!ENTITY keypressGesture.copy "複製所有劃過的連結網址">
+<!ENTITY keypressGesture.ctrl "按住 Ctrl 鍵並劃過鏈結">
+<!ENTITY keypressGesture.shift "按住 Shift 鍵並劃過鏈結">
+<!ENTITY keypressGesture.open "於分頁中開啟所有劃過的鏈結">
+<!ENTITY keypressGesture.save "儲存所有劃過的鏈結">
+<!ENTITY keypressGesture.copy "複製所有劃過的鏈結網址">
 <!ENTITY tabwheelGesture "分頁滾輪手勢">
 <!ENTITY tabwheelGesture.description "於分頁列上滾動滾輪切換分頁">
+<!ENTITY swipe "滑動手勢">
+<!ENTITY swipe.left "向左滑動">
+<!ENTITY swipe.right "向右滑動">
+<!ENTITY swipe.up "向上滑動">
+<!ENTITY swipe.down "向下滑動">
+<!ENTITY swipe.continuous "持續滑動的滑鼠手勢">
+<!ENTITY swipe.continuous.1 "等待下一個方向的時間">
+<!ENTITY swipe.continuous.2 "秒">
 <!ENTITY treecol.name "名稱">
 <!ENTITY treecol.command "命令">
 <!ENTITY treecol.script "腳本手勢">

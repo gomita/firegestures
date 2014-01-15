@@ -26,8 +26,8 @@
 <!ENTITY gestureCmd.closeRightTabs "Cerrar pestañas de la derecha">
 <!ENTITY gestureCmd.scrollTop "Regresar al inicio de la página">
 <!ENTITY gestureCmd.scrollBottom "Ir al final de la página">
-<!ENTITY gestureCmd.scrollPageUp "Avanzar una página">
-<!ENTITY gestureCmd.scrollPageDown "Retroceder una página">
+<!ENTITY gestureCmd.scrollPageUp "Retroceder una página">
+<!ENTITY gestureCmd.scrollPageDown "Avanzar una página">
 <!ENTITY gestureCmd.backgroundTab "en segundo plano">
 <!ENTITY gestureCmd.foregroundTab "en primer plano">
 <!ENTITY gestureCmd.saveImageNow "Guardar imagen ya">
