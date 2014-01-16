@@ -834,7 +834,6 @@ var FireGestures = {
 		switch (aCommand) {
 			case "FireGestures:AllTabsPopup": 
 				var tabs = gBrowser.mTabs;
-				var tabContainer = gBrowser.tabContainer;
 				if (tabs.length < 1)
 					return;	// just in case
 				var pinned;
@@ -847,7 +846,9 @@ var FireGestures = {
 						popup.appendChild(document.createElement("menuseparator"));
 					pinned = tab.pinned;
 					let menuitem = popup.appendChild(document.createElement("menuitem"));
-					tabContainer.mAllTabsPopup._setMenuitemAttributes(menuitem, tab);
+					menuitem.setAttribute("label", tab.label);
+					menuitem.setAttribute("crop", tab.getAttribute("crop"));
+					menuitem.setAttribute("image", tab.getAttribute("image"));
 					menuitem.setAttribute("class", "menuitem-iconic alltabs-item menuitem-with-favicon");
 					menuitem.setAttribute("statustext", tab.linkedBrowser.currentURI.spec);
 					menuitem.index = i;
@@ -856,6 +857,7 @@ var FireGestures = {
 				}
 				// decorate menuitem which of tab is visible in overflowed tab strip
 				// @see tabbrowser.xml: _updateTabsVisibilityStatus
+				var tabContainer = gBrowser.tabContainer;
 				if (tabContainer.getAttribute("overflow") != "true")
 					break;
 				var tabstrip = tabContainer.mTabstrip.scrollBoxObject;
