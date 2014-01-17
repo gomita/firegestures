@@ -83,13 +83,16 @@
 							event.stopPropagation();
 							break;
 						case "mouseup": 
-							// fire command event on popup
-							var evt = this.ownerDocument.createEvent("xulcommandevent");
-							evt.initCommandEvent(
-								"command", true, true, this.ownerDocument.defaultView, 0, 
-								false, false, false, false, null
-							);
-							this.dispatchEvent(evt);
+							if (this.currentItem && 
+							    this.currentItem.getAttribute("_moz-menuactive") == "true") {
+								// fire command event on popup
+								var evt = this.ownerDocument.createEvent("xulcommandevent");
+								evt.initCommandEvent(
+									"command", true, true, this.ownerDocument.defaultView, 0, 
+									false, false, false, false, null
+								);
+								this.currentItem.dispatchEvent(evt);
+							}
 							this.hidePopup();
 							break;
 					}

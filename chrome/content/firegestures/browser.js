@@ -954,6 +954,8 @@ var FireGestures = {
 						menuitem = document.createElement("menuitem");
 						for (let [name, val] in Iterator(aAttrs)) {
 							menuitem.setAttribute(name, val);
+							if (menuitem.getAttribute("checked") == "true")
+								menuitem.setAttribute("default", "true");
 						}
 					}
 					popup.appendChild(menuitem);
@@ -1012,8 +1014,6 @@ var FireGestures = {
 							relatedToCurrent: true
 						});
 						break;
-					default: 
-						eval(item.getAttribute("oncommand"));
 				}
 				break;
 			case "popuphiding": 
