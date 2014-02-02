@@ -63,10 +63,9 @@ var FireGestures = {
 			dump("*** suppress starting gesture in print preview mode\n");	// #debug
 			return false;
 		}
-		// XXX a hackish way to detect whether the current tab is in Tilt mode
-		if (event.target instanceof HTMLCanvasElement && 
-		    event.target.parentNode instanceof Ci.nsIDOMXULElement) {
-			dump("*** suppress starting gesture in Tilt 3D View\n");	// #debug
+		// suppress starting gesture on html:canvas element, including Tilt 3D View
+		if (event.target instanceof HTMLCanvasElement) {
+			dump("*** suppress starting gesture on canvas element\n");	// #debug
 			return false;
 		}
 		return true;
@@ -352,9 +351,6 @@ var FireGestures = {
 				var imageURL = this.getImageURL();
 				if (!imageURL)
 					throw this._getLocaleString("ERROR_NOT_ON_IMAGE");
-				var onCanvas = this.sourceNode instanceof HTMLCanvasElement;
-				if (onCanvas)
-					this.checkURL(imageURL, gBrowser.contentDocument, Ci.nsIScriptSecurityManager.DISALLOW_SCRIPT);
 				openUILink(imageURL, event);
 				break;
 			case "FireGestures:SaveImage": 
@@ -372,11 +368,6 @@ var FireGestures = {
 					                ? "SaveVideoTitle" : "SaveAudioTitle";
 					// FIXME saveHelper always shows prompt
 					nsContextMenu.prototype.saveHelper(mediaURL, null, dialogTitle, false, doc);
-				}
-				else if (this.sourceNode instanceof HTMLCanvasElement) {
-					// save canvas
-					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", 
-					             false, skipPrompt, doc.documentURIObject, doc);
 				}
 				else {
 					// save image
@@ -573,7 +564,7 @@ var FireGestures = {
 		return text;
 	},
 
-	// returns src attribute of an img element or data: URL of a canvas element
+	// returns src attribute of an img element
 	// on the starting point of a gesture
 	// returns null if no image element on the starting point
 	getImageURL: function(aNode) {
@@ -581,8 +572,6 @@ var FireGestures = {
 			aNode = this.sourceNode;
 		if (aNode instanceof Ci.nsIImageLoadingContent && aNode.src)
 			return aNode.src;
-		else if (aNode instanceof HTMLCanvasElement)
-			return aNode.toDataURL();
 		// background image
 		// @see nsContextMenu::setTarget()
 		if (aNode instanceof HTMLHtmlElement)
