@@ -199,14 +199,7 @@ var FireGestures = {
 					document.getElementById("cmd_closeWindow").doCommand();
 				break;
 			case "FireGestures:UndoCloseTab": 
-				try { document.getElementById("History:UndoCloseTab").doCommand(); }
-				catch(ex) {
-					if ("undoRemoveTab" in gBrowser)
-						// [TabMixPlus]
-						gBrowser.undoRemoveTab();
-					else
-						throw "Session Restore feature is disabled.";
-				}
+				document.getElementById("History:UndoCloseTab").doCommand();
 				break;
 			case "FireGestures:PreviousTab": 
 				gBrowser.mTabContainer.advanceSelectedTab(-1, true);
