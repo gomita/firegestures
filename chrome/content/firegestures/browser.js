@@ -711,25 +711,17 @@ var FireGestures = {
 	},
 
 	closeMultipleTabs: function(aLeftRight) {
-		if ("closeLeftTabs" in gBrowser) {
-			// [TabMixPlus]
-			if (aLeftRight == "left")
-				gBrowser.closeLeftTabs(gBrowser.mCurrentTab);
-			else
-				gBrowser.closeRightTabs(gBrowser.mCurrentTab);
-			return;
-		}
-		var tabs = Array.slice(gBrowser.mTabs);
-		var pos = gBrowser.mCurrentTab._tPos;
+		var tabs = this.visibleTabs.filter(function(tab) !tab.pinned);
+		var pos = tabs.indexOf(this.mCurrentTab);
 		var start = aLeftRight == "left" ? 0   : pos + 1;
 		var stop  = aLeftRight == "left" ? pos : tabs.length;
-		tabs = tabs.slice(start, stop).filter(function(tab) !tab.pinned && !tab.hidden);
+		tabs = tabs.slice(start, stop);
 		// alert(tabs.map(function(tab) "[" + tab._tPos + "] " + tab.label).join("\n"));
 		// @see warnAboutClosingTabs in tabbrowser.xml
 		var shouldPrompt = Services.prefs.getBoolPref("browser.tabs.warnOnCloseOtherTabs");
 		if (shouldPrompt && tabs.length > 1) {
 			var ps = Services.prompt;
-			var bundle = gBrowser.mStringBundle;
+			var bundle = this.mStringBundle;
 			window.focus();
 			var ret = ps.confirmEx(
 				window, 
@@ -742,8 +734,8 @@ var FireGestures = {
 			if (ret != 0)
 				return;
 		}
-		tabs.reverse().forEach(function(tab) gBrowser.removeTab(tab));
-	},
+		tabs.reverse().forEach(function(tab) this.removeTab(tab), this);
+	}.bind(gBrowser),
 
 	sendKeyEvent: function(aOptions) {
 		var evt = this.sourceNode.ownerDocument.createEvent("KeyEvents");
