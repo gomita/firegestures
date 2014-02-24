@@ -722,11 +722,19 @@ var FireGestures = {
 		if (shouldPrompt && tabs.length > 1) {
 			var ps = Services.prompt;
 			var bundle = this.mStringBundle;
+			var message;
+			try {
+				// [Firefox29-]
+				message = bundle.getFormattedString("tabs.closeWarningMultipleTabs", [tabs.length]);
+			}
+			catch (ex) {
+				// [Firefox30+]
+				message = PluralForm.get(tabs.length, bundle.getString("tabs.closeWarningMultiple")).
+				          replace("#1", tabs.length);
+			}
 			window.focus();
 			var ret = ps.confirmEx(
-				window, 
-				bundle.getString("tabs.closeWarningTitle"), 
-				bundle.getFormattedString("tabs.closeWarningMultipleTabs", [tabs.length]), 
+				window, bundle.getString("tabs.closeWarningTitle"), message, 
 				ps.BUTTON_TITLE_IS_STRING * ps.BUTTON_POS_0 + ps.BUTTON_TITLE_CANCEL * ps.BUTTON_POS_1, 
 				bundle.getString("tabs.closeButtonMultiple"), 
 				null, null, null, {}
