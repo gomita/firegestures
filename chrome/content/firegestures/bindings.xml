@@ -15,7 +15,6 @@
 		</content>
 		<implementation implements="nsIDOMEventListener">
 			<constructor><![CDATA[
-				this.style.MozAppearance = "menupopup";
 				if (this.localName == "panel")
 					this.setAttribute("noautohide", "true");
 			]]></constructor>
