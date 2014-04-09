@@ -50,3 +50,5 @@
 <!ENTITY gestureCmd.options "Опције">
 <!-- leave this empty for Pale Moon 24 compatibility -->
 <!ENTITY viewTabGroups.label "">
+<!-- leave this empty for Firefox 28- compatibility -->
+<!ENTITY appmenu.tooltip "">

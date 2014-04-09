@@ -482,6 +482,13 @@ var FireGestures = {
 					return;
 				new Function("event", items[ret.value][kCommandCol])(event);
 				break;
+			case "FireGestures:OpenPanelUI": 
+				setTimeout(function(self) {
+					PanelUI.ensureReady().then(() => {
+						self._gestureHandler.openPopupAtPointer(PanelUI.panel);
+					});
+				}, 0, this);
+				break;
 			case "FireGestures:OpenHoveredLinks": 
 				var doc = this.sourceNode.ownerDocument;
 				var referer = makeURI(doc.location.href);

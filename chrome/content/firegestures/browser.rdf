@@ -103,6 +103,7 @@
     <RDF:li RDF:resource="urn:FireGestures:ClosedTabsPopup" />
     <RDF:li RDF:resource="urn:FireGestures:WebSearchPopup" />
     <RDF:li RDF:resource="urn:FireGestures:AllScriptsPopup" />
+    <RDF:li RDF:resource="urn:FireGestures:OpenPanelUI" />
     <RDF:li RDF:resource="urn:category:hybrid" />
     <RDF:li RDF:resource="urn:FireGestures:HybridBookmark" />
     <RDF:li RDF:resource="urn:FireGestures:HybridSave" />
@@ -436,6 +437,10 @@
   <RDF:Description RDF:about="urn:FireGestures:AllScriptsPopup"
                    FG:type="1"
                    FG:name="[&gestureType.popup;] &gestureCmd.allScripts;" />
+  <RDF:Description RDF:about="urn:FireGestures:OpenPanelUI"
+                   FG:type="1"
+                   FG:name="[&gestureType.popup;] &appmenu.tooltip;"
+                   FG:flags="min:firefox29" />
   <!-- hybrid -->
   <RDF:Description RDF:about="urn:category:hybrid"
                    FG:type="0"
