@@ -314,21 +314,28 @@ var FireGestures = {
 				document.getElementById(aCommand).doCommand();
 				break;
 			case "FireGestures:ScrollTop": 
-				this._performScrollAction("cmd_scrollTop", "DOM_VK_HOME");
-				break;
 			case "FireGestures:ScrollBottom": 
-				this._performScrollAction("cmd_scrollBottom", "DOM_VK_END");
-				break;
 			case "FireGestures:ScrollPageUp": 
-				this._performScrollAction("cmd_scrollPageUp", "DOM_VK_PAGE_UP");
-				break;
 			case "FireGestures:ScrollPageDown": 
-				this._performScrollAction("cmd_scrollPageDown", "DOM_VK_PAGE_DOWN");
+				// replace command name to cmd_scrollTop/Bottom/PageUp/PageDown
+				aCommand = aCommand.replace("FireGestures:Scroll", "cmd_scroll");
+				// this effects only for mouse gesture with left-button on inner frame
+				this.sourceNode.ownerDocument.defaultView.focus();
+				// [e10s]
+				if (this.isRemote) {
+					this.sendAsyncMessage("FireGestures:DoCommand", { cmd: aCommand });
+					return;
+				}
+				var docShell = gBrowser.mCurrentBrowser.docShell;
+				if (docShell.isCommandEnabled(aCommand))
+					docShell.doCommand(aCommand);
 				break;
 			case "FireGestures:ShowOnlyThisFrame": 
-				var docURL = this.sourceNode.ownerDocument.location.href;
-				this.checkURL(docURL, gBrowser.contentDocument, Ci.nsIScriptSecurityManager.DISALLOW_SCRIPT);
-				gBrowser.loadURI(docURL);
+				var doc = this.sourceNode.ownerDocument;
+				var docURL = doc.location.href;
+				var refURI = doc.referrer ? makeURI(doc.referrer) : null;
+				this.checkURL(docURL, doc.defaultView.top.document, Ci.nsIScriptSecurityManager.DISALLOW_SCRIPT);
+				openUILinkIn(docURL, "current", { disallowInheritPrincipal: true, referrerURI: refURI });
 				break;
 			case "FireGestures:OpenFrame": 
 			case "FireGestures:OpenFrameInTab": 
@@ -404,7 +411,8 @@ var FireGestures = {
 					throw this._getLocaleString("ERROR_NOT_ON_IMAGE");
 				var onCanvas = this.sourceNode instanceof HTMLCanvasElement;
 				if (onCanvas)
-					this.checkURL(imageURL, gBrowser.contentDocument, Ci.nsIScriptSecurityManager.DISALLOW_SCRIPT);
+					this.checkURL(imageURL, this.sourceNode.ownerDocument, 
+					              Ci.nsIScriptSecurityManager.DISALLOW_SCRIPT);
 				openUILink(imageURL, event);
 				break;
 			case "FireGestures:SaveImage": 
@@ -443,9 +451,7 @@ var FireGestures = {
 				if (!linkURLs || linkURLs.length == 0)
 					throw "No valid links in selection";
 				var doc = this.sourceNode.ownerDocument;
-				var referer = makeURI(doc.location.href);
-				var charset = window.content.document.characterSet;
-				this.openURLs(linkURLs, referer, charset);
+				this.openURLs(linkURLs, doc.documentURIObject, doc.charset);
 				break;
 			case "FireGestures:OpenURLsInSelection": 
 				this.openURLsInSelection();
@@ -473,9 +479,10 @@ var FireGestures = {
 				break;
 			case "FireGestures:HybridSave": 
 			case "FireGestures:HybridBookmark": 
+				var doc = this.sourceNode.ownerDocument;
 				var onLink  = this.getLinkURL()  != null;
 				var onMedia = this.getMediaURL() != null;
-				var inFrame = this.sourceNode.ownerDocument != window.content.document;
+				var inFrame = doc.defaultView != doc.defaultView.top;
 				if (aCommand == "FireGestures:HybridSave") {
 					if (onLink)       aCommand = "FireGestures:SaveLink";
 					else if (onMedia) aCommand = "FireGestures:SaveImage";
@@ -495,7 +502,7 @@ var FireGestures = {
 				if (url)
 					MailIntegration.sendMessage(url, "");
 				else
-					MailIntegration.sendLinkForWindow(window.content);
+					MailIntegration.sendLinkForWindow(this.focusedWindow);
 				break;
 			case "FireGestures:HybridCopyURL": 
 				var url = this.getLinkURL() || this.getImageURL() || 
@@ -548,14 +555,12 @@ var FireGestures = {
 				break;
 			case "FireGestures:OpenHoveredLinks": 
 				var doc = this.sourceNode.ownerDocument;
-				var referer = makeURI(doc.location.href);
-				var charset = window.content.document.characterSet;
-				this.openURLs(this._linkURLs, referer, charset);
+				this.openURLs(this._linkURLs, doc.documentURIObject, doc.characterSet);
 				break;
 			case "FireGestures:SaveHoveredLinks": 
 				var delay = 0;
 				var doc = this.sourceNode.ownerDocument;
-				var ref = makeURI(doc.location.href, doc.characterSet);
+				var ref = doc.documentURIObject;
 				this._linkURLs.forEach(function(aURL) {
 					window.setTimeout(function() { saveURL(aURL, null, null, false, true, ref, doc); }, delay);
 					delay += 1000;
@@ -579,17 +584,6 @@ var FireGestures = {
 		}
 	},
 
-	_performScrollAction: function(aCommand, aKeyCode) {
-		// [Mac][Linux] to fix #70, always use goDoCommand
-		if (!this._isWin || 
-		    this.sourceNode instanceof HTMLInputElement || 
-		    this.sourceNode instanceof HTMLTextAreaElement || 
-		    gBrowser.mPrefs.getBoolPref("accessibility.browsewithcaret"))
-			goDoCommand(aCommand);
-		else
-			this.sendKeyEvent({ keyCode: aKeyCode });
-	},
-
 	get sourceNode() {
 		return this._gestureHandler.sourceNode;
 	},
@@ -597,7 +591,7 @@ var FireGestures = {
 	get focusedWindow() {
 		var win = document.commandDispatcher.focusedWindow;
 		if (win == window)
-			win = window.content;
+			win = this.sourceNode.ownerDocument.defaultView;
 		return win;
 	},
 
@@ -703,6 +697,16 @@ var FireGestures = {
 
 	// wrapper function of |urlSecurityCheck|
 	checkURL: function(aURL, aDoc, aFlags) {
+		// [e10s] get remote principal @see nsContextMenu._unremotePrincipal
+		if (this.isRemote) {
+			let principal = Cc["@mozilla.org/scriptsecuritymanager;1"].
+			                getService(Ci.nsIScriptSecurityManager).
+			                getAppCodebasePrincipal(aDoc.nodePrincipal.URI,
+			                                        aDoc.nodePrincipal.appId,
+			                                        aDoc.nodePrincipal.isInBrowserElement);
+			urlSecurityCheck(aURL, principal, aFlags);
+			return;
+		}
 		urlSecurityCheck(aURL, aDoc.nodePrincipal, aFlags);
 	},
 
@@ -823,6 +827,11 @@ var FireGestures = {
 	},
 
 	sendKeyEvent: function(aOptions) {
+		// [e10s]
+		if (this.isRemote) {
+			this.sendAsyncMessage("FireGestures:SendKeyEvent", aOptions);
+			return;
+		}
 		var evt = this.sourceNode.ownerDocument.createEvent("KeyEvents");
 		evt.initKeyEvent(
 			"keypress", true, true, null, 
