@@ -152,11 +152,10 @@ xdGestureHandler.prototype = {
 		if (this._rockerGestureEnabled)
 			this._drawArea.addEventListener("click", this, true);
 		// prefs for tab wheel gesture
-		var tabbrowser = this._drawArea.ownerDocument.getBindingParent(this._drawArea);
-		if (tabbrowser && tabbrowser.localName == "tabbrowser") {
-			tabbrowser.mStrip.removeEventListener("DOMMouseScroll", this._wheelOnTabBar, true);
+		if (this._drawArea.localName == "tabbrowser") {
+			this._drawArea.mStrip.removeEventListener("DOMMouseScroll", this._wheelOnTabBar, true);
 			if (getPref("tabwheelgesture"))
-				tabbrowser.mStrip.addEventListener("DOMMouseScroll", this._wheelOnTabBar, true);
+				this._drawArea.mStrip.addEventListener("DOMMouseScroll", this._wheelOnTabBar, true);
 		}
 		// if trigger button is middle, disable loading the clipboard URL with middle click.
 		if (this._triggerButton == 1) {
@@ -650,21 +649,17 @@ xdGestureHandler.prototype = {
 
 	// called from _startGesture
 	createTrail: function FGH_createTrail(event) {
-		// [Firefox22] cannot access |event.view.top| directly
-		var win = event.view;
+		var win = this.sourceNode.ownerDocument.defaultView;
 		if (win.top.document instanceof Ci.nsIDOMHTMLDocument)
 			win = win.top;
 		else if (win.document instanceof Ci.nsIDOMHTMLDocument === false)
 			return;
 		var doc = win.document;
-		var insertionNode = doc.documentElement ? doc.documentElement : doc;
-		var win = doc.defaultView;
-		this._trailZoom = this._gestureObserver.fullZoom;
-		if (this._trailZoom != 1) log("fullZoom: " + this._trailZoom);	// #debug
+		this._trailZoom = this._drawArea.fullZoom || 1;
 		this._trailOffsetX = (win.mozInnerScreenX - win.scrollX) * this._trailZoom;
 		this._trailOffsetY = (win.mozInnerScreenY - win.scrollY) * this._trailZoom;
 		this._trailArea = doc.createElementNS(HTML_NS, "xdTrailArea");
-		insertionNode.appendChild(this._trailArea);
+		(doc.documentElement || doc).appendChild(this._trailArea);
 		this._trailDot = doc.createElementNS(HTML_NS, "xdTrailDot");
 		this._trailDot.style.width = this._trailSize + "px";
 		this._trailDot.style.height = this._trailSize + "px";

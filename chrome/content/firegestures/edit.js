@@ -86,10 +86,6 @@ var EditUI = {
 
 	/* ::::: xdIGestureObserver ::::: */
 
-	get fullZoom() {
-		return 1;
-	},
-
 	canStartGesture: function(event) {
 		return true;
 	},

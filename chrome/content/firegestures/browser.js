@@ -28,7 +28,7 @@ var FireGestures = {
 		}
 		var gestureSvc = Cc["@xuldev.org/firegestures/service;1"].getService(Ci.xdIGestureService);
 		this._gestureHandler = gestureSvc.createHandler();
-		this._gestureHandler.attach(gBrowser.mPanelContainer, this);
+		this._gestureHandler.attach(gBrowser, this);
 		this._gestureMapping = gestureSvc.getMappingForBrowser();
 		this._getLocaleString = gestureSvc.getLocaleString;
 		this._statusTextField = document.getElementById("statusbar-display");
@@ -53,10 +53,6 @@ var FireGestures = {
 
 
 	/* ::::: xdIGestureObserver ::::: */
-
-	get fullZoom() {
-		return gBrowser.mCurrentBrowser.markupDocumentViewer.fullZoom;
-	},
 
 	canStartGesture: function(event) {
 		if (gInPrintPreviewMode) {
@@ -239,7 +235,7 @@ var FireGestures = {
 					document.getElementById(aCommand.replace("text", "full")).doCommand();
 				else
 					// if full zoom is enabled, text zoom cannot save site-specific pref.
-					gBrowser.markupDocumentViewer.textZoom += (aCommand == "cmd_textZoomEnlarge") ? 0.2 : -0.2;
+					gBrowser.textZoom += (aCommand == "cmd_textZoomEnlarge") ? 0.2 : -0.2;
 				break;
 			case "cmd_fullZoomEnlarge": 
 			case "cmd_fullZoomReduce": 
@@ -248,7 +244,7 @@ var FireGestures = {
 					document.getElementById(aCommand).doCommand();
 				else
 					// if full zoom is disabled, full zoom cannot save site-specific pref.
-					gBrowser.markupDocumentViewer.fullZoom += (aCommand == "cmd_fullZoomEnlarge") ? 0.2 : -0.2;
+					gBrowser.fullZoom += (aCommand == "cmd_fullZoomEnlarge") ? 0.2 : -0.2;
 				break;
 			case "cmd_textZoomReset": 
 				if ("FullZoom" in window)
