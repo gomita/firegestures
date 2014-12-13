@@ -37,9 +37,19 @@ var FireGestures = {
 			this._statusTextField = gBrowser.getStatusPanel();
 		// disable built-in swipe gesture
 		window.removeEventListener("MozSwipeGesture", gGestureSupport, true);
+		// [e10s] load frame script into every browser in window
+		if (gMultiProcessBrowser) {
+			window.messageManager.loadFrameScript("chrome://firegestures/content/remote.js", true);
+			window.messageManager.addMessageListener("FireGesturesRemote:Response", this);
+		}
 	},
 
 	uninit: function() {
+		// [e10s] stop loading delayed frame script if exists
+		if (gMultiProcessBrowser) {
+			window.messageManager.removeDelayedFrameScript("chrome://firegestures/content/remote.js");
+			window.messageManager.removeMessageListener("FireGesturesRemote:Response", this);
+		}
 		if (this._gestureHandler) {
 			this._gestureHandler.detach();
 			this._gestureHandler = null;
@@ -49,6 +59,37 @@ var FireGestures = {
 		if (this._clearStatusTimer)
 			window.clearTimeout(this._clearStatusTimer);
 		this._statusTextField = null;
+	},
+
+
+	/* ::::: [e10s] ::::: */
+
+	// check whether the current browser is remote or not
+	get isRemote() {
+		return gBrowser.mCurrentBrowser.getAttribute("remote") == "true";
+	},
+
+	// send async message to remote browser
+	sendAsyncMessage: function(aName, aData) {
+		gBrowser.mCurrentBrowser.messageManager.sendAsyncMessage(aName, aData);
+	},
+
+	// receive message from remote browser
+	receiveMessage: function(aMsg) {
+		// #debug-begin
+		var val = aMsg.name + ":\n" + aMsg.data.toSource() + "\n" + (aMsg.objects.elt || aMsg.objects);
+		Services.console.logStringMessage(val);
+		// #debug-end
+		switch (aMsg.data.name) {
+			case "sourceNode": 
+				// replace |sourceNode| of gesture handler by CPOW object
+				this._gestureHandler.sourceNode = aMsg.objects.elt;
+				break;
+			case "linkURLs": 
+				this._linkURLs = aMsg.data.linkURLs;
+				break;
+			default: 
+		}
 	},
 
 
@@ -117,11 +158,25 @@ var FireGestures = {
 				this.onMouseGesture(event, aGesture);
 				break;
 			case "keypress-start": 
+				// [e10s]
+				if (this.isRemote) {
+					this._linkURLs = [];
+					this.sendAsyncMessage("FireGestures:KeypressStart", {});
+					return;
+				}
 				this.clearStatusText(0);
 				this._linkURLs = [];
 				this._linkElts = [];
 				break;
 			case "keypress-progress": 
+				// [e10s]
+				if (this.isRemote) {
+					this.sendAsyncMessage("FireGestures:KeypressProgress", {
+						x: event.screenX - gBrowser.mCurrentBrowser.boxObject.screenX, 
+						y: event.screenY - gBrowser.mCurrentBrowser.boxObject.screenY, 
+					});
+					return;
+				}
 				var linkURL = this.getLinkURL(event.target);
 				if (!this._linkURLs)
 					this._linkURLs = [];
@@ -136,6 +191,12 @@ var FireGestures = {
 				}
 				break;
 			case "keypress-stop": 
+				// [e10s]
+				if (this.isRemote) {
+					this._linkURLs = null;
+					this.sendAsyncMessage("FireGestures:KeypressStop", {});
+					return;
+				}
 				for (var i = 0; i < this._linkURLs.length; i++) {
 					this._linkElts[i].style.outline = "";
 					this._linkElts[i] = null;	// just in case

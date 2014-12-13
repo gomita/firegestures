@@ -73,6 +73,9 @@ xdGestureHandler.prototype = {
 	// xdIGestureObserver
 	_gestureObserver: null,
 
+	// [e10s] a flag to indicate whether the current browser is remote or not
+	_isRemote: false,
+
 	attach: function FGH_attach(aDrawArea, aObserver) {
 		var appInfo = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
 		this._drawArea = aDrawArea;
@@ -212,7 +215,8 @@ xdGestureHandler.prototype = {
 						this._state = STATE_GESTURE;
 						this._startGesture(event);
 						// prevent selecting (only if mouse gesture is enabled)
-						if (this._mouseGestureEnabled)
+						// [e10s] don't prevent in remote mode since event.target always becomes to xul:tabbrowser
+						if (!this._isRemote && this._mouseGestureEnabled)
 							event.preventDefault();
 					}
 					// rocker gesture
@@ -441,6 +445,14 @@ xdGestureHandler.prototype = {
 			}
 		}
 		this._enableContextMenu(true);
+		if (this._isRemote) {
+			// [e10s] display context menu on remote browser
+			this._gestureObserver.sendAsyncMessage("FireGestures:ContextMenu", {
+				x: event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX, 
+				y: event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY, 
+			});
+			return;
+		}
 		// open the context menu artificially
 		var evt = event.originalTarget.ownerDocument.createEvent("MouseEvents");
 		evt.initMouseEvent(
@@ -482,7 +494,9 @@ xdGestureHandler.prototype = {
 
 	// called from handleEvent (type is "mousedown")
 	_startGesture: function FGH__startGesture(event) {
-		log("_startGesture()");	// #debug
+		if (this._drawArea.localName == "tabbrowser")
+			this._isRemote = this._drawArea.mCurrentBrowser.getAttribute("remote") == "true";
+		log("_startGesture(" + event.target.localName + ") " + (this._isRemote ? "[e10s]" : ""));	// #debug
 		this.sourceNode = event.target;
 		this._lastX = event.screenX;
 		this._lastY = event.screenY;
@@ -491,6 +505,14 @@ xdGestureHandler.prototype = {
 		// trail drawing
 		if (this._trailEnabled)
 			this.createTrail(event);
+		// [e10s] tell remote browser that mouse gesture has started
+		if (this._isRemote) {
+			this._gestureObserver.sendAsyncMessage("FireGestures:GestureStart", {
+				button: event.button, 
+				x: event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX, 
+				y: event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY, 
+			});
+		}
 	},
 
 	// called from handleEvent (type is "mousemove")
@@ -649,6 +671,15 @@ xdGestureHandler.prototype = {
 
 	// called from _startGesture
 	createTrail: function FGH_createTrail(event) {
+		if (this._isRemote) {
+			// [e10s]
+			this._gestureObserver.sendAsyncMessage("FireGestures:CreateTrail", {
+				size : this._trailSize,
+				color: this._trailColor,
+				zoom : this._drawArea.fullZoom || 1,
+			});
+			return;
+		}
 		var win = this.sourceNode.ownerDocument.defaultView;
 		if (win.top.document instanceof Ci.nsIDOMHTMLDocument)
 			win = win.top;
@@ -671,6 +702,16 @@ xdGestureHandler.prototype = {
 
 	// called from _progressGesture
 	drawTrail: function FGH_drawTrail(x1, y1, x2, y2) {
+		if (this._isRemote) {
+			// [e10s]
+			this._gestureObserver.sendAsyncMessage("FireGestures:DrawTrail", {
+				x1: x1 - this._drawArea.mCurrentBrowser.boxObject.screenX,
+				y1: y1 - this._drawArea.mCurrentBrowser.boxObject.screenY,
+				x2: x2 - this._drawArea.mCurrentBrowser.boxObject.screenX,
+				y2: y2 - this._drawArea.mCurrentBrowser.boxObject.screenY,
+			});
+			return;
+		}
 		if (!this._trailArea)
 			return;
 		var xMove = x2 - x1;
@@ -689,6 +730,11 @@ xdGestureHandler.prototype = {
 
 	// called from _stopGesture
 	eraseTrail: function FGH_eraseTrail() {
+		if (this._isRemote) {
+			// [e10s]
+			this._gestureObserver.sendAsyncMessage("FireGestures:EraseTrail", {});
+			return;
+		}
 		if (this._trailArea && this._trailArea.parentNode) {
 			while (this._trailArea.lastChild)
 				this._trailArea.removeChild(this._trailArea.lastChild);
