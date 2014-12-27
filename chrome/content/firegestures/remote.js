@@ -71,6 +71,10 @@ let FireGesturesRemote = {
 			let win = doc.defaultView;
 			win.removeEventListener("scroll", this, false);
 			win.addEventListener("scroll", this, false);
+			// cancel selecting ranges
+			let sel = win.getSelection();
+			if (sel.isCollapsed)
+				win.setTimeout(function() { sel.removeAllRanges(); }, 10);
 		}
 		// tell parent browser the source node and some info
 		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt: elt });
