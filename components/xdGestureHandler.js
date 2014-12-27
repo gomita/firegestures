@@ -662,6 +662,11 @@ xdGestureHandler.prototype = {
 		this._stopGesture();
 	},
 
+	cancelMouseGesture: function FGH_cancelMouseGesture() {
+		this._directionChain = "";
+		this._stopGesture();
+	},
+
 
 	/* ::::: MOUSE TRAIL ::::: */
 

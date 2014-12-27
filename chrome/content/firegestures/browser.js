@@ -88,6 +88,9 @@ var FireGestures = {
 			case "linkURLs": 
 				this._linkURLs = aMsg.data.linkURLs;
 				break;
+			case "cancelMouseGesture": 
+				this._gestureHandler.cancelMouseGesture();
+				break;
 			default: 
 		}
 	},

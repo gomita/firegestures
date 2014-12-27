@@ -102,6 +102,11 @@ interface xdIGestureHandler : nsISupports
 	 */
 	void openPopupAtPointer(in nsIDOMElement aPopup);
 
+	/**
+	 * Cancel mouse gesture forcibly
+	 */
+	void cancelMouseGesture();
+
 };
 
 

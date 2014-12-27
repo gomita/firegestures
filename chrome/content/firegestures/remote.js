@@ -60,8 +60,13 @@ let FireGesturesRemote = {
 		this._startY = aData.y;
 		let { doc: doc, elt: elt } = this._elementFromPoint(aData.x, aData.y);
 		if (aData.button == 0) {
-			// [ToDo] get the element under mouse pointer with the use of document.elementFromPoint
-			// if the element is scrollbar, cancel starting gesture
+			// cancel starting gesture on form elements
+			let localName = elt.localName;
+			if (["input", "textarea", "select", "option", "textbox", "menulist"].indexOf(localName) >= 0) {
+				log("*** cancel starting gesture on form element (" + localName + ")");	// #debug
+				sendSyncMessage("FireGesturesRemote:Response", { name: "cancelMouseGesture" }, {});
+				return;
+			}
 			// select event should be cancelled
 		}
 		// tell parent browser the source node and some info
