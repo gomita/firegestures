@@ -23,7 +23,6 @@ let FireGesturesRemote = {
 		addMessageListener("FireGestures:KeypressStart", this);
 		addMessageListener("FireGestures:KeypressProgress", this);
 		addMessageListener("FireGestures:KeypressStop", this);
-		addMessageListener("FireGestures:ContextMenu", this);
 		addMessageListener("FireGestures:DoCommand", this);
 		addMessageListener("FireGestures:SendKeyEvent", this);
 		addMessageListener("FireGestures:CreateTrail", this);
@@ -38,7 +37,6 @@ let FireGesturesRemote = {
 			case "FireGestures:KeypressStart"   : this._onKeypressStart(); break;
 			case "FireGestures:KeypressProgress": this._onKeypressProgress(aMsg.data); break;
 			case "FireGestures:KeypressStop"    : this._onKeypressStop(); break;
-			case "FireGestures:ContextMenu" : this._displayContextMenu(aMsg.data); break;
 			case "FireGestures:DoCommand"   : this._doCommand(aMsg.data); break;
 			case "FireGestures:SendKeyEvent": this._sendKeyEvent(aMsg.data); break;
 			case "FireGestures:CreateTrail" : this._createTrail(aMsg.data); break;
@@ -147,19 +145,6 @@ let FireGesturesRemote = {
 
 
 	/* ::::: Commands ::::: */
-
-	_displayContextMenu: function FGR__displayContextMenu(aData) {
-		// log("_displayContextMenu: " + aData.toSource());	// #debug
-		let { doc: doc, elt: elt, x: x, y: y } = this._elementFromPoint(aData.x, aData.y);
-		// open the context menu artificially
-		let evt = doc.createEvent("MouseEvents");
-		evt.initMouseEvent(
-			"contextmenu", true, true, doc.defaultView, 0,
-			aData.x, aData.y, x, y,
-			false, false, false, false, 2, null
-		);
-		elt.dispatchEvent(evt);
-	},
 
 	_doCommand: function FGR__doCommand(aData) {
 		if (docShell.isCommandEnabled(aData.cmd))

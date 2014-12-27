@@ -312,7 +312,14 @@ xdGestureHandler.prototype = {
 					// [Linux][Mac] display context menu artificially
 					if (this._shouldFireContext) {
 						this._shouldFireContext = false;
-						this._displayContextMenu(event);
+						this._enableContextMenu(true);
+						// synthesize contextmenu event by nsIDOMWindowUtils
+						var win = this._drawArea.ownerDocument.defaultView;
+						var x = event.screenX - win.document.documentElement.boxObject.screenX;
+						var y = event.screenY - win.document.documentElement.boxObject.screenY;
+						win.QueryInterface(Ci.nsIInterfaceRequestor).getInterface(Ci.nsIDOMWindowUtils).
+						    sendMouseEvent("contextmenu", x, y, 2, 1, null);
+						log("*** synthesize contextmenu event (" + x + ", " + y + ")");	// #debug
 					}
 				}
 				break;
@@ -320,7 +327,6 @@ xdGestureHandler.prototype = {
 				// [Linux] if right-click without holding left-button, display context menu artificially
 				if (!this._isMouseDownL && this._isMouseDownR) {
 					// #debug-begin
-					log("*** display context menu artificially");
 					if (PLATFORM == "Windows_NT")
 						alert("Assertion failed!\ndisplay context menu artificially");
 					// #debug-end
@@ -428,40 +434,6 @@ xdGestureHandler.prototype = {
 
 	_altKey: function(event) {
 		return this._suppressAlt ? event.altKey : false;
-	},
-
-	_displayContextMenu: function FGH__displayContextMenu(event) {
-		if ("nsContextMenu" in this._drawArea.ownerDocument.defaultView) {
-			// this fixes the problem: the list of alternative words doesn't display in the context menu
-			// when right-clicking on a misspelled word, because of a wrong value of |document.popupRangeOffset|.
-			with (this._drawArea.ownerDocument.defaultView) {
-				if (!nsContextMenu.prototype._setTargetInternal) {
-					nsContextMenu.prototype._setTargetInternal = nsContextMenu.prototype.setTarget;
-					nsContextMenu.prototype.setTarget = function(aNode, aRangeParent, aRangeOffset) {
-						this._setTargetInternal(aNode, aRangeParent, this._rangeOffset);
-					};
-					log("*** REPLACED nsContextMenu.prototype.setTarget");	// #debug
-				}
-				nsContextMenu.prototype._rangeOffset = event.rangeOffset;
-			}
-		}
-		this._enableContextMenu(true);
-		if (this._isRemote) {
-			// [e10s] display context menu on remote browser
-			this._gestureObserver.sendAsyncMessage("FireGestures:ContextMenu", {
-				x: event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX, 
-				y: event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY, 
-			});
-			return;
-		}
-		// open the context menu artificially
-		var evt = event.originalTarget.ownerDocument.createEvent("MouseEvents");
-		evt.initMouseEvent(
-			"contextmenu", true, true, event.originalTarget.ownerDocument.defaultView, 0,
-			event.screenX, event.screenY, event.clientX, event.clientY,
-			false, false, false, false, 2, null
-		);
-		event.originalTarget.dispatchEvent(evt);
 	},
 
 	_enableContextMenu: function FGH__enableContextMenu(aEnable) {
