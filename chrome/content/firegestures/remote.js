@@ -64,9 +64,6 @@ let FireGesturesRemote = {
 			// if the element is scrollbar, cancel starting gesture
 			// select event should be cancelled
 		}
-		else if (aData.button == 1) {
-			// [ToDo] cancel auto-scrolling?
-		}
 		// tell parent browser the source node and some info
 		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt: elt });
 	},

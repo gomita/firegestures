@@ -231,8 +231,6 @@ xdGestureHandler.prototype = {
 					if (this._triggerButton == 1 && !this._isMouseDownL && !this._isMouseDownR && !this._altKey(event)) {
 						this._state = STATE_GESTURE;
 						this._startGesture(event);
-						// prevent auto-scroll
-						event.stopPropagation();
 					}
 				}
 				else if (event.button == 2) {
@@ -270,6 +268,11 @@ xdGestureHandler.prototype = {
 						}
 						// mouse gesture
 						this._progressGesture(event);
+						// cancel auto-scroll if trigger button is middle
+						if (this._triggerButton == 1 && this._isMouseDownM && 
+						    this._drawArea.mCurrentBrowser._autoScrollPopup) {
+							this._drawArea.mCurrentBrowser._autoScrollPopup.hidePopup();
+						}
 					}
 				}
 				else if (this._state == STATE_WHEEL || this._state == STATE_ROCKER) {
