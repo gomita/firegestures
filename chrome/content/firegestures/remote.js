@@ -67,10 +67,25 @@ let FireGesturesRemote = {
 				sendSyncMessage("FireGesturesRemote:Response", { name: "cancelMouseGesture" }, {});
 				return;
 			}
-			// select event should be cancelled
+			// ready for cancel mouse gesture if gesture starts on scrollbar
+			let win = doc.defaultView;
+			win.removeEventListener("scroll", this, false);
+			win.addEventListener("scroll", this, false);
 		}
 		// tell parent browser the source node and some info
 		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt: elt });
+	},
+
+	handleEvent: function(event) {
+		switch (event.type) {
+			case "scroll": 
+				let win = event.target.defaultView;
+				win.removeEventListener("scroll", this, false);
+				sendSyncMessage("FireGesturesRemote:Response", { name: "cancelMouseGesture" }, {});
+				log("*** cancel starting gesture on scrollbar");	// #debug
+				break;
+			default: 
+		}
 	},
 
 
