@@ -192,21 +192,19 @@ xdGestureHandler.prototype = {
 				if (!this._gestureObserver.canStartGesture(event))
 					break;
 				if (event.button == 0) {
-					// suppress starting gesture on textboxes and textarea elements etc.
-					var targetName = event.target.localName.toUpperCase();
-					if (targetName == "INPUT" || targetName == "TEXTAREA") {
-						log("*** ignore left-click on form element (" + targetName + ")");	// #debug
-						break;
-					}
-					// suppress starting gesture when dragging scrollbar
-					targetName = event.originalTarget.localName;
-					if (targetName == "scrollbarbutton" || targetName == "slider" || targetName == "thumb") {
-						log("*** ignore left-click on scrollbar element (" + targetName + ")");	// #debug
-						break;
-					}
-					if (this._triggerButton == 0 && targetName == "select") {
-						log("*** ignore left-click on select element");	// #debug
-						break;
+					if (this._triggerButton == 0) {
+						// suppress starting gesture with left-button on HTML/XUL form elements
+						var localName = event.target.localName;
+						if (["input", "textarea", "select", "option", "textbox", "menulist"].indexOf(localName) >= 0) {
+							log("*** suppress starting gesture on form element (" + localName + ")");	// #debug
+							break;
+						}
+						// suppress starting gesture with left-button on scrollbar
+						var localName = event.originalTarget.localName;
+						if (["scrollbarbutton", "slider", "thumb"].indexOf(localName) >= 0) {
+							log("*** suppress starting gesture on scrollbar (" + localName + ")");	// #debug
+							break;
+						}
 					}
 					this._isMouseDownL = true;
 					this._isMouseDownM = false;	// fixed invalid state of _isMouseDownM after autoscrolling
@@ -236,9 +234,9 @@ xdGestureHandler.prototype = {
 				else if (event.button == 2) {
 					// this fixes the problem: when showing context menu of a Flash movie, 
 					// _isMouseDownR becomes true and then rocker-left will be fired with a left-click
-					var targetName = event.target.localName.toUpperCase();
-					if (targetName == "OBJECT" || targetName == "EMBED") {
-						log("*** ignore right-click on flash movie (" + targetName + ")");	// #debug
+					var localName = event.target.localName;
+					if (localName == "object" || localName == "embed") {
+						log("*** ignore right-click on flash movie (" + localName + ")");	// #debug
 						break;
 					}
 					this._isMouseDownR = true;
