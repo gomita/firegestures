@@ -23,6 +23,7 @@ let FireGesturesRemote = {
 		addMessageListener("FireGestures:KeypressStart", this);
 		addMessageListener("FireGestures:KeypressProgress", this);
 		addMessageListener("FireGestures:KeypressStop", this);
+		addMessageListener("FireGestures:SwipeGesture", this);
 		addMessageListener("FireGestures:DoCommand", this);
 		addMessageListener("FireGestures:SendKeyEvent", this);
 		addMessageListener("FireGestures:CreateTrail", this);
@@ -37,6 +38,7 @@ let FireGesturesRemote = {
 			case "FireGestures:KeypressStart"   : this._onKeypressStart(); break;
 			case "FireGestures:KeypressProgress": this._onKeypressProgress(aMsg.data); break;
 			case "FireGestures:KeypressStop"    : this._onKeypressStop(); break;
+			case "FireGestures:SwipeGesture"    : this._onSwipeGesture(aMsg.data); break;
 			case "FireGestures:DoCommand"   : this._doCommand(aMsg.data); break;
 			case "FireGestures:SendKeyEvent": this._sendKeyEvent(aMsg.data); break;
 			case "FireGestures:CreateTrail" : this._createTrail(aMsg.data); break;
@@ -76,6 +78,13 @@ let FireGesturesRemote = {
 		}
 		// tell parent browser the source node and some info
 		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt: elt });
+	},
+
+	_onSwipeGesture: function(aData) {
+		log("onSwipeGesture: " + aData.toSource());	// #debug
+		let { elt: elt } = this._elementFromPoint(aData.x, aData.y);
+		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt: elt });
+		sendSyncMessage("FireGesturesRemote:Response", { name: "swipe" }, { direction: aData.direction });
 	},
 
 	handleEvent: function(event) {
@@ -169,18 +178,6 @@ let FireGesturesRemote = {
 
 	/* ::::: Utils ::::: */
 
-//	// returns DOM element and some related data which is under the mouse pointer
-//	_elementAtPointer: function FGR__elementAtPointer() {
-//		let doc = content.document;
-//		let elt = doc.querySelector(":hover") || doc.body || doc.documentElement;
-//		while (/^i?frame$/.test(elt.localName.toLowerCase())) {
-//			doc = elt.contentDocument;
-//			elt = doc.querySelector(":hover");
-//		}
-//		log("_elementAtPointer: " + [doc.location, elt.localName].join(", "));	// #debug
-//		return elt;
-//	},
-
 	// returns DOM element and some data related which is located at given coordinates
 	_elementFromPoint: function FGR__elementFromPoint(x, y) {
 		let doc = content.document;
@@ -192,7 +189,7 @@ let FireGesturesRemote = {
 			elt = doc.elementFromPoint(x, y);
 		}
 		// log("_elementFromPoint: " + [doc.location, elt.localName, x, y].join(", "));	// #debug
-		return { doc: doc, elt: elt, x: x, y: y };
+		return { doc: doc, elt: elt };
 	},
 
 

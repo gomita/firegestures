@@ -76,10 +76,7 @@ var FireGestures = {
 
 	// receive message from remote browser
 	receiveMessage: function(aMsg) {
-		// #debug-begin
-		var val = aMsg.name + ":\n" + aMsg.data.toSource() + "\n" + (aMsg.objects.elt || aMsg.objects);
-		Services.console.logStringMessage(val);
-		// #debug-end
+		dump(aMsg.name + " " + aMsg.data.toSource() + " " + (aMsg.objects.elt || aMsg.objects.toSource()) + "\n");	// #debug
 		switch (aMsg.data.name) {
 			case "sourceNode": 
 				// replace |sourceNode| of gesture handler by CPOW object
@@ -90,6 +87,10 @@ var FireGestures = {
 				break;
 			case "cancelMouseGesture": 
 				this._gestureHandler.cancelMouseGesture();
+				break;
+			case "swipe": 
+				this.onMouseGesture(null, "swipe-" + aMsg.objects.direction);
+				this._gestureHandler.sourceNode = null;
 				break;
 			default: 
 		}

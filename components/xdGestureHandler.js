@@ -385,6 +385,16 @@ xdGestureHandler.prototype = {
 						case event.DIRECTION_UP   : direction = "up";    break;
 						case event.DIRECTION_DOWN : direction = "down";  break;
 					}
+					this._isRemote = this._drawArea.mCurrentBrowser.getAttribute("remote") == "true";
+					// [e10s] get source node and invoke extra gesture in remote
+					if (this._isRemote) {
+						this._gestureObserver.sendAsyncMessage("FireGestures:SwipeGesture", {
+							direction: direction, 
+							x: event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX, 
+							y: event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY, 
+						});
+						return;
+					}
 					this.sourceNode = event.target;
 					this._invokeExtraGesture(event, "swipe-" + direction);
 					this.sourceNode = null;
