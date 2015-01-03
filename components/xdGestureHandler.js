@@ -386,8 +386,6 @@ xdGestureHandler.prototype = {
 						case event.DIRECTION_DOWN : direction = "down";  break;
 					}
 					this.sourceNode = event.target;
-					this._lastX = event.screenX;
-					this._lastY = event.screenY;
 					this._invokeExtraGesture(event, "swipe-" + direction);
 					this.sourceNode = null;
 					return;
@@ -400,9 +398,7 @@ xdGestureHandler.prototype = {
 				this._swipeTimer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
 				this._swipeTimer.initWithCallback(this, this._swipeTimeout, Ci.nsITimer.TYPE_ONE_SHOT);
 				if (!this._directionChain) {
-					this.sourceNode = event.target;
-					this._lastX = event.screenX;
-					this._lastY = event.screenY;
+					this._startGesture(event);
 				}
 				var direction;
 				switch (event.direction) {
@@ -465,7 +461,7 @@ xdGestureHandler.prototype = {
 		tabbar.advanceSelectedTab(event.detail < 0 ? -1 : 1, true);
 	},
 
-	// called from handleEvent (type is "mousedown")
+	// called from handleEvent (type is "mousedown", "MozSwipeGesture")
 	_startGesture: function FGH__startGesture(event) {
 		if (this._drawArea.localName == "tabbrowser")
 			this._isRemote = this._drawArea.mCurrentBrowser.getAttribute("remote") == "true";
@@ -476,11 +472,12 @@ xdGestureHandler.prototype = {
 		this._directionChain = "";
 		this._shouldFireContext = false;
 		// trail drawing
-		if (this._trailEnabled)
+		if (!this._swipeTimer && this._trailEnabled)
 			this.createTrail(event);
 		// [e10s] tell remote browser that mouse gesture has started
 		if (this._isRemote) {
 			this._gestureObserver.sendAsyncMessage("FireGestures:GestureStart", {
+				type: event.type, 
 				button: event.button, 
 				x: event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX, 
 				y: event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY, 
@@ -556,7 +553,7 @@ xdGestureHandler.prototype = {
 		this._isMouseDownR = false;
 		this._clearTimeout();
 		// clear trail drawing
-		if (this._trailEnabled)
+		if (!this._swipeTimer && this._trailEnabled)
 			this.eraseTrail();
 		// don't call onMouseGesture after events sequence: mousedown > minimal mousemove > mouseup
 		if (this._directionChain) {
@@ -608,9 +605,7 @@ xdGestureHandler.prototype = {
 				this._gestureObserver.onExtraGesture(null, "gesture-timeout");
 				break;
 			case this._swipeTimer: 
-				this._gestureObserver.onMouseGesture(null, this._directionChain);
-				this.sourceNode = null;
-				this._directionChain = "";
+				this._stopGesture();
 				this._swipeTimer = null;
 				break;
 		}

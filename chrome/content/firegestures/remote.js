@@ -57,7 +57,7 @@ let FireGesturesRemote = {
 		this._startX = aData.x;
 		this._startY = aData.y;
 		let { doc: doc, elt: elt } = this._elementFromPoint(aData.x, aData.y);
-		if (aData.button == 0) {
+		if (aData.type != "MozSwipeGesture" && aData.button == 0) {
 			// cancel starting gesture on form elements
 			let localName = elt.localName;
 			if (["input", "textarea", "select", "option", "textbox", "menulist"].indexOf(localName) >= 0) {
