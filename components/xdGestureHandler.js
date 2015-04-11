@@ -688,10 +688,7 @@ xdGestureHandler.prototype = {
 		if (this._isRemote) {
 			// [e10s]
 			this._gestureObserver.sendAsyncMessage("FireGestures:DrawTrail", {
-				x1: x1 - this._drawArea.mCurrentBrowser.boxObject.screenX,
-				y1: y1 - this._drawArea.mCurrentBrowser.boxObject.screenY,
-				x2: x2 - this._drawArea.mCurrentBrowser.boxObject.screenX,
-				y2: y2 - this._drawArea.mCurrentBrowser.boxObject.screenY,
+				x1: x1, y1: y1, x2: x2, y2: y2, 
 			});
 			return;
 		}
