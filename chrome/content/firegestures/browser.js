@@ -426,6 +426,7 @@ var FireGestures = {
 					throw this._getLocaleString("ERROR_NOT_ON_IMAGE");
 				var doc = this.sourceNode.ownerDocument;
 				var skipPrompt = aCommand == "FireGestures:SaveImageNow";
+				var refURI = this.isRemote ? makeURI(doc.location.href) : doc.documentURIObject;
 				if (this.sourceNode instanceof HTMLVideoElement || 
 				    this.sourceNode instanceof HTMLAudioElement) {
 					// save video and audio
@@ -437,14 +438,12 @@ var FireGestures = {
 				}
 				else if (this.sourceNode instanceof HTMLCanvasElement) {
 					// save canvas
-					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", 
-					             false, skipPrompt, doc.documentURIObject, doc);
+					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", false, skipPrompt, refURI, doc);
 				}
 				else {
 					// save image
 					this.checkURL(mediaURL, doc);
-					saveImageURL(mediaURL, null, "SaveImageTitle", 
-					             false, skipPrompt, doc.documentURIObject, doc);
+					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, doc);
 				}
 				break;
 			case "FireGestures:WebSearch": 
