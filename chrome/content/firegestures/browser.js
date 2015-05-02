@@ -81,6 +81,7 @@ var FireGestures = {
 			case "sourceNode": 
 				// replace |sourceNode| of gesture handler by CPOW object
 				this._gestureHandler.sourceNode = aMsg.objects.elt;
+				this._selectedText = aMsg.objects.elt.ownerDocument.getSelection().toString();
 				break;
 			case "linkURLs": 
 				this._linkURLs = aMsg.data.linkURLs;
@@ -447,7 +448,7 @@ var FireGestures = {
 				}
 				break;
 			case "FireGestures:WebSearch": 
-				BrowserSearch.loadSearch(getBrowserSelection(), true);
+				BrowserSearch.loadSearch(this.getSelectedText(), true);
 				break;
 			case "FireGestures:OpenLinksInSelection": 
 				var linkURLs = this.gatherLinkURLsInSelection();
@@ -667,7 +668,13 @@ var FireGestures = {
 			return this.getImageURL(aNode);
 	},
 
+	// [e10s]
+	_selectedText: null,
+
 	getSelectedText: function() {
+		if (this.isRemote) {
+			return this._selectedText;
+		}
 		return this.focusedWindow.getSelection().toString();
 	},
 
@@ -1076,7 +1083,7 @@ var FireGestures = {
 						var engine = item.engine;
 						if (!engine)
 							break;
-						var submission = engine.getSubmission(getBrowserSelection(), null);
+						var submission = engine.getSubmission(this.getSelectedText(), null);
 						if (!submission)
 							break;
 						// [TreeStyleTab] the next line will be replaced to open child tab
