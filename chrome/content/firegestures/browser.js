@@ -357,14 +357,17 @@ var FireGestures = {
 				finally { nsContextMenu.prototype.target = null; }
 				break;
 			// @see nsContextMenu::openLink()
+			// @see nsContextMenu::openLinkInPrivateWindow()
 			case "FireGestures:OpenLink": 
+			case "FireGestures:OpenLinkInPrivateWindow": 
 				var linkURL = this.getLinkURL();
 				if (!linkURL)
 					throw this._getLocaleString("ERROR_NOT_ON_LINK");
 				var doc = this.sourceNode.ownerDocument;
 				this.checkURL(linkURL, doc);
 				openLinkIn(linkURL, "window", {
-					charset: doc.characterSet, referrerURI: doc.documentURIObject
+					charset: doc.characterSet, referrerURI: doc.documentURIObject, 
+					private: aCommand == "FireGestures:OpenLinkInPrivateWindow"
 				});
 				break;
 			case "FireGestures:OpenLinkInBgTab": 
@@ -379,17 +382,6 @@ var FireGestures = {
 					referrerURI: doc.documentURIObject, charset: doc.characterSet, 
 					inBackground: aCommand == "FireGestures:OpenLinkInBgTab", 
 					relatedToCurrent: true
-				});
-				break;
-			// @see nsContextMenu::openLinkInPrivateWindow()
-			case "FireGestures:OpenLinkInPrivateWindow": 
-				var linkURL = this.getLinkURL();
-				if (!linkURL)
-					throw this._getLocaleString("ERROR_NOT_ON_LINK");
-				var doc = this.sourceNode.ownerDocument;
-				this.checkURL(linkURL, doc);
-				openLinkIn(linkURL, "window", {
-					charset: doc.characterSet, referrerURI: doc.documentURIObject, private: true
 				});
 				break;
 			// @see browser.xul menuitem#context-bookmarklink@oncommand
@@ -707,7 +699,6 @@ var FireGestures = {
 
 	// wrapper function of |urlSecurityCheck|
 	checkURL: function(aURL, aDoc, aFlags) {
-		// [e10s] get remote principal @see nsContextMenu._unremotePrincipal
 		if (this.isRemote) {
 			let principal = Cc["@mozilla.org/scriptsecuritymanager;1"].
 			                getService(Ci.nsIScriptSecurityManager).
