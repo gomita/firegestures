@@ -645,123 +645,67 @@ xdGestureHandler.prototype = {
 
 	/* ::::: MOUSE TRAIL ::::: */
 
-	_trailDot: null,
 	_trailArea: null,
-	_trailLastDot: null,
+	_trailContext: null,
 	_trailOffsetX: 0,
 	_trailOffsetY: 0,
-	_trailZoom: 1,
 
 	// called from _startGesture
 	createTrail: function FGH_createTrail(event) {
-		if (this._isRemote) {
-			// [e10s]
-			this._gestureObserver.sendAsyncMessage("FireGestures:CreateTrail", {
-				size : this._trailSize,
-				color: this._trailColor,
-				zoom : this._drawArea.fullZoom || 1,
-			});
-			return;
-		}
-		var win = this.sourceNode.ownerDocument.defaultView;
-		if (win.top.document instanceof Ci.nsIDOMHTMLDocument)
-			win = win.top;
-		else if (win.document instanceof Ci.nsIDOMHTMLDocument === false)
-			return;
-		var doc = win.document;
-		this._trailZoom = this._drawArea.fullZoom || 1;
-		this._trailOffsetX = (win.mozInnerScreenX - win.scrollX) * this._trailZoom;
-		this._trailOffsetY = (win.mozInnerScreenY - win.scrollY) * this._trailZoom;
-		this._trailArea = doc.createElementNS(HTML_NS, "xdTrailArea");
-		(doc.documentElement || doc).appendChild(this._trailArea);
-		this._trailDot = doc.createElementNS(HTML_NS, "xdTrailDot");
-		this._trailDot.style.width = this._trailSize + "px";
-		this._trailDot.style.height = this._trailSize + "px";
-		this._trailDot.style.background = this._trailColor;
-		this._trailDot.style.border = "0px";
-		this._trailDot.style.position = "absolute";
-		this._trailDot.style.zIndex = 2147483647;
+		var doc = this._drawArea.ownerDocument;
+		var box = doc.documentElement.boxObject;
+		var css = "-moz-user-focus: none !important;"
+		        + "-moz-user-select: none !important;"
+		        + "display: -moz-box !important;"
+		        + "box-sizing: border-box !important;"
+		        + "pointer-events: none !important;"
+		        + "margin: 0 !important;"
+		        + "padding: 0 !important;"
+		        + "width: 100% !important;"
+		        + "height: 100% !important;"
+		        + "border: none !important;"
+		        + "box-shadow: none !important;"
+		        + "overflow: hidden !important;"
+		        + "background: none !important;"
+		        + "opacity: 0.6 !important;"
+		        + "position: fixed !important;"
+		        + "top:  " + box.y + "px !important;"
+		        + "left: " + box.x + "px !important;"
+		        + "z-index: 2147483647 !important;";
+		this._trailArea = doc.createElement("hbox");
+		this._trailArea.style.cssText = css;
+		this._trailOffsetX = box.screenX;
+		this._trailOffsetY = box.screenY;
+		var canvas = doc.createElementNS(HTML_NS, "canvas");
+		canvas.setAttribute("width",  box.width);
+		canvas.setAttribute("height", box.height);
+		this._trailArea.appendChild(canvas);
+		doc.documentElement.appendChild(this._trailArea);
+		this._trailContext = canvas.getContext("2d");
 	},
 
 	// called from _progressGesture
 	drawTrail: function FGH_drawTrail(x1, y1, x2, y2) {
-		if (this._isRemote) {
-			// [e10s]
-			this._gestureObserver.sendAsyncMessage("FireGestures:DrawTrail", {
-				x1: x1, y1: y1, x2: x2, y2: y2, 
-			});
-			return;
-		}
 		if (!this._trailArea)
 			return;
-		var xMove = x2 - x1;
-		var yMove = y2 - y1;
-		var xDecrement = xMove < 0 ? 1 : -1;
-		var yDecrement = yMove < 0 ? 1 : -1;
-		x2 -= this._trailOffsetX;
-		y2 -= this._trailOffsetY;
-		if (Math.abs(xMove) >= Math.abs(yMove))
-			for (var i = xMove; i != 0; i += xDecrement)
-				this._strokeDot(x2 - i, y2 - Math.round(yMove * i / xMove));
-		else
-			for (var i = yMove; i != 0; i += yDecrement)
-				this._strokeDot(x2 - Math.round(xMove * i / yMove), y2 - i);
+		var context = this._trailContext;
+		context.strokeStyle = this._trailColor;
+		context.lineJoin = "round";
+		context.lineWidth = this._trailSize;
+		context.beginPath();
+		context.moveTo(x1 - this._trailOffsetX, y1 - this._trailOffsetY);
+		context.lineTo(x2 - this._trailOffsetX, y2 - this._trailOffsetY);
+		context.closePath();
+		context.stroke();
 	},
 
 	// called from _stopGesture
 	eraseTrail: function FGH_eraseTrail() {
-		if (this._isRemote) {
-			// [e10s]
-			this._gestureObserver.sendAsyncMessage("FireGestures:EraseTrail", {});
-			return;
-		}
 		if (this._trailArea && this._trailArea.parentNode) {
-			while (this._trailArea.lastChild)
-				this._trailArea.removeChild(this._trailArea.lastChild);
 			this._trailArea.parentNode.removeChild(this._trailArea);
 		}
-		this._trailDot = null;
 		this._trailArea = null;
-		this._trailLastDot = null;
-	},
-
-	// called from drawTrail
-	_strokeDot: function FGH__strokeDot(x, y) {
-		if (this._trailArea.y == y && this._trailArea.h == this._trailSize) {
-			// draw vertical line
-			var newX = Math.min(this._trailArea.x, x);
-			var newW = Math.max(this._trailArea.x + this._trailArea.w, x + this._trailSize) - newX;
-			this._trailArea.x = newX;
-			this._trailArea.w = newW;
-			this._trailLastDot.style.left  = newX.toString() + "px";
-			this._trailLastDot.style.width = newW.toString() + "px";
-			return;
-		}
-		else if (this._trailArea.x == x && this._trailArea.w == this._trailSize) {
-			// draw horizontal line
-			var newY = Math.min(this._trailArea.y, y);
-			var newH = Math.max(this._trailArea.y + this._trailArea.h, y + this._trailSize) - newY;
-			this._trailArea.y = newY;
-			this._trailArea.h = newH;
-			this._trailLastDot.style.top    = newY.toString() + "px";
-			this._trailLastDot.style.height = newH.toString() + "px";
-			return;
-		}
-		if (this._trailZoom != 1) {
-			x = Math.floor(x / this._trailZoom);
-			y = Math.floor(y / this._trailZoom);
-		}
-		var dot = this._trailDot.cloneNode(true);
-		dot.style.left = x + "px";
-		dot.style.top = y + "px";
-		this._trailArea.x = x;
-		this._trailArea.y = y;
-		this._trailArea.w = this._trailSize;
-		this._trailArea.h = this._trailSize;
-		this._trailArea.appendChild(dot);
-		this._trailLastDot = dot;
-		// log("_strokeDot(" + x + ", " + y + ")");	// #debug
-		// dot.style.outline = "1px solid blue";	// #debug
+		this._trailContext = null;
 	},
 
 };

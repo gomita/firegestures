@@ -26,9 +26,6 @@ let FireGesturesRemote = {
 		addMessageListener("FireGestures:SwipeGesture", this);
 		addMessageListener("FireGestures:DoCommand", this);
 		addMessageListener("FireGestures:SendKeyEvent", this);
-		addMessageListener("FireGestures:CreateTrail", this);
-		addMessageListener("FireGestures:DrawTrail", this);
-		addMessageListener("FireGestures:EraseTrail", this);
 	},
 
 	receiveMessage: function FGR_receiveMessage(aMsg) {
@@ -41,9 +38,6 @@ let FireGesturesRemote = {
 			case "FireGestures:SwipeGesture"    : this._onSwipeGesture(aMsg.data); break;
 			case "FireGestures:DoCommand"   : this._doCommand(aMsg.data); break;
 			case "FireGestures:SendKeyEvent": this._sendKeyEvent(aMsg.data); break;
-			case "FireGestures:CreateTrail" : this._createTrail(aMsg.data); break;
-			case "FireGestures:DrawTrail"   : this._drawTrail(aMsg.data); break;
-			case "FireGestures:EraseTrail"  : this._eraseTrail(); break;
 		}
 	},
 
@@ -206,101 +200,6 @@ let FireGesturesRemote = {
 		return { doc, elt };
 	},
 
-
-	/* ::::: Mouse Trail ::::: */
-
-	_trailSize: 0,
-	_trailColor: "",
-	_trailZoom: 1,
-	_trailDot: null,
-	_trailArea: null,
-	_trailLastDot: null,
-	_trailOffsetX: 0,
-	_trailOffsetY: 0,
-
-	_createTrail: function FGR__createTrail(aData) {
-		let win = content.window;
-		let doc = content.document;
-		this._trailSize  = aData.size;
-		this._trailColor = aData.color;
-		this._trailZoom  = aData.zoom;
-		this._trailOffsetX = (win.mozInnerScreenX - win.scrollX) * this._trailZoom;
-		this._trailOffsetY = (win.mozInnerScreenY - win.scrollY) * this._trailZoom;
-		this._trailArea = doc.createElementNS(HTML_NS, "xdTrailArea");
-		(doc.documentElement || doc).appendChild(this._trailArea);
-		this._trailDot = doc.createElementNS(HTML_NS, "xdTrailDot");
-		this._trailDot.style.width = this._trailSize + "px";
-		this._trailDot.style.height = this._trailSize + "px";
-		this._trailDot.style.background = this._trailColor;
-		this._trailDot.style.border = "0px";
-		this._trailDot.style.position = "absolute";
-		this._trailDot.style.zIndex = 2147483647;
-	},
-
-	_drawTrail: function FGR__drawTrail(aData) {
-		if (!this._trailArea)
-			return;
-		let x1 = aData.x1, y1 = aData.y1, x2 = aData.x2, y2 = aData.y2;
-		let xMove = x2 - x1;
-		let yMove = y2 - y1;
-		let xDecrement = xMove < 0 ? 1 : -1;
-		let yDecrement = yMove < 0 ? 1 : -1;
-		x2 -= this._trailOffsetX;
-		y2 -= this._trailOffsetY;
-		if (Math.abs(xMove) >= Math.abs(yMove))
-			for (let i = xMove; i != 0; i += xDecrement)
-				this._strokeDot(x2 - i, y2 - Math.round(yMove * i / xMove));
-		else
-			for (let i = yMove; i != 0; i += yDecrement)
-				this._strokeDot(x2 - Math.round(xMove * i / yMove), y2 - i);
-	},
-
-	_eraseTrail: function FGR__eraseTrail() {
-		if (this._trailArea && this._trailArea.parentNode) {
-			while (this._trailArea.lastChild)
-				this._trailArea.removeChild(this._trailArea.lastChild);
-			this._trailArea.parentNode.removeChild(this._trailArea);
-		}
-		this._trailDot = null;
-		this._trailArea = null;
-		this._trailLastDot = null;
-	},
-
-	_strokeDot: function FGR__strokeDot(x, y) {
-		if (this._trailArea.y == y && this._trailArea.h == this._trailSize) {
-			// draw vertical line
-			let newX = Math.min(this._trailArea.x, x);
-			let newW = Math.max(this._trailArea.x + this._trailArea.w, x + this._trailSize) - newX;
-			this._trailArea.x = newX;
-			this._trailArea.w = newW;
-			this._trailLastDot.style.left  = newX.toString() + "px";
-			this._trailLastDot.style.width = newW.toString() + "px";
-			return;
-		}
-		else if (this._trailArea.x == x && this._trailArea.w == this._trailSize) {
-			// draw horizontal line
-			let newY = Math.min(this._trailArea.y, y);
-			let newH = Math.max(this._trailArea.y + this._trailArea.h, y + this._trailSize) - newY;
-			this._trailArea.y = newY;
-			this._trailArea.h = newH;
-			this._trailLastDot.style.top    = newY.toString() + "px";
-			this._trailLastDot.style.height = newH.toString() + "px";
-			return;
-		}
-		if (this._trailZoom != 1) {
-			x = Math.floor(x / this._trailZoom);
-			y = Math.floor(y / this._trailZoom);
-		}
-		let dot = this._trailDot.cloneNode(true);
-		dot.style.left = x + "px";
-		dot.style.top = y + "px";
-		this._trailArea.x = x;
-		this._trailArea.y = y;
-		this._trailArea.w = this._trailSize;
-		this._trailArea.h = this._trailSize;
-		this._trailArea.appendChild(dot);
-		this._trailLastDot = dot;
-	},
 
 };
 
