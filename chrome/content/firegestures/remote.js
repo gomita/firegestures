@@ -58,7 +58,7 @@ let FireGesturesRemote = {
 		log("onStartGesture: " + aData.toSource());	// #debug
 		this._startX = aData.x;
 		this._startY = aData.y;
-		let { doc: doc, elt: elt } = this._elementFromPoint(aData.x, aData.y);
+		let { doc, elt } = this._elementFromPoint(aData.x, aData.y);
 		if (aData.type != "MozSwipeGesture" && aData.button == 0) {
 			// cancel starting gesture on form elements
 			let localName = elt.localName;
@@ -77,14 +77,28 @@ let FireGesturesRemote = {
 				win.setTimeout(function() { sel.removeAllRanges(); }, 10);
 		}
 		// tell parent browser the source node and some info
-		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt: elt });
+		let sel = this._getSelectedText(doc, elt);
+		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt, sel });
 	},
 
 	_onSwipeGesture: function(aData) {
 		log("onSwipeGesture: " + aData.toSource());	// #debug
-		let { elt: elt } = this._elementFromPoint(aData.x, aData.y);
-		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt: elt });
+		let { doc, elt } = this._elementFromPoint(aData.x, aData.y);
+		let sel = this._getSelectedText(doc, elt);
+		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt, sel });
 		sendSyncMessage("FireGesturesRemote:Response", { name: "swipe" }, { direction: aData.direction });
+	},
+
+	_getSelectedText: function(doc, elt) {
+		// @see BrowserUtils.getSelectionDetails
+		let sel = doc.defaultView.getSelection().toString();
+		if (!sel && elt instanceof Ci.nsIDOMNSEditableElement) {
+			if (elt instanceof Ci.nsIDOMHTMLTextAreaElement || 
+			    (elt instanceof Ci.nsIDOMHTMLInputElement && elt.mozIsTextField(true))) {
+				sel = elt.editor.selection.toString();
+			}
+		}
+		return sel;
 	},
 
 	handleEvent: function(event) {
@@ -111,7 +125,7 @@ let FireGesturesRemote = {
 	},
 
 	_onKeypressProgress: function FGR__onKeypressProgress(aData) {
-		let { doc: doc, elt: elt } = this._elementFromPoint(aData.x, aData.y);
+		let { doc, elt } = this._elementFromPoint(aData.x, aData.y);
 		let linkURL = this.getLinkURL(elt);
 		if (!this._linkURLs)
 			this._linkURLs = [];
@@ -161,7 +175,7 @@ let FireGesturesRemote = {
 	},
 
 	_sendKeyEvent: function FGR__sendKeyEvent(aOptions) {
-		let { elt: elt, doc: doc } = this._elementFromPoint(this._startX, this._startY);
+		let { doc, elt } = this._elementFromPoint(this._startX, this._startY);
 		let evt = doc.createEvent("KeyEvents");
 		evt.initKeyEvent(
 			"keypress", true, true, null, 
@@ -189,7 +203,7 @@ let FireGesturesRemote = {
 			elt = doc.elementFromPoint(x, y);
 		}
 		// log("_elementFromPoint: " + [doc.location, elt.localName, x, y].join(", "));	// #debug
-		return { doc: doc, elt: elt };
+		return { doc, elt };
 	},
 
 

@@ -81,7 +81,7 @@ var FireGestures = {
 			case "sourceNode": 
 				// replace |sourceNode| of gesture handler by CPOW object
 				this._gestureHandler.sourceNode = aMsg.objects.elt;
-				this._selectedText = aMsg.objects.elt.ownerDocument.getSelection().toString();
+				this._selectedText = aMsg.objects.sel;
 				break;
 			case "linkURLs": 
 				this._linkURLs = aMsg.data.linkURLs;
@@ -664,10 +664,19 @@ var FireGestures = {
 	_selectedText: null,
 
 	getSelectedText: function() {
+		// [e10s]
 		if (this.isRemote) {
 			return this._selectedText;
 		}
-		return this.focusedWindow.getSelection().toString();
+		var [elt, win] = BrowserUtils.getFocusSync(document);
+		var sel = win.getSelection().toString();
+		if (!sel && elt instanceof Ci.nsIDOMNSEditableElement) {
+			if (elt instanceof Ci.nsIDOMHTMLTextAreaElement || 
+			    (elt instanceof Ci.nsIDOMHTMLInputElement && elt.mozIsTextField(true))) {
+				sel = elt.editor.selection.toString();
+			}
+		}
+		return sel;
 	},
 
 	gatherLinkURLsInSelection: function() {
