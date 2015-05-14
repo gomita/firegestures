@@ -19,29 +19,6 @@
  *
  * Contributor(s):
  *
- *     The Mouse Trails part in "xdGestureHandler.js" is derived from 
- *     Optimoz Mouse Gestures extension.
- *
- *     The Original Code is Mouse Gesture for Mozilla.
- *
- *     The Initial Developer of the Original Code is Jens Bannmann.
- *     Portions created by the Initial Developer are Copyright (C) 2003
- *     the Initial Developer. All Rights Reserved.
- *
- *     Contributor(s):
- *         Jens Bannmann <jens.b@web.de>
- *         Jochen <bugs@krickelkrackel.de>
- *         Mike Kozlowski <mozdev@klio.org>
- *
- *     Some parts in "xdGestureHandler.js" is derived from 
- *     All-in-One Gestures extension.
- *
- *     The Original Code is the "All-in-One Gestures" extension for Phoenix.
- *
- *     The Initial Developer of the Original Code is Marc Boullet <boullet.marc@orange.fr>
- *     Portions created by Marc Boullet are Copyright (C) 2003, 
- *     Marc Boullet. All Rights Reserved.
- *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
  * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
