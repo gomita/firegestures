@@ -108,6 +108,8 @@ xdGestureHandler.prototype = {
 		}
 		this.sourceNode = null;
 		this._drawArea = null;
+		this._trailArea = null;
+		this._trailContext = null;
 		this._gestureObserver = null;
 		// log("detach()");	// #debug
 	},
@@ -652,6 +654,10 @@ xdGestureHandler.prototype = {
 
 	// called from _startGesture
 	createTrail: function FGH_createTrail(event) {
+		if (this._trailArea) {
+			this._trailArea.style.display = "-moz-box";
+			return;
+		}
 		var doc = this._drawArea.ownerDocument;
 		var box = doc.documentElement.boxObject;
 		var css = "-moz-user-focus: none !important;"
@@ -673,6 +679,7 @@ xdGestureHandler.prototype = {
 		        + "left: " + box.x + "px !important;"
 		        + "z-index: 2147483647 !important;";
 		this._trailArea = doc.createElement("hbox");
+		this._trailArea.id = "FireGesturesTrail";
 		this._trailArea.style.cssText = css;
 		this._trailOffsetX = box.screenX;
 		this._trailOffsetY = box.screenY;
@@ -701,11 +708,11 @@ xdGestureHandler.prototype = {
 
 	// called from _stopGesture
 	eraseTrail: function FGH_eraseTrail() {
-		if (this._trailArea && this._trailArea.parentNode) {
-			this._trailArea.parentNode.removeChild(this._trailArea);
-		}
-		this._trailArea = null;
-		this._trailContext = null;
+		if (!this._trailArea)
+			return;
+		var canvas = this._trailArea.firstChild;
+		this._trailContext.clearRect(0, 0, canvas.getAttribute("width"), canvas.getAttribute("height"));
+		this._trailArea.style.display = "none";
 	},
 
 };
