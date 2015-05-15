@@ -485,7 +485,7 @@ xdGestureHandler.prototype = {
 		this._shouldFireContext = false;
 		// trail drawing
 		if (!this._swipeTimer && this._trailEnabled)
-			this.createTrail(event);
+			this._createTrail();
 		// [e10s] tell remote browser that mouse gesture has started
 		if (this._isRemote) {
 			this._gestureObserver.sendAsyncMessage("FireGestures:GestureStart", {
@@ -514,7 +514,7 @@ xdGestureHandler.prototype = {
 			direction = y < this._lastY ? "U" : "D";
 		// trail drawing
 		if (this._trailEnabled)
-			this.drawTrail(this._lastX, this._lastY, x, y);
+			this._drawTrail(this._lastX, this._lastY, x, y);
 		// remember the current position
 		this._lastX = x;
 		this._lastY = y;
@@ -541,7 +541,7 @@ xdGestureHandler.prototype = {
 		}
 		// clear trail drawing when invoking extra gesture except keypress gesture
 		if (this._state != STATE_KEYPRESS && this._trailEnabled)
-			this.eraseTrail();
+			this._eraseTrail();
 		// Fixed bug: FireGestures.sourceNode is null when doing rocker-right
 		if (!this.sourceNode)
 			this.sourceNode = event.target;
@@ -566,7 +566,7 @@ xdGestureHandler.prototype = {
 		this._clearTimeout();
 		// clear trail drawing
 		if (!this._swipeTimer && this._trailEnabled)
-			this.eraseTrail();
+			this._eraseTrail();
 		// don't call onMouseGesture after events sequence: mousedown > minimal mousemove > mouseup
 		if (this._directionChain) {
 			this._gestureObserver.onMouseGesture(event, this._directionChain);
@@ -653,7 +653,7 @@ xdGestureHandler.prototype = {
 	_trailOffsetY: 0,
 
 	// called from _startGesture
-	createTrail: function FGH_createTrail(event) {
+	_createTrail: function FGH__createTrail() {
 		if (this._trailArea) {
 			this._trailArea.style.display = "-moz-box";
 			return;
@@ -692,7 +692,7 @@ xdGestureHandler.prototype = {
 	},
 
 	// called from _progressGesture
-	drawTrail: function FGH_drawTrail(x1, y1, x2, y2) {
+	_drawTrail: function FGH__drawTrail(x1, y1, x2, y2) {
 		if (!this._trailArea)
 			return;
 		var context = this._trailContext;
@@ -706,8 +706,8 @@ xdGestureHandler.prototype = {
 		context.stroke();
 	},
 
-	// called from _stopGesture
-	eraseTrail: function FGH_eraseTrail() {
+	// called from _stopGesture, _invokeExtraGesture
+	_eraseTrail: function FGH__eraseTrail() {
 		if (!this._trailArea)
 			return;
 		var canvas = this._trailArea.firstChild;
