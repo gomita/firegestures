@@ -668,7 +668,8 @@ var FireGestures = {
 		if (this.isRemote) {
 			return this._selectedText;
 		}
-		var [elt, win] = BrowserUtils.getFocusSync(document);
+		var win = document.commandDispatcher.focusedWindow;
+		var elt = document.commandDispatcher.focusedElement;
 		var sel = win.getSelection().toString();
 		if (!sel && elt instanceof Ci.nsIDOMNSEditableElement) {
 			if (elt instanceof Ci.nsIDOMHTMLTextAreaElement || 
