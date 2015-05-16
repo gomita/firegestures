@@ -335,6 +335,7 @@ var FireGestures = {
 				if (docShell.isCommandEnabled(aCommand))
 					docShell.doCommand(aCommand);
 				break;
+			// @see nsContextMenu::showOnlyThisFrame()
 			case "FireGestures:ShowOnlyThisFrame": 
 				var doc = this.sourceNode.ownerDocument;
 				var docURL = doc.location.href;
@@ -342,19 +343,58 @@ var FireGestures = {
 				this.checkURL(docURL, doc.defaultView.top.document, Ci.nsIScriptSecurityManager.DISALLOW_SCRIPT);
 				openUILinkIn(docURL, "current", { disallowInheritPrincipal: true, referrerURI: refURI });
 				break;
+			// @see nsContextMenu::openFrame()
+			// @see nsContextMenu::openFrameInTab()
 			case "FireGestures:OpenFrame": 
 			case "FireGestures:OpenFrameInTab": 
+				var doc = this.sourceNode.ownerDocument;
+				var docURL = doc.location.href;
+				var refURI = doc.referrer ? makeURI(doc.referrer) : null;
+				openLinkIn(docURL, aCommand == "FireGestures:OpenFrame" ? "window" : "tab", {
+					charset: doc.characterSet, referrerURI: refURI
+				});
+				break;
 			case "FireGestures:ReloadFrame": 
+				this.sourceNode.ownerDocument.location.reload();
+				break;
+			// @see nsContextMenu::addBookmarkForFrame()
 			case "FireGestures:AddBookmarkForFrame": 
+				var doc = this.sourceNode.ownerDocument;
+				var docURI = makeURI(doc.location.href);
+				var itemId = PlacesUtils.getMostRecentBookmarkForURI(docURI);
+				if (itemId == -1) {
+					PlacesUIUtils.showBookmarkDialog({
+						action: "add", type: "bookmark", uri: docURI, title: doc.title, 
+						description: PlacesUIUtils.getDescriptionFromDocument(doc), 
+						hiddenRows: ["description", "location", "loadInSidebar", "keyword" ]
+					}, window.top);
+				}
+				else {
+					PlacesUIUtils.showBookmarkDialog({
+						action: "edit", type: "bookmark", itemId: itemId
+					}, window.top);
+				}
+				break;
 			case "FireGestures:SaveFrame": 
+				saveDocument(this.sourceNode.ownerDocument);
+				break;
+			// @see nsContextMenu::viewFrameSource
 			case "FireGestures:ViewFrameSource": 
+				// [e10s]
+				if (this.isRemote) {
+					var doc = this.sourceNode.ownerDocument;
+					var frameID = doc.defaultView.QueryInterface(Ci.nsIInterfaceRequestor).
+					              getInterface(Ci.nsIDOMWindowUtils).outerWindowID;
+					BrowserViewSourceOfDocument({
+						browser: gBrowser.mCurrentBrowser, URL: doc.location.href, 
+						outerWindowID: frameID
+					});
+					return;
+				}
+				BrowserViewSourceOfDocument(this.sourceNode.ownerDocument);
+				break;
 			case "FireGestures:ViewFrameInfo": 
-				// XXXtotally hack!
-				var funcName = aCommand.substr("FireGestures:".length);
-				funcName = funcName.charAt(0).toLowerCase() + funcName.substr(1);
-				nsContextMenu.prototype.target = this.sourceNode;
-				try { nsContextMenu.prototype[funcName](); }
-				finally { nsContextMenu.prototype.target = null; }
+				BrowserPageInfo(this.sourceNode.ownerDocument);
 				break;
 			// @see nsContextMenu::openLink()
 			// @see nsContextMenu::openLinkInPrivateWindow()
@@ -510,7 +550,7 @@ var FireGestures = {
 				if (this.getSelectedText())
 					nsContextMenu.prototype.viewPartialSource("selection");
 				else
-					BrowserViewSourceOfDocument(this.sourceNode.ownerDocument);
+					this._performAction(event, "FireGestures:ViewFrameSource");
 				break;
 			case "FireGestures:AllTabsPopup": 
 			case "FireGestures:BFHistoryPopup": 
