@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "ブックマーク">
 <!ENTITY gestureCmd.hybridViewSource "ソースを表示">
 <!ENTITY gestureCmd.hybridProperties "プロパティ">
-<!ENTITY gestureCmd.hybridSendURL "URL をメールで送信...">
 <!ENTITY gestureCmd.hybridCopyURL "URL をコピー">
 <!ENTITY gestureCmd.toggleFindbar "検索バーを開く / 閉じる">
 <!ENTITY gestureCmd.restartApp "Firefox を再起動">

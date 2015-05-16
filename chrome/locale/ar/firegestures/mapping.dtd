@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "علامة…">
 <!ENTITY gestureCmd.hybridViewSource "أظهر المصدر">
 <!ENTITY gestureCmd.hybridProperties "الخصائص">
-<!ENTITY gestureCmd.hybridSendURL "أرسل…">
 <!ENTITY gestureCmd.hybridCopyURL "إنسخ المكان">
 <!ENTITY gestureCmd.toggleFindbar "إفتح / أغلق شريط البحث">
 <!ENTITY gestureCmd.restartApp "أعد تشغيل فايرفوكس">

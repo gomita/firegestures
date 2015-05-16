@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Dodaj zakładkę…">
 <!ENTITY gestureCmd.hybridViewSource "Pokaż źródło">
 <!ENTITY gestureCmd.hybridProperties "Właściwości">
-<!ENTITY gestureCmd.hybridSendURL "Wyślij…">
 <!ENTITY gestureCmd.hybridCopyURL "Kopiuj lokalizację">
 <!ENTITY gestureCmd.toggleFindbar "Otwórz/Zamknij pasek wyszukiwania">
 <!ENTITY gestureCmd.restartApp "Uruchom ponownie Firefoksa">

@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Yer İmi...">
 <!ENTITY gestureCmd.hybridViewSource "Kaynağı Göster">
 <!ENTITY gestureCmd.hybridProperties "Özellikler">
-<!ENTITY gestureCmd.hybridSendURL "Gönder...">
 <!ENTITY gestureCmd.hybridCopyURL "Konumu Kopyala">
 <!ENTITY gestureCmd.toggleFindbar "Arama Çubuğunu Aç/ Kapat">
 <!ENTITY gestureCmd.restartApp "Firefox&apos;u Baştan Başlat">

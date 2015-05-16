@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Bladwijzer...">
 <!ENTITY gestureCmd.hybridViewSource "Bron Bekijken">
 <!ENTITY gestureCmd.hybridProperties "Eigenschappen">
-<!ENTITY gestureCmd.hybridSendURL "Verzenden...">
 <!ENTITY gestureCmd.hybridCopyURL "Locatie Kopiëren">
 <!ENTITY gestureCmd.toggleFindbar "Zoekbalk Openen / Sluiten">
 <!ENTITY gestureCmd.restartApp "Firefox Herstarten">

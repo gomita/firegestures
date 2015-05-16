@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Đánh dấu...">
 <!ENTITY gestureCmd.hybridViewSource "Xem mã nguồn">
 <!ENTITY gestureCmd.hybridProperties "Thuộc tính">
-<!ENTITY gestureCmd.hybridSendURL "Gửi...">
 <!ENTITY gestureCmd.hybridCopyURL "Chép địa chỉ">
 <!ENTITY gestureCmd.toggleFindbar "Mở/Đóng Thanh tìm kiếm">
 <!ENTITY gestureCmd.restartApp "Khởi động lại Firefox">

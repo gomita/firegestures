@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "加到书签...">
 <!ENTITY gestureCmd.hybridViewSource "查看源代码">
 <!ENTITY gestureCmd.hybridProperties "属性">
-<!ENTITY gestureCmd.hybridSendURL "发送...">
 <!ENTITY gestureCmd.hybridCopyURL "复制地址">
 <!ENTITY gestureCmd.toggleFindbar "打开/关闭 查找栏">
 <!ENTITY gestureCmd.restartApp "重启Firefox">

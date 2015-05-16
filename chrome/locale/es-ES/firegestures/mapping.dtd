@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Añadir a marcadores...">
 <!ENTITY gestureCmd.hybridViewSource "Ver fuente">
 <!ENTITY gestureCmd.hybridProperties "Propiedades">
-<!ENTITY gestureCmd.hybridSendURL "Enviar...">
 <!ENTITY gestureCmd.hybridCopyURL "Copiar ubicación">
 <!ENTITY gestureCmd.toggleFindbar "Abrir / Cerrar barra de búsqueda">
 <!ENTITY gestureCmd.restartApp "Reiniciar Firefox">

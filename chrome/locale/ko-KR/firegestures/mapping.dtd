@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "북마크에 추가">
 <!ENTITY gestureCmd.hybridViewSource "소스 보기">
 <!ENTITY gestureCmd.hybridProperties "속성">
-<!ENTITY gestureCmd.hybridSendURL "보내기...">
 <!ENTITY gestureCmd.hybridCopyURL "위치 복사">
 <!ENTITY gestureCmd.toggleFindbar "검색 막대 열기/닫기">
 <!ENTITY gestureCmd.restartApp "Firefox 재시작">

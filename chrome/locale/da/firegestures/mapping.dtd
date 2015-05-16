@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Bogmærk…">
 <!ENTITY gestureCmd.hybridViewSource "Vis sidens kildekode">
 <!ENTITY gestureCmd.hybridProperties "Egenskaber">
-<!ENTITY gestureCmd.hybridSendURL "Send…">
 <!ENTITY gestureCmd.hybridCopyURL "Kopier linkadresse">
 <!ENTITY gestureCmd.toggleFindbar "Åbn / Luk søgebjælke">
 <!ENTITY gestureCmd.restartApp "Genstart Firefox">

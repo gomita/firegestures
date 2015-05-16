@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Luo kirjanmerkki...">
 <!ENTITY gestureCmd.hybridViewSource "Näytä lähdekoodi">
 <!ENTITY gestureCmd.hybridProperties "Ominaisuudet">
-<!ENTITY gestureCmd.hybridSendURL "Lähetä...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopioi sijainti">
 <!ENTITY gestureCmd.toggleFindbar "Avaa / sulje etsintäpalkki">
 <!ENTITY gestureCmd.restartApp "Käynnistä Firefox uudelleen">

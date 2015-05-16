@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Žymelė...">
 <!ENTITY gestureCmd.hybridViewSource "Žiūrėti pradinį kodą">
 <!ENTITY gestureCmd.hybridProperties "Savybės">
-<!ENTITY gestureCmd.hybridSendURL "Siųsti...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopijuoti vietą">
 <!ENTITY gestureCmd.toggleFindbar "Atverti / Užverti paieškos juostą">
 <!ENTITY gestureCmd.restartApp "Paleisti iš naujo Firefox">

@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Přidat do záložek...">
 <!ENTITY gestureCmd.hybridViewSource "Zobrazit zdrojový kód">
 <!ENTITY gestureCmd.hybridProperties "Vlastnosti">
-<!ENTITY gestureCmd.hybridSendURL "Odeslat">
 <!ENTITY gestureCmd.hybridCopyURL "Kopírovat URL">
 <!ENTITY gestureCmd.toggleFindbar "Zobrazit / Skrýt panel vyhledávání">
 <!ENTITY gestureCmd.restartApp "Restartovat Firefox">

@@ -493,13 +493,6 @@ var FireGestures = {
 				// call _performAction again
 				this._performAction(event, aCommand);
 				break;
-			case "FireGestures:HybridSendURL": 
-				var url = this.getLinkURL() || this.getImageURL();
-				if (url)
-					MailIntegration.sendMessage(url, "");
-				else
-					MailIntegration.sendLinkForWindow(this.focusedWindow);
-				break;
 			case "FireGestures:HybridCopyURL": 
 				var url = this.getLinkURL() || this.getImageURL() || 
 				          this.sourceNode.ownerDocument.location.href;

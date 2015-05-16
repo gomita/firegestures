@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Закладка...">
 <!ENTITY gestureCmd.hybridViewSource "Просмотреть исходный код">
 <!ENTITY gestureCmd.hybridProperties "Свойства">
-<!ENTITY gestureCmd.hybridSendURL "Отправить...">
 <!ENTITY gestureCmd.hybridCopyURL "Копировать адрес">
 <!ENTITY gestureCmd.toggleFindbar "Открыть / Закрыть панель поиска">
 <!ENTITY gestureCmd.restartApp "Перезапустить Firefox">

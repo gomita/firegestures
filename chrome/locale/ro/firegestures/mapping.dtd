@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Semn de carte…">
 <!ENTITY gestureCmd.hybridViewSource "Afișează codul sursă">
 <!ENTITY gestureCmd.hybridProperties "Proprietăți">
-<!ENTITY gestureCmd.hybridSendURL "Trimite…">
 <!ENTITY gestureCmd.hybridCopyURL "Copiază adresa locației">
 <!ENTITY gestureCmd.toggleFindbar "Afișează/Ascunde bara de căutare">
 <!ENTITY gestureCmd.restartApp "Repornește Firefox">

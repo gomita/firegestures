@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Забележи...">
 <!ENTITY gestureCmd.hybridViewSource "Погледај извор">
 <!ENTITY gestureCmd.hybridProperties "Својства">
-<!ENTITY gestureCmd.hybridSendURL "Пошаљи...">
 <!ENTITY gestureCmd.hybridCopyURL "Умножи локацију">
 <!ENTITY gestureCmd.toggleFindbar "Отвори/затвори траку за претрагу">
 <!ENTITY gestureCmd.restartApp "Поново покрени Фајерфокс">

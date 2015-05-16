@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Könyvjelző…">
 <!ENTITY gestureCmd.hybridViewSource "Oldal forrása">
 <!ENTITY gestureCmd.hybridProperties "Tulajdonságok">
-<!ENTITY gestureCmd.hybridSendURL "Küldés…">
 <!ENTITY gestureCmd.hybridCopyURL "Útvonal másolása">
 <!ENTITY gestureCmd.toggleFindbar "Keresés megnyitása/bezárása">
 <!ENTITY gestureCmd.restartApp "Firefox újraindítása">

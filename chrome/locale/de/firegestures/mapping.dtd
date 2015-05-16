@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Lesezeichen...">
 <!ENTITY gestureCmd.hybridViewSource "Quelltext anzeigen">
 <!ENTITY gestureCmd.hybridProperties "Eigenschaften">
-<!ENTITY gestureCmd.hybridSendURL "Link senden...">
 <!ENTITY gestureCmd.hybridCopyURL "Link-Adresse kopieren">
 <!ENTITY gestureCmd.toggleFindbar "Suchleiste öffnen/schließen">
 <!ENTITY gestureCmd.restartApp "Firefox neu starten">

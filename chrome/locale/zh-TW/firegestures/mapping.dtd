@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "加入書籤...">
 <!ENTITY gestureCmd.hybridViewSource "檢視原始碼">
 <!ENTITY gestureCmd.hybridProperties "屬性">
-<!ENTITY gestureCmd.hybridSendURL "寄出...">
 <!ENTITY gestureCmd.hybridCopyURL "複製網址">
 <!ENTITY gestureCmd.toggleFindbar "開啟╱關閉搜尋列">
 <!ENTITY gestureCmd.restartApp "重新啟動 Firefox">

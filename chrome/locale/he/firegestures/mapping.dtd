@@ -43,7 +43,6 @@
 <!ENTITY gestureCmd.hybridBookmark "סימניות...">
 <!ENTITY gestureCmd.hybridViewSource "הצגת המקור">
 <!ENTITY gestureCmd.hybridProperties "הגדרות">
-<!ENTITY gestureCmd.hybridSendURL "שליחה...">
 <!ENTITY gestureCmd.hybridCopyURL "העתקת המיקום">
 <!ENTITY gestureCmd.toggleFindbar "פתיחת / סגירת סרגל החיפוש">
 <!ENTITY gestureCmd.restartApp "אתחול Firefox">

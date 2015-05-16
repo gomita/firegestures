@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Järjehoidja...">
 <!ENTITY gestureCmd.hybridViewSource "Vaata allikat">
 <!ENTITY gestureCmd.hybridProperties "Properties">
-<!ENTITY gestureCmd.hybridSendURL "Saada...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopeeri asukoht">
 <!ENTITY gestureCmd.toggleFindbar "Ava/Sulge otsinguriba">
 <!ENTITY gestureCmd.restartApp "Taaskäivita Firefox">

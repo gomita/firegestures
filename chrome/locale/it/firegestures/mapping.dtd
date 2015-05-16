@@ -40,7 +40,6 @@
 <!ENTITY gestureCmd.hybridSave "Salva destinazione con nome...">
 <!ENTITY gestureCmd.hybridBookmark "Aggiungi ai segnalibri...">
 <!ENTITY gestureCmd.hybridViewSource "Visualizza sorgente">
-<!ENTITY gestureCmd.hybridSendURL "Invia...">
 <!ENTITY gestureCmd.hybridCopyURL "Copia destinazione">
 <!ENTITY gestureCmd.toggleFindbar "Apri/Chiudi Barra di Ricerca">
 <!ENTITY gestureCmd.options "Opzioni">

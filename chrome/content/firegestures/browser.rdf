@@ -107,7 +107,6 @@
     <RDF:li RDF:resource="urn:category:hybrid" />
     <RDF:li RDF:resource="urn:FireGestures:HybridBookmark" />
     <RDF:li RDF:resource="urn:FireGestures:HybridSave" />
-    <RDF:li RDF:resource="urn:FireGestures:HybridSendURL" />
     <RDF:li RDF:resource="urn:FireGestures:HybridCopyURL" />
     <RDF:li RDF:resource="urn:FireGestures:HybridViewSource" />
     <RDF:li RDF:resource="urn:FireGestures:HybridMetaData" />
@@ -452,9 +451,6 @@
                    FG:type="1"
                    FG:name="[&gestureType.hybrid;] &gestureCmd.hybridSave; (&gestureCategory.link; / &gestureCategory.image; / &gestureCategory.frame; / &gestureCategory.page;)"
                    FG:direction="DL" />
-  <RDF:Description RDF:about="urn:FireGestures:HybridSendURL"
-                   FG:type="1"
-                   FG:name="[&gestureType.hybrid;] &gestureCmd.hybridSendURL; (&gestureCategory.link; / &gestureCategory.image; / &gestureCategory.page;)" />
   <RDF:Description RDF:about="urn:FireGestures:HybridCopyURL"
                    FG:type="1"
                    FG:name="[&gestureType.hybrid;] &gestureCmd.hybridCopyURL; (&gestureCategory.link; / &gestureCategory.image; / &gestureCategory.frame; / &gestureCategory.page;)" />

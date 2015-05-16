@@ -42,7 +42,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Bokmärk...">
 <!ENTITY gestureCmd.hybridViewSource "Visa källkod">
 <!ENTITY gestureCmd.hybridProperties "Egenskaper">
-<!ENTITY gestureCmd.hybridSendURL "Skicka...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopiera plats">
 <!ENTITY gestureCmd.toggleFindbar "Öppna / Stäng Sidsökfältet">
 <!ENTITY gestureCmd.restartApp "Starta om Firefox">
