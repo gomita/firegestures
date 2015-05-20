@@ -654,12 +654,17 @@ xdGestureHandler.prototype = {
 
 	// called from _startGesture
 	_createTrail: function FGH__createTrail() {
-		if (this._trailArea) {
-			this._trailArea.style.display = "-moz-box";
-			return;
-		}
 		var doc = this._drawArea.ownerDocument;
 		var box = doc.documentElement.boxObject;
+		if (this._trailArea) {
+			this._trailArea.style.display = "-moz-box";
+			this._trailOffsetX = box.screenX;
+			this._trailOffsetY = box.screenY;
+			var canvas = this._trailArea.firstChild;
+			canvas.setAttribute("width",  box.width);
+			canvas.setAttribute("height", box.height);
+			return;
+		}
 		var css = "-moz-user-focus: none !important;"
 		        + "-moz-user-select: none !important;"
 		        + "display: -moz-box !important;"
