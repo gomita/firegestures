@@ -241,6 +241,16 @@
 		</em:localized>
 		<em:localized>
 			<Description>
+				<em:locale>sl-SI</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Executes various commands with mouse gestures.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:translator>Klofutar</em:translator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
 				<em:locale>sr</em:locale>
 				<em:name>FireGestures</em:name>
 				<em:description>Извршавање разних наредбе гестикулацијом мишем.</em:description>

@@ -1,0 +1,54 @@
+<!ENTITY gestureCategory.navigation "Krmarjenje">
+<!ENTITY gestureCategory.window "Okno">
+<!ENTITY gestureCategory.tab "Zavihek">
+<!ENTITY gestureCategory.page "Stran">
+<!ENTITY gestureCategory.frame "Okvir">
+<!ENTITY gestureCategory.link "Povezava">
+<!ENTITY gestureCategory.image "Slika">
+<!ENTITY gestureCategory.selection "Izbira">
+<!ENTITY gestureCategory.tools "Orodja">
+<!ENTITY gestureCategory.popup "Vrste pojavnih oken">
+<!ENTITY gestureCategory.hybrid "Hibridne vrste">
+<!ENTITY gestureCategory.script "Uporabniški skripti">
+<!ENTITY gestureType.popup "Pojavno okno">
+<!ENTITY gestureType.hybrid "Hibridno">
+<!ENTITY gestureCmd.skipCache "preskoči predpomnilnik">
+<!ENTITY gestureCmd.goUpperLevel "Pojdi na višjo raven">
+<!ENTITY gestureCmd.incrementURL "Povečaj število v URL-ju">
+<!ENTITY gestureCmd.decrementURL "Zmanjšaj število v URL-ju">
+<!ENTITY gestureCmd.undoCloseWindow "Razveljavi zapiranje okna">
+<!ENTITY gestureCmd.minimizeWindow "Skrči okno">
+<!ENTITY gestureCmd.maximizeWindow "Razpni okno">
+<!ENTITY gestureCmd.previousTab "Prejšnji zavihek">
+<!ENTITY gestureCmd.nextTab "Naslednji zavihek">
+<!ENTITY gestureCmd.duplicateTab "Podvoji zavihek">
+<!ENTITY gestureCmd.closeLeftTabs "Zapri zavihke na levi">
+<!ENTITY gestureCmd.closeRightTabs "Zapri zavihke na desni">
+<!ENTITY gestureCmd.scrollTop "Pomakni se na vrh">
+<!ENTITY gestureCmd.scrollBottom "Pomakni se na dno">
+<!ENTITY gestureCmd.scrollPageUp "Za eno stran gor">
+<!ENTITY gestureCmd.scrollPageDown "Za eno stran dol">
+<!ENTITY gestureCmd.backgroundTab "v ozadju">
+<!ENTITY gestureCmd.foregroundTab "v ospredju">
+<!ENTITY gestureCmd.saveImageNow "Shrani sliko zdaj">
+<!ENTITY gestureCmd.searchForSelection "Išči izbiro">
+<!ENTITY gestureCmd.searchForSelectionWith "Išči izbiro s/z ...">
+<!ENTITY gestureCmd.allScripts "Vsi uporabniški skripti">
+<!ENTITY gestureCmd.openLinksInSelection "Odpri vse povezave v izbiri">
+<!ENTITY gestureCmd.openURLsInSelection "Odpri vse URL-je v izbiri">
+<!ENTITY gestureCmd.bookmarksSidebar "Prikaži stranko vrstico z zaznamki">
+<!ENTITY gestureCmd.historySidebar "Prikaži stranko vrstico z zgodovino">
+<!ENTITY gestureCmd.backForwardHistory "Zgodovina Naprej / Nazaj">
+<!ENTITY gestureCmd.hybridSave "Shrani kot ...">
+<!ENTITY gestureCmd.hybridBookmark "Zaznamek ...">
+<!ENTITY gestureCmd.hybridViewSource "Pokaži izvorno kodo">
+<!ENTITY gestureCmd.hybridProperties "Lastnosti">
+<!ENTITY gestureCmd.hybridSendURL "Pošlji ...">
+<!ENTITY gestureCmd.hybridCopyURL "Kopiraj mesto">
+<!ENTITY gestureCmd.toggleFindbar "Odpri / Zapri iskalno vrstico">
+<!ENTITY gestureCmd.restartApp "Ponovno zaženi Firefox">
+<!ENTITY gestureCmd.options "Možnosti">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">
+<!-- leave this empty for Firefox 28- compatibility -->
+<!ENTITY appmenu.tooltip "">

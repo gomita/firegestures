@@ -1,0 +1,66 @@
+<!ENTITY options "Možnosti">
+<!ENTITY mainPane "Glavno">
+<!ENTITY mappingPane "Preslikava">
+<!ENTITY advancedPane "Napredno">
+<!ENTITY swipePane "Povleci">
+<!ENTITY mouseGesture "Poteze miške">
+<!ENTITY triggerButton "Sprožilni gumb za začetek poteze">
+<!ENTITY triggerButton.left "Levi">
+<!ENTITY triggerButton.middle "Srednji">
+<!ENTITY triggerButton.right "Desni">
+<!ENTITY suppress.alt "Ne začni poteze ob pridržanju tipke Alt">
+<!ENTITY trail "Risanje sledi">
+<!ENTITY trail.color "Barva">
+<!ENTITY trail.size "Velikost">
+<!ENTITY status "Prikaz stanja">
+<!ENTITY status.description.1 "Skrij prikaz stanja po">
+<!ENTITY status.description.2 "sekundah">
+<!ENTITY timeout "Časovni potek">
+<!ENTITY timeout.description.1 "Prekliči potezo po">
+<!ENTITY timeout.description.2 "sekundah brez premikanja">
+<!ENTITY mappings.title "Preslikave">
+<!ENTITY mappings.description "Izberite preslikavo za nastavitev">
+<!ENTITY tools.title "Orodja">
+<!ENTITY tools.description "Varnostno kopiraj in obnovi vse preslikave">
+<!ENTITY tools.backup.label "Varnostno kopiranje">
+<!ENTITY tools.restore.label "Obnova">
+<!ENTITY tools.restore.alerttext "To bo nadomestilo vse vaše trenutne poteze z varnostno kopijo. Ali ste prepričani?">
+<!ENTITY wheelGesture "Poteze drsnega koleščka">
+<!ENTITY wheelGesture.up.left "Pomik gor s pridržanim levim gumbom">
+<!ENTITY wheelGesture.up.middle "Pomik gor s pridržanim srednjim gumbom">
+<!ENTITY wheelGesture.up.right "Pomik gor s pridržanim desnim gumbom">
+<!ENTITY wheelGesture.down.left "Pomik dol s pridržanim levim gumbom">
+<!ENTITY wheelGesture.down.middle "Pomik dol s pridržanim srednjim gumbom">
+<!ENTITY wheelGesture.down.right "Pomik dol s pridržanim desnim gumbom">
+<!ENTITY rockerGesture "Gugalne poteze">
+<!ENTITY rockerGesture.left "Levi klik s pridržanim desnim gumbom">
+<!ENTITY rockerGesture.right "Desni klik s pridržanim levim gumbom">
+<!ENTITY keypressGesture "Poteze s pridržanimi tipkami">
+<!ENTITY keypressGesture.ctrl "Poteza miške s pridržano tipko Ctrl">
+<!ENTITY keypressGesture.shift "Poteza miške s pridržano tipko Shift">
+<!ENTITY keypressGesture.open "Odpri povezave v novem zavihku ob prehodu z miško">
+<!ENTITY keypressGesture.save "Shrani povezave ob prehodu z miško">
+<!ENTITY keypressGesture.copy "Kopiraj mesta povezav ob prehodu z miško">
+<!ENTITY tabwheelGesture "Poteze drsnega koleščka na zavihkih">
+<!ENTITY tabwheelGesture.description "Preklopi zavihek ob pomiku drsnega koleščka na vrstici z zavihki">
+<!ENTITY swipe "Poteze vlečenja">
+<!ENTITY swipe.left "Povleci levo">
+<!ENTITY swipe.right "Povleci desno">
+<!ENTITY swipe.up "Povleci gor">
+<!ENTITY swipe.down "Povleci dol">
+<!ENTITY swipe.continuous "Poteza miške s neprekinjenimi vlečenji">
+<!ENTITY swipe.continuous.1 "Čas čakanja na naslednjo smer">
+<!ENTITY swipe.continuous.2 "sekund">
+<!ENTITY treecol.name "Ime">
+<!ENTITY treecol.command "Ukaz">
+<!ENTITY treecol.script "Skript">
+<!ENTITY treecol.gesture "Poteza">
+<!ENTITY editButton.label "Uredi">
+<!ENTITY editButton.accesskey "U">
+<!ENTITY clearButton.label "Počisti">
+<!ENTITY clearButton.accesskey "P">
+<!ENTITY addScriptButton.label "Dodaj skript">
+<!ENTITY addScriptButton.accesskey "D">
+<!ENTITY deleteScriptButton.label "Izbriši skript">
+<!ENTITY deleteScriptButton.accesskey "b">
+<!ENTITY getScripts.label "Dobi skripte">
