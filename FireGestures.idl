@@ -122,17 +122,17 @@ interface xdIGestureObserver : nsISupports
 	/**
 	 * Called when the direction is changed in progress of mouse gesture.
 	 */
-	void onDirectionChanged(in nsIDOMEvent event, in ACString aDirectionChain);
+	void onDirectionChanged(in nsIVariant event, in ACString aDirectionChain);
 
 	/**
 	 * Called when user perform mouse gesture.
 	 */
-	void onMouseGesture(in nsIDOMEvent event, in ACString aDirectionChain);
+	void onMouseGesture(in nsIVariant event, in ACString aDirectionChain);
 
 	/**
 	 * Called when user perform some extra gestures.
 	 */
-	void onExtraGesture(in nsIDOMEvent event, in ACString aGestureType);
+	void onExtraGesture(in nsIVariant event, in ACString aGestureType);
 
 	/**
 	 * [e10s] Called when gesture handler requests to send message to remote browser.
