@@ -3,8 +3,6 @@
 <!DOCTYPE RDF:RDF [
   <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
   %browserDTD;
-  <!ENTITY % tabBrowserDTD SYSTEM "chrome://browser/locale/tabbrowser.dtd">
-  %tabBrowserDTD;
   <!ENTITY % mappingDTD SYSTEM "chrome://firegestures/locale/mapping.dtd">
   %mappingDTD;
 ]>
