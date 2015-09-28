@@ -72,14 +72,14 @@ let FireGesturesRemote = {
 		}
 		// tell parent browser the source node and some info
 		let sel = this._getSelectedText(doc, elt);
-		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt, sel });
+		sendRpcMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt, sel });
 	},
 
 	_onSwipeGesture: function(aData) {
 		log("onSwipeGesture: " + aData.toSource());	// #debug
 		let { doc, elt } = this._elementFromPoint(aData.x, aData.y);
 		let sel = this._getSelectedText(doc, elt);
-		sendSyncMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt, sel });
+		sendRpcMessage("FireGesturesRemote:Response", { name: "sourceNode" }, { elt, sel });
 		sendSyncMessage("FireGesturesRemote:Response", { name: "swipe" }, { direction: aData.direction });
 	},
 
