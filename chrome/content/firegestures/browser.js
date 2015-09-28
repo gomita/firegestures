@@ -31,10 +31,7 @@ var FireGestures = {
 		this._gestureHandler.attach(gBrowser, this);
 		this._gestureMapping = gestureSvc.getMappingForBrowser();
 		this._getLocaleString = gestureSvc.getLocaleString;
-		this._statusTextField = document.getElementById("statusbar-display");
-		// [Firefox26] status panel will be generated dynamically @see Bug 821687
-		if (!this._statusTextField)
-			this._statusTextField = gBrowser.getStatusPanel();
+		this._statusTextField = gBrowser.getStatusPanel();
 		// disable built-in swipe gesture
 		window.removeEventListener("MozSwipeGesture", gGestureSupport, true);
 		// [e10s] load frame script into every browser in window
@@ -847,16 +844,8 @@ var FireGestures = {
 		if (shouldPrompt && tabs.length > 1) {
 			var ps = Services.prompt;
 			var bundle = gBrowser.mStringBundle;
-			var message;
-			try {
-				// [Firefox29-]
-				message = bundle.getFormattedString("tabs.closeWarningMultipleTabs", [tabs.length]);
-			}
-			catch (ex) {
-				// [Firefox30+]
-				message = PluralForm.get(tabs.length, bundle.getString("tabs.closeWarningMultiple")).
-				          replace("#1", tabs.length);
-			}
+			var message = PluralForm.get(tabs.length, bundle.getString("tabs.closeWarningMultiple")).
+			              replace("#1", tabs.length);
 			window.focus();
 			var ret = ps.confirmEx(
 				window, bundle.getString("tabs.closeWarningTitle"), message, 

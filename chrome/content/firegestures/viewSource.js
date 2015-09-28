@@ -18,12 +18,7 @@ var FireGesturesViewSource = {
 		this._gestureHandler.attach(getBrowser(), this);
 		this._gestureMapping = gestureSvc.getMapping("viewsource_mapping");
 		// disable built-in swipe gesture
-		// [Firefox40-]
-		if ("HandleSwipeGesture" in window)
-			window.removeEventListener("MozSwipeGesture", HandleSwipeGesture, true);
-		// [Firefox41+]
-		if ("ViewSourceChrome" in window)
-			window.removeEventListener("MozSwipeGesture", ViewSourceChrome, true);
+		window.removeEventListener("MozSwipeGesture", ViewSourceChrome, true);
 	},
 
 	uninit: function() {
