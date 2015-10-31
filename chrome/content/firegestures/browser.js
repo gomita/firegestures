@@ -995,7 +995,8 @@ var FireGestures = {
 						menuitem.className = "unified-nav-current";
 					}
 					else {
-						PlacesUtils.favicons.getFaviconURLForPage(entry.URI, function(aURI) {
+						var entryURI = this.isRemote ? makeURI(entry.URI.spec) : entry.URI;
+						PlacesUtils.favicons.getFaviconURLForPage(entryURI, function(aURI) {
 							if (!aURI)
 								return;
 							let iconURL = PlacesUtils.favicons.getFaviconLinkForIcon(aURI).spec;
