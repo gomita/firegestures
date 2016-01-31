@@ -436,8 +436,7 @@ var FireGestures = {
 				var doc = this.sourceNode.ownerDocument;
 				this.checkURL(linkURL, doc);
 				// XXX using saveHelper is a bit hackish but good to handle appropriate MIME-type
-				var linkText = gatherTextUnder(this.sourceNode);
-				nsContextMenu.prototype.saveHelper(linkURL, linkText, null, true, doc);
+				nsContextMenu.prototype.saveHelper(linkURL, this.getLinkText(), null, true, doc);
 				break;
 			case "FireGestures:ViewImage": 
 				var imageURL = this.getImageURL();
@@ -633,11 +632,35 @@ var FireGestures = {
 		return null;
 	},
 
-	// NOTE: this method uses |gatherTextUnder| defined in utilityOverlay.js
+	// @see nsContextMenu::getLinkText()
+	// @see gatherTextUnder in utilityOverlay.js
 	getLinkText: function(aNode) {
 		if (!aNode)
 			aNode = this.sourceNode;
-		var text = gatherTextUnder(aNode);
+		var text = "", node = aNode.firstChild, depth = 1;
+		while (node && depth > 0) {
+			if (node.nodeType == Node.TEXT_NODE) {
+				text += " " + node.data;
+			}
+			else if (node instanceof HTMLImageElement) {
+				var altText = node.getAttribute("alt");
+				if (altText && altText != "")
+					text += " " + altText;
+			}
+			if (node.hasChildNodes()) {
+				node = node.firstChild;
+				depth++;
+			}
+			else {
+				while (depth > 0 && !node.nextSibling) {
+					node = node.parentNode;
+					depth--;
+				}
+				if (node.nextSibling)
+					node = node.nextSibling;
+			}
+		}
+		text = text.trim().replace(/\s+/g, " ");
 		if (!text || !text.match(/\S/)) {
 			text = aNode.getAttribute("title");
 			if (!text || !text.match(/\S/)) {
