@@ -504,7 +504,14 @@ var FireGestures = {
 				gFindBar.hidden ? gFindBar.onFindCommand() : gFindBar.close();
 				break;
 			case "FireGestures:RestartApp": 
-				Application.restart();
+				let cancelQuit = Cc["@mozilla.org/supports-PRBool;1"].
+				                 createInstance(Ci.nsISupportsPRBool);
+				Services.obs.notifyObservers(cancelQuit, "quit-application-requested", "restart");
+				if (cancelQuit.data)
+					return;
+				let appStartup = Cc["@mozilla.org/toolkit/app-startup;1"].
+				                 getService(Ci.nsIAppStartup);
+				appStartup.quit(Ci.nsIAppStartup.eAttemptQuit |  Ci.nsIAppStartup.eRestart);
 				break;
 			case "FireGestures:Preferences": 
 				this._gestureMapping.configure();
