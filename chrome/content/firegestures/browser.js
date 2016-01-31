@@ -403,7 +403,7 @@ var FireGestures = {
 				var doc = this.sourceNode.ownerDocument;
 				this.checkURL(linkURL, doc);
 				openLinkIn(linkURL, "window", {
-					charset: doc.characterSet, referrerURI: doc.documentURIObject, 
+					charset: doc.characterSet, referrerURI: makeURI(doc.location.href), 
 					private: aCommand == "FireGestures:OpenLinkInPrivateWindow"
 				});
 				break;
@@ -416,7 +416,7 @@ var FireGestures = {
 				this.checkURL(linkURL, doc);
 				// [TreeStyleTab] the next line will be replaced to open child tab
 				gBrowser.loadOneTab(linkURL, {
-					referrerURI: doc.documentURIObject, charset: doc.characterSet, 
+					referrerURI: makeURI(doc.location.href), charset: doc.characterSet, 
 					inBackground: aCommand == "FireGestures:OpenLinkInBgTab", 
 					relatedToCurrent: true
 				});
@@ -456,7 +456,7 @@ var FireGestures = {
 					throw this._getLocaleString("ERROR_NOT_ON_IMAGE");
 				var doc = this.sourceNode.ownerDocument;
 				var skipPrompt = aCommand == "FireGestures:SaveImageNow";
-				var refURI = this.isRemote ? makeURI(doc.location.href) : doc.documentURIObject;
+				var refURI = makeURI(doc.location.href);
 				if (this.sourceNode instanceof HTMLVideoElement || 
 				    this.sourceNode instanceof HTMLAudioElement) {
 					// save video and audio
@@ -484,7 +484,7 @@ var FireGestures = {
 				if (!linkURLs || linkURLs.length == 0)
 					throw "No valid links in selection";
 				var doc = this.sourceNode.ownerDocument;
-				this.openURLs(linkURLs, doc.documentURIObject, doc.charset);
+				this.openURLs(linkURLs, makeURI(doc.location.href), doc.charset);
 				break;
 			case "FireGestures:OpenURLsInSelection": 
 				this.openURLsInSelection();
@@ -581,14 +581,14 @@ var FireGestures = {
 				break;
 			case "FireGestures:OpenHoveredLinks": 
 				var doc = this.sourceNode.ownerDocument;
-				this.openURLs(this._linkURLs, doc.documentURIObject, doc.characterSet);
+				this.openURLs(this._linkURLs, makeURI(doc.location.href), doc.characterSet);
 				break;
 			case "FireGestures:SaveHoveredLinks": 
 				var delay = 0;
 				var doc = this.sourceNode.ownerDocument;
-				var ref = doc.documentURIObject;
+				var refURI = makeURI(doc.location.href);
 				this._linkURLs.forEach(function(aURL) {
-					window.setTimeout(function() { saveURL(aURL, null, null, false, true, ref, doc); }, delay);
+					window.setTimeout(function() { saveURL(aURL, null, null, false, true, refURI, doc); }, delay);
 					delay += 1000;
 				});
 				break;
