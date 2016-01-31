@@ -234,7 +234,7 @@
                    FG:name="&gestureCmd.closeRightTabs;" />
   <RDF:Description RDF:about="urn:Browser:ToggleTabView"
                    FG:type="1"
-                   FG:name="&viewTabGroups.label;" />
+                   FG:name="Tab Groups" />
   <!-- page -->
   <RDF:Description RDF:about="urn:cmd_textZoomEnlarge"
                    FG:type="1"

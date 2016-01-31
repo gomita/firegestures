@@ -291,6 +291,10 @@ var FireGestures = {
 			case "FireGestures:CloseRightTabs": 
 				this.closeMultipleTabs("right");
 				break;
+			case "Browser:ToggleTabView": 
+				alert("Please add the following script:\nTabView.toggle();");
+				this._gestureMapping.configure();
+				break;
 			case "cmd_textZoomEnlarge": 
 			case "cmd_textZoomReduce": 
 				if ("FullZoom" in window && !ZoomManager.useFullZoom)
