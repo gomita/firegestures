@@ -390,10 +390,11 @@ xdGestureHandler.prototype = {
 					this._isRemote = this._drawArea.mCurrentBrowser.getAttribute("remote") == "true";
 					// [e10s] get source node and invoke extra gesture in remote
 					if (this._isRemote) {
+						var zoom = this._drawArea.mCurrentBrowser.fullZoom;
 						this._gestureObserver.sendAsyncMessage("FireGestures:SwipeGesture", {
 							direction: direction, 
-							x: event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX, 
-							y: event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY, 
+							x: (event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX) / zoom, 
+							y: (event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY) / zoom, 
 						});
 						return;
 					}
@@ -488,11 +489,12 @@ xdGestureHandler.prototype = {
 			this._createTrail();
 		// [e10s] tell remote browser that mouse gesture has started
 		if (this._isRemote) {
+			var zoom = this._drawArea.mCurrentBrowser.fullZoom;
 			this._gestureObserver.sendAsyncMessage("FireGestures:GestureStart", {
 				type: event.type, 
 				button: event.button, 
-				x: event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX, 
-				y: event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY, 
+				x: (event.screenX - this._drawArea.mCurrentBrowser.boxObject.screenX) / zoom, 
+				y: (event.screenY - this._drawArea.mCurrentBrowser.boxObject.screenY) / zoom, 
 			});
 		}
 	},
