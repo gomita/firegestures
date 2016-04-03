@@ -1,0 +1,55 @@
+<!ENTITY gestureCategory.navigation "Навигація">
+<!ENTITY gestureCategory.window "Вікно">
+<!ENTITY gestureCategory.tab "Вкладка">
+<!ENTITY gestureCategory.page "Сторінка">
+<!ENTITY gestureCategory.frame "Фрейм">
+<!ENTITY gestureCategory.link "Посилання">
+<!ENTITY gestureCategory.image "Малюнок">
+<!ENTITY gestureCategory.selection "Виділений фрагмент">
+<!ENTITY gestureCategory.tools "Інструменти">
+<!ENTITY gestureCategory.popup "Діалоговий тип">
+<!ENTITY gestureCategory.hybrid "Гібридний тип">
+<!ENTITY gestureCategory.script "Клієнтські сценарії">
+<!ENTITY gestureType.popup "Діалог">
+<!ENTITY gestureType.hybrid "Гібрид">
+<!ENTITY gestureCmd.skipCache "Ігнорувати кеш">
+<!ENTITY gestureCmd.goUpperLevel "Перейти на рівень вище">
+<!ENTITY gestureCmd.incrementURL "Збільшити число в URL">
+<!ENTITY gestureCmd.decrementURL "Зменшити число в URL">
+<!ENTITY gestureCmd.undoCloseWindow "Відмінити закриття вікна">
+<!ENTITY gestureCmd.minimizeWindow "Згорнути вікно">
+<!ENTITY gestureCmd.maximizeWindow "Розгорнути вікно / Відновити розмір вікна">
+<!ENTITY gestureCmd.previousTab "Попередня вкладка">
+<!ENTITY gestureCmd.nextTab "Наступна вкладка">
+<!ENTITY gestureCmd.duplicateTab "Дублювати вкладку">
+<!ENTITY gestureCmd.closeLeftTabs "Закрити вкладку зліва">
+<!ENTITY gestureCmd.closeRightTabs "Закрити вкладку справа">
+<!ENTITY gestureCmd.scrollTop "Прокрутити на початок документу">
+<!ENTITY gestureCmd.scrollBottom "Прокрутити до кінця документу">
+<!ENTITY gestureCmd.scrollPageUp "Прокрутити догори">
+<!ENTITY gestureCmd.scrollPageDown "Прокрутити донизу">
+<!ENTITY gestureCmd.backgroundTab "Фонова вкладка">
+<!ENTITY gestureCmd.foregroundTab "Активна вкладка">
+<!ENTITY gestureCmd.saveImageNow "Зберегти зображення">
+<!ENTITY gestureCmd.searchForSelection "Пошук по виділеному фрагменту">
+<!ENTITY gestureCmd.searchForSelectionWith "Пошук виділеному фрагменту за допомогою…">
+<!ENTITY gestureCmd.allScripts "Усі сценарії">
+<!ENTITY gestureCmd.openLinksInSelection "Відкрити усі посилання у виділеному фрагменті">
+<!ENTITY gestureCmd.openURLsInSelection "Відкрити усі адреси у виділеному фрагменті">
+<!ENTITY gestureCmd.bookmarksSidebar "Відкрити бічну панель із Закладками">
+<!ENTITY gestureCmd.historySidebar "Відкрити бічну панель із Історією">
+<!ENTITY gestureCmd.backForwardHistory "Назад / Вперед по Історії">
+<!ENTITY gestureCmd.hybridSave "Зберегти як…">
+<!ENTITY gestureCmd.hybridBookmark "Закладка…">
+<!ENTITY gestureCmd.hybridViewSource "Переглянути початковий код">
+<!ENTITY gestureCmd.hybridProperties "Властивості">
+<!ENTITY gestureCmd.hybridCopyURL "Копіювати адресу">
+<!ENTITY gestureCmd.toggleFindbar "Відкрити/Закрити панель пошуку">
+<!ENTITY gestureCmd.restartApp "Перезапустити Firefox">
+<!ENTITY gestureCmd.options "Параметри">
+<!-- leave this empty for Pale Moon 24 compatibility -->
+<!ENTITY viewTabGroups.label "">
+<!-- leave this empty for Firefox 28- compatibility -->
+<!ENTITY appmenu.tooltip "">
+<!-- for Firefox 48+ compatibility -->
+<!ENTITY errorConsoleCmd.label "Консоль помилок">

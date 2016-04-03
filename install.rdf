@@ -281,6 +281,16 @@
 		</em:localized>
 		<em:localized>
 			<Description>
+				<em:locale>uk-UA</em:locale>
+				<em:name>FireGestures</em:name>
+				<em:description>Executes various commands with mouse gestures.</em:description>
+				<em:creator>Gomita</em:creator>
+				<em:translator>Sappa</em:translator>
+				<em:homepageURL>http://www.xuldev.org/firegestures/</em:homepageURL>
+			</Description>
+		</em:localized>
+		<em:localized>
+			<Description>
 				<em:locale>vi</em:locale>
 				<em:name>FireGestures</em:name>
 				<em:description>Thực hiện lệnh chỉ bằng cách lắc chuột.</em:description>

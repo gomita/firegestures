@@ -1,0 +1,66 @@
+<!ENTITY options "Параметри">
+<!ENTITY mainPane "Загальні">
+<!ENTITY mappingPane "Мапа жестів">
+<!ENTITY advancedPane "Додаткові">
+<!ENTITY swipePane "Зсув">
+<!ENTITY mouseGesture "Жести мишею">
+<!ENTITY triggerButton "Почати жест із наступної кнопки миші">
+<!ENTITY triggerButton.left "Лівої">
+<!ENTITY triggerButton.middle "Середньої">
+<!ENTITY triggerButton.right "Правої">
+<!ENTITY suppress.alt "Не починати жесту при утриманні кнопки Alt">
+<!ENTITY trail "Показувати слід">
+<!ENTITY trail.color "Колір">
+<!ENTITY trail.size "Розмір">
+<!ENTITY status "Показувати стан">
+<!ENTITY status.description.1 "Приховувати показ стану після">
+<!ENTITY status.description.2 "секунд(и)">
+<!ENTITY timeout "Очікування">
+<!ENTITY timeout.description.1 "Скасовувати жест після">
+<!ENTITY timeout.description.2 "секунд(и) без руху курсору">
+<!ENTITY mappings.title "Мапи жестів">
+<!ENTITY mappings.description "Оберіть мапу жестів для налаштування">
+<!ENTITY tools.title "Інструменти">
+<!ENTITY tools.description "Резервне копіювання та відновлення мап жестів">
+<!ENTITY tools.backup.label "Резервне копіювання">
+<!ENTITY tools.restore.label "Відновлення">
+<!ENTITY tools.restore.alerttext "Ця операція замінить усі поточні мапи жестів мапами із резервної копії. Ви впевнені, що це треба зробити?">
+<!ENTITY wheelGesture "Жести, що використовують коліща">
+<!ENTITY wheelGesture.up.left "Прокручування вгору при утриманні ЛКМ">
+<!ENTITY wheelGesture.up.middle "Прокручування вгору при утриманні СКМ">
+<!ENTITY wheelGesture.up.right "Прокручування вгору при утриманні ПКМ">
+<!ENTITY wheelGesture.down.left "Прокручування вниз при утриманні ЛКМ">
+<!ENTITY wheelGesture.down.middle "Прокручування вниз при утриманні СКМ">
+<!ENTITY wheelGesture.down.right "Прокручування вниз при утриманні ПКМ">
+<!ENTITY rockerGesture "Жести, що використовують дві кнопки">
+<!ENTITY rockerGesture.left "Клацання ЛКМ при утриманні ПКМ">
+<!ENTITY rockerGesture.right "Клацання ПКМ при утриманні ЛКМ">
+<!ENTITY keypressGesture "Жести, що виконуються при утриманні клавіши">
+<!ENTITY keypressGesture.ctrl "Жест мишею при утриманні Ctrl">
+<!ENTITY keypressGesture.shift "Жест мишею при утриманні Shift">
+<!ENTITY keypressGesture.open "Відкрити у вкладках посилання під курсором">
+<!ENTITY keypressGesture.save "Зберегти посилання під курсором">
+<!ENTITY keypressGesture.copy "Копіювати адресу посилання, що розташована під курсором">
+<!ENTITY tabwheelGesture "Жести для панелі вкладок">
+<!ENTITY tabwheelGesture.description "Перемикати вкладки, коли над панеллю вкладок прокручується коліща">
+<!ENTITY swipe "Жести зсувом">
+<!ENTITY swipe.left "Зсув вліво">
+<!ENTITY swipe.right "Зсув вправо">
+<!ENTITY swipe.up "Зсув вгору">
+<!ENTITY swipe.down "Зсув вниз">
+<!ENTITY swipe.continuous "Жести мишею за допомогою послідовних зсувів">
+<!ENTITY swipe.continuous.1 "Час очікування наступного напрямку">
+<!ENTITY swipe.continuous.2 "сек.">
+<!ENTITY treecol.name "Назва">
+<!ENTITY treecol.command "Команда">
+<!ENTITY treecol.script "Сценарій">
+<!ENTITY treecol.gesture "Жест">
+<!ENTITY editButton.label "Редактор">
+<!ENTITY editButton.accesskey "Р">
+<!ENTITY clearButton.label "Очистити">
+<!ENTITY clearButton.accesskey "О">
+<!ENTITY addScriptButton.label "Додати сценарій">
+<!ENTITY addScriptButton.accesskey "Д">
+<!ENTITY deleteScriptButton.label "Вилучити сценарій">
+<!ENTITY deleteScriptButton.accesskey "В">
+<!ENTITY getScripts.label "Отримати сценарії">
