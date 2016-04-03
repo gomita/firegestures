@@ -51,3 +51,5 @@
 <!ENTITY viewTabGroups.label "">
 <!-- leave this empty for Firefox 28- compatibility -->
 <!ENTITY appmenu.tooltip "">
+<!-- for Firefox 48+ compatibility -->
+<!ENTITY errorConsoleCmd.label "Fejlkonsol">

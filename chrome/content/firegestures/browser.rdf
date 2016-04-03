@@ -392,7 +392,7 @@
                    FG:name="&clearRecentHistory.label;" />
   <RDF:Description RDF:about="urn:Tools:DevToolbox"
                    FG:type="1"
-                   FG:name="&webDeveloperMenu.label; - &devToolboxMenuItem.label;" />
+                   FG:name="&webDeveloperMenu.label;" />
   <RDF:Description RDF:about="urn:FireGestures:ErrorConsole"
                    FG:type="1"
                    FG:name="&errorConsoleCmd.label;" />
