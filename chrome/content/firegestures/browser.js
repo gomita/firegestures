@@ -1009,38 +1009,50 @@ var FireGestures = {
 				}
 				break;
 			case "FireGestures:BFHistoryPopup": 
-				var sessionHistory = gBrowser.webNavigation.sessionHistory;
-				if (sessionHistory.count < 1)
-					throw "No back/forward history for this tab.";
-				var curIdx = sessionHistory.index;
-				for (var i = 0; i < sessionHistory.count; i++) {
-					let entry = sessionHistory.getEntryAtIndex(i, false);
-					if (!entry)
-						continue;
-					let menuitem = document.createElement("menuitem");
-					popup.insertBefore(menuitem, popup.firstChild);
-					menuitem.setAttribute("label", entry.title);
-					menuitem.setAttribute("statustext", entry.URI.spec);
-					menuitem.index = i;
-					if (i == curIdx) {
-						menuitem.setAttribute("type", "radio");
-						menuitem.setAttribute("checked", "true");
-						menuitem.setAttribute("default", "true");
-						menuitem.className = "unified-nav-current";
+				function callback(sessionHistory, initial) {
+					if (popup.firstChild)
+						return;	// popup is built before callback
+					let count = sessionHistory.entries ? sessionHistory.entries.length	// [Firefox43+]
+					                                   : sessionHistory.count;	// [Firefox42-]
+					if (count < 1)
+						throw "No back/forward history for this tab.";
+					var curIdx = sessionHistory.index;
+					for (var i = 0; i < count; i++) {
+						let entry = sessionHistory.entries ? sessionHistory.entries[i]	// [Firefox43+]
+						                                   : sessionHistory.getEntryAtIndex(i, false);	// [Firefox42-]
+						let menuitem = document.createElement("menuitem");
+						popup.insertBefore(menuitem, popup.firstChild);
+						menuitem.setAttribute("label", entry.title);
+						menuitem.setAttribute("statustext", entry.url);
+						menuitem.index = i;
+						if (i == curIdx) {
+							menuitem.setAttribute("type", "radio");
+							menuitem.setAttribute("checked", "true");
+							menuitem.setAttribute("default", "true");
+							menuitem.className = "unified-nav-current";
+						}
+						else {
+							var entryURI = entry.url ? BrowserUtils.makeURI(entry.url, entry.charset, null)	// [Firefox43+]
+							                         : this.isRemote ? makeURI(entry.URI.spec) : entry.URI;	// [Firefox42-]
+							PlacesUtils.favicons.getFaviconURLForPage(entryURI, function(aURI) {
+								if (!aURI)
+									return;
+								let iconURL = PlacesUtils.favicons.getFaviconLinkForIcon(aURI).spec;
+								menuitem.style.listStyleImage = "url(" + iconURL + ")";
+							});
+							menuitem.className = i < curIdx
+							                   ? "unified-nav-back menuitem-iconic menuitem-with-favicon"
+							                   : "unified-nav-forward menuitem-iconic menuitem-with-favicon";
+						}
 					}
-					else {
-						var entryURI = this.isRemote ? makeURI(entry.URI.spec) : entry.URI;
-						PlacesUtils.favicons.getFaviconURLForPage(entryURI, function(aURI) {
-							if (!aURI)
-								return;
-							let iconURL = PlacesUtils.favicons.getFaviconLinkForIcon(aURI).spec;
-							menuitem.style.listStyleImage = "url(" + iconURL + ")";
-						});
-						menuitem.className = i < curIdx
-						                   ? "unified-nav-back menuitem-iconic menuitem-with-favicon"
-						                   : "unified-nav-forward menuitem-iconic menuitem-with-favicon";
-					}
+					// for async opening popup
+					if (popup.state == "showing" || popup.state == "open")
+						setTimeout(function() { popup.currentItem = popup.defaultItem || popup.firstChild; }, 10);
 				}
+				if (SessionStore.getSessionHistory)
+					SessionStore.getSessionHistory(gBrowser.selectedTab, callback);	// [Firefox43+]
+				else
+					callback(gBrowser.webNavigation.sessionHistory);	// [Firefox42-]
 				break;
 			case "FireGestures:ClosedTabsPopup": 
 				var ss = Cc["@mozilla.org/browser/sessionstore;1"].getService(Ci.nsISessionStore);

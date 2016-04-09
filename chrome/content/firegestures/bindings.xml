@@ -67,6 +67,8 @@
 							event.stopPropagation();
 							// change the current item excluding menuseparator
 							var elt = this.currentItem;
+							if (!elt)
+								return;
 							do {
 								elt = event.detail < 0 ? elt.previousSibling || this.lastChild
 								                       : elt.nextSibling     || this.firstChild;
