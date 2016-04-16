@@ -571,14 +571,16 @@ xdGestureHandler.prototype = {
 			this._eraseTrail();
 		// don't call onMouseGesture after events sequence: mousedown > minimal mousemove > mouseup
 		if (this._directionChain) {
-			this._gestureObserver.onMouseGesture(event, this._directionChain);
+			// reset direction chain before calling onMouseGesture to fix issue#125
+			var directionChain = this._directionChain;
+			this._directionChain = "";
+			this._gestureObserver.onMouseGesture(event, directionChain);
 			// suppress immediate context menu after finishing mouse gesture with right-button
 			// don't suppress mouse gesture with left or middle button
 			this._suppressContext = true;
 			this._shouldFireContext = false;
 		}
 		this.sourceNode = null;
-		this._directionChain = "";
 	},
 
 
