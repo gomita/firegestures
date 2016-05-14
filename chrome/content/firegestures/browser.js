@@ -460,6 +460,7 @@ var FireGestures = {
 				var doc = this.sourceNode.ownerDocument;
 				var skipPrompt = aCommand == "FireGestures:SaveImageNow";
 				var refURI = makeURI(doc.location.href);
+				var isPrivate = PrivateBrowsingUtils.isBrowserPrivate(gBrowser);
 				if (this.sourceNode instanceof HTMLVideoElement || 
 				    this.sourceNode instanceof HTMLAudioElement) {
 					// save video and audio
@@ -471,12 +472,14 @@ var FireGestures = {
 				}
 				else if (this.sourceNode instanceof HTMLCanvasElement) {
 					// save canvas
-					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", false, skipPrompt, refURI, doc);
+					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", false, skipPrompt, refURI, 
+					             null, null, null, isPrivate);
 				}
 				else {
 					// save image
 					this.checkURL(mediaURL, doc);
-					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, doc);
+					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, 
+					             null, null, null, isPrivate);
 				}
 				break;
 			case "FireGestures:WebSearch": 
