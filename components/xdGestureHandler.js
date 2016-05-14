@@ -156,9 +156,9 @@ xdGestureHandler.prototype = {
 			this._drawArea.addEventListener("click", this, true);
 		// prefs for tab wheel gesture
 		if (this._drawArea.localName == "tabbrowser") {
-			this._drawArea.mStrip.removeEventListener("DOMMouseScroll", this._wheelOnTabBar, true);
+			this._drawArea.tabContainer.removeEventListener("wheel", this._wheelOnTabBar, true);
 			if (getPref("tabwheelgesture"))
-				this._drawArea.mStrip.addEventListener("DOMMouseScroll", this._wheelOnTabBar, true);
+				this._drawArea.tabContainer.addEventListener("wheel", this._wheelOnTabBar, true);
 		}
 		// if trigger button is middle, disable loading the clipboard URL with middle click.
 		if (this._triggerButton == 1) {
@@ -469,7 +469,7 @@ xdGestureHandler.prototype = {
 			return;
 		event.preventDefault();
 		event.stopPropagation();
-		tabbar.advanceSelectedTab(event.detail < 0 ? -1 : 1, true);
+		tabbar.advanceSelectedTab(event.deltaY < 0 ? -1 : 1, true);
 	},
 
 	// called from handleEvent (type is "mousedown", "MozSwipeGesture")
