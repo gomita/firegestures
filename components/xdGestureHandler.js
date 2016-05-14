@@ -22,8 +22,6 @@ function log(aMsg) {
 
 function alert(aMsg) {
 	Components.utils.reportError(aMsg);
-	var fuelApp = Cc["@mozilla.org/fuel/application;1"].getService(Ci.fuelIApplication);
-	fuelApp.console.open();
 }
 
 const PLATFORM = Cc["@mozilla.org/system-info;1"].getService(Ci.nsIPropertyBag2).getProperty("name");
