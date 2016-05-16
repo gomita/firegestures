@@ -472,14 +472,18 @@ var FireGestures = {
 				}
 				else if (this.sourceNode instanceof HTMLCanvasElement) {
 					// save canvas
+					this.isRemote ? 
 					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", false, skipPrompt, refURI, 
-					             null, null, null, isPrivate);
+					             null, null, null, isPrivate) : 
+					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", false, skipPrompt, refURI, doc);
 				}
 				else {
 					// save image
 					this.checkURL(mediaURL, doc);
+					this.isRemote ? 
 					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, 
-					             null, null, null, isPrivate);
+					             null, null, null, isPrivate) : 
+					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, doc);
 				}
 				break;
 			case "FireGestures:WebSearch": 
