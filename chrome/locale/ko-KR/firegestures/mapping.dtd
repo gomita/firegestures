@@ -24,10 +24,10 @@
 <!ENTITY gestureCmd.duplicateTab "탭 복제">
 <!ENTITY gestureCmd.closeLeftTabs "왼쪽 탭 닫기">
 <!ENTITY gestureCmd.closeRightTabs "오른쪽 탭 닫기">
-<!ENTITY gestureCmd.scrollTop "상단으로 스크롤">
-<!ENTITY gestureCmd.scrollBottom "하단으로 스크롤">
-<!ENTITY gestureCmd.scrollPageUp "페이지 위로">
-<!ENTITY gestureCmd.scrollPageDown "페이지 아래로">
+<!ENTITY gestureCmd.scrollTop "맨 위로 스크롤">
+<!ENTITY gestureCmd.scrollBottom "맨 아래로 스크롤">
+<!ENTITY gestureCmd.scrollPageUp "한 페이지 위로">
+<!ENTITY gestureCmd.scrollPageDown "한 페이지 아래로">
 <!ENTITY gestureCmd.backgroundTab "배경 탭">
 <!ENTITY gestureCmd.foregroundTab "전경 탭">
 <!ENTITY gestureCmd.saveImageNow "그림 즉시 저장">
