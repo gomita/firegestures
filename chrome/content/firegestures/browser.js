@@ -1013,17 +1013,15 @@ var FireGestures = {
 				function callback(sessionHistory, initial) {
 					if (popup.firstChild)
 						return;	// popup is built before callback
-					let count = sessionHistory.entries ? sessionHistory.entries.length	// [Firefox43+]
-					                                   : sessionHistory.count;	// [Firefox42-]
+					let count = sessionHistory.entries.length;
 					if (count < 1)
 						throw "No back/forward history for this tab.";
 					var curIdx = sessionHistory.index;
 					for (var i = 0; i < count; i++) {
-						let entry = sessionHistory.entries ? sessionHistory.entries[i]	// [Firefox43+]
-						                                   : sessionHistory.getEntryAtIndex(i, false);	// [Firefox42-]
+						let entry = sessionHistory.entries[i];
 						let menuitem = document.createElement("menuitem");
 						popup.insertBefore(menuitem, popup.firstChild);
-						menuitem.setAttribute("label", entry.title);
+						menuitem.setAttribute("label", entry.title || entry.url);
 						menuitem.setAttribute("statustext", entry.url);
 						menuitem.index = i;
 						if (i == curIdx) {
@@ -1033,8 +1031,7 @@ var FireGestures = {
 							menuitem.className = "unified-nav-current";
 						}
 						else {
-							var entryURI = entry.url ? BrowserUtils.makeURI(entry.url, entry.charset, null)	// [Firefox43+]
-							                         : this.isRemote ? makeURI(entry.URI.spec) : entry.URI;	// [Firefox42-]
+							var entryURI = BrowserUtils.makeURI(entry.url, entry.charset, null);
 							PlacesUtils.favicons.getFaviconURLForPage(entryURI, function(aURI) {
 								if (!aURI)
 									return;
@@ -1047,10 +1044,7 @@ var FireGestures = {
 						}
 					}
 				}
-				if (SessionStore.getSessionHistory)
-					SessionStore.getSessionHistory(gBrowser.selectedTab, callback);	// [Firefox43+]
-				else
-					callback(gBrowser.webNavigation.sessionHistory);	// [Firefox42-]
+				SessionStore.getSessionHistory(gBrowser.selectedTab, callback);
 				break;
 			case "FireGestures:ClosedTabsPopup": 
 				var ss = Cc["@mozilla.org/browser/sessionstore;1"].getService(Ci.nsISessionStore);
