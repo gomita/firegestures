@@ -1052,9 +1052,6 @@ var FireGestures = {
 							                   : "unified-nav-forward menuitem-iconic menuitem-with-favicon";
 						}
 					}
-					// for async opening popup
-					if (popup.state == "showing" || popup.state == "open")
-						setTimeout(function() { popup.currentItem = popup.defaultItem || popup.firstChild; }, 10);
 				}
 				if (SessionStore.getSessionHistory)
 					SessionStore.getSessionHistory(gBrowser.selectedTab, callback);	// [Firefox43+]
@@ -1143,7 +1140,7 @@ var FireGestures = {
 				XULBrowserWindow.setOverLink("", null);
 				break;
 			case "command": 
-				var item = popup.currentItem || event.target;
+				var item = event.target;
 				if (popup.defaultItem == item)
 					break;
 				switch (popup.getAttribute("_gesturecommand")) {
