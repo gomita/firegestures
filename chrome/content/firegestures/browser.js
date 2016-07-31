@@ -381,18 +381,13 @@ var FireGestures = {
 				break;
 			// @see nsContextMenu::viewFrameSource
 			case "FireGestures:ViewFrameSource": 
-				// [e10s]
-				if (this.isRemote) {
-					var doc = this.sourceNode.ownerDocument;
-					var frameID = doc.defaultView.QueryInterface(Ci.nsIInterfaceRequestor).
-					              getInterface(Ci.nsIDOMWindowUtils).outerWindowID;
-					BrowserViewSourceOfDocument({
-						browser: gBrowser.mCurrentBrowser, URL: doc.location.href, 
-						outerWindowID: frameID
-					});
-					return;
-				}
-				BrowserViewSourceOfDocument(this.sourceNode.ownerDocument);
+				var doc = this.sourceNode.ownerDocument;
+				var frameID = doc.defaultView.QueryInterface(Ci.nsIInterfaceRequestor).
+				              getInterface(Ci.nsIDOMWindowUtils).outerWindowID;
+				BrowserViewSourceOfDocument({
+					browser: gBrowser.mCurrentBrowser, URL: doc.location.href, 
+					outerWindowID: frameID
+				});
 				break;
 			case "FireGestures:ViewFrameInfo": 
 				BrowserPageInfo(this.sourceNode.ownerDocument);
