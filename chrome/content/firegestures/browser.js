@@ -472,7 +472,17 @@ var FireGestures = {
 				else {
 					// save image
 					this.checkURL(mediaURL, doc);
-					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, null, null, null, isPrivate);
+					// get content type
+					let contType = null;
+					let contDisp = null;
+					try {
+						let imgCache = Cc["@mozilla.org/image/tools;1"].getService(Ci.imgITools).getImgCacheForDocument(doc);
+						let props = imgCache.findEntryProperties(this.sourceNode.currentURI, doc);
+						contType = props.get("type", Ci.nsISupportsCString).data;
+						contDisp = props.get("content-disposition", Ci.nsISupportsCString).data;
+					}
+					catch(ex) {}
+					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, null, contType, contDisp, isPrivate);
 				}
 				break;
 			case "FireGestures:WebSearch": 
