@@ -477,9 +477,10 @@ var FireGestures = {
 					let contDisp = null;
 					try {
 						let imgCache = Cc["@mozilla.org/image/tools;1"].getService(Ci.imgITools).getImgCacheForDocument(doc);
-						let props = imgCache.findEntryProperties(this.sourceNode.currentURI, doc);
-						contType = props.get("type", Ci.nsISupportsCString).data;
-						contDisp = props.get("content-disposition", Ci.nsISupportsCString).data;
+						let props = imgCache.findEntryProperties(makeURI(mediaURL, getCharsetforSave(doc)), doc);
+						// need try-catch to get each property @see /browser/base/content/content.js
+						try { contType = props.get("type", Ci.nsISupportsCString).data; } catch(ex) {}
+						try { contDisp = props.get("content-disposition", Ci.nsISupportsCString).data; } catch(ex) {}
 					}
 					catch(ex) {}
 					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, null, contType, contDisp, isPrivate);
