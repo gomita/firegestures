@@ -83,7 +83,7 @@ xdGestureHandler.prototype = {
 		root.addEventListener("mousemove", this, true);
 		root.addEventListener("mouseup", this, true);
 		this._drawArea.addEventListener("contextmenu", this, true);
-		this._drawArea.addEventListener("draggesture", this, true);
+		this._drawArea.addEventListener("dragstart", this, true);
 		this._reloadPrefs();
 		var prefBranch2 = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch2);
 		prefBranch2.addObserver(PREFS_DOMAIN, this, true);
@@ -96,7 +96,7 @@ xdGestureHandler.prototype = {
 		root.removeEventListener("mousemove", this, true);
 		root.removeEventListener("mouseup", this, true);
 		this._drawArea.removeEventListener("contextmenu", this, true);
-		this._drawArea.removeEventListener("draggesture", this, true);
+		this._drawArea.removeEventListener("dragstart", this, true);
 		var prefBranch2 = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefBranch2);
 		prefBranch2.removeObserver(PREFS_DOMAIN, this);
 		this._clearTimeout();
@@ -364,11 +364,11 @@ xdGestureHandler.prototype = {
 					event.stopPropagation();
 				}
 				break;
-			case "draggesture": 
+			case "dragstart": 
 				// this fixes the bug: _isMouseDownL remains true after drag-and-drop if...
 				// STATE_READY  : trigger_button is right and mousegesture is enabled
 				// STATE_GESTURE: trigger_button is left  and mousegesture is disabled
-				// STATE_ROCKER : except draggesture events which are fired while sequential rocker-right
+				// STATE_ROCKER : except dragstart events which are fired while sequential rocker-right
 				if (this._state != STATE_ROCKER)
 					this._isMouseDownL = false;
 				break;
