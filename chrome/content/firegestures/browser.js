@@ -467,7 +467,7 @@ var FireGestures = {
 				}
 				else if (this.sourceNode instanceof HTMLCanvasElement) {
 					// save canvas
-					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", false, skipPrompt, refURI, null, null, null, isPrivate);
+					saveImageURL(mediaURL, "canvas.png", "SaveImageTitle", false, skipPrompt, refURI, doc, null, null, isPrivate);
 				}
 				else {
 					// save image
@@ -483,7 +483,7 @@ var FireGestures = {
 						try { contDisp = props.get("content-disposition", Ci.nsISupportsCString).data; } catch(ex) {}
 					}
 					catch(ex) {}
-					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, null, contType, contDisp, isPrivate);
+					saveImageURL(mediaURL, null, "SaveImageTitle", false, skipPrompt, refURI, doc, contType, contDisp, isPrivate);
 				}
 				break;
 			case "FireGestures:WebSearch": 
