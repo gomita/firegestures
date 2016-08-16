@@ -499,11 +499,11 @@ var FireGestures = {
 			case "FireGestures:OpenURLsInSelection": 
 				this.openURLsInSelection();
 				break;
+			case "Tools:DevToolbox": 
+				document.getElementById("menu_devToolbox").doCommand();
+				break;
 			case "FireGestures:ErrorConsole": 
 				toJavaScriptConsole();
-				break;
-			case "FireGestures:WebConsole": 
-				HUDConsoleUI.toggleHUD();
 				break;
 			case "FireGestures:BookmarksSidebar": 
 				toggleSidebar("viewBookmarksSidebar");
