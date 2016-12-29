@@ -12,3 +12,4 @@ pref("extensions.firegestures.mousetrail.color", "#33FF33");
 pref("extensions.firegestures.gesture_timeout", 3000);
 pref("extensions.firegestures.status_display", 2000);
 pref("extensions.firegestures.swipe_timeout", 0);
+pref("extensions.firegestures.blocked_hosts", "");

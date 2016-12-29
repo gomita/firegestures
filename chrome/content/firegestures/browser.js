@@ -15,6 +15,8 @@ var FireGestures = {
 
 	_statusDisplay: null,
 
+	_blockedHosts: [],
+
 	get _isWin() {
 		delete this._isWin;
 		return this._isWin = navigator.platform.startsWith("Win");
@@ -106,6 +108,10 @@ var FireGestures = {
 		if (event.target instanceof HTMLCanvasElement && 
 		    event.target.parentNode instanceof Ci.nsIDOMXULElement) {
 			dump("*** suppress starting gesture in Tilt 3D View\n");	// #debug
+			return false;
+		}
+		if (this._blockedHosts.some(host => gBrowser.currentURI.asciiHost.endsWith(host))) {
+			dump("*** suppress starting gesture on blocked host\n");	// #debug
 			return false;
 		}
 		return true;
@@ -210,8 +216,11 @@ var FireGestures = {
 				this.clearStatusText(0);
 				break;
 			case "reload-prefs": 
-				var pref = "extensions.firegestures.status_display";
-				this._statusDisplay = Services.prefs.getIntPref(pref);
+				const PREF = "extensions.firegestures.";
+				this._statusDisplay = Services.prefs.getIntPref(PREF + "status_display");
+				this._blockedHosts = Services.prefs.getCharPref(PREF + "blocked_hosts").split(",").
+				                     map(host => host.replace(/^[\s\*]+|\s+$/g, "")).filter(host => host);
+				dump("blocked hosts: " + this._blockedHosts.map(host => "[" + host + "]") + "\n");	// #debug
 				break;
 		}
 	},
