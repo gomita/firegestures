@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "כל תסריטי המשתמש">
 <!ENTITY gestureCmd.openLinksInSelection "פתיחת כל הקישורים שבבחירה">
 <!ENTITY gestureCmd.openURLsInSelection "פתיחת כל הכתובות אינטרנט שבבחירה">
+<!ENTITY gestureCmd.browserConsole "מסוף דפדפן">
 <!ENTITY gestureCmd.bookmarksSidebar "הצגת סרגל-צד סימניות">
 <!ENTITY gestureCmd.historySidebar "הצגת סרגל-צד ההיסטוריה">
 <!ENTITY gestureCmd.backForwardHistory "היסטוריה קדימה / אחורה">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "פתיחת / סגירת סרגל החיפוש">
 <!ENTITY gestureCmd.restartApp "אתחול Firefox">
 <!ENTITY gestureCmd.options "אפשרויות">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "מסוף שגיאות">

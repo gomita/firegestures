@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "所有使用者腳本">
 <!ENTITY gestureCmd.openLinksInSelection "開啟選取範圍內的所有鏈結">
 <!ENTITY gestureCmd.openURLsInSelection "開啟選取範圍內的所有網址">
+<!ENTITY gestureCmd.browserConsole "瀏覽器主控台">
 <!ENTITY gestureCmd.bookmarksSidebar "於側邊欄顯示書籤">
 <!ENTITY gestureCmd.historySidebar "於側邊欄顯示瀏覽記錄">
 <!ENTITY gestureCmd.backForwardHistory "上╱下一頁瀏覽記錄">
@@ -48,9 +49,3 @@
 <!ENTITY gestureCmd.toggleFindbar "開啟╱關閉搜尋列">
 <!ENTITY gestureCmd.restartApp "重新啟動 Firefox">
 <!ENTITY gestureCmd.options "選項">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "錯誤主控台">

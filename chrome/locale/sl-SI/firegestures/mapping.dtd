@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "Vsi uporabniški skripti">
 <!ENTITY gestureCmd.openLinksInSelection "Odpri vse povezave v izbiri">
 <!ENTITY gestureCmd.openURLsInSelection "Odpri vse URL-je v izbiri">
+<!ENTITY gestureCmd.browserConsole "Konzola brskalnika">
 <!ENTITY gestureCmd.bookmarksSidebar "Prikaži stranko vrstico z zaznamki">
 <!ENTITY gestureCmd.historySidebar "Prikaži stranko vrstico z zgodovino">
 <!ENTITY gestureCmd.backForwardHistory "Zgodovina Naprej / Nazaj">
@@ -48,9 +49,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Odpri / Zapri iskalno vrstico">
 <!ENTITY gestureCmd.restartApp "Ponovno zaženi Firefox">
 <!ENTITY gestureCmd.options "Možnosti">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Konzola napak">

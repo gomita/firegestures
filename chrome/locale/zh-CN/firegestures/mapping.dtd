@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "全部脚本">
 <!ENTITY gestureCmd.openLinksInSelection "打开选中的所有链接">
 <!ENTITY gestureCmd.openURLsInSelection "打开选中的所有URL">
+<!ENTITY gestureCmd.browserConsole "浏览器控制台">
 <!ENTITY gestureCmd.bookmarksSidebar "显示书签侧边栏">
 <!ENTITY gestureCmd.historySidebar "显示历史侧边栏">
 <!ENTITY gestureCmd.backForwardHistory "后退/前进 历史">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "打开/关闭 查找栏">
 <!ENTITY gestureCmd.restartApp "重启Firefox">
 <!ENTITY gestureCmd.options "选项">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "错误控制台">

@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "모든 사용자 스크립트">
 <!ENTITY gestureCmd.openLinksInSelection "선택한 문장 내 모든 연결 열기">
 <!ENTITY gestureCmd.openURLsInSelection "선택한 문장 내 모든 URL 열기">
+<!ENTITY gestureCmd.browserConsole "브라우저 콘솔">
 <!ENTITY gestureCmd.bookmarksSidebar "북마크 탐색창 표시">
 <!ENTITY gestureCmd.historySidebar "열어본 페이지 목록 창 표시">
 <!ENTITY gestureCmd.backForwardHistory "이전/이후 방문 기록">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "검색 막대 열기/닫기">
 <!ENTITY gestureCmd.restartApp "Firefox 재시작">
 <!ENTITY gestureCmd.options "선택사항">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "오류 정보">

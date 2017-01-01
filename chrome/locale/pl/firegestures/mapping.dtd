@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "Wszystkie skrypty">
 <!ENTITY gestureCmd.openLinksInSelection "Otwórz wszystkie odnośniki z zaznaczenia">
 <!ENTITY gestureCmd.openURLsInSelection "Otwórz wszystkie adresy URL z zaznaczenia">
+<!ENTITY gestureCmd.browserConsole "Konsola przeglądarki">
 <!ENTITY gestureCmd.bookmarksSidebar "Wyświetl zakładki w panelu bocznym">
 <!ENTITY gestureCmd.historySidebar "Wyświetl historię w panelu bocznym">
 <!ENTITY gestureCmd.backForwardHistory "Historia Wstecz/Do przodu">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Otwórz/Zamknij pasek wyszukiwania">
 <!ENTITY gestureCmd.restartApp "Uruchom ponownie Firefoksa">
 <!ENTITY gestureCmd.options "opcje">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Konsola błędów" >

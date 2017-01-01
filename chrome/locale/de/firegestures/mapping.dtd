@@ -35,6 +35,7 @@
 <!ENTITY gestureCmd.searchForSelectionWith "Nach Selektion suchen mit...">
 <!ENTITY gestureCmd.openLinksInSelection "Alle Hyperlinks in der Selektion öffnen">
 <!ENTITY gestureCmd.openURLsInSelection "Alles URLs in der Selektion öffnen">
+<!ENTITY gestureCmd.browserConsole "Browser-Konsole">
 <!ENTITY gestureCmd.bookmarksSidebar "Lesezeichenleiste anzeigen">
 <!ENTITY gestureCmd.historySidebar "Chronikleiste anzeigen">
 <!ENTITY gestureCmd.backForwardHistory "Chronik vor/zurück">
@@ -46,9 +47,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Suchleiste öffnen/schließen">
 <!ENTITY gestureCmd.restartApp "Firefox neu starten">
 <!ENTITY gestureCmd.options "Optionen">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Fehlerkonsole">

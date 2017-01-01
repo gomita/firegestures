@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "Alle scripts">
 <!ENTITY gestureCmd.openLinksInSelection "Åbn alle markerede links">
 <!ENTITY gestureCmd.openURLsInSelection "Åbn alle markerede URL'er">
+<!ENTITY gestureCmd.browserConsole "Browserkonsol">
 <!ENTITY gestureCmd.bookmarksSidebar "Vis bogmærker i sidebjælken">
 <!ENTITY gestureCmd.historySidebar "Vis historik i sidebjælken">
 <!ENTITY gestureCmd.backForwardHistory "Tilbage / Fremad i historik">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Åbn / Luk søgebjælke">
 <!ENTITY gestureCmd.restartApp "Genstart Firefox">
 <!ENTITY gestureCmd.options "Indstillinger">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Fejlkonsol">

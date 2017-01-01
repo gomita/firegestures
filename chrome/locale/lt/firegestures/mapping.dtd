@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "Visi scenarijai">
 <!ENTITY gestureCmd.openLinksInSelection "Atverti visas pasirinktas nuorodas">
 <!ENTITY gestureCmd.openURLsInSelection "Atverti visus pasirinktus URL">
+<!ENTITY gestureCmd.browserConsole "Naršyklės pultas">
 <!ENTITY gestureCmd.bookmarksSidebar "Šoninėje juostoje rodyti žymeles">
 <!ENTITY gestureCmd.historySidebar "Šoninėje juostoje rodyti istoriją">
 <!ENTITY gestureCmd.backForwardHistory "Atgal / Pirmyn istorija">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Atverti / Užverti paieškos juostą">
 <!ENTITY gestureCmd.restartApp "Paleisti iš naujo Firefox">
 <!ENTITY gestureCmd.options "Parinktys">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Klaidų pultas">

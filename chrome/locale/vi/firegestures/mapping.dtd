@@ -46,9 +46,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Mở/Đóng Thanh tìm kiếm">
 <!ENTITY gestureCmd.restartApp "Khởi động lại Firefox">
 <!ENTITY gestureCmd.options "Tùy chọn">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Bảng kiểm soát Lỗi">

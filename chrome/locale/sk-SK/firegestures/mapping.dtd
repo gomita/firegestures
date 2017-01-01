@@ -32,6 +32,7 @@
 <!ENTITY gestureCmd.searchForSelectionWith "Hľadať výber s ...">
 <!ENTITY gestureCmd.openLinksInSelection "Otvoriť všetky odkazy vo výbere">
 <!ENTITY gestureCmd.openURLsInSelection "Otvoriť všetky URL vo výbere">
+<!ENTITY gestureCmd.browserConsole "Konzola prehliadača">
 <!ENTITY gestureCmd.bookmarksSidebar "Zobraziť záložky v bočnom paneli">
 <!ENTITY gestureCmd.historySidebar "Zobraziť históriu v bočnom paneli">
 <!ENTITY gestureCmd.backForwardHistory "Späť / Vpred v Histórii">
@@ -41,9 +42,3 @@
 <!ENTITY gestureCmd.hybridCopyURL "Kopírovať umiestnenie">
 <!ENTITY gestureCmd.toggleFindbar "Otvoriť / Zavrieť lištu vyhľadávania">
 <!ENTITY gestureCmd.options "Možnosti">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Chybová konzola">

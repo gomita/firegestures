@@ -89,7 +89,7 @@
     <RDF:li RDF:resource="urn:Tools:Addons" />
     <RDF:li RDF:resource="urn:Tools:Sanitize" />
     <RDF:li RDF:resource="urn:Tools:DevToolbox" />
-    <RDF:li RDF:resource="urn:FireGestures:ErrorConsole" />
+    <RDF:li RDF:resource="urn:FireGestures:BrowserConsole" />
     <RDF:li RDF:resource="urn:FireGestures:BookmarksSidebar" />
     <RDF:li RDF:resource="urn:FireGestures:HistorySidebar" />
     <RDF:li RDF:resource="urn:FireGestures:FindBar" />
@@ -393,9 +393,9 @@
   <RDF:Description RDF:about="urn:Tools:DevToolbox"
                    FG:type="1"
                    FG:name="&webDeveloperMenu.label;" />
-  <RDF:Description RDF:about="urn:FireGestures:ErrorConsole"
+  <RDF:Description RDF:about="urn:FireGestures:BrowserConsole"
                    FG:type="1"
-                   FG:name="&errorConsoleCmd.label;" />
+                   FG:name="&gestureCmd.browserConsole;" />
   <RDF:Description RDF:about="urn:FireGestures:BookmarksSidebar"
                    FG:type="1"
                    FG:name="&gestureCmd.bookmarksSidebar;" />

@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "Minden felhasználói parancsfájl">
 <!ENTITY gestureCmd.openLinksInSelection "Kiválasztás linkjeinek megnyitása">
 <!ENTITY gestureCmd.openURLsInSelection "Kiválasztás URL címek megnyitása">
+<!ENTITY gestureCmd.browserConsole "Böngészőkonzol">
 <!ENTITY gestureCmd.bookmarksSidebar "Könyvjelző oldalsáv megjelenítése">
 <!ENTITY gestureCmd.historySidebar "Előzmények oldalsáv megjelenítése">
 <!ENTITY gestureCmd.backForwardHistory "Előző/következő története">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Keresés megnyitása/bezárása">
 <!ENTITY gestureCmd.restartApp "Firefox újraindítása">
 <!ENTITY gestureCmd.options "Beállítások">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Hibakonzol">

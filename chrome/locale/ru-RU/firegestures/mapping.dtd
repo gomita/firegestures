@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "Все сценарии">
 <!ENTITY gestureCmd.openLinksInSelection "Открыть все ссылки в выделенном фрагменте">
 <!ENTITY gestureCmd.openURLsInSelection "Открыть все URL в выделенном фрагменте">
+<!ENTITY gestureCmd.browserConsole "Консоль браузера">
 <!ENTITY gestureCmd.bookmarksSidebar "Открыть боковую панель с закладками">
 <!ENTITY gestureCmd.historySidebar "Открыть боковую панель с историей посещений">
 <!ENTITY gestureCmd.backForwardHistory "Назад / Вперёд по истории посещений">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Открыть / Закрыть панель поиска">
 <!ENTITY gestureCmd.restartApp "Перезапустить Firefox">
 <!ENTITY gestureCmd.options "Настройки">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Консоль ошибок">

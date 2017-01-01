@@ -35,6 +35,7 @@
 <!ENTITY gestureCmd.searchForSelectionWith "Hledat výběr pomocí...">
 <!ENTITY gestureCmd.openLinksInSelection "Otevřít všechny odkazy ve výběru">
 <!ENTITY gestureCmd.openURLsInSelection "Otevřít všechny adresy ve výběru">
+<!ENTITY gestureCmd.browserConsole "Konzole prohlížeče">
 <!ENTITY gestureCmd.bookmarksSidebar "Zobrazit postranní panel záložek">
 <!ENTITY gestureCmd.historySidebar "Zobrazit postranní panel historie">
 <!ENTITY gestureCmd.backForwardHistory "Zpět / Dopředu v historii">
@@ -46,9 +47,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Zobrazit / Skrýt panel vyhledávání">
 <!ENTITY gestureCmd.restartApp "Restartovat Firefox">
 <!ENTITY gestureCmd.options "možnosti">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Chybová konzole">

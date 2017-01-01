@@ -46,9 +46,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Ava/Sulge otsinguriba">
 <!ENTITY gestureCmd.restartApp "Taaskäivita Firefox">
 <!ENTITY gestureCmd.options "Sätted">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Vigade konsool">

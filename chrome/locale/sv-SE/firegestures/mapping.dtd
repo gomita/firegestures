@@ -35,6 +35,7 @@
 <!ENTITY gestureCmd.searchForSelectionWith "Sök efter markering med...">
 <!ENTITY gestureCmd.openLinksInSelection "Öppna alla länkar i markeringen">
 <!ENTITY gestureCmd.openURLsInSelection "Öppna alla URL:er i markeringen">
+<!ENTITY gestureCmd.browserConsole "Webbläsarkonsolen">
 <!ENTITY gestureCmd.bookmarksSidebar "Visa Bokmärkes-sidpanelen">
 <!ENTITY gestureCmd.historySidebar "Visa Historik-sidpanelen">
 <!ENTITY gestureCmd.backForwardHistory "Bakåt / Framåt i historiken">
@@ -46,9 +47,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Öppna / Stäng Sidsökfältet">
 <!ENTITY gestureCmd.restartApp "Starta om Firefox">
 <!ENTITY gestureCmd.options "Inställningar">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Felkonsol">

@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "Comandos del usuario">
 <!ENTITY gestureCmd.openLinksInSelection "Abrir los enlaces contenidos en la selección">
 <!ENTITY gestureCmd.openURLsInSelection "Abrir las direcciones URL contenidas en la selección">
+<!ENTITY gestureCmd.browserConsole "Navegador de consola">
 <!ENTITY gestureCmd.bookmarksSidebar "Mostrar pánel lateral de Marcadores">
 <!ENTITY gestureCmd.historySidebar "Mostrar pánel lateral de Historial">
 <!ENTITY gestureCmd.backForwardHistory "Retroceder/Avanzar en el Historial">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Abrir/Cerrar la barra de búsqueda">
 <!ENTITY gestureCmd.restartApp "Re-iniciar Firefox">
 <!ENTITY gestureCmd.options "Opciones">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Consola de errores">

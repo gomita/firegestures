@@ -511,8 +511,8 @@ var FireGestures = {
 			case "Tools:DevToolbox": 
 				document.getElementById("menu_devToolbox").doCommand();
 				break;
-			case "FireGestures:ErrorConsole": 
-				toJavaScriptConsole();
+			case "FireGestures:BrowserConsole": 
+				document.getElementById("menu_browserConsole").doCommand();
 				break;
 			case "FireGestures:BookmarksSidebar": 
 				toggleSidebar("viewBookmarksSidebar");

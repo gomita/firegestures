@@ -40,9 +40,3 @@
 <!ENTITY gestureCmd.hybridViewSource "Ver código-fonte">
 <!ENTITY gestureCmd.toggleFindbar "Abrir / Fechar barra de localizar">
 <!ENTITY gestureCmd.options "Opções">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Console de erros">

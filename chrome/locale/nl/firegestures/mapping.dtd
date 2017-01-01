@@ -35,6 +35,7 @@
 <!ENTITY gestureCmd.searchForSelectionWith "Zoeken naar Selectie met...">
 <!ENTITY gestureCmd.openLinksInSelection "Alle Links Openen in Selectie">
 <!ENTITY gestureCmd.openURLsInSelection "Alle URLs Openen in Selectie">
+<!ENTITY gestureCmd.browserConsole "Browserconsole">
 <!ENTITY gestureCmd.bookmarksSidebar "Bladwijzerbalk Tonen">
 <!ENTITY gestureCmd.historySidebar "Geschiedenisbalk Tonen">
 <!ENTITY gestureCmd.backForwardHistory "Terug / Vooruit in Geschiedenis">
@@ -46,9 +47,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Zoekbalk Openen / Sluiten">
 <!ENTITY gestureCmd.restartApp "Firefox Herstarten">
 <!ENTITY gestureCmd.options "Opties">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Foutconsole">

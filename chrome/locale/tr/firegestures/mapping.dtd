@@ -35,6 +35,7 @@
 <!ENTITY gestureCmd.searchForSelectionWith "Seçimi bununla arat...">
 <!ENTITY gestureCmd.openLinksInSelection "Tüm Bağlantıları Seçimde Aç">
 <!ENTITY gestureCmd.openURLsInSelection "Tüm URLleri Seçimde Aç">
+<!ENTITY gestureCmd.browserConsole "Tarayıcı konsolu">
 <!ENTITY gestureCmd.bookmarksSidebar "Yer İmleri Bölmesini Göster">
 <!ENTITY gestureCmd.historySidebar "Geçmiş Bölmesini Göster">
 <!ENTITY gestureCmd.backForwardHistory "Önceki / Sonraki Geçmiş">
@@ -46,9 +47,3 @@
 <!ENTITY gestureCmd.toggleFindbar "Arama Çubuğunu Aç/ Kapat">
 <!ENTITY gestureCmd.restartApp "Firefox&apos;u Baştan Başlat">
 <!ENTITY gestureCmd.options "Ayarlar">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Hata konsolu">

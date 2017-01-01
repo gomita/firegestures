@@ -36,6 +36,7 @@
 <!ENTITY gestureCmd.allScripts "すべてのユーザースクリプト">
 <!ENTITY gestureCmd.openLinksInSelection "選択範囲内のリンクをすべて開く">
 <!ENTITY gestureCmd.openURLsInSelection "選択範囲内の URL をすべて開く">
+<!ENTITY gestureCmd.browserConsole "ブラウザコンソール">
 <!ENTITY gestureCmd.bookmarksSidebar "ブックマークサイドバーを表示">
 <!ENTITY gestureCmd.historySidebar "履歴サイドバーを表示">
 <!ENTITY gestureCmd.backForwardHistory "戻る / 進むの履歴">
@@ -47,9 +48,3 @@
 <!ENTITY gestureCmd.toggleFindbar "検索バーを開く / 閉じる">
 <!ENTITY gestureCmd.restartApp "Firefox を再起動">
 <!ENTITY gestureCmd.options "設定">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "エラーコンソール">

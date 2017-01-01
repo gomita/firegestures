@@ -34,6 +34,7 @@
 <!ENTITY gestureCmd.searchForSelectionWith "Cerca testo selezionato con...">
 <!ENTITY gestureCmd.openLinksInSelection "Apri tutti i collegamenti presenti nella selezione">
 <!ENTITY gestureCmd.openURLsInSelection "Apri tutti gli URL presenti nella selezione">
+<!ENTITY gestureCmd.browserConsole "Console del browser">
 <!ENTITY gestureCmd.bookmarksSidebar "Visualizza Barra laterale dei Segnalibri">
 <!ENTITY gestureCmd.historySidebar "Visualizza Barra laterale della Cronologia">
 <!ENTITY gestureCmd.backForwardHistory "Indietro/Avanti nella Cronologia">
@@ -43,9 +44,3 @@
 <!ENTITY gestureCmd.hybridCopyURL "Copia destinazione">
 <!ENTITY gestureCmd.toggleFindbar "Apri/Chiudi Barra di Ricerca">
 <!ENTITY gestureCmd.options "Opzioni">
-<!-- leave this empty for Pale Moon 24 compatibility -->
-<!ENTITY viewTabGroups.label "">
-<!-- leave this empty for Firefox 28- compatibility -->
-<!ENTITY appmenu.tooltip "">
-<!-- for Firefox 48+ compatibility -->
-<!ENTITY errorConsoleCmd.label "Console degli errori">
