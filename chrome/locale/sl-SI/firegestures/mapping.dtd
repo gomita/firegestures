@@ -44,7 +44,6 @@
 <!ENTITY gestureCmd.hybridBookmark "Zaznamek ...">
 <!ENTITY gestureCmd.hybridViewSource "Pokaži izvorno kodo">
 <!ENTITY gestureCmd.hybridProperties "Lastnosti">
-<!ENTITY gestureCmd.hybridSendURL "Pošlji ...">
 <!ENTITY gestureCmd.hybridCopyURL "Kopiraj mesto">
 <!ENTITY gestureCmd.toggleFindbar "Odpri / Zapri iskalno vrstico">
 <!ENTITY gestureCmd.restartApp "Ponovno zaženi Firefox">
