@@ -792,9 +792,9 @@ var FireGestures = {
 		if (this.isRemote) {
 			let principal = Cc["@mozilla.org/scriptsecuritymanager;1"].
 			                getService(Ci.nsIScriptSecurityManager).
-			                getAppCodebasePrincipal(gBrowser.currentURI,
-			                                        aDoc.nodePrincipal.appId,
-			                                        aDoc.nodePrincipal.isInBrowserElement);
+			                createCodebasePrincipal(gBrowser.currentURI, {
+			                                        appId: aDoc.nodePrincipal.appId,
+			                                        inBrowser: true });
 			urlSecurityCheck(aURL, principal, aFlags);
 			return;
 		}
